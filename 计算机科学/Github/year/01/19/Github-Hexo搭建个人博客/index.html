@@ -91,7 +91,7 @@
 <meta property="og:image" content="http://yoursite.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/year/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/031.png">
 <meta property="og:image" content="http://yoursite.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/year/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/04.png">
 <meta property="article:published_time" content="2020-01-19T14:05:11.000Z">
-<meta property="article:modified_time" content="2020-01-20T08:58:43.575Z">
+<meta property="article:modified_time" content="2020-01-20T09:01:59.443Z">
 <meta property="article:author" content="GeRongcun">
 <meta property="article:tag" content="Github">
 <meta property="article:tag" content="Hexo">
@@ -359,7 +359,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-01-20T16:58:43+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2020-01-20T17:01:59+08:00">
                 2020-01-20
               </time>
             
@@ -431,7 +431,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  541字
+                  542字
                 </span>
               
 
@@ -471,7 +471,10 @@
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前段时间，在浏览<a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a>时，知道可以用Github+Hexo搭建个人博客。这几天，参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的教程</a>学习了Git，参考梧雨北辰的教程<a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a>和其他大佬的教程，尝试搭建个人博客。期间，遇到不少问题，在这里贴出来，避免以后再次踩坑。</p>
 <p>个人博客，看效果进入：<a href="https://github.com/GeRongcun/GeRongcun.github.io" target="_blank" rel="noopener">https://github.com/GeRongcun/GeRongcun.github.io</a></p>
 <hr>
-<h1 id="安装Hexo失败"><a href="#安装Hexo失败" class="headerlink" title="安装Hexo失败"></a>安装Hexo失败</h1><p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/year/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/01%E9%94%99%E8%AF%AF.png" alt="安装hexo失败"><br><strong>错误提示</strong><br>    FATAL can not read an implicit mapping pair; a colon is missed at line 103, column 16:<br>        branch:master<br>                    ^<br>    YAMLException: can not read an implicit mapping pair; a colon is missed at line 103, column 16:<br>        branch:master<br><strong>解决方法</strong><br>目前国内npm源有问题；所以键入如下代码即可安装成功:<br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>cnpm install hexo-cli -g</p>
+<h1 id="安装Hexo失败"><a href="#安装Hexo失败" class="headerlink" title="安装Hexo失败"></a>安装Hexo失败</h1><p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/year/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/01%E9%94%99%E8%AF%AF.png" alt="安装hexo失败"><br><strong>错误提示</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">FATAL can not read an implicit mapping pair; a colon is missed at line 103, column 16:</span><br><span class="line">    branch:master</span><br><span class="line">                ^</span><br><span class="line">YAMLException: can not read an implicit mapping pair; a colon is missed at line 103, column 16:</span><br><span class="line">    branch:master</span><br></pre></td></tr></table></figure>
+
+<p><strong>解决方法</strong><br>目前国内npm源有问题；所以键入如下代码即可安装成功:<br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>cnpm install hexo-cli -g</p>
 <h1 id="URL乱码"><a href="#URL乱码" class="headerlink" title="URL乱码"></a>URL乱码</h1><h2 id="导航栏链接URL乱码"><a href="#导航栏链接URL乱码" class="headerlink" title="导航栏链接URL乱码"></a>导航栏链接URL乱码</h2><p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/year/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/02%E9%94%99%E8%AF%AF.png" alt="导航栏链接URL乱码"><br><strong>错误原因：</strong>%20由空格转义过来  </p>
 <p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/year/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/03.png" alt="解决方法"><br>只需要删除home: / || home中，/和||之间的空格。  </p>
 <h2 id="日志按钮链接URL乱码"><a href="#日志按钮链接URL乱码" class="headerlink" title="日志按钮链接URL乱码"></a>日志按钮链接URL乱码</h2><p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/year/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/031.png" alt="点击个人博客头像下方的“日志”按钮"><br>点击个人博客头像下方的“日志”按钮，跳转url出现乱码  </p>
