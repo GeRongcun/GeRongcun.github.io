@@ -19,8 +19,9 @@
 <h2 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h2><ul>
 <li>访问个人博客需要访问特定网址，推广不易； </li>
 <li>排版不美观，样式单调；  </li>
+<li>访问速度慢，需科学上网；</li>
 </ul>
-<h1 id="微信公众号排版编辑器"><a href="#微信公众号排版编辑器" class="headerlink" title="微信公众号排版编辑器"></a>微信公众号排版编辑器</h1><p>为了兼顾微信公众号的推广性和个人博客的方便性，考虑使用lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，先用Markdown写好个人博客，再使用微信公众号排版编辑器，转换为微信特制的HTML。<br><strong>PS</strong>：个人博客：<a href="https://gerongcun.github.io/" target="_blank" rel="noopener">https://gerongcun.github.io/</a>，欢迎访问</p>
+<h1 id="微信公众号排版编辑器"><a href="#微信公众号排版编辑器" class="headerlink" title="微信公众号排版编辑器"></a>微信公众号排版编辑器</h1><p>为了兼顾微信公众号的推广性和个人博客的方便性，考虑使用lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，先用Markdown写好个人博客，再使用微信公众号排版编辑器，转换为微信特制的HTML。<br><strong>PS</strong>：个人博客：<a href="https://gerongcun.github.io/" target="_blank" rel="noopener">https://gerongcun.github.io/</a>，欢迎访问。</p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
