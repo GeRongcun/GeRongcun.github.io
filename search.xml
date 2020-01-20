@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Markdown和微信公众号排版</title>
+    <url>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/year/01/20/Markdown%E5%92%8C%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E6%8E%92%E7%89%88/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>微信公众号排版复杂，但推广方便；Github+Hexo搭建个人博客，写作方便（Markdown语言），但推广不易；lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，轻松转化Markdown到给微信特制的HTML。  </p>
+<h1 id="微信公众号"><a href="#微信公众号" class="headerlink" title="微信公众号"></a>微信公众号</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
+<li>受众较多，推广方便；</li>
+<li>模板很多，排版美观；<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2></li>
+<li>排版复杂，时间成本较大；</li>
+<li>复用性差，移植到简书、知乎等其他知识分享平台，需要重新排版；</li>
+</ul>
+<h1 id="Github-Hexo搭建个人博客"><a href="#Github-Hexo搭建个人博客" class="headerlink" title="Github+Hexo搭建个人博客"></a>Github+Hexo搭建个人博客</h1><h2 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h2><ul>
+<li>Markdown写作方便，注重于知识本身，而非排版；</li>
+<li>复用性强，轻松移植到其他知识分享平台；<h2 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h2></li>
+<li>访问个人博客需要访问特定网址，推广不易；</li>
+<li>排版不美观，样式单调；</li>
+</ul>
+<h1 id="微信公众号排版编辑器"><a href="#微信公众号排版编辑器" class="headerlink" title="微信公众号排版编辑器"></a>微信公众号排版编辑器</h1><p>为了兼顾微信公众号的推广性和个人博客的方便性，考虑使用lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，先用Markdown写好个人博客，再使用微信公众号排版编辑器，转换为微信特制的HTML。</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Markdown</tag>
+        <tag>微信公众号</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown常用语法</title>
     <url>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/year/01/19/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><p>作业部落出品的常用语法：<br><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor</a><br>我用的Markdown编辑器是VS Code。Sublime也很好用。</p>
@@ -139,23 +167,5 @@
         <tag>Hexo</tag>
         <tag>Blog</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/uncategorized/year/01/19/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
   </entry>
 </search>
