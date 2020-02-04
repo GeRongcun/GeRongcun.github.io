@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Android," />
+  <meta name="keywords" content="PT," />
 
 
 
@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="前言在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。 过时代码及更新写法RecyclerView控件位置第3章 软件也要拼脸蛋——UI开发的点点滴滴3.6 更强大的滚动控件——RecyclerView   运行错误提示显示java.lang.ClassNotFoundExcepti">
+<meta name="description" content="前言PT站是分享影视，游戏，音乐，动漫，学习等资料的平台。不管是看电影、看电视剧，还是追番，PT站都是不错的选择。PT站的特点是，服务器不存放资源，资源均由用户上传，PT站基本都会设置上传&#x2F;下载比率限制，防止出现只下载不上传的“吸血鬼”。说不多说，开始简单介绍各大PT站。   简介及注册方式注册方式这里是我整理的各大BT、PT站注册方式：https:&#x2F;&#x2F;docs.qq.com&#x2F;sheet&#x2F;DSnB">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Android】郭霖《第一行代码》过时代码的更新写法">
-<meta property="og:url" content="http://yoursite.com/2020/6.html">
+<meta property="og:title" content="PT站简介及注册方式汇总">
+<meta property="og:url" content="http://yoursite.com/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/21/PT%E7%AB%99%E7%AE%80%E4%BB%8B%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB">
 <meta property="og:site_name" content="划水小能手">
-<meta property="og:description" content="前言在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。 过时代码及更新写法RecyclerView控件位置第3章 软件也要拼脸蛋——UI开发的点点滴滴3.6 更强大的滚动控件——RecyclerView   运行错误提示显示java.lang.ClassNotFoundExcepti">
-<meta property="og:image" content="http://yoursite.com/2020//RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png">
-<meta property="article:published_time" content="2020-02-04T05:04:19.000Z">
-<meta property="article:modified_time" content="2020-02-04T05:57:12.925Z">
+<meta property="og:description" content="前言PT站是分享影视，游戏，音乐，动漫，学习等资料的平台。不管是看电影、看电视剧，还是追番，PT站都是不错的选择。PT站的特点是，服务器不存放资源，资源均由用户上传，PT站基本都会设置上传&#x2F;下载比率限制，防止出现只下载不上传的“吸血鬼”。说不多说，开始简单介绍各大PT站。   简介及注册方式注册方式这里是我整理的各大BT、PT站注册方式：https:&#x2F;&#x2F;docs.qq.com&#x2F;sheet&#x2F;DSnB">
+<meta property="article:published_time" content="2020-01-21T06:17:04.000Z">
+<meta property="article:modified_time" content="2020-02-04T05:56:42.115Z">
 <meta property="article:author" content="GeRongcun">
-<meta property="article:tag" content="Android">
+<meta property="article:tag" content="PT">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020//RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/6.html"/>
+  <link rel="canonical" href="http://yoursite.com/生活/娱乐/2020/01/21/PT站简介及注册方式汇总"/>
 
 
 
 
 
-  <title>【Android】郭霖《第一行代码》过时代码的更新写法 | 划水小能手</title>
+  <title>PT站简介及注册方式汇总 | 划水小能手</title>
   
 
 
@@ -318,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/6.html">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/21/PT%E7%AB%99%E7%AE%80%E4%BB%8B%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GeRongcun">
@@ -335,7 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Android】郭霖《第一行代码》过时代码的更新写法</h1>
+          <h1 class="post-title" itemprop="name headline">PT站简介及注册方式汇总</h1>
         
 
         <div class="post-meta">
@@ -349,8 +347,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-04T13:04:19+08:00">
-                2020-02-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-21T14:17:04+08:00">
+                2020-01-21
               </time>
             
 
@@ -365,7 +363,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-04T13:57:12+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2020-02-04T13:56:42+08:00">
                 2020-02-04
               </time>
             
@@ -384,8 +382,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机科学</span>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
+                    <span itemprop="name">生活</span>
                   </a>
                 </span>
 
@@ -395,8 +393,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/" itemprop="url" rel="index">
+                    <span itemprop="name">娱乐</span>
                   </a>
                 </span>
 
@@ -413,9 +411,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/6.html#comments" itemprop="discussionUrl">
+                <a href="/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/21/PT%E7%AB%99%E7%AE%80%E4%BB%8B%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/6.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="生活/娱乐/2020/01/21/PT站简介及注册方式汇总" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -423,7 +421,7 @@
 
           
           
-             <span id="/2020/6.html" class="leancloud_visitors" data-flag-title="【Android】郭霖《第一行代码》过时代码的更新写法">
+             <span id="/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/21/PT%E7%AB%99%E7%AE%80%E4%BB%8B%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB" class="leancloud_visitors" data-flag-title="PT站简介及注册方式汇总">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -448,7 +446,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  317字
+                  2.7k字
                 </span>
               
 
@@ -464,7 +462,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  9分钟
                 </span>
               
             </div>
@@ -485,22 +483,51 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。</p>
-<h2 id="过时代码及更新写法"><a href="#过时代码及更新写法" class="headerlink" title="过时代码及更新写法"></a>过时代码及更新写法</h2><h3 id="RecyclerView控件"><a href="#RecyclerView控件" class="headerlink" title="RecyclerView控件"></a>RecyclerView控件</h3><p><strong>位置</strong><br>第3章 软件也要拼脸蛋——UI开发的点点滴滴<br>3.6 更强大的滚动控件——RecyclerView  </p>
-<p><strong>运行错误提示</strong><br><img src="/2020//RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png" alt="RecyclerView错误提示"><br>显示java.lang.ClassNotFoundException: Didn’t find class “android.support.v7.widget.RecyclerView”  </p>
-<p><strong>代码更新写法</strong><br>参考资料：<a href="https://blog.csdn.net/u011041494/article/details/93849730" target="_blank" rel="noopener">一次解决找不到 android.support.v7.XXX 问题</a><br>在build.gradle中用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation &#39;androidx.recyclerview:recyclerview:1.0.0&#39;</span><br></pre></td></tr></table></figure>
-<p>替换</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation &#39;com.android.support:recyclerview-v7:x.x.x&#39;</span><br></pre></td></tr></table></figure>
-
-<p>并在xml文件中用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;androidx.recyclerview.widget.RecyclerView</span><br><span class="line">        ...&gt;</span><br><span class="line">&lt;&#x2F;androidx.recyclerview.widget.RecyclerView&gt;</span><br></pre></td></tr></table></figure>
-<p>替换对应组件标签</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;android.support.v7.widget.RecyclerView</span><br><span class="line">        ...&gt;</span><br><span class="line">&lt;&#x2F;android.support.v7.widget.RecyclerView&gt;</span><br></pre></td></tr></table></figure>
-<p>由于Androidx中是对于support包的整合升级，可能还需要修改组件相应代码，如recyclerView组件中，若使用还需要在Activity/fragment的代码中修改</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">manager.setOrientation(LinearLayoutManager.VERTICAL);</span><br></pre></td></tr></table></figure>
-<p>的参数 LinearLayoutManager.VERTICAL为RecyclerView.VERTICAL</p>
-<h2 id="Android学习资料汇总"><a href="#Android学习资料汇总" class="headerlink" title="Android学习资料汇总"></a>Android学习资料汇总</h2><p>郭霖《第一行代码——Android 第2版》<br><a href="https://blog.csdn.net/zhaokaiqiang1992/article/details/43731967" target="_blank" rel="noopener">Android开发相关的Blog推荐——跟随大神的脚步才能成长为大神</a></p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>PT站是分享影视，游戏，音乐，动漫，学习等资料的平台。不管是看电影、看电视剧，还是追番，PT站都是不错的选择。PT站的特点是，服务器不存放资源，资源均由用户上传，PT站基本都会设置上传/下载比率限制，防止出现只下载不上传的“吸血鬼”。说不多说，开始简单介绍各大PT站。  </p>
+<h1 id="简介及注册方式"><a href="#简介及注册方式" class="headerlink" title="简介及注册方式"></a>简介及注册方式</h1><h2 id="注册方式"><a href="#注册方式" class="headerlink" title="注册方式"></a>注册方式</h2><p>这里是我整理的各大BT、PT站注册方式：<br><a href="https://docs.qq.com/sheet/DSnBBaVBydnBhRHdo?tab=ln32s3&c=A22A0K0" target="_blank" rel="noopener">https://docs.qq.com/sheet/DSnBBaVBydnBhRHdo?tab=ln32s3&amp;c=A22A0K0</a>  </p>
+<h2 id="教育网PT站简介"><a href="#教育网PT站简介" class="headerlink" title="教育网PT站简介"></a>教育网PT站简介</h2><p>教育网PT，是指在教育网（中国教育和科研计算机网）IPv6环境下才能访问的PT站。访问教育网PT，需要插网线。</p>
+<h3 id="葡萄"><a href="#葡萄" class="headerlink" title="葡萄"></a>葡萄</h3><p>葡萄创建于2009年5月2日，是非公开PT站点，是国内公网用户的教育网PT！站点以高清影视资源分享为主，官方压制组PuTao、官方WEB组PuTao一直活跃，分享各位会员。另有软件、游戏、电子书籍等资源，欢迎加入！<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a>  </p>
+<h3 id="百川PT"><a href="#百川PT" class="headerlink" title="百川PT"></a>百川PT</h3><p>由哈尔滨工业大学威海校区学生管理的教育网综合PT站点，以影视，游戏，动漫，学习资料为主，涵盖综艺、音乐、游戏软件等多个方面。资源多转发自各大站点资源，也有部分原创资源。用户以在校学生为主体，也有公网用户。目前支持IPv4与IPv6双栈访问，教育网和公网可实现高速下载上传。站内魔力值非常容易获取，可以通过挂种累积魔力值换取上传量来维持分享率。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a>  </p>
+<h3 id="极速之星"><a href="#极速之星" class="headerlink" title="极速之星"></a>极速之星</h3><p>极速之星PT站正式上线于2009年10月20日，由北京理工大学学生自主创建与管理，主要用户为在校生与毕业校友。<br>网站内容涵盖电影、剧集、动漫、游戏、节目、软件等各类资源，旨向为用户提供极速下载服务。<br>同时，管理组正不断对站点进行改进，以期优化用户体验，欢迎身怀技能的你加入极速之星。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a>  </p>
+<h3 id="BYRBT-北邮人"><a href="#BYRBT-北邮人" class="headerlink" title="BYRBT(北邮人)"></a>BYRBT(北邮人)</h3><p>BYRBT依靠北邮人团队设计与开发力量，新功能不断加入。BYRBT现有注册用户137000人并持续增长中。BYRBT分为电影 剧集 音乐 游戏 动漫 综艺 软件 资料 体育 记录共10个区，有包括BYRPAD,BYRHD,BYRTV在内的压制组，录制组。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a>  </p>
+<h3 id="麦田PT"><a href="#麦田PT" class="headerlink" title="麦田PT"></a>麦田PT</h3><p>创建于2010.9.28，由西农学生自主创建、管理，网络与教育中心直属的Private BT资源下载分享平台。仅支持ipv6访问。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a>  </p>
+<h2 id="公网PT站简介"><a href="#公网PT站简介" class="headerlink" title="公网PT站简介"></a>公网PT站简介</h2><p>公网PT站，是指在外网IPv4环境下即可访问的PT站。</p>
+<ul>
+<li><a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a></li>
+</ul>
+<h3 id="HDHome-家园"><a href="#HDHome-家园" class="headerlink" title="HDHome(家园)"></a>HDHome(家园)</h3><p>HDHome是高清影视站点，以电视节目录制为特色。成立于2014年12月。HDHome成立于2014年，日韩资源为站点特色，有专属LIVE区提供韩国台的LIVE及综艺节目，有原盘、官方小組HDHome制作REMUX、重编码小组HDH(720p，1080p）、HDHpad（1080p）及HDHWEB网剧小组。家园以自由无负担分享为核心价值，欢迎所有热爱高清影视的朋友前来分享与交流，人人为我，我为人人。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a></p>
+<h3 id="HDCity-高清城市"><a href="#HDCity-高清城市" class="headerlink" title="HDCity(高清城市)"></a>HDCity(高清城市)</h3><p>站点口号是User is god,admin is disciple。本站生存比较容易，默认界面也比较美观（奇葩），站内气氛较为轻松，有大量的FREE，积分也不难获得，支持V4+V6访问，自动返回V6的tracker，教育网无压力，同时站内有拥很多国外用户和小水管用户，小水管的天堂，我们强烈支持多保种、保优种。目前有自己的电影压制组HDCity—NoVa，通常压制经典或最新电影的1080P重编码，在1080P的发种速度上较快，其余资源已转载为主，站内有很多优秀的发布员和保种员。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a></p>
+<h3 id="HDChina-高清中国"><a href="#HDChina-高清中国" class="headerlink" title="HDChina(高清中国)"></a>HDChina(高清中国)</h3><p>驻站小组：HDChina（官方原盘发布组与重编码小组）、HDCTV（原HDWTV，高清电视录制小组）、iHD（移动设备视频压制小组），还有包括 LU9998(高清剧集录制小组) 、tudou(SNG无台标版体育赛事、综艺等高清录制小组)</p>
+<h3 id="皇后OpenCD"><a href="#皇后OpenCD" class="headerlink" title="皇后OpenCD"></a>皇后OpenCD</h3><p>皇后OpenCD（站外链接 :: <a href="https://open.cd" target="_blank" rel="noopener">https://open.cd</a> ）是专一的音乐类PT站，是目前国内最大的无损音乐PT，成立于2010年1月1日，现拥有OpenCD与LLM两个音乐原抓制作组。OpenCD支持ipv6地址互联，教育网用户与公网用户皆可使用，适合并欢迎热爱音乐的人们前来分享与交流！<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a></p>
+<h3 id="M-Team-MT、馒头"><a href="#M-Team-MT、馒头" class="headerlink" title="M-Team(MT、馒头)"></a>M-Team(MT、馒头)</h3><p>M-Team是一个拥有丰富高质量资源的综合类资源PT站点，拥有知识丰富的用户。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a></p>
+<h3 id="TCCF"><a href="#TCCF" class="headerlink" title="TCCF"></a>TCCF</h3><p>成立于2009年，以学习资源为主，涉猎优秀影视，记录片，少量音乐，游戏。TCCF有丰富的其它站点邀请，大佬热情大方，稀有站点也不难获得。有机会获得ccf论坛邀请。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=22" target="_blank" rel="noopener">北洋园PT 论坛–&gt;邀请注册区</a> </p>
+<h3 id="KEEPFRDS"><a href="#KEEPFRDS" class="headerlink" title="KEEPFRDS"></a>KEEPFRDS</h3><p>“KEEPFRDS”，意即：Let us keep friends forever！FRDS-PT建站于2012-08-04。MNHD-FRDS在电脑上表现出色，在电视上表现杰出。FRDS-PT无考核。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a></p>
+<h3 id="聆音Club"><a href="#聆音Club" class="headerlink" title="聆音Club"></a>聆音Club</h3><p>聆音Club是以有声书电子书为主，学习资料影视资源为辅的新站，目前资源很少，感兴趣的可以去占个位儿。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=22" target="_blank" rel="noopener">北洋园PT 论坛–&gt;邀请注册区</a>  </p>
+<h3 id="U2"><a href="#U2" class="headerlink" title="U2"></a>U2</h3><p>国内最大的专业动漫类PT站, 以提供动漫BDMV/BDRip/老动漫DVDISO为主要特色 ，以日本动漫为主要资源。该站只交流已完结动漫，不适合只追新番的同学，适合动漫收藏者。此外，U2里的资源体积普遍较大，需要足够的硬盘用来保种。<br>参考资料：<a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener">北洋园PT 论坛–&gt;特别邀请区</a></p>
+<h3 id="PTHOME-PT之家"><a href="#PTHOME-PT之家" class="headerlink" title="PTHOME(PT之家)"></a>PTHOME(PT之家)</h3><p>PTHOME是一个拥有丰富综合资源的非开放社区，拥有众多注册成员，站内云集各路资源大佬。<br>本站资源涵盖影视、动漫、纪录、综艺、无损音乐、学习资料、软件等资源，旨在打造一流高清影视分享、资源交流平台,欢迎所有热爱高清影视的朋友前来分享与交流！</p>
+<h3 id="ToTheGlory-TTG"><a href="#ToTheGlory-TTG" class="headerlink" title="ToTheGlory(TTG)"></a>ToTheGlory(TTG)</h3><p>ToTheGlory(TTG)是以高清影视资源为主，游戏资源为特色的国内老牌综合性 PT 站。TTG 由原 GameGui(GG)演变而成，GameGui是中国第一个游戏 PT 站点，创办初期是一个单纯的 XBOX360 游戏分享站，2010 年 4 月份，Wiki小组加盟后网站改版为TTG,从原来的单一游戏 PT 站，转型为集众多高清影视、游戏、音乐、动漫资源的综合PT站，目前在国内PT中居于前列，影片、游戏、剧集更新速度快。目前封闭运行，采用邀请机制。支持IPv6下载，在校申请者注意设置ipfilter。  </p>
+<p>TTG旗下有以下官方制作组：  </p>
+<ul>
+<li>WiKi：以蓝光原盘为片源压制 720P、1080P 等高码重编码资源，其较高的压制水准深受高清发烧友喜爱。</li>
+<li>NGB：以自录的 HDTV 为片源压制 720P 剧集综艺。常发布不带电视台水印的无台标版本，其作品常被做收藏版本。</li>
+<li>DoA：从NGB小组中独立出来的新小组，以日剧和韩剧录制为特色。</li>
+<li>TTG原盘组：发布各种蓝光原盘以及DIY等</li>
+</ul>
+<p>除了以上制作组外，TTG 还开发了 sceneup 发种机器人，保证第一时间更新 0day 的影视游戏资源；<br>同时有作为合作组的PHD BMDruCHinYaN CMCT TLF-MiniSD等小组入驻；<br>此外还成立了 BDClub 官方蓝光俱乐部和 OoKU 官方音乐公社；<br>TTG拥有国内公网最大的游戏区，尤其是主机类游戏的数量相当惊人。站内涵盖了绝大多数PC MAC计算机游戏、PS2 XBOX360 PSP NGC WII的游戏镜像、Game VIDEO、Game Ebook、Game OST、XBOX360，是相关玩家的必备站点。<br>欢迎各位朋友的加入！</p>
+<h3 id="Bitspyder"><a href="#Bitspyder" class="headerlink" title="Bitspyder"></a>Bitspyder</h3><p>站点介绍：电子书各类学习视频站，特别计算机实用学习资料非常多。<br>外站不容易混上传，没有魔力值系统买上传，需要硬上传量，建议发种<br>没有好的英文学习资料的生存策略：刚开始千万别下多，保持分享率大于1，任何时候都没有免费资源，做种是必须的，慢慢混上传。<br>下载自己急需的资料，别眼馋其他的，学习中用到了再下。v4站点，纯IPv6玩家不建议进站。</p>
+<p>注意：一段时间内有连坐，别乱下<br>   不要发带中文字幕的学习视频</p>
+<h2 id="补充资料"><a href="#补充资料" class="headerlink" title="补充资料"></a>补充资料</h2><ul>
+<li><a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=34" target="_blank" rel="noopener"><strong>北洋园PT 论坛–&gt;特别邀请区</strong></a></li>
+<li><a href="https://www.douban.com/group/topic/16696238/" target="_blank" rel="noopener"><strong>国内外著名PT网站大全</strong></a></li>
+<li><a href="https://www.tjupt.org/forums.php?action=viewforum&forumid=22" target="_blank" rel="noopener">北洋园PT 论坛–&gt;邀请注册区</a><br>  <strong>PS</strong>：加粗的是重要补充资料，建议浏览。</li>
+</ul>
+<h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h2 id="教程-1"><a href="#教程-1" class="headerlink" title="教程"></a>教程</h2><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>新注册的账号无流量n天，可能会被ban；所以，为了防止被ban，可以先下载一些小种子，使得账号有流量；</li>
+<li>分享率不足，可能会被ban；  </li>
+<li>H&amp;R 是 Hit and Run 的缩写，表示下载完资源后立即关闭μTorrent不留种上传的恶劣行为，简单说就是“下完就跑”；多次H&amp;R可能会被ban。种子下到一半，停止下载，也算H&amp;R；为了防止获得H&amp;R警告，请下载完成后，保持做种状态一段时间；</li>
+<li>北洋园PT和蒲公英PT的论坛区有很多官方邀请！经常关注，可以轻松获得其他PT站的官邀。</li>
+<li>申请期间，请在网站-控制面板-安全设定界面，设置隐私等级为低，让审核人看到你的邮箱；</li>
+</ul>
 
       
     </div>
@@ -526,7 +553,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android/" rel="tag"># Android</a>
+            <a href="/tags/PT/" rel="tag"># PT</a>
           
         </div>
       
@@ -539,8 +566,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/5.html" rel="next" title="紫荆PT站种子简介写作入门">
-                <i class="fa fa-chevron-left"></i> 紫荆PT站种子简介写作入门
+              <a href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/2020/01/20/Markdown%E5%92%8C%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E6%8E%92%E7%89%88" rel="next" title="Markdown和微信公众号排版">
+                <i class="fa fa-chevron-left"></i> Markdown和微信公众号排版
               </a>
             
           </div>
@@ -548,6 +575,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/29/%E7%B4%AB%E8%8D%86PT%E7%AB%99%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B%E5%86%99%E4%BD%9C%E5%85%A5%E9%97%A8" rel="prev" title="紫荆PT站种子简介写作入门">
+                紫荆PT站种子简介写作入门 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -721,7 +752,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过时代码及更新写法"><span class="nav-number">2.</span> <span class="nav-text">过时代码及更新写法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RecyclerView控件"><span class="nav-number">2.1.</span> <span class="nav-text">RecyclerView控件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android学习资料汇总"><span class="nav-number">3.</span> <span class="nav-text">Android学习资料汇总</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#简介及注册方式"><span class="nav-number">2.</span> <span class="nav-text">简介及注册方式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册方式"><span class="nav-number">2.1.</span> <span class="nav-text">注册方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#教育网PT站简介"><span class="nav-number">2.2.</span> <span class="nav-text">教育网PT站简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#葡萄"><span class="nav-number">2.2.1.</span> <span class="nav-text">葡萄</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#百川PT"><span class="nav-number">2.2.2.</span> <span class="nav-text">百川PT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#极速之星"><span class="nav-number">2.2.3.</span> <span class="nav-text">极速之星</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BYRBT-北邮人"><span class="nav-number">2.2.4.</span> <span class="nav-text">BYRBT(北邮人)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#麦田PT"><span class="nav-number">2.2.5.</span> <span class="nav-text">麦田PT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公网PT站简介"><span class="nav-number">2.3.</span> <span class="nav-text">公网PT站简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HDHome-家园"><span class="nav-number">2.3.1.</span> <span class="nav-text">HDHome(家园)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDCity-高清城市"><span class="nav-number">2.3.2.</span> <span class="nav-text">HDCity(高清城市)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDChina-高清中国"><span class="nav-number">2.3.3.</span> <span class="nav-text">HDChina(高清中国)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#皇后OpenCD"><span class="nav-number">2.3.4.</span> <span class="nav-text">皇后OpenCD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#M-Team-MT、馒头"><span class="nav-number">2.3.5.</span> <span class="nav-text">M-Team(MT、馒头)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCCF"><span class="nav-number">2.3.6.</span> <span class="nav-text">TCCF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#KEEPFRDS"><span class="nav-number">2.3.7.</span> <span class="nav-text">KEEPFRDS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聆音Club"><span class="nav-number">2.3.8.</span> <span class="nav-text">聆音Club</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#U2"><span class="nav-number">2.3.9.</span> <span class="nav-text">U2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PTHOME-PT之家"><span class="nav-number">2.3.10.</span> <span class="nav-text">PTHOME(PT之家)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ToTheGlory-TTG"><span class="nav-number">2.3.11.</span> <span class="nav-text">ToTheGlory(TTG)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bitspyder"><span class="nav-number">2.3.12.</span> <span class="nav-text">Bitspyder</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补充资料"><span class="nav-number">2.4.</span> <span class="nav-text">补充资料</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#教程"><span class="nav-number">3.</span> <span class="nav-text">教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#教程-1"><span class="nav-number">3.1.</span> <span class="nav-text">教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意事项"><span class="nav-number">3.2.</span> <span class="nav-text">注意事项</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -902,9 +933,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2020/6.html';
-          this.page.identifier = '2020/6.html';
-          this.page.title = '【Android】郭霖《第一行代码》过时代码的更新写法';
+          this.page.url = 'http://yoursite.com/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/21/PT%E7%AB%99%E7%AE%80%E4%BB%8B%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB';
+          this.page.identifier = '生活/娱乐/2020/01/21/PT站简介及注册方式汇总';
+          this.page.title = 'PT站简介及注册方式汇总';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://gerongcun.disqus.com/embed.js';

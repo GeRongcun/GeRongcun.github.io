@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="PT," />
+  <meta name="keywords" content="Markdown,Github," />
 
 
 
@@ -79,24 +79,24 @@
 
 
 
-<meta name="description" content="前言紫荆PT是南京大学教育网环境下的PT站，站友在上传种子时，需要写种子简介。这里，提供一些入门教程，方便站内快速、高效地写出合格的种子简介。 BBCodePT站大多使用的是轻量标记语言BBCode，紫荆PT亦是如此。常见的BBCode标签代码：  紫荆PT-BBCode标签代码示例   BBCode 标签指南    “引用” 代码如下： 1234[quote]转自SSD原种子链接：https:&amp;">
+<meta name="description" content="教程作业部落出品的常用语法：https:&#x2F;&#x2F;www.zybuluo.com&#x2F;mdeditor我用的Markdown编辑器是VS Code。Sublime也很好用。  以下是常用语法： 欢迎使用 Cmd Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更">
 <meta property="og:type" content="article">
-<meta property="og:title" content="紫荆PT站种子简介写作入门">
-<meta property="og:url" content="http://yoursite.com/2020/5.html">
+<meta property="og:title" content="Markdown常用语法">
+<meta property="og:url" content="http://yoursite.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/2020/01/19/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95">
 <meta property="og:site_name" content="划水小能手">
-<meta property="og:description" content="前言紫荆PT是南京大学教育网环境下的PT站，站友在上传种子时，需要写种子简介。这里，提供一些入门教程，方便站内快速、高效地写出合格的种子简介。 BBCodePT站大多使用的是轻量标记语言BBCode，紫荆PT亦是如此。常见的BBCode标签代码：  紫荆PT-BBCode标签代码示例   BBCode 标签指南    “引用” 代码如下： 1234[quote]转自SSD原种子链接：https:&amp;">
-<meta property="og:image" content="http://yoursite.com/2020//%E5%BC%95%E7%94%A8.png">
-<meta property="og:image" content="http://yoursite.com/2020//%E5%BC%95%E7%94%A8%E5%8A%A0%E6%A0%87%E9%A2%98.png">
-<meta property="og:image" content="http://yoursite.com/2020//PTGen.png">
-<meta property="og:image" content="http://yoursite.com/2020//%E5%8F%B3%E9%94%AE%E7%94%A8MedioInfo%E6%89%93%E5%BC%80.png">
-<meta property="og:image" content="http://yoursite.com/2020//View%E9%80%89%E6%8B%A9Text.png">
-<meta property="og:image" content="http://yoursite.com/2020//%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B.png">
-<meta property="article:published_time" content="2020-01-29T02:02:00.000Z">
-<meta property="article:modified_time" content="2020-02-04T05:56:56.603Z">
+<meta property="og:description" content="教程作业部落出品的常用语法：https:&#x2F;&#x2F;www.zybuluo.com&#x2F;mdeditor我用的Markdown编辑器是VS Code。Sublime也很好用。  以下是常用语法： 欢迎使用 Cmd Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/logo.png">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-editor.png">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-manager.jpg">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-reader.jpg">
+<meta property="og:image" content="https://www.zybuluo.com/static/img/file-list.png">
+<meta property="article:published_time" content="2020-01-19T15:49:07.000Z">
+<meta property="article:modified_time" content="2020-02-04T05:56:06.020Z">
 <meta property="article:author" content="GeRongcun">
-<meta property="article:tag" content="PT">
+<meta property="article:tag" content="Markdown">
+<meta property="article:tag" content="Github">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020//%E5%BC%95%E7%94%A8.png">
+<meta name="twitter:image" content="https://www.zybuluo.com/static/img/logo.png">
 
 
 
@@ -126,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/5.html"/>
+  <link rel="canonical" href="http://yoursite.com/计算机科学/Markdown/2020/01/19/Markdown常用语法"/>
 
 
 
 
 
-  <title>紫荆PT站种子简介写作入门 | 划水小能手</title>
+  <title>Markdown常用语法 | 划水小能手</title>
   
 
 
@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/5.html">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/2020/01/19/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GeRongcun">
@@ -340,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">紫荆PT站种子简介写作入门</h1>
+          <h1 class="post-title" itemprop="name headline">Markdown常用语法</h1>
         
 
         <div class="post-meta">
@@ -354,8 +354,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-29T10:02:00+08:00">
-                2020-01-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-19T23:49:07+08:00">
+                2020-01-19
               </time>
             
 
@@ -370,7 +370,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-04T13:56:56+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2020-02-04T13:56:06+08:00">
                 2020-02-04
               </time>
             
@@ -389,8 +389,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机科学</span>
                   </a>
                 </span>
 
@@ -400,8 +400,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/" itemprop="url" rel="index">
-                    <span itemprop="name">娱乐</span>
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/" itemprop="url" rel="index">
+                    <span itemprop="name">Markdown</span>
                   </a>
                 </span>
 
@@ -418,9 +418,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/5.html#comments" itemprop="discussionUrl">
+                <a href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/2020/01/19/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/5.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="计算机科学/Markdown/2020/01/19/Markdown常用语法" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -428,7 +428,7 @@
 
           
           
-             <span id="/2020/5.html" class="leancloud_visitors" data-flag-title="紫荆PT站种子简介写作入门">
+             <span id="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/2020/01/19/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95" class="leancloud_visitors" data-flag-title="Markdown常用语法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -453,7 +453,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k字
+                  2.3k字
                 </span>
               
 
@@ -469,7 +469,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6分钟
+                  8分钟
                 </span>
               
             </div>
@@ -490,49 +490,95 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>紫荆PT是南京大学教育网环境下的PT站，站友在上传种子时，需要写种子简介。这里，提供一些入门教程，方便站内快速、高效地写出合格的种子简介。</p>
-<h1 id="BBCode"><a href="#BBCode" class="headerlink" title="BBCode"></a>BBCode</h1><p>PT站大多使用的是轻量标记语言BBCode，紫荆PT亦是如此。<br>常见的BBCode标签代码：</p>
+        <h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><p>作业部落出品的常用语法：<br><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor</a><br>我用的Markdown编辑器是VS Code。Sublime也很好用。</p>
+<hr>
+<p><strong>以下是常用语法：</strong></p>
+<h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><hr>
+<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
+<blockquote>
 <ul>
-<li><a href="http://zijingbt.njuftp.org/faq.html#faq10" target="_blank" rel="noopener">紫荆PT-BBCode标签代码示例</a>  </li>
-<li><a href="https://bangumi.tv/help/bbcode" target="_blank" rel="noopener">BBCode 标签指南</a>  </li>
+<li>整理知识，学习笔记</li>
+<li>发布日记，杂文，所见所想</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（LaTeX 公式支持）</li>
 </ul>
-<p><strong>“引用”</strong></p>
-<p><img src="/2020//%E5%BC%95%E7%94%A8.png" alt="引用"><br>代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[quote]转自SSD</span><br><span class="line">原种子链接：https:&#x2F;&#x2F;springsunday.net&#x2F;details.php?id&#x3D;50837&amp;hit&#x3D;1</span><br><span class="line">原上传时间：2017年</span><br><span class="line">未改变文件内容[&#x2F;quote]</span><br></pre></td></tr></table></figure>
-
-<p><strong>给“引用”添加标题</strong></p>
-<p><img src="/2020//%E5%BC%95%E7%94%A8%E5%8A%A0%E6%A0%87%E9%A2%98.png" alt="引用"><br>代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[quote&#x3D;搬运信息]转自SSD</span><br><span class="line">原种子链接：https:&#x2F;&#x2F;springsunday.net&#x2F;details.php?id&#x3D;50837&amp;hit&#x3D;1</span><br><span class="line">原上传时间：2017年</span><br><span class="line">未改变文件内容[&#x2F;quote]</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="实用工具"><a href="#实用工具" class="headerlink" title="实用工具"></a>实用工具</h1><h2 id="PTGen快速填写电影、剧集的简介"><a href="#PTGen快速填写电影、剧集的简介" class="headerlink" title="PTGen快速填写电影、剧集的简介"></a>PTGen快速填写电影、剧集的简介</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>PTGen是由R酱（rhilip）开发的Pt站资源简介生成工具。<br>R酱博客：<a href="https://blog.rhilip.info/" target="_blank" rel="noopener">https://blog.rhilip.info/</a><br>R酱Github：<a href="https://github.com/Rhilip/" target="_blank" rel="noopener">https://github.com/Rhilip/</a>  </p>
-<p>在填写电影、剧集、综艺类资源的简介时，强烈推荐使用下面这个简介生成模板：<br><a href="https://rhilip.github.io/PT-help/ptgen" target="_blank" rel="noopener">https://rhilip.github.io/PT-help/ptgen</a>  </p>
-<p><img src="/2020//PTGen.png" alt="PTGen.png">  </p>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><ol>
-<li>输入豆瓣链接、豆瓣ID、IMDB链接、IMDB ID、电影中文名、电影英文名等信息；</li>
-<li>获得查询结果；</li>
-<li>点击右上角“复制”按钮，复制简介；</li>
-<li>粘贴到PT站种子简介处；</li>
-</ol>
-<p>参考资料：<br><a href="https://blog.rhilip.info/archives/800/" target="_blank" rel="noopener">R酱-Pt站资源简介生成工具PT-Gen</a><br><a href="https://www.tjupt.org/forums.php?action=viewtopic&topicid=15098&page=p162215#pid162215" target="_blank" rel="noopener">北洋园PT-简介生成模板</a>（查看需要注册北洋园PT账号）</p>
+</blockquote>
+<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
+<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
+<h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">Windows/Mac/Linux 全平台客户端</a></h3><blockquote>
+<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+</blockquote>
 <hr>
-<h2 id="PotPlayer截图"><a href="#PotPlayer截图" class="headerlink" title="PotPlayer截图"></a>PotPlayer截图</h2><h3 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h3><p>PotPlayer是Daum公司的一款免费的网络播放器，拥有强大的内置解码器。<br>下载链接：<br><a href="https://daumpotplayer.com/download/" target="_blank" rel="noopener">https://daumpotplayer.com/download/</a></p>
-<h3 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h3><p>截图：<br>视频-&gt;图像截取-&gt;截存当前源画面（快捷键：Alt+E） </p>
-<p>创建缩略图：<br>视频-&gt;图像截取-&gt;创建缩略图（快捷键：Alt+N）  </p>
-<p>参考资料：<br><a href="https://www.tjupt.org/forums.php?action=viewtopic&topicid=5980" target="_blank" rel="noopener">北洋园PT-视频缩略图制作教程</a>（查看需要注册北洋园PT账号）<br><a href="http://zijingbt.njuftp.org/faq.html#faq17" target="_blank" rel="noopener">紫荆PT-视频缩略图制作方法</a>  </p>
+<h2 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h2><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+<h3 id="1-制作一份待办事宜-Todo-列表"><a href="#1-制作一份待办事宜-Todo-列表" class="headerlink" title="1. 制作一份待办事宜 Todo 列表"></a>1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表" target="_blank" rel="noopener">Todo 列表</a></h3><ul>
+<li><input disabled type="checkbox"> 支持以 PDF 格式导出文稿</li>
+<li><input disabled type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+<li><input checked disabled type="checkbox"> 新增 Todo 列表功能</li>
+<li><input checked disabled type="checkbox"> 修复 LaTex 公式渲染问题</li>
+<li><input checked disabled type="checkbox"> 新增 LaTex 公式编号功能</li>
+</ul>
+<h3 id="2-书写一个质能守恒公式-LaTeX"><a href="#2-书写一个质能守恒公式-LaTeX" class="headerlink" title="2. 书写一个质能守恒公式[^LaTeX]"></a>2. 书写一个质能守恒公式[^LaTeX]</h3><p>$$E=mc^2$$</p>
+<h3 id="3-高亮一段代码-code"><a href="#3-高亮一段代码-code" class="headerlink" title="3. 高亮一段代码[^code]"></a>3. 高亮一段代码[^code]</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># A comment</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'hello world'</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-高效绘制-流程图"><a href="#4-高效绘制-流程图" class="headerlink" title="4. 高效绘制 流程图"></a>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图" target="_blank" rel="noopener">流程图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st&#x3D;&gt;start: Start</span><br><span class="line">op&#x3D;&gt;operation: Your Operation</span><br><span class="line">cond&#x3D;&gt;condition: Yes or No?</span><br><span class="line">e&#x3D;&gt;end</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-高效绘制-序列图"><a href="#5-高效绘制-序列图" class="headerlink" title="5. 高效绘制 序列图"></a>5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图" target="_blank" rel="noopener">序列图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-高效绘制-甘特图"><a href="#6-高效绘制-甘特图" class="headerlink" title="6. 高效绘制 甘特图"></a>6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-甘特图" target="_blank" rel="noopener">甘特图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">title 项目开发流程</span><br><span class="line">section 项目确定</span><br><span class="line">    需求分析       :a1, 2016-06-22, 3d</span><br><span class="line">    可行性报告     :after a1, 5d</span><br><span class="line">    概念验证       : 5d</span><br><span class="line">section 项目实施</span><br><span class="line">    概要设计      :2016-07-05  , 5d</span><br><span class="line">    详细设计      :2016-07-08, 10d</span><br><span class="line">    编码          :2016-07-15, 10d</span><br><span class="line">    测试          :2016-07-22, 5d</span><br><span class="line">section 发布验收</span><br><span class="line">    发布: 2d</span><br><span class="line">    验收: 3d</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-绘制表格"><a href="#7-绘制表格" class="headerlink" title="7. 绘制表格"></a>7. 绘制表格</h3><table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">价格</th>
+<th align="center">数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>计算机</td>
+<td align="right">$1600</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td align="right">$12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td align="right">$1</td>
+<td align="center">234</td>
+</tr>
+</tbody></table>
+<h3 id="8-更详细语法说明"><a href="#8-更详细语法说明" class="headerlink" title="8. 更详细语法说明"></a>8. 更详细语法说明</h3><p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" target="_blank" rel="noopener">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册" target="_blank" rel="noopener">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
+<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
 <hr>
-<h2 id="MedioInfo填写视频编码信息"><a href="#MedioInfo填写视频编码信息" class="headerlink" title="MedioInfo填写视频编码信息"></a>MedioInfo填写视频编码信息</h2><h3 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h3><p>MediaInfo是一款免费、实用的视频参数检测工具，除了可以对视频进行编码分析查询，还可以对音频文件的编码及信息进行检测。<br>下载链接：<a href="http://mediaarea.net/en/MediaInfo" target="_blank" rel="noopener">http://mediaarea.net/en/MediaInfo</a></p>
-<h3 id="使用方法-2"><a href="#使用方法-2" class="headerlink" title="使用方法"></a>使用方法</h3><p>1.选中文件，右键用MedioInfo打开；   </p>
-<p><img src="/2020//%E5%8F%B3%E9%94%AE%E7%94%A8MedioInfo%E6%89%93%E5%BC%80.png" alt="右键用MedioInfo打开"><br>2.点击View-&gt;Text；  </p>
-<p><img src="/2020//View%E9%80%89%E6%8B%A9Text.png" alt="View选择Text"><br>3.全选，复制粘贴到PT站种子简介处；<br>视频编码信息会出现不对齐的现象，需要括在下述代码内，设置为等宽字体。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[font&#x3D;Consolas,monospace]视频编码信息[&#x2F;font]</span><br></pre></td></tr></table></figure>
-
-<p>参考资料：<br><a href="http://zijingbt.njuftp.org/faq.html#faq16" target="_blank" rel="noopener">紫荆PT-视频编码的查询方法</a></p>
-<h1 id="种子简介示例"><a href="#种子简介示例" class="headerlink" title="种子简介示例"></a>种子简介示例</h1><p>种子链接：<a href="http://zijingbt.njuftp.org/stats.html?id=113159" target="_blank" rel="noopener">http://zijingbt.njuftp.org/stats.html?id=113159</a><br>种子简介代码如下：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><span class="line">[quote&#x3D;搬运信息]转自SSD</span><br><span class="line">原种子链接：https:&#x2F;&#x2F;springsunday.net&#x2F;details.php?id&#x3D;50837&amp;hit&#x3D;1</span><br><span class="line">原上传时间：2017年</span><br><span class="line">未改变文件内容[&#x2F;quote]</span><br><span class="line"></span><br><span class="line">[img]http:&#x2F;&#x2F;nvidia.njuftp.org&#x2F;images&#x2F;2020&#x2F;1&#x2F;15&#x2F;f824b7f4-326f-4f5b-8061-281e3b7830da.jpg[&#x2F;img]</span><br><span class="line"></span><br><span class="line">◎译　　名　Legend of Tianyun Monutain</span><br><span class="line">◎片　　名　天云山传奇</span><br><span class="line">◎年　　代　1980</span><br><span class="line">◎产　　地　中国大陆</span><br><span class="line">◎类　　别　剧情</span><br><span class="line">◎语　　言　汉语普通话</span><br><span class="line">◎上映日期　1981-11-14</span><br><span class="line">◎IMDb评分  7.7&#x2F;10 from 138 users</span><br><span class="line">◎IMDb链接  https:&#x2F;&#x2F;www.imdb.com&#x2F;title&#x2F;tt0081632</span><br><span class="line">◎豆瓣评分　7.8&#x2F;10 from 3907 users</span><br><span class="line">◎豆瓣链接　https:&#x2F;&#x2F;movie.douban.com&#x2F;subject&#x2F;1291864&#x2F;</span><br><span class="line">◎片　　长　121分钟</span><br><span class="line">◎导　　演　谢晋 Jin Xie</span><br><span class="line">◎编　　剧　鲁彦周 Yanzhou Lu</span><br><span class="line">◎主　　演　石维坚 Weijian Shi</span><br><span class="line">　　　　　  施建岚 Jianlan Shi</span><br><span class="line">　　　　　  王馥荔 Fuli Wang</span><br><span class="line">　　　　　  仲星火 Xinghuo Zhong</span><br><span class="line">　　　　　  洪学敏 Xuemin Hong</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">◎标　　签　谢晋 | 中国电影 | 中国 | 伤痕 | 大陆 | 爱情 | 1980 | 国产老片</span><br><span class="line"></span><br><span class="line">◎简　　介  </span><br><span class="line"></span><br><span class="line">　　1978年冬天，地委组织部副部长宋薇（王馥荔 饰）和丈夫、部长吴遥（仲星火 饰）正在对文革期间的冤假错案进行拨乱反正。从天云山赶回的周瑜贞（洪学敏 饰）向宋薇汇报工作，声称在天云山调查期间拜访了一对儿特殊的夫妻：丈夫罗群（石维坚 饰）是个靠赶车维生的老右派，有多部没有发表的著述；妻子冯晴岚（施建岚 饰）是有病在身的小学教员。这对儿夫妻凄凉的境遇令周瑜贞同情，而且她通过了解，知道罗群是当年宋薇在天云山的恋人……原来二十年前宋薇与冯晴岚一起加入考察队驻扎天云山，吴遥和罗群是前后两任政治委员，吴遥暗恋宋薇，于是陷害罗群是反党分子。罗群的遭遇令宋薇吃惊和愤怒，然而在为罗群平反的问题上，吴遥再次出面阻挠……</span><br><span class="line"></span><br><span class="line">◎获奖情况  </span><br><span class="line"></span><br><span class="line">　　第1届中国电影金鸡奖(1981)</span><br><span class="line">　　最佳故事片</span><br><span class="line">　　最佳导演 谢晋</span><br><span class="line">　　最佳编剧(提名) 鲁彦周</span><br><span class="line">　　最佳女主角(提名) 王馥荔</span><br><span class="line">　　最佳摄影 许琦</span><br><span class="line">　　最佳美术 陈绍勉</span><br><span class="line">　　最佳剪辑(提名) 周鼎文</span><br><span class="line"></span><br><span class="line">　　第4届大众电影百花奖(1981)</span><br><span class="line">　　最佳故事片</span><br><span class="line"></span><br><span class="line">[img]http:&#x2F;&#x2F;nvidia.njuftp.org&#x2F;images&#x2F;2020&#x2F;1&#x2F;15&#x2F;49004b27-e3eb-41d5-9c34-993e103373ec.jpg[&#x2F;img]</span><br><span class="line"></span><br><span class="line">[quote][font&#x3D;Consolas,monospace]General</span><br><span class="line">ID                                       : 1 (0x1)</span><br><span class="line">Complete name                            : F:\03电影\谢晋 天云山传奇\Legend.of.Tianyun.Mountain.1980.HDTV.1080i.H264-CZW\天云山传奇.Legend.of.Tianyun.Mountain.1980.HDTV.1080i.H264-CZW.ts</span><br><span class="line">Format                                   : MPEG-TS</span><br><span class="line">File size                                : 6.15 GiB</span><br><span class="line">Duration                                 : 2 h 0 min</span><br><span class="line">Overall bit rate mode                    : Variable</span><br><span class="line">Overall bit rate                         : 7 290 kb&#x2F;s</span><br><span class="line">Maximum Overall bit rate                 : 35.5 Mb&#x2F;s</span><br><span class="line"></span><br><span class="line">Video</span><br><span class="line">ID                                       : 4113 (0x1011)</span><br><span class="line">Menu ID                                  : 1 (0x1)</span><br><span class="line">Format                                   : AVC</span><br><span class="line">Format&#x2F;Info                              : Advanced Video Codec</span><br><span class="line">Format profile                           : High@L4</span><br><span class="line">Format settings                          : CABAC &#x2F; 4 Ref Frames</span><br><span class="line">Format settings, CABAC                   : Yes</span><br><span class="line">Format settings, Reference frames        : 4 frames</span><br><span class="line">Codec ID                                 : 27</span><br><span class="line">Duration                                 : 2 h 0 min</span><br><span class="line">Bit rate mode                            : Variable</span><br><span class="line">Bit rate                                 : 6 801 kb&#x2F;s</span><br><span class="line">Maximum bit rate                         : 40.0 Mb&#x2F;s</span><br><span class="line">Width                                    : 1 920 pixels</span><br><span class="line">Height                                   : 1 080 pixels</span><br><span class="line">Display aspect ratio                     : 16:9</span><br><span class="line">Frame rate                               : 25.000 FPS</span><br><span class="line">Color space                              : YUV</span><br><span class="line">Chroma subsampling                       : 4:2:0</span><br><span class="line">Bit depth                                : 8 bits</span><br><span class="line">Scan type                                : MBAFF</span><br><span class="line">Scan type, store method                  : Interleaved fields</span><br><span class="line">Scan order                               : Top Field First</span><br><span class="line">Bits&#x2F;(Pixel*Frame)                       : 0.131</span><br><span class="line">Stream size                              : 5.74 GiB (93%)</span><br><span class="line"></span><br><span class="line">Audio</span><br><span class="line">ID                                       : 4352 (0x1100)</span><br><span class="line">Menu ID                                  : 1 (0x1)</span><br><span class="line">Format                                   : MPEG Audio</span><br><span class="line">Format version                           : Version 1</span><br><span class="line">Format profile                           : Layer 2</span><br><span class="line">Codec ID                                 : 4</span><br><span class="line">Duration                                 : 2 h 0 min</span><br><span class="line">Bit rate mode                            : Constant</span><br><span class="line">Bit rate                                 : 128 kb&#x2F;s</span><br><span class="line">Channel(s)                               : 2 channels</span><br><span class="line">Sampling rate                            : 48.0 kHz</span><br><span class="line">Frame rate                               : 41.667 FPS (1152 SPF)</span><br><span class="line">Compression mode                         : Lossy</span><br><span class="line">Delay relative to video                  : 587 ms</span><br><span class="line">Stream size                              : 111 MiB (2%)[&#x2F;font][&#x2F;quote]</span><br></pre></td></tr></table></figure>
-
-<p>种子简介截图：<br><img src="/2020//%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B.png" alt="种子简介"></p>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://www.tjupt.org/forums.php?action=viewtopic&forumid=15&topicid=15075" target="_blank" rel="noopener">【新手手册】初入北洋园PT你必须知道的知识</a>：超级详细的PT站入门教程（需要注册北洋园PT账号）<br><a href="https://www.tjupt.org/forums.php?action=viewtopic&topicid=15098" target="_blank" rel="noopener">发布资源&amp;制作种子的教程</a>：发布资源&amp;制作种子的教程（需要注册北洋园PT账号）    </p>
+<h2 id="什么是-Cmd-Markdown"><a href="#什么是-Cmd-Markdown" class="headerlink" title="什么是 Cmd Markdown"></a>什么是 Cmd Markdown</h2><p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+<h3 id="1-实时同步预览"><a href="#1-实时同步预览" class="headerlink" title="1. 实时同步预览"></a>1. 实时同步预览</h3><p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+<h3 id="2-编辑工具栏"><a href="#2-编辑工具栏" class="headerlink" title="2. 编辑工具栏"></a>2. 编辑工具栏</h3><p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"></p>
+<h3 id="3-编辑模式"><a href="#3-编辑模式" class="headerlink" title="3. 编辑模式"></a>3. 编辑模式</h3><p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+<h3 id="4-实时的云端文稿"><a href="#4-实时的云端文稿" class="headerlink" title="4. 实时的云端文稿"></a>4. 实时的云端文稿</h3><p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+<h3 id="5-离线模式"><a href="#5-离线模式" class="headerlink" title="5. 离线模式"></a>5. 离线模式</h3><p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
+<h3 id="6-管理工具栏"><a href="#6-管理工具栏" class="headerlink" title="6. 管理工具栏"></a>6. 管理工具栏</h3><p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"></p>
+<p>通过管理工具栏可以：</p>
+<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br><i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br><i class="icon-trash"></i> 删除：删除当前的文稿<br><i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br><i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br><i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
+<h3 id="7-阅读工具栏"><a href="#7-阅读工具栏" class="headerlink" title="7. 阅读工具栏"></a>7. 阅读工具栏</h3><p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p>
+<p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
+<p>工具栏上的五个图标依次为：</p>
+<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br><i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br><i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br><i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br><i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
+<h3 id="8-阅读模式"><a href="#8-阅读模式" class="headerlink" title="8. 阅读模式"></a>8. 阅读模式</h3><p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
+<h3 id="9-标签、分类和搜索"><a href="#9-标签、分类和搜索" class="headerlink" title="9. 标签、分类和搜索"></a>9. 标签、分类和搜索</h3><p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
+<p>标签： 未分类</p>
+<p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
+<p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"></p>
+<h3 id="10-文稿发布和分享"><a href="#10-文稿发布和分享" class="headerlink" title="10. 文稿发布和分享"></a>10. 文稿发布和分享</h3><p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
+<hr>
+<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
+<p>作者 <a href="http://weibo.com/ghosert" target="_blank" rel="noopener">@ghosert</a><br>2016 年 07月 07日    </p>
+<p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a> 参考更多使用方法。</p>
+<p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
 
       
     </div>
@@ -558,7 +604,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/PT/" rel="tag"># PT</a>
+            <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+          
+            <a href="/tags/Github/" rel="tag"># Github</a>
           
         </div>
       
@@ -571,8 +619,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/4.html" rel="next" title="PT站简介及注册方式汇总">
-                <i class="fa fa-chevron-left"></i> PT站简介及注册方式汇总
+              <a href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/2020/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2" rel="next" title="Github+Hexo搭建个人博客">
+                <i class="fa fa-chevron-left"></i> Github+Hexo搭建个人博客
               </a>
             
           </div>
@@ -581,8 +629,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/6.html" rel="prev" title="【Android】郭霖《第一行代码》过时代码的更新写法">
-                【Android】郭霖《第一行代码》过时代码的更新写法 <i class="fa fa-chevron-right"></i>
+              <a href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/2020/01/20/Markdown%E5%92%8C%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E6%8E%92%E7%89%88" rel="prev" title="Markdown和微信公众号排版">
+                Markdown和微信公众号排版 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -757,7 +805,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BBCode"><span class="nav-number">2.</span> <span class="nav-text">BBCode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实用工具"><span class="nav-number">3.</span> <span class="nav-text">实用工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#PTGen快速填写电影、剧集的简介"><span class="nav-number">3.1.</span> <span class="nav-text">PTGen快速填写电影、剧集的简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">3.1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用方法"><span class="nav-number">3.1.2.</span> <span class="nav-text">使用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PotPlayer截图"><span class="nav-number">3.2.</span> <span class="nav-text">PotPlayer截图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介-1"><span class="nav-number">3.2.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用方法-1"><span class="nav-number">3.2.2.</span> <span class="nav-text">使用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MedioInfo填写视频编码信息"><span class="nav-number">3.3.</span> <span class="nav-text">MedioInfo填写视频编码信息</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介-2"><span class="nav-number">3.3.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用方法-2"><span class="nav-number">3.3.2.</span> <span class="nav-text">使用方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#种子简介示例"><span class="nav-number">4.</span> <span class="nav-text">种子简介示例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#教程"><span class="nav-number">1.</span> <span class="nav-text">教程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#欢迎使用-Cmd-Markdown-编辑阅读器"><span class="nav-number">2.</span> <span class="nav-text">欢迎使用 Cmd Markdown 编辑阅读器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows-Mac-Linux-全平台客户端"><span class="nav-number">2.0.1.</span> <span class="nav-text">Windows&#x2F;Mac&#x2F;Linux 全平台客户端</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-Markdown"><span class="nav-number">2.1.</span> <span class="nav-text">什么是 Markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-制作一份待办事宜-Todo-列表"><span class="nav-number">2.1.1.</span> <span class="nav-text">1. 制作一份待办事宜 Todo 列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-书写一个质能守恒公式-LaTeX"><span class="nav-number">2.1.2.</span> <span class="nav-text">2. 书写一个质能守恒公式[^LaTeX]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-高亮一段代码-code"><span class="nav-number">2.1.3.</span> <span class="nav-text">3. 高亮一段代码[^code]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-高效绘制-流程图"><span class="nav-number">2.1.4.</span> <span class="nav-text">4. 高效绘制 流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-高效绘制-序列图"><span class="nav-number">2.1.5.</span> <span class="nav-text">5. 高效绘制 序列图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-高效绘制-甘特图"><span class="nav-number">2.1.6.</span> <span class="nav-text">6. 高效绘制 甘特图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-绘制表格"><span class="nav-number">2.1.7.</span> <span class="nav-text">7. 绘制表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-更详细语法说明"><span class="nav-number">2.1.8.</span> <span class="nav-text">8. 更详细语法说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-Cmd-Markdown"><span class="nav-number">2.2.</span> <span class="nav-text">什么是 Cmd Markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-实时同步预览"><span class="nav-number">2.2.1.</span> <span class="nav-text">1. 实时同步预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-编辑工具栏"><span class="nav-number">2.2.2.</span> <span class="nav-text">2. 编辑工具栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-编辑模式"><span class="nav-number">2.2.3.</span> <span class="nav-text">3. 编辑模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-实时的云端文稿"><span class="nav-number">2.2.4.</span> <span class="nav-text">4. 实时的云端文稿</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-离线模式"><span class="nav-number">2.2.5.</span> <span class="nav-text">5. 离线模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-管理工具栏"><span class="nav-number">2.2.6.</span> <span class="nav-text">6. 管理工具栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-阅读工具栏"><span class="nav-number">2.2.7.</span> <span class="nav-text">7. 阅读工具栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-阅读模式"><span class="nav-number">2.2.8.</span> <span class="nav-text">8. 阅读模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-标签、分类和搜索"><span class="nav-number">2.2.9.</span> <span class="nav-text">9. 标签、分类和搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-文稿发布和分享"><span class="nav-number">2.2.10.</span> <span class="nav-text">10. 文稿发布和分享</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -938,9 +986,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2020/5.html';
-          this.page.identifier = '2020/5.html';
-          this.page.title = '紫荆PT站种子简介写作入门';
+          this.page.url = 'http://yoursite.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/2020/01/19/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95';
+          this.page.identifier = '计算机科学/Markdown/2020/01/19/Markdown常用语法';
+          this.page.title = 'Markdown常用语法';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://gerongcun.disqus.com/embed.js';
