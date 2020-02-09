@@ -82,18 +82,18 @@
 <meta name="description" content="前言在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。 过时代码及更新写法RecyclerView控件位置第3章 软件也要拼脸蛋——UI开发的点点滴滴3.6 更强大的滚动控件——RecyclerView   运行错误提示   显示java.lang.ClassNotFoundExce">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【Android】郭霖《第一行代码》过时代码的更新写法">
-<meta property="og:url" content="http://yoursite.com/21901/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/21901/index.html">
 <meta property="og:site_name" content="划水小能手">
 <meta property="og:description" content="前言在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。 过时代码及更新写法RecyclerView控件位置第3章 软件也要拼脸蛋——UI开发的点点滴滴3.6 更强大的滚动控件——RecyclerView   运行错误提示   显示java.lang.ClassNotFoundExce">
-<meta property="og:image" content="http://yoursite.com/21901/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png">
-<meta property="og:image" content="http://yoursite.com/21901/NetworkInfo%E9%94%99%E8%AF%AF.png">
-<meta property="og:image" content="http://yoursite.com/21901/%E7%94%B3%E8%AF%B7%E6%9D%83%E9%99%90.png">
+<meta property="og:image" content="http://yoursite.com/2020/21901/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png">
+<meta property="og:image" content="http://yoursite.com/2020/21901/NetworkInfo%E9%94%99%E8%AF%AF.png">
+<meta property="og:image" content="http://yoursite.com/2020/21901/%E7%94%B3%E8%AF%B7%E6%9D%83%E9%99%90.png">
 <meta property="article:published_time" content="2020-02-04T05:04:19.000Z">
 <meta property="article:modified_time" content="2020-02-09T10:37:37.339Z">
 <meta property="article:author" content="GeRongcun">
 <meta property="article:tag" content="Android">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/21901/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png">
+<meta name="twitter:image" content="http://yoursite.com/2020/21901/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png">
 
 
 
@@ -123,7 +123,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/21901/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/21901/"/>
 
 
 
@@ -320,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/21901/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/21901/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GeRongcun">
@@ -415,9 +415,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/21901/#comments" itemprop="discussionUrl">
+                <a href="/2020/21901/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="21901/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2020/21901/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -425,7 +425,7 @@
 
           
           
-             <span id="/21901/" class="leancloud_visitors" data-flag-title="【Android】郭霖《第一行代码》过时代码的更新写法">
+             <span id="/2020/21901/" class="leancloud_visitors" data-flag-title="【Android】郭霖《第一行代码》过时代码的更新写法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -490,7 +490,7 @@
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。</p>
 <h1 id="过时代码及更新写法"><a href="#过时代码及更新写法" class="headerlink" title="过时代码及更新写法"></a>过时代码及更新写法</h1><h2 id="RecyclerView控件"><a href="#RecyclerView控件" class="headerlink" title="RecyclerView控件"></a>RecyclerView控件</h2><p><strong>位置</strong><br>第3章 软件也要拼脸蛋——UI开发的点点滴滴<br>3.6 更强大的滚动控件——RecyclerView  </p>
 <p><strong>运行错误提示</strong>  </p>
-<p><img src="/21901/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png" alt="RecyclerView错误提示"><br>显示java.lang.ClassNotFoundException: Didn’t find class “android.support.v7.widget.RecyclerView”   </p>
+<p><img src="/2020/21901/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png" alt="RecyclerView错误提示"><br>显示java.lang.ClassNotFoundException: Didn’t find class “android.support.v7.widget.RecyclerView”   </p>
 <p><strong>代码更新写法</strong><br>参考资料：<a href="https://blog.csdn.net/u011041494/article/details/93849730" target="_blank" rel="noopener">一次解决找不到 android.support.v7.XXX 问题</a><br>在build.gradle中用</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation &#39;androidx.recyclerview:recyclerview:1.0.0&#39;</span><br></pre></td></tr></table></figure>
 <p>替换</p>
@@ -505,9 +505,9 @@
 <p>的参数 LinearLayoutManager.VERTICAL为RecyclerView.VERTICAL</p>
 <h2 id="Networklnfo被弃用"><a href="#Networklnfo被弃用" class="headerlink" title="Networklnfo被弃用"></a>Networklnfo被弃用</h2><p><strong>位置</strong><br>第5章 全局大喇叭——详解广播机制<br>5.2.1动态注册监听网络变化  </p>
 <p><strong>运行错误提示</strong>  </p>
-<p><img src="/21901/NetworkInfo%E9%94%99%E8%AF%AF.png" alt="NetworkInfo错误提示"><br>显示’android.net.Networklnfo’ is deprecated（被弃用了）   </p>
+<p><img src="/2020/21901/NetworkInfo%E9%94%99%E8%AF%AF.png" alt="NetworkInfo错误提示"><br>显示’android.net.Networklnfo’ is deprecated（被弃用了）   </p>
 <p><strong>代码更新写法</strong><br>参考资料：<br><a href="https://www.jb51.net/article/136923.htm" target="_blank" rel="noopener">Android 7.0 监听网络变化的示例代码</a><br><a href="https://blog.csdn.net/u011315960/article/details/79006162" target="_blank" rel="noopener">各种网络状态的解释</a><br><a href="https://developer.android.google.cn/reference/android/net/ConnectivityManager.NetworkCallback.html" target="_blank" rel="noopener">ConnectivityManager.NetworkCallback官网文档</a></p>
-<p>AndroidManifest.xml添加权限<br><img src="/21901/%E7%94%B3%E8%AF%B7%E6%9D%83%E9%99%90.png" alt="AndroidManifest.xml添加权限"> </p>
+<p>AndroidManifest.xml添加权限<br><img src="/2020/21901/%E7%94%B3%E8%AF%B7%E6%9D%83%E9%99%90.png" alt="AndroidManifest.xml添加权限"> </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--在app&#x2F;src&#x2F;main&#x2F;AndroidManifest.xml里添加权限，如下：--&gt;</span><br><span class="line">&lt;uses-permission android:name&#x3D;&quot;android.permission.ACCESS_NETWORK_STATE&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
 
 <p>Activity活动文件代码如下：</p>
@@ -569,7 +569,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/51708/" rel="next" title="紫荆PT站种子简介写作入门">
+              <a href="/2020/51708/" rel="next" title="紫荆PT站种子简介写作入门">
                 <i class="fa fa-chevron-left"></i> 紫荆PT站种子简介写作入门
               </a>
             
@@ -579,7 +579,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/27115/" rel="prev" title="Excel学习资料">
+              <a href="/2020/27115/" rel="prev" title="Excel学习资料">
                 Excel学习资料 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -936,8 +936,8 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/21901/';
-          this.page.identifier = '21901/';
+          this.page.url = 'http://yoursite.com/2020/21901/';
+          this.page.identifier = '2020/21901/';
           this.page.title = '【Android】郭霖《第一行代码》过时代码的更新写法';
         };
         var d = document, s = d.createElement('script');
