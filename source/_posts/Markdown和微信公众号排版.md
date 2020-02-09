@@ -1,14 +1,16 @@
 ---
 title: Markdown和微信公众号排版
+tags:
+  - Markdown
+  - Blog
+  - 微信公众号
+category:
+  - 计算机科学
+  - - 计算机科学
+    - Markdown
+id: 3
+abbrlink: 18383
 date: 2020-01-20 22:29:29
-tags: 
-- Markdown
-- Blog
-- 微信公众号
-category: 
-- 计算机科学
-- [计算机科学,Markdown]
-id: 003
 ---
 
 # 前言  

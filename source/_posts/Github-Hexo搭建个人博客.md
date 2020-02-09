@@ -1,17 +1,17 @@
 ---
 title: Github+Hexo搭建个人博客
-date: 2020-01-19 22:05:11
-tags: 
-- Github
-- Hexo
-- Blog
-category: 
-- 计算机科学
-- [计算机科学,Github]
+tags:
+  - Github
+  - Hexo
+  - Blog
+category:
+  - 计算机科学
+  - - 计算机科学
+    - Github
 top: true
-# top: 100
-# 数字越大，排得越靠前
-id: 001
+id: 1
+abbrlink: 42500
+date: 2020-01-19 22:05:11
 ---
 
 # 前言  

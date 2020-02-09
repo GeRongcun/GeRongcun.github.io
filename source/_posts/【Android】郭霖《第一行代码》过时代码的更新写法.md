@@ -1,13 +1,14 @@
 ---
 title: 【Android】郭霖《第一行代码》过时代码的更新写法
+tags:
+  - Android
+category:
+  - 计算机科学
+  - - 计算机科学
+    - Android
+id: 6
+abbrlink: 21901
 date: 2020-02-04 13:04:19
-tags: 
-- Android
-category: 
-- 计算机科学
-- [计算机科学,Android]
-# top: 100
-id: 006
 ---
 
 # 前言

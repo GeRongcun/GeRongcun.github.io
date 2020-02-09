@@ -1,12 +1,14 @@
 ---
 title: 紫荆PT站种子简介写作入门
+tags:
+  - PT
+category:
+  - 生活
+  - - 生活
+    - 娱乐
+id: 5
+abbrlink: 51708
 date: 2020-01-29 10:02:00
-tags: 
-- PT
-category: 
-- 生活
-- [生活,娱乐]
-id: 005
 ---
 
 # 前言  

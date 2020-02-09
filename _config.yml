@@ -48,6 +48,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - README.md
 # 参数	描述	默认值
 # source_dir	资源文件夹，这个文件夹用来存放内容。	source
 # public_dir	公共文件夹，这个文件夹用于存放生成的站点文件。	public
@@ -182,7 +183,8 @@ theme: next
 deploy:
   type: git
   repository: git@github.com:GeRongcun/GeRongcun.github.io.git
-  branch: master
+  # branch: master
+  branch: dev
 
 #搜索功能
 search:
