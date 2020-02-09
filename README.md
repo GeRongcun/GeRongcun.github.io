@@ -1,2 +1,2 @@
-# 个人博客简介  
-用Github+Hexo搭建的个人博客，教程：[https://www.jianshu.com/p/72842e1c63e2](https://www.jianshu.com/p/72842e1c63e2)
+#### 简介
+这是个人博客仓库，使用git clone命令或者直接下载博客，即可快速部署个人博客。
