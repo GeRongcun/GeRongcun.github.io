@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Excel学习资料</title>
+    <url>/uncategorized/2020/02/09/Excel%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>【Android】郭霖《第一行代码》过时代码的更新写法</title>
     <url>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Android/2020/02/04/%E3%80%90Android%E3%80%91%E9%83%AD%E9%9C%96%E3%80%8A%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E3%80%8B%E8%BF%87%E6%97%B6%E4%BB%A3%E7%A0%81%E7%9A%84%E6%9B%B4%E6%96%B0%E5%86%99%E6%B3%95/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。</p>
