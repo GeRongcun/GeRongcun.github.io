@@ -15,3 +15,16 @@ Pages仓库，hexo d命令部署生成的文件（即public文件夹）。
 PS：给自己看的
 文件位置：D:\00000\00MyBlog\Blog20200120  
 根目录下的README.md和public文件夹下的README.md内容一样，将根目录下的README.md复制粘贴到public文件夹中。  
+
+## 搭建博客
+利用本仓库搭建自己的个人博客。  
+1.codes分支是站点目录仓库（稳定版本），使用git clone命令或者直接下载zip文件。  
+2.打开git bash，定位到根目录，依次输入
+```
+git init
+git clean
+git g
+git d
+```
+
+
