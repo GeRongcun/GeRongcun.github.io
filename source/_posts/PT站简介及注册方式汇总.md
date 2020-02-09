@@ -1,12 +1,14 @@
 ---
 title: PT站简介及注册方式汇总
+tags:
+  - PT
+category:
+  - 生活
+  - - 生活
+    - 娱乐
+id: 4
+abbrlink: 31857
 date: 2020-01-21 14:17:04
-tags: 
-- PT
-category: 
-- 生活
-- [生活,娱乐]
-id: 004
 ---
 
 # 前言  

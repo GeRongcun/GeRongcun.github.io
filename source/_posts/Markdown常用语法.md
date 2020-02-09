@@ -1,13 +1,15 @@
 ---
 title: Markdown常用语法
+tags:
+  - Github
+  - Markdown
+category:
+  - 计算机科学
+  - - 计算机科学
+    - Markdown
+id: 2
+abbrlink: 52876
 date: 2020-01-19 23:49:07
-tags: 
-- Github
-- Markdown
-category: 
-- 计算机科学
-- [计算机科学,Markdown]
-id: 002
 ---
 
 # 教程
