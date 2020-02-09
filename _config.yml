@@ -184,7 +184,7 @@ deploy:
   type: git
   repository: git@github.com:GeRongcun/GeRongcun.github.io.git
   # branch: master
-  branch: dev
+  branch: pages
 
 #搜索功能
 search:
