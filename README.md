@@ -1,5 +1,5 @@
 ## 简介
-这是个人博客站点目录仓库，使用git clone命令或者直接下载博客，即可快速部署个人博客。  
+这是个人博客站点目录仓库，使用git clone命令或者直接下载zip文件，即可快速部署个人博客。  
 个人博客Pages仓库：https://github.com/GeRongcun/GeRongcun.github.io  
 个人博客站点目录仓库：https://github.com/GeRongcun/HexoBlog  
 个人博客网址：https://gerongcun.github.io  
