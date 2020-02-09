@@ -1,0 +1,193 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 划水小能手
+subtitle: ''
+description: ''
+keywords:
+author: GeRongcun
+language: zh-Hans
+timezone: ''
+avatar: /images/blog-logo.jpg #头像
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+#网站根目录
+permalink: :category/:year/:month/:day/:title/
+# 最后不要加.html，否则图片访问不了。
+# 图片的访问路径为 :category/:year/:month/:day/:title/图片途径
+# 如果加上.html，则访问路径变成:category/:year/:month/:day/:title.html/图片途径 出现错误
+# 如果不加.html，则必须加/，否则访问不了
+# permalink: :year/:id.html
+# 文章的 永久链接 格式
+permalink_defaults:
+# 博客文章的 URL 结构，请务必写文章之前就想好！
+# 详细参数请查看：https://hexo.io/docs/permalinks.html
+# 当然最好不要参考我的，我的太不利于 SEO 了，除非……
+# permalink: :category/:year/:month/:day/:title.html
+# permalink_defaults:
+# 永久链接中各部分的默认值
+
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  #是否在永久链接中保留尾部的 index.html，设置为 false 时去除
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  #是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)
+#改写 permalink 的值来美化 URL
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+# 参数	描述	默认值
+# source_dir	资源文件夹，这个文件夹用来存放内容。	source
+# public_dir	公共文件夹，这个文件夹用于存放生成的站点文件。	public
+# tag_dir	标签文件夹	tags
+# archive_dir	归档文件夹	archives
+# category_dir	分类文件夹	categories
+# code_dir	Include code 文件夹，source_dir 下的子目录	downloads/code
+# i18n_dir	国际化（i18n）文件夹	:lang
+# skip_render	跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。	
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+
+# 参数	描述	默认值
+# new_post_name	新文章的文件名称	:title.md
+# default_layout	预设布局	post
+# auto_spacing	在中文和英文之间加入空格	false
+# titlecase	把标题转换为 title case	false
+# external_link	在新标签中打开链接	true
+# external_link.enable	在新标签中打开链接	true
+# external_link.field	对整个网站（site）生效或仅对文章（post）生效	site
+# external_link.exclude	需要排除的域名。主域名和子域名如 www 需分别配置	[]
+# filename_case	把文件名称转换为 (1) 小写或 (2) 大写	0
+# render_drafts	显示草稿	false
+# post_asset_folder	启动 Asset 文件夹	false
+# relative_link	把链接改为与根目录的相对位址	false
+# future	显示未来的文章	true
+# highlight	代码块的设置	
+# highlight.enable	开启代码块高亮	true
+# highlight.auto_detect	如果未指定语言，则启用自动检测	false
+# highlight.line_number	显示行数
+# Enabling this option will also enable wrap option	true
+# highlight.tab_replace	用 n 个空格替换 tabs；如果值为空，则不会替换 tabs	''
+# highlight.wrap	Wrap the code block in <table>	true
+# highlight.hljs	Use the hljs-* prefix for CSS classes	false
+
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+# 分类 & 标签
+# 参数	描述	默认值
+# default_category	默认分类	uncategorized
+# category_map	分类别名	
+# tag_map	标签别名	
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## Use post's date for updated date unless set in front-matter
+use_date_for_updated: false
+# 日期 / 时间格式
+# Hexo 使用 Moment.js 来解析和显示时间。
+
+# 参数	描述	默认值
+# date_format	日期格式	YYYY-MM-DD
+# time_format	时间格式	HH:mm:ss
+# use_date_for_updated	启用以后，如果 Front Matter 中没有指定 updated， post.updated 将会使用 date 的值而不是文件的创建时间。在 Git 工作流中这个选项会很有用	true
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+# 分页
+# 参数	描述	默认值
+# per_page	每页显示的文章量 (0 = 关闭分页功能)	10
+# pagination_dir	分页目录	page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+# 包括或不包括目录和文件
+# 在 Hexo 配置文件中，通过设置 include/exclude 可以让 Hexo 进行处理或忽略某些目录和文件夹。你可以使用 glob 表达式 对目录和文件进行匹配。
+
+# include and exclude options only apply to the source/ folder, whereas ignore option applies to all folders.
+
+# 参数	描述
+# include	Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。通过设置此字段将使 Hexo 处理他们并将它们复制到 source 目录下。
+# exclude	Hexo 会忽略这些文件和目录
+# ignore	Ignore files/folders
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+# 扩展
+# 参数	描述
+# theme	当前主题名称。值为false时禁用主题
+# theme_config	主题的配置文件。在这里放置的配置会覆盖主题目录下的 _config.yml 中的配置
+# deploy	部署部分的设置
+# meta_generator	Meta generator 标签。 值为 false 时 Hexo 不会在头部插入该标签
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: git@github.com:GeRongcun/GeRongcun.github.io.git
+  branch: master
+
+#搜索功能
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+  
