@@ -2,16 +2,16 @@
 <search>
   <entry>
     <title>Excel学习资料</title>
-    <url>/uncategorized/2020/02/09/Excel%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
+    <url>/2020/27115/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>【Android】郭霖《第一行代码》过时代码的更新写法</title>
-    <url>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Android/2020/02/04/%E3%80%90Android%E3%80%91%E9%83%AD%E9%9C%96%E3%80%8A%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E3%80%8B%E8%BF%87%E6%97%B6%E4%BB%A3%E7%A0%81%E7%9A%84%E6%9B%B4%E6%96%B0%E5%86%99%E6%B3%95/</url>
+    <url>/2020/21901/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。</p>
 <h1 id="过时代码及更新写法"><a href="#过时代码及更新写法" class="headerlink" title="过时代码及更新写法"></a>过时代码及更新写法</h1><h2 id="RecyclerView控件"><a href="#RecyclerView控件" class="headerlink" title="RecyclerView控件"></a>RecyclerView控件</h2><p><strong>位置</strong><br>第3章 软件也要拼脸蛋——UI开发的点点滴滴<br>3.6 更强大的滚动控件——RecyclerView  </p>
 <p><strong>运行错误提示</strong>  </p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Android/2020/02/04/%E3%80%90Android%E3%80%91%E9%83%AD%E9%9C%96%E3%80%8A%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E3%80%8B%E8%BF%87%E6%97%B6%E4%BB%A3%E7%A0%81%E7%9A%84%E6%9B%B4%E6%96%B0%E5%86%99%E6%B3%95/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png" alt="RecyclerView错误提示"><br>显示java.lang.ClassNotFoundException: Didn’t find class “android.support.v7.widget.RecyclerView”   </p>
+<p><img src="/2020/21901/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png" alt="RecyclerView错误提示"><br>显示java.lang.ClassNotFoundException: Didn’t find class “android.support.v7.widget.RecyclerView”   </p>
 <p><strong>代码更新写法</strong><br>参考资料：<a href="https://blog.csdn.net/u011041494/article/details/93849730" target="_blank" rel="noopener">一次解决找不到 android.support.v7.XXX 问题</a><br>在build.gradle中用</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">implementation &#39;androidx.recyclerview:recyclerview:1.0.0&#39;</span><br></pre></td></tr></table></figure>
 <p>替换</p>
@@ -26,9 +26,9 @@
 <p>的参数 LinearLayoutManager.VERTICAL为RecyclerView.VERTICAL</p>
 <h2 id="Networklnfo被弃用"><a href="#Networklnfo被弃用" class="headerlink" title="Networklnfo被弃用"></a>Networklnfo被弃用</h2><p><strong>位置</strong><br>第5章 全局大喇叭——详解广播机制<br>5.2.1动态注册监听网络变化  </p>
 <p><strong>运行错误提示</strong>  </p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Android/2020/02/04/%E3%80%90Android%E3%80%91%E9%83%AD%E9%9C%96%E3%80%8A%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E3%80%8B%E8%BF%87%E6%97%B6%E4%BB%A3%E7%A0%81%E7%9A%84%E6%9B%B4%E6%96%B0%E5%86%99%E6%B3%95/NetworkInfo%E9%94%99%E8%AF%AF.png" alt="NetworkInfo错误提示"><br>显示’android.net.Networklnfo’ is deprecated（被弃用了）   </p>
+<p><img src="/2020/21901/NetworkInfo%E9%94%99%E8%AF%AF.png" alt="NetworkInfo错误提示"><br>显示’android.net.Networklnfo’ is deprecated（被弃用了）   </p>
 <p><strong>代码更新写法</strong><br>参考资料：<br><a href="https://www.jb51.net/article/136923.htm" target="_blank" rel="noopener">Android 7.0 监听网络变化的示例代码</a><br><a href="https://blog.csdn.net/u011315960/article/details/79006162" target="_blank" rel="noopener">各种网络状态的解释</a><br><a href="https://developer.android.google.cn/reference/android/net/ConnectivityManager.NetworkCallback.html" target="_blank" rel="noopener">ConnectivityManager.NetworkCallback官网文档</a></p>
-<p>AndroidManifest.xml添加权限<br><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Android/2020/02/04/%E3%80%90Android%E3%80%91%E9%83%AD%E9%9C%96%E3%80%8A%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E3%80%8B%E8%BF%87%E6%97%B6%E4%BB%A3%E7%A0%81%E7%9A%84%E6%9B%B4%E6%96%B0%E5%86%99%E6%B3%95/%E7%94%B3%E8%AF%B7%E6%9D%83%E9%99%90.png" alt="AndroidManifest.xml添加权限"> </p>
+<p>AndroidManifest.xml添加权限<br><img src="/2020/21901/%E7%94%B3%E8%AF%B7%E6%9D%83%E9%99%90.png" alt="AndroidManifest.xml添加权限"> </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--在app&#x2F;src&#x2F;main&#x2F;AndroidManifest.xml里添加权限，如下：--&gt;</span><br><span class="line">&lt;uses-permission android:name&#x3D;&quot;android.permission.ACCESS_NETWORK_STATE&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
 
 <p>Activity活动文件代码如下：</p>
@@ -63,7 +63,7 @@
   </entry>
   <entry>
     <title>紫荆PT站种子简介写作入门</title>
-    <url>/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/29/%E7%B4%AB%E8%8D%86PT%E7%AB%99%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B%E5%86%99%E4%BD%9C%E5%85%A5%E9%97%A8/</url>
+    <url>/2020/51708/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>紫荆PT是南京大学教育网环境下的PT站，站友在上传种子时，需要写种子简介。这里，提供一些入门教程，方便站内快速、高效地写出合格的种子简介。</p>
 <h1 id="BBCode"><a href="#BBCode" class="headerlink" title="BBCode"></a>BBCode</h1><p>PT站大多使用的是轻量标记语言BBCode，紫荆PT亦是如此。<br>常见的BBCode标签代码：</p>
 <ul>
@@ -71,17 +71,17 @@
 <li><a href="https://bangumi.tv/help/bbcode" target="_blank" rel="noopener">BBCode 标签指南</a>  </li>
 </ul>
 <p><strong>“引用”</strong></p>
-<p><img src="/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/29/%E7%B4%AB%E8%8D%86PT%E7%AB%99%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B%E5%86%99%E4%BD%9C%E5%85%A5%E9%97%A8/%E5%BC%95%E7%94%A8.png" alt="引用"><br>代码如下：</p>
+<p><img src="/2020/51708/%E5%BC%95%E7%94%A8.png" alt="引用"><br>代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[quote]转自SSD</span><br><span class="line">原种子链接：https:&#x2F;&#x2F;springsunday.net&#x2F;details.php?id&#x3D;50837&amp;hit&#x3D;1</span><br><span class="line">原上传时间：2017年</span><br><span class="line">未改变文件内容[&#x2F;quote]</span><br></pre></td></tr></table></figure>
 
 <p><strong>给“引用”添加标题</strong></p>
-<p><img src="/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/29/%E7%B4%AB%E8%8D%86PT%E7%AB%99%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B%E5%86%99%E4%BD%9C%E5%85%A5%E9%97%A8/%E5%BC%95%E7%94%A8%E5%8A%A0%E6%A0%87%E9%A2%98.png" alt="引用"><br>代码如下：</p>
+<p><img src="/2020/51708/%E5%BC%95%E7%94%A8%E5%8A%A0%E6%A0%87%E9%A2%98.png" alt="引用"><br>代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[quote&#x3D;搬运信息]转自SSD</span><br><span class="line">原种子链接：https:&#x2F;&#x2F;springsunday.net&#x2F;details.php?id&#x3D;50837&amp;hit&#x3D;1</span><br><span class="line">原上传时间：2017年</span><br><span class="line">未改变文件内容[&#x2F;quote]</span><br></pre></td></tr></table></figure>
 
 
 <h1 id="实用工具"><a href="#实用工具" class="headerlink" title="实用工具"></a>实用工具</h1><h2 id="PTGen快速填写电影、剧集的简介"><a href="#PTGen快速填写电影、剧集的简介" class="headerlink" title="PTGen快速填写电影、剧集的简介"></a>PTGen快速填写电影、剧集的简介</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>PTGen是由R酱（rhilip）开发的Pt站资源简介生成工具。<br>R酱博客：<a href="https://blog.rhilip.info/" target="_blank" rel="noopener">https://blog.rhilip.info/</a><br>R酱Github：<a href="https://github.com/Rhilip/" target="_blank" rel="noopener">https://github.com/Rhilip/</a>  </p>
 <p>在填写电影、剧集、综艺类资源的简介时，强烈推荐使用下面这个简介生成模板：<br><a href="https://rhilip.github.io/PT-help/ptgen" target="_blank" rel="noopener">https://rhilip.github.io/PT-help/ptgen</a>  </p>
-<p><img src="/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/29/%E7%B4%AB%E8%8D%86PT%E7%AB%99%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B%E5%86%99%E4%BD%9C%E5%85%A5%E9%97%A8/PTGen.png" alt="PTGen.png">  </p>
+<p><img src="/2020/51708/PTGen.png" alt="PTGen.png">  </p>
 <h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><ol>
 <li>输入豆瓣链接、豆瓣ID、IMDB链接、IMDB ID、电影中文名、电影英文名等信息；</li>
 <li>获得查询结果；</li>
@@ -97,15 +97,15 @@
 <hr>
 <h2 id="MedioInfo填写视频编码信息"><a href="#MedioInfo填写视频编码信息" class="headerlink" title="MedioInfo填写视频编码信息"></a>MedioInfo填写视频编码信息</h2><h3 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h3><p>MediaInfo是一款免费、实用的视频参数检测工具，除了可以对视频进行编码分析查询，还可以对音频文件的编码及信息进行检测。<br>下载链接：<a href="http://mediaarea.net/en/MediaInfo" target="_blank" rel="noopener">http://mediaarea.net/en/MediaInfo</a></p>
 <h3 id="使用方法-2"><a href="#使用方法-2" class="headerlink" title="使用方法"></a>使用方法</h3><p>1.选中文件，右键用MedioInfo打开；   </p>
-<p><img src="/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/29/%E7%B4%AB%E8%8D%86PT%E7%AB%99%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B%E5%86%99%E4%BD%9C%E5%85%A5%E9%97%A8/%E5%8F%B3%E9%94%AE%E7%94%A8MedioInfo%E6%89%93%E5%BC%80.png" alt="右键用MedioInfo打开"><br>2.点击View-&gt;Text；  </p>
-<p><img src="/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/29/%E7%B4%AB%E8%8D%86PT%E7%AB%99%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B%E5%86%99%E4%BD%9C%E5%85%A5%E9%97%A8/View%E9%80%89%E6%8B%A9Text.png" alt="View选择Text"><br>3.全选，复制粘贴到PT站种子简介处；<br>视频编码信息会出现不对齐的现象，需要括在下述代码内，设置为等宽字体。</p>
+<p><img src="/2020/51708/%E5%8F%B3%E9%94%AE%E7%94%A8MedioInfo%E6%89%93%E5%BC%80.png" alt="右键用MedioInfo打开"><br>2.点击View-&gt;Text；  </p>
+<p><img src="/2020/51708/View%E9%80%89%E6%8B%A9Text.png" alt="View选择Text"><br>3.全选，复制粘贴到PT站种子简介处；<br>视频编码信息会出现不对齐的现象，需要括在下述代码内，设置为等宽字体。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[font&#x3D;Consolas,monospace]视频编码信息[&#x2F;font]</span><br></pre></td></tr></table></figure>
 
 <p>参考资料：<br><a href="http://zijingbt.njuftp.org/faq.html#faq16" target="_blank" rel="noopener">紫荆PT-视频编码的查询方法</a></p>
 <h1 id="种子简介示例"><a href="#种子简介示例" class="headerlink" title="种子简介示例"></a>种子简介示例</h1><p>种子链接：<a href="http://zijingbt.njuftp.org/stats.html?id=113159" target="_blank" rel="noopener">http://zijingbt.njuftp.org/stats.html?id=113159</a><br>种子简介代码如下：  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[quote&#x3D;搬运信息]转自SSD</span><br><span class="line">原种子链接：https:&#x2F;&#x2F;springsunday.net&#x2F;details.php?id&#x3D;50837&amp;hit&#x3D;1</span><br><span class="line">原上传时间：2017年</span><br><span class="line">未改变文件内容[&#x2F;quote]</span><br><span class="line"></span><br><span class="line">[img]http:&#x2F;&#x2F;nvidia.njuftp.org&#x2F;images&#x2F;2020&#x2F;1&#x2F;15&#x2F;f824b7f4-326f-4f5b-8061-281e3b7830da.jpg[&#x2F;img]</span><br><span class="line"></span><br><span class="line">◎译　　名　Legend of Tianyun Monutain</span><br><span class="line">◎片　　名　天云山传奇</span><br><span class="line">◎年　　代　1980</span><br><span class="line">◎产　　地　中国大陆</span><br><span class="line">◎类　　别　剧情</span><br><span class="line">◎语　　言　汉语普通话</span><br><span class="line">◎上映日期　1981-11-14</span><br><span class="line">◎IMDb评分  7.7&#x2F;10 from 138 users</span><br><span class="line">◎IMDb链接  https:&#x2F;&#x2F;www.imdb.com&#x2F;title&#x2F;tt0081632</span><br><span class="line">◎豆瓣评分　7.8&#x2F;10 from 3907 users</span><br><span class="line">◎豆瓣链接　https:&#x2F;&#x2F;movie.douban.com&#x2F;subject&#x2F;1291864&#x2F;</span><br><span class="line">◎片　　长　121分钟</span><br><span class="line">◎导　　演　谢晋 Jin Xie</span><br><span class="line">◎编　　剧　鲁彦周 Yanzhou Lu</span><br><span class="line">◎主　　演　石维坚 Weijian Shi</span><br><span class="line">　　　　　  施建岚 Jianlan Shi</span><br><span class="line">　　　　　  王馥荔 Fuli Wang</span><br><span class="line">　　　　　  仲星火 Xinghuo Zhong</span><br><span class="line">　　　　　  洪学敏 Xuemin Hong</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">◎标　　签　谢晋 | 中国电影 | 中国 | 伤痕 | 大陆 | 爱情 | 1980 | 国产老片</span><br><span class="line"></span><br><span class="line">◎简　　介  </span><br><span class="line"></span><br><span class="line">　　1978年冬天，地委组织部副部长宋薇（王馥荔 饰）和丈夫、部长吴遥（仲星火 饰）正在对文革期间的冤假错案进行拨乱反正。从天云山赶回的周瑜贞（洪学敏 饰）向宋薇汇报工作，声称在天云山调查期间拜访了一对儿特殊的夫妻：丈夫罗群（石维坚 饰）是个靠赶车维生的老右派，有多部没有发表的著述；妻子冯晴岚（施建岚 饰）是有病在身的小学教员。这对儿夫妻凄凉的境遇令周瑜贞同情，而且她通过了解，知道罗群是当年宋薇在天云山的恋人……原来二十年前宋薇与冯晴岚一起加入考察队驻扎天云山，吴遥和罗群是前后两任政治委员，吴遥暗恋宋薇，于是陷害罗群是反党分子。罗群的遭遇令宋薇吃惊和愤怒，然而在为罗群平反的问题上，吴遥再次出面阻挠……</span><br><span class="line"></span><br><span class="line">◎获奖情况  </span><br><span class="line"></span><br><span class="line">　　第1届中国电影金鸡奖(1981)</span><br><span class="line">　　最佳故事片</span><br><span class="line">　　最佳导演 谢晋</span><br><span class="line">　　最佳编剧(提名) 鲁彦周</span><br><span class="line">　　最佳女主角(提名) 王馥荔</span><br><span class="line">　　最佳摄影 许琦</span><br><span class="line">　　最佳美术 陈绍勉</span><br><span class="line">　　最佳剪辑(提名) 周鼎文</span><br><span class="line"></span><br><span class="line">　　第4届大众电影百花奖(1981)</span><br><span class="line">　　最佳故事片</span><br><span class="line"></span><br><span class="line">[img]http:&#x2F;&#x2F;nvidia.njuftp.org&#x2F;images&#x2F;2020&#x2F;1&#x2F;15&#x2F;49004b27-e3eb-41d5-9c34-993e103373ec.jpg[&#x2F;img]</span><br><span class="line"></span><br><span class="line">[quote][font&#x3D;Consolas,monospace]General</span><br><span class="line">ID                                       : 1 (0x1)</span><br><span class="line">Complete name                            : F:\03电影\谢晋 天云山传奇\Legend.of.Tianyun.Mountain.1980.HDTV.1080i.H264-CZW\天云山传奇.Legend.of.Tianyun.Mountain.1980.HDTV.1080i.H264-CZW.ts</span><br><span class="line">Format                                   : MPEG-TS</span><br><span class="line">File size                                : 6.15 GiB</span><br><span class="line">Duration                                 : 2 h 0 min</span><br><span class="line">Overall bit rate mode                    : Variable</span><br><span class="line">Overall bit rate                         : 7 290 kb&#x2F;s</span><br><span class="line">Maximum Overall bit rate                 : 35.5 Mb&#x2F;s</span><br><span class="line"></span><br><span class="line">Video</span><br><span class="line">ID                                       : 4113 (0x1011)</span><br><span class="line">Menu ID                                  : 1 (0x1)</span><br><span class="line">Format                                   : AVC</span><br><span class="line">Format&#x2F;Info                              : Advanced Video Codec</span><br><span class="line">Format profile                           : High@L4</span><br><span class="line">Format settings                          : CABAC &#x2F; 4 Ref Frames</span><br><span class="line">Format settings, CABAC                   : Yes</span><br><span class="line">Format settings, Reference frames        : 4 frames</span><br><span class="line">Codec ID                                 : 27</span><br><span class="line">Duration                                 : 2 h 0 min</span><br><span class="line">Bit rate mode                            : Variable</span><br><span class="line">Bit rate                                 : 6 801 kb&#x2F;s</span><br><span class="line">Maximum bit rate                         : 40.0 Mb&#x2F;s</span><br><span class="line">Width                                    : 1 920 pixels</span><br><span class="line">Height                                   : 1 080 pixels</span><br><span class="line">Display aspect ratio                     : 16:9</span><br><span class="line">Frame rate                               : 25.000 FPS</span><br><span class="line">Color space                              : YUV</span><br><span class="line">Chroma subsampling                       : 4:2:0</span><br><span class="line">Bit depth                                : 8 bits</span><br><span class="line">Scan type                                : MBAFF</span><br><span class="line">Scan type, store method                  : Interleaved fields</span><br><span class="line">Scan order                               : Top Field First</span><br><span class="line">Bits&#x2F;(Pixel*Frame)                       : 0.131</span><br><span class="line">Stream size                              : 5.74 GiB (93%)</span><br><span class="line"></span><br><span class="line">Audio</span><br><span class="line">ID                                       : 4352 (0x1100)</span><br><span class="line">Menu ID                                  : 1 (0x1)</span><br><span class="line">Format                                   : MPEG Audio</span><br><span class="line">Format version                           : Version 1</span><br><span class="line">Format profile                           : Layer 2</span><br><span class="line">Codec ID                                 : 4</span><br><span class="line">Duration                                 : 2 h 0 min</span><br><span class="line">Bit rate mode                            : Constant</span><br><span class="line">Bit rate                                 : 128 kb&#x2F;s</span><br><span class="line">Channel(s)                               : 2 channels</span><br><span class="line">Sampling rate                            : 48.0 kHz</span><br><span class="line">Frame rate                               : 41.667 FPS (1152 SPF)</span><br><span class="line">Compression mode                         : Lossy</span><br><span class="line">Delay relative to video                  : 587 ms</span><br><span class="line">Stream size                              : 111 MiB (2%)[&#x2F;font][&#x2F;quote]</span><br></pre></td></tr></table></figure>
 
-<p>种子简介截图：<br><img src="/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/29/%E7%B4%AB%E8%8D%86PT%E7%AB%99%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B%E5%86%99%E4%BD%9C%E5%85%A5%E9%97%A8/%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B.png" alt="种子简介"></p>
+<p>种子简介截图：<br><img src="/2020/51708/%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B.png" alt="种子简介"></p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://www.tjupt.org/forums.php?action=viewtopic&forumid=15&topicid=15075" target="_blank" rel="noopener">【新手手册】初入北洋园PT你必须知道的知识</a>：超级详细的PT站入门教程（需要注册北洋园PT账号）<br><a href="https://www.tjupt.org/forums.php?action=viewtopic&topicid=15098" target="_blank" rel="noopener">发布资源&amp;制作种子的教程</a>：发布资源&amp;制作种子的教程（需要注册北洋园PT账号）    </p>
 ]]></content>
       <categories>
@@ -118,7 +118,7 @@
   </entry>
   <entry>
     <title>PT站简介及注册方式汇总</title>
-    <url>/%E7%94%9F%E6%B4%BB/%E5%A8%B1%E4%B9%90/2020/01/21/PT%E7%AB%99%E7%AE%80%E4%BB%8B%E5%8F%8A%E6%B3%A8%E5%86%8C%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB/</url>
+    <url>/2020/31857/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>PT站是分享影视，游戏，音乐，动漫，学习等资料的平台。不管是看电影、看电视剧，还是追番，PT站都是不错的选择。PT站的特点是，服务器不存放资源，资源均由用户上传，PT站基本都会设置上传/下载比率限制，防止出现只下载不上传的“吸血鬼”。说不多说，开始简单介绍各大PT站。  </p>
 <h1 id="简介及注册方式"><a href="#简介及注册方式" class="headerlink" title="简介及注册方式"></a>简介及注册方式</h1><h2 id="注册方式"><a href="#注册方式" class="headerlink" title="注册方式"></a>注册方式</h2><p>这里是我整理的各大BT、PT站注册方式：<br><a href="https://docs.qq.com/sheet/DSnBBaVBydnBhRHdo?tab=ln32s3&c=A22A0K0" target="_blank" rel="noopener">https://docs.qq.com/sheet/DSnBBaVBydnBhRHdo?tab=ln32s3&amp;c=A22A0K0</a>  </p>
 <h2 id="教育网PT站简介"><a href="#教育网PT站简介" class="headerlink" title="教育网PT站简介"></a>教育网PT站简介</h2><p>教育网PT，是指在教育网（中国教育和科研计算机网）IPv6环境下才能访问的PT站。访问教育网PT，需要插网线。</p>
@@ -175,7 +175,7 @@
   </entry>
   <entry>
     <title>Markdown和微信公众号排版</title>
-    <url>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/2020/01/20/Markdown%E5%92%8C%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E6%8E%92%E7%89%88/</url>
+    <url>/2020/18383/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>微信公众号排版复杂，但推广方便；Github+Hexo搭建个人博客，写作方便（Markdown语言），但推广不易；lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，轻松转化Markdown到给微信特制的HTML。  </p>
 <h1 id="微信公众号"><a href="#微信公众号" class="headerlink" title="微信公众号"></a>微信公众号</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
 <li>受众较多，推广方便； </li>
@@ -201,14 +201,14 @@
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Blog</tag>
         <tag>Markdown</tag>
+        <tag>Blog</tag>
         <tag>微信公众号</tag>
       </tags>
   </entry>
   <entry>
     <title>Markdown常用语法</title>
-    <url>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Markdown/2020/01/19/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</url>
+    <url>/2020/52876/</url>
     <content><![CDATA[<h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><p>作业部落出品的常用语法：<br><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor</a><br>我用的Markdown编辑器是VS Code。Sublime也很好用。</p>
 <hr>
 <p><strong>以下是常用语法：</strong></p>
@@ -310,19 +310,19 @@
   </entry>
   <entry>
     <title>Github+Hexo搭建个人博客</title>
-    <url>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/2020/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <url>/2020/42500/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前段时间，在浏览<a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a>时，知道可以用Github+Hexo搭建个人博客。这几天，参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的教程</a>学习了Git，参考梧雨北辰的教程<a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a>和其他大佬的教程，尝试搭建个人博客。期间，遇到不少问题，在这里贴出来，避免以后再次踩坑。</p>
 <p>个人博客，看效果进入：<a href="https://GeRongcun.github.io" target="_blank" rel="noopener">https://GeRongcun.github.io</a><br>Github仓库：<a href="https://github.com/GeRongcun/GeRongcun.github.io" target="_blank" rel="noopener">https://github.com/GeRongcun/GeRongcun.github.io</a></p>
 <p>推荐学习资料：<br><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a><br><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的Git教程</a><br><a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a>  </p>
 <hr>
-<h1 id="安装Hexo失败"><a href="#安装Hexo失败" class="headerlink" title="安装Hexo失败"></a>安装Hexo失败</h1><p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/2020/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/01%E9%94%99%E8%AF%AF.png" alt="安装hexo失败"><br><strong>错误提示</strong>  </p>
+<h1 id="安装Hexo失败"><a href="#安装Hexo失败" class="headerlink" title="安装Hexo失败"></a>安装Hexo失败</h1><p><img src="/2020/42500/01%E9%94%99%E8%AF%AF.png" alt="安装hexo失败"><br><strong>错误提示</strong>  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">FATAL can not read an implicit mapping pair; a colon is missed at line 103, column 16:</span><br><span class="line">    branch:master</span><br><span class="line">                ^</span><br><span class="line">YAMLException: can not read an implicit mapping pair; a colon is missed at line 103, column 16:</span><br><span class="line">    branch:master</span><br></pre></td></tr></table></figure>
 
 <p><strong>解决方法：</strong><br>目前国内npm源有问题；所以键入如下代码即可安装成功:<br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>cnpm install hexo-cli -g</p>
-<h1 id="URL乱码"><a href="#URL乱码" class="headerlink" title="URL乱码"></a>URL乱码</h1><h2 id="导航栏链接URL乱码"><a href="#导航栏链接URL乱码" class="headerlink" title="导航栏链接URL乱码"></a>导航栏链接URL乱码</h2><p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/2020/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/02%E9%94%99%E8%AF%AF.png" alt="导航栏链接URL乱码"><br><strong>错误原因：</strong>%20由空格转义过来  </p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/2020/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/03.png" alt="解决方法"><br><strong>解决方法：</strong>只需要删除home: / || home中，/和||之间的空格。  </p>
-<h2 id="日志按钮链接URL乱码"><a href="#日志按钮链接URL乱码" class="headerlink" title="日志按钮链接URL乱码"></a>日志按钮链接URL乱码</h2><p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/2020/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/031.png" alt="点击个人博客头像下方的“日志”按钮"><br>点击个人博客头像下方的“日志”按钮，跳转url出现乱码  </p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/Github/2020/01/19/Github-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/04.png" alt="日志按钮链接URL乱码"><br><strong>错误原因：</strong>%7C是由/转义过来的  </p>
+<h1 id="URL乱码"><a href="#URL乱码" class="headerlink" title="URL乱码"></a>URL乱码</h1><h2 id="导航栏链接URL乱码"><a href="#导航栏链接URL乱码" class="headerlink" title="导航栏链接URL乱码"></a>导航栏链接URL乱码</h2><p><img src="/2020/42500/02%E9%94%99%E8%AF%AF.png" alt="导航栏链接URL乱码"><br><strong>错误原因：</strong>%20由空格转义过来  </p>
+<p><img src="/2020/42500/03.png" alt="解决方法"><br><strong>解决方法：</strong>只需要删除home: / || home中，/和||之间的空格。  </p>
+<h2 id="日志按钮链接URL乱码"><a href="#日志按钮链接URL乱码" class="headerlink" title="日志按钮链接URL乱码"></a>日志按钮链接URL乱码</h2><p><img src="/2020/42500/031.png" alt="点击个人博客头像下方的“日志”按钮"><br>点击个人博客头像下方的“日志”按钮，跳转url出现乱码  </p>
+<p><img src="/2020/42500/04.png" alt="日志按钮链接URL乱码"><br><strong>错误原因：</strong>%7C是由/转义过来的  </p>
 <p><strong>解决方法：</strong><br>在themes\next\layout_macro中找到sidebar.swig</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if config.archive_dir !&#x3D; &#39;&#x2F;&#39; and site.posts.length &gt; 0 %&#125;</span><br><span class="line">  &lt;div class&#x3D;&quot;site-state-item site-state-posts&quot;&gt;</span><br><span class="line">  &#123;% if theme.menu.archives %&#125;</span><br><span class="line">	&lt;a href&#x3D;&quot;&#123;&#123; url_for(theme.menu.archives).split(&#39;||&#39;)[0] | trim &#125;&#125;&quot;&gt;</span><br><span class="line">  &#123;% else %&#125;</span><br><span class="line">	&lt;a href&#x3D;&quot;&#123;&#123; url_for(config.archive_dir) &#125;&#125;&quot;&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">	  &lt;span class&#x3D;&quot;site-state-item-count&quot;&gt;&#123;&#123; site.posts.length &#125;&#125;&lt;&#x2F;span&gt;</span><br><span class="line">	  &lt;span class&#x3D;&quot;site-state-item-name&quot;&gt;&#123;&#123; __(&#39;state.posts&#39;) &#125;&#125;&lt;&#x2F;span&gt;</span><br><span class="line">	&lt;&#x2F;a&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <p>将</p>
