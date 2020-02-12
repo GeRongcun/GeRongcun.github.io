@@ -76,13 +76,14 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+
+highlight: # 代码高亮
+  enable: true # 开启代码高亮
+  line_number: true # 是否显示行号
+  auto_detect: false 
+  tab_replace: '' # 是否替换tab为空格
+  wrap: true 
+  hljs: false 
 
 # 参数	描述	默认值
 # new_post_name	新文章的文件名称	:title.md
