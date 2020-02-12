@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>编程学习资料整理</title>
+    <url>/2020/98746a1e/</url>
+    <content><![CDATA[<h2 id="大佬"><a href="#大佬" class="headerlink" title="大佬"></a>大佬</h2><p><a href="http://www.ruanyifeng.com/" target="_blank" rel="noopener"><strong>阮一峰的个人网站</strong></a><br>阮一峰的1500+博客<br><a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener"><strong>廖雪峰的官方网站</strong></a><br>Java教程、Python教程、JavaScript教程、SQL教程、Git教程  </p>
+<h2 id="Hexo博客"><a href="#Hexo博客" class="headerlink" title="Hexo博客"></a>Hexo博客</h2><p><a href="https://strivebo.com/" target="_blank" rel="noopener"><strong>Jaybo’s Blog</strong></a><br>Jaybo个人博客，介绍Hexo主题很全面，<a href="https://github.com/strivebo" target="_blank" rel="noopener">Jaybo’s Github</a>  </p>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p><a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener"><strong>廖雪峰的官方网站</strong></a><br>很详细的Git教程，特别适合入门  </p>
+<h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><p><a href="https://github.com/strivebo" target="_blank" rel="noopener"><strong>Jaybo’s Github</strong></a><br>大杂烩，什么都有，主要方向是Java、深度学习  </p>
+]]></content>
+  </entry>
+  <entry>
     <title>ArcGIS安装包&amp;教程</title>
     <url>/2020/ceddd626/</url>
     <content><![CDATA[]]></content>
