@@ -391,8 +391,8 @@
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>Blog</tag>
+        <tag>Markdown</tag>
         <tag>微信公众号</tag>
       </tags>
   </entry>
@@ -494,8 +494,8 @@
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>Github</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -532,9 +532,9 @@
         <category>Github</category>
       </categories>
       <tags>
-        <tag>Blog</tag>
         <tag>Github</tag>
         <tag>Hexo</tag>
+        <tag>Blog</tag>
       </tags>
   </entry>
 </search>
