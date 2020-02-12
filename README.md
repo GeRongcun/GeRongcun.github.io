@@ -22,10 +22,14 @@ PS：给自己看的
 hexo clean（一般不用hexo clean，会删除public文件夹，将根目录下的README.md复制粘贴到public文件夹中）  
 hexo g  
 hexo d  
+git add .
+git commit -m "更新master"
 切换到dev分支  
 git merge --no-ff -m "用master分支覆盖dev分支" master  
 切换到codes分支（可选）  
 git merge --no-ff -m "20200209版本V1.01 无重大更新" dev  
+git push origin dev
+git push origin codes
 再切换到master分支  
 确保定位到master分支，关闭git bash  
 
@@ -37,6 +41,7 @@ git merge --no-ff -m "20200209版本V1.01 无重大更新" dev
 git init
 git clean
 git g
+gulp build  
 git d
 ```
 

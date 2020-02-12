@@ -15,7 +15,7 @@ date: 2020-02-04 13:04:19
 在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。
 
 # 过时代码及更新写法
-## RecyclerView控件
+## 3.6 更强大的滚动控件——RecyclerView
 **位置**  
 第3章 软件也要拼脸蛋——UI开发的点点滴滴  
 3.6 更强大的滚动控件——RecyclerView  
@@ -23,7 +23,7 @@ date: 2020-02-04 13:04:19
 **运行错误提示**  
   
 ![RecyclerView错误提示](【Android】郭霖《第一行代码》过时代码的更新写法/RecyclerView错误提示.png)  
-显示java.lang.ClassNotFoundException: Didn't find class "android.support.v7.widget.RecyclerView"   
+显示java.lang.ClassNotFoundException: Didn't find class "android.support.v7.widget.RecyclerView"  
 
 **代码更新写法**  
 参考资料：[一次解决找不到 android.support.v7.XXX 问题](https://blog.csdn.net/u011041494/article/details/93849730)  
@@ -54,10 +54,10 @@ manager.setOrientation(LinearLayoutManager.VERTICAL);
 ```
 的参数 LinearLayoutManager.VERTICAL为RecyclerView.VERTICAL
 
-## Networklnfo被弃用
+## 5.2.1 动态注册监听网络变化
 **位置**  
 第5章 全局大喇叭——详解广播机制  
-5.2.1动态注册监听网络变化  
+5.2.1 动态注册监听网络变化  
 
 **运行错误提示**  
 
@@ -165,16 +165,17 @@ public class D02Activity extends AABaseActivity {
     }
 }
 ```
-## 无法静态注册广播接收器
+## 5.2.2 静态注册实现开机启动
 **位置**  
 第5章 全局大喇叭——详解广播机制  
-5.2.2静态注册实现开机启动  
-5.3.1发送标准广播  
+5.2.2 静态注册实现开机启动   
+5.3.1 发送标准广播  
 
 **运行错误提示**  
 程序运行失败，Toast没有弹出。  
 
 **错误原因**  
+无法静态注册广播接收器；
 在Android 8.0及以上的平台上，应用不能对大部分的广播进行静态注册，也就是说，不能在AndroidManifest文件对有些广播进行静态注册，这里必须强调是有些广播，因为有些广播还是能够注册的。   
 
 谷歌在8.0后为了提高效率，删除了静态注册，防止关闭App后广播还在， 造成内存泄漏， 现在静态注册的广播需要指定包名，而动态注册就没有这个问题。 
@@ -210,10 +211,10 @@ button1.setOnClickListener(new View.OnClickListener() {
         sendBroadcast(intent);
 ```
 
-## 找不到Android Device Monitor
+## 6.2.1 将数据存储到文件中
 **位置**  
 第6章 数据存储全方案——详解持久化技术   
-6.2.1将数据存储到文件中
+6.2.1 将数据存储到文件中
 
 **运行错误提示**  
 找不到Android Device Monitor。
@@ -224,12 +225,61 @@ button1.setOnClickListener(new View.OnClickListener() {
 参考资料：  
 [Android Device Monitor官方替代工具](https://blog.csdn.net/w_xue/article/details/88649081)
 
-
 **代码更新写法**  
 参考资料：  
 [android studio 3.0以上版本Android Device Monitor的替代方案](https://blog.csdn.net/baidu_34635864/article/details/90902017)  
 
 Android Studio界面右下角有Device File Explorer按钮，点击后，弹出Device File Explorer界面，可以找到/data/data/\<package name\>/files/data，然后导出。  
+
+## 6.4.1 创建数据库
+**位置**  
+第6章 数据存储全方案——详解持久化技术   
+6.4.1 创建数据库
+
+### Permission denied没有权限
+**运行错误提示**  
+在命令行窗口，执行命令cd \<package name\>，显示Permission denied没有权限。
+![adb权限错误](【Android】郭霖《第一行代码》过时代码的更新写法/adb权限错误.png)  
+**错误原因**   
+手机没有获得root权限。   
+
+**解决方法**   
+方法一：
+
+真机测试，手机获取root权限后，输入su root，申请root权限，然后手机上点击授权，再次执行cd data/data即可进入手机data/data目录。  
+参考资料：  
+[windows 下通过adb shell进入data目录，Permission denied 权限被拒绝](https://blog.csdn.net/xiejc01/article/details/8449935?utm_source=blogxgwz0)  
+
+方法二：  
+真机获得root权限的步骤比较复杂，建议安装虚拟机。点击“AVD Manager”按钮，创建虚拟机。  
+安装虚拟机后，输入su root，显示“su: not found”问题。
+我们获取不了管理员权限都是因为下载的虚拟机中Target带(Google play)，是无法获取管理员权限的。  
+![adb权限错误Google_play](【Android】郭霖《第一行代码》过时代码的更新写法/adb权限错误Google_play.png)   
+
+然后重新下载一个Target带（Google APIs）的虚拟机,是可以获取管理员权限的。  
+![adb权限错误Google_play](【Android】郭霖《第一行代码》过时代码的更新写法/adb权限错误Google_api.png)   
+
+参考资料：  
+[关于解决su:not found的方法](https://blog.csdn.net/the_shiled/article/details/91044129)
+
+### 无法打开数据库
+**运行错误提示**   
+无法打开数据库。
+android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14 SQLITE_CANTOPEN): Could not open database
+![无法打开数据库](【Android】郭霖《第一行代码》过时代码的更新写法/无法打开数据库.png)   
+
+**错误原因**   
+Android6.0以后出现了很多权限即使在AndroidManifest.xml中配置了也不行，必须手动请求，或者在设置-应用-权限打开对应的权限。
+换成Android 4.0系统运行，直接就运行起来了。    
+自Android 6.0开始，Google开始对系统权限做出严格的要求，有些权限必须用户同意才能调用相应功能，所以开发者需要调用权限申请的代码，弹出一个小窗口，向用户动态申请权限。  
+
+参考资料：  
+[unknown error (Sqlite code 14): Could not open database解决方案](https://blog.csdn.net/qq_31796651/article/details/70155155)  
+[Android 6.0以上动态申请文件读写权限](https://blog.csdn.net/qq_34330286/article/details/79660059)  
+[Android的单个或多个权限动态申请](https://blog.csdn.net/qq_33200967/article/details/81041390)  
+
+
+**解决方法**   
 
 
 
