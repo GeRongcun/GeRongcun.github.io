@@ -1,6 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git学习资料</title>
+    <url>/2020/3a12b356/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git是“Linux之父”Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。  </p>
+<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><strong>廖雪峰Git教程</strong><br><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a><br>廖雪峰老师写的教程简明易学，通俗易懂，非常适合入门。  </p>
+<h2 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h2><p>看<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰Git教程</a>，将示例代码全部实现一下。  </p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据分析软件Matlab入门</title>
+    <url>/2020/21b7e720/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>写本科毕业论文时，在李正晨学长的指导下，学习了MATLAB软件。学习的主要目的是处理excel数据和科学绘图。这里，推荐一些MATLAB学习资料。  </p>
+<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><strong>matlab官方帮助文档</strong><br><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/" target="_blank" rel="noopener">https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/</a><br>官方写得很全面</p>
+<p><strong>MATLAB数学工具软件实例简明教程</strong><br>南京航空航天大学王正盛老师《MATLAB数学工具软件实例简明教程》<br>百度网盘链接：<a href="https://pan.baidu.com/s/1MN5qupq9so2TdA_aiLimmw" target="_blank" rel="noopener">https://pan.baidu.com/s/1MN5qupq9so2TdA_aiLimmw</a><br>提取码：fk5z</p>
+<p><strong>MATLAB w3c教程</strong><br><a href="https://www.w3cschool.cn/matlab/" target="_blank" rel="noopener">https://www.w3cschool.cn/matlab/</a></p>
+<p><strong>MATLAB中文论坛</strong><br><a href="https://www.ilovematlab.cn/forum.php?mod=home" target="_blank" rel="noopener">https://www.ilovematlab.cn/forum.php?mod=home</a></p>
+<h2 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h2><p>如果是入门的话，建议将南航王正盛老师写的《MATLAB数学工具软件实例简明教程》从头到尾看一遍，大概划上7天时间。然后，就可以编程啦。<br>编程过程中，遇到不会的，参考MATLAB官方文档。</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【科研】引文分析软件HistCite入门</title>
+    <url>/2020/de379eff/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>科研</category>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科研背景知识介绍03科研软件</title>
+    <url>/2020/477ee937/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在科研领域，前人开发了多款科研软件供广大研究人员使用。学会一款方便的科研软件，可以简化科研流程，极大地提高科研效率。科研软件分为文献管理软件和引文分析软件，文献管理软件可以管理文献、阅读文献等，引文分析软件可以文献调研、理清发展脉络等。  </p>
+<h2 id="文献管理软件"><a href="#文献管理软件" class="headerlink" title="文献管理软件"></a>文献管理软件</h2><p>市面上上的文献管理软件有EndNote、Mendeley、Citavi、Refworks、Zotero、Papers、ReadCube、NoteExpress等。  </p>
+<h3 id="EndNote"><a href="#EndNote" class="headerlink" title="EndNote"></a>EndNote</h3><p>EndNote由科睿唯安开发，是一款主流文献管理软件。它能方便地扩展任何语言参考书目，允许创建任意大小的文献库。通过EndNote可进行文献批量下载和管理、写作论文时添加索引、分析某篇文献的引文索引等。EndNote X9集成了3776种国际期刊的参考文献格式有以及几百种写作模板，涵盖各个领域的期刊。  </p>
+<h3 id="Mendeley"><a href="#Mendeley" class="headerlink" title="Mendeley"></a>Mendeley</h3><p>Mendeley是一款免费的跨平台文献管理软件。与EndNote相比，Mendeley拥有pdf全文搜索功能。  </p>
+<h3 id="NoteExpress"><a href="#NoteExpress" class="headerlink" title="NoteExpress"></a>NoteExpress</h3><p>NoteExpress是一款优秀的国产文献管理软件，其核心功能涵盖“知识采集，管理，应用，挖掘”的知识管理的所有环节，是学术研究、知识管理、发表论文的必备工具。南大图书馆已开通NoteExpress软件使用权。  </p>
+<h2 id="引文分析软件"><a href="#引文分析软件" class="headerlink" title="引文分析软件"></a>引文分析软件</h2><p>市面上上的引文分析软件有HistCite、CiteSpace、VOSviewer等。  </p>
+<h3 id="HistCite"><a href="#HistCite" class="headerlink" title="HistCite"></a>HistCite</h3><p>HistCite是“History of Cite”的简称，意为引文历史，由“SCI之父”尤金·加菲尔德开发，目前已停止更新。利用HistCite可以快速绘出一个领域的发展脉络、快速定位某个领域的重要文献、查找领域的重要科学家和机构、总结某个领域的最新进展、找出无指定关键词的重要文献……  </p>
+<p>美中不足的是，HistCite的引文数据只能来源于Web of Science的文献记录，这意味着无法对中文文献进行分析。  </p>
+<h3 id="CiteSpace"><a href="#CiteSpace" class="headerlink" title="CiteSpace"></a>CiteSpace</h3><p>CiteSpace是“Citation Space”的简称，可译为“引文空间”。CiteSpace是一款着眼于分析科学分析中蕴含的潜在知识，并在科学计量学（Scientometric）、数据和信息可视化（Data and information visualization）背景下逐渐发展起来的一款引文可视化分析软件。利用CiteSpace可以快速把握研究热点、研究前沿和研究趋势。  </p>
+<h3 id="VOSviewer"><a href="#VOSviewer" class="headerlink" title="VOSviewer"></a>VOSviewer</h3><p>VOSviewer是一款文献可视化工具，可以生成多种基于文献计量关系的图谱，如作者或期刊的共引关系图，关键词共现关系图。与其它可视化软件相比，其主要特点为图形化展现的方式较为丰富，显示清晰。  </p>
+]]></content>
+      <categories>
+        <category>科研</category>
+        <category>科研方法</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科研背景知识介绍02期刊评价指标</title>
+    <url>/2020/ac3dde07/</url>
+    <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>本文主要介绍一些科研背景知识，包括JCR分区、中科院分区、IF、H指数、被引半衰期等评价指标的介绍。</p>
+<h2 id="期刊引证报告JCR"><a href="#期刊引证报告JCR" class="headerlink" title="期刊引证报告JCR"></a>期刊引证报告JCR</h2><p>期刊引证报告（Journal Citation Reports，简称JCR）是由科睿唯安发表的年度出版物。该公司透过旗下Web of Science平台的引文资料来为学术期刊评价，针对自然科学版本（JCR-SCI）和社会科学版本（JCR-SSCI）两部分，基于期刊被引用次数来计算出影响因子等多种评比指标，并作为期刊排名依据。JCR是对世界权威期刊进行系统客观评价的有效工具。  </p>
+<p>SCI分区是JCR的一部分，JCR还有SSCI分区等。  </p>
+<h2 id="中科院JCR期刊分区"><a href="#中科院JCR期刊分区" class="headerlink" title="中科院JCR期刊分区"></a>中科院JCR期刊分区</h2><p>中科院JCR期刊分区（又称分区表、分区数据）是中国科学院文献情报中心世界科学前沿分析中心的科学研究成果。分区表设计的思路始于2000年之初，旨在纠正当时国内科研界对不同学科期刊影响因子数值差异的忽视。  </p>
+<p>中科院分区表对汤森路透每年度发布的期刊引证报告中SCI期刊在学科内依据3年平均影响因子划分分区。它包括大类分区和小类分区：大类分区是将期刊按照自定义的13个学科所做的分区，大类分区包括Top期刊；而小类分区是将期刊按照JCR已有学科分类体系所做的分区。  </p>
+<p>中科院JCR分区表对所有期刊的学科划分作出如下规定：大类学科分为医学、生物、农林科学、环境科学与生态学、化学、工程技术、数学、物理、地学、地学天文、社会科学、管理科学及综合性期刊，共13个大类。小类学科即JCR学科分类体系Journal Ranking确定的176个学科领域。汤森路透JCR分区的Journal Ranking没有设置大类学科，只分为176个具体学科，也就是中科院分区表中所指的小类学科。  </p>
+<p>汤森路透JCR分区以当年的影响因子为基础，每个学科分类按照期刊的当年的影响因子高低，平均分为Q1、Q2、Q3和Q4四个区，“Q”表示Quartile in Category。汤森路透JCR分区中期刊的数量是均匀分为四个部分，而中科院分区表四个区呈金字塔型分布，各学科分类中影响因子位于学科中总刊数的前5%期刊划分为1区，前5<del>20%为2区，前20</del>50%为3区，后50%为4区，缺点是一区期刊数太少。  </p>
+<p>中科院分区表是基于JCR的数据，但对于JCR中期刊刊名更名或合并的情况进行数据规范处理。对于变更刊名的期刊，JCR会保留两个刊名，会计算两个影响因子。中科院分区表会将变更前期刊数据合并到变更后的期刊，且重新计算影响因子，只保留变更后刊名和ISSN。中科院期刊分区依据也是基于一个期刊的影响因子，但是采用的是三年平均影响因子，优点是减少了有些期刊影响因子逐年波动较大带来的不稳定因素。  </p>
+<h2 id="影响因子IF"><a href="#影响因子IF" class="headerlink" title="影响因子IF"></a>影响因子IF</h2><p>影响因子（Impact factor，简称IF）是加菲尔德在1972年提出的一个评价期刊的重要指标，是指某期刊前两年发表的论文在统计当年的被引用总次数（前两年总被引次数）除以该期刊在前两年内发表的论文总数（前两年总发文量），公式为：  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">IF&#x3D;某刊前2年发表论文在该年的被引用次数&#x2F;该刊前2年发表论文总数</span><br></pre></td></tr></table></figure>
+
+<p>IF是衡量学术期刊影响力的一个重要指标，其后为文献计量学的发展带来了一系列重大革新。该指标是一个相对数量指标，主要用以调整和修正期刊总被引频次过大。普赖斯曾提出，科学论文一般在其发表后一二年后，被人们接受，并达到被引用的峰值阶段。加菲尔德正式按照这个思想，定义了IF的计算公式。  </p>
+<p>影响因子现已成为国际上通用的期刊评价指标，它不仅是一种测度期刊有用性和显示度的指标，而且也是测度期刊的学术水平，乃至论文质量的重要指标。  </p>
+<h2 id="H指数"><a href="#H指数" class="headerlink" title="H指数"></a>H指数</h2><p>H指数（H-index)，最初是由美国加利福尼亚大学圣地亚哥分校的物理学家乔治·赫希(Jorge Hirsch)在2005年提出，其目的是量化科研人员作为独立个体的研究成果，标志着学术影响力。一名科研人员的H指数是指他至多有H篇论文分别被引用了至少H次。H指数能够比较准确地反映一个人的学术成就，一个人的H指数越高，则表明他的论文影响力越大。生物学家的H指数通常都偏高。例如，根据Google Scholar的统计，王中林院士的H指数为226，表明王中林院士的226篇论文分别被引用了至少226次。  </p>
+<h2 id="被引半衰期"><a href="#被引半衰期" class="headerlink" title="被引半衰期"></a>被引半衰期</h2><p>被引半衰期(Cited Half-life)指该期刊在统计当年被引用的全部次数中，较新一半是多长一段时间内发表的。被引半衰期可代表该期刊文章影响力衰退的速度，衡量文献老化速度快慢，帮助判断该期刊文献采集结构布局是否合理，是一个测量科研成果生命力的指标。  </p>
+<p>一般来说，最新发表的文献具有最强的生命力，然而随着时间的推移，其生命力会逐渐衰退，受到研究者的关注和引用也就会越来越少。那么，被引半衰期越长，说明该学科文献老化速度越慢，被利用时间越长，生命周期越长；反之，该学科文献老化速度越快，被利用时间越短，文献的生命周期越短。  </p>
+<h2 id="相关公司"><a href="#相关公司" class="headerlink" title="相关公司"></a>相关公司</h2><h3 id="科睿唯安"><a href="#科睿唯安" class="headerlink" title="科睿唯安"></a>科睿唯安</h3><p>科睿唯安（Clarivate Analytics，原汤森路透知识产权与科技事业部）致力于通过为全球客户提供值得信赖的数据与分析，洞悉科技前沿，加快创新步伐，帮助全球范围的用户更快地发现新想法、保护创新、并助力创新成果的商业化。  </p>
+<p>科睿唯安拥有超过60年的专业服务经验，其旗下拥有众多业界知名品牌，如Web of Science平台（包含科学引文索引，即SCI）、InCites平台、EndNote、Cortellis、德温特世界专利索引（Derwent World Patents Index，简称DWPI）、Thomson Innovation平台等。  </p>
+<h3 id="科学信息研究所ISI"><a href="#科学信息研究所ISI" class="headerlink" title="科学信息研究所ISI"></a>科学信息研究所ISI</h3><p>ISI于1960年由尤金·加菲尔德（Eugene Garfield）博士创立，并于1964年开发出了第一套引文索引——SCI，并于20世纪70年代陆续推出了社会科学引文索引（Social Sciences Citation Index，简称SSCI）、艺术与人文引文索引（Arts &amp; Humanities Citation Index，简称A&amp;HCI），以及包括期刊影响因子（Journal Impact Factor）的期刊引证报告（Journal Citation Reports，简称JCR）。这些引文索引集成在一起于1997年形成了网络版的Web of Science数据库。这是一项革新信息检索方式的创举。加菲尔德博士预见到了超链接网页的诞生以及谷歌搜索算法的出现（该算法中的专利技术引用了加菲尔德的研究成果）。  </p>
+<p>2018年2月7日，全球专业信息与分析服务的领导者科睿唯安宣布，在其科学与学术研究业务部门（Scientific＆Academic Research Group）重新组建声名卓著的科学信息研究所（Institute for Scientific Information ，简称ISI）。这一重新组建的机构将致力于创新科学计量分析方法并加强与学术界的合作。  </p>
+<p>“50多年来，ISI一直是科学计量学领域学术研究和产品研发的重要源泉。它是科睿唯安公司的最初前身，也是目前科睿唯安科学和学术研究业务的核心”，科睿唯安科学和学术研究业务部门首席执行官Annette Thomas说道。  </p>
+<p>作为科睿唯安的一部分，ISI将受益于从Web of Science获取的大量数据。基于33,000多种期刊中的1亿多条记录，Web of Science独特的文献资源满足了广大研究人员同时了解相关学科和学术研究精度和广度的要求。ISI也计划充分利用科睿唯安的旗舰知识产权数据库——Derwent World Patent Index（德温特世界专利索引，简称DWPI）中丰富的且经过人工改写的专利数据，推动学术界与产业界的深入合作。  </p>
+]]></content>
+      <categories>
+        <category>科研</category>
+        <category>科研方法</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科研背景知识介绍01期刊类别</title>
+    <url>/2020/7d7485b9/</url>
+    <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>本文主要介绍一些科研背景知识，包括SCI、SSCI、北大核心、CSCD、核心期刊等期刊类别的介绍。</p>
+<h2 id="科学引文索引SCI"><a href="#科学引文索引SCI" class="headerlink" title="科学引文索引SCI"></a>科学引文索引SCI</h2><p>科学引文索引（Science Citation Index，简称SCI）是由美国科学信息研究所（Institute for Scientific Information，简称ISI）于1960年上线投入使用的期刊文献检索工具，其出版形式包括印刷版期刊和光盘版及联机数据库。目前，科学引文索引由科睿唯安公司（Clarivate Analytics）运营。  </p>
+<p>SCI（科学引文索引）、EI（工程索引）、ISTP（科技会议录索引）是世界著名的三大科技文献检索系统，是国际公认的进行科学统计与科学评价的主要检索工具，其中以SCI最为重要。SCI是目前国际上被公认的最具权威的科技文献检索工具。SCI创办人是尤金·加菲尔德（Eugene Garfield），被称为“科学引文索引（SCI）之父”。  </p>
+<p>SCI论文是被SCI收录的期刊所刊登的论文。  </p>
+<p>SCI-E是SCI的扩展版，目前前者收录期刊3600 多种，后者收录期刊 6000 多种，被SCI 收录的期刊应该都被 SCI-E 收 , 但反之却不成立。  </p>
+<h2 id="社会科学引文索引SSCI"><a href="#社会科学引文索引SSCI" class="headerlink" title="社会科学引文索引SSCI"></a>社会科学引文索引SSCI</h2><p>社会科学引文索引（Social Sciences Citation Index，简称SSCI）也是由美国科学信息研究所创建，是可以用来对不同国家和地区的社会科学论文的数量进行统计分析的大型检索工具。  </p>
+<h2 id="CSSCI、C刊、南大核心"><a href="#CSSCI、C刊、南大核心" class="headerlink" title="CSSCI、C刊、南大核心"></a>CSSCI、C刊、南大核心</h2><p>中文社会科学引文索引（Chinese Social Sciences Citation Index，简称CSSCI）是由南京大学投资建设、南京大学中国社会科学研究评价中心开发研制的人文社会科学引文数据库，用来检索中文人文社会科学领域的论文收录和被引用情况。CSSCI是一项凝聚了国内学术界、期刊界、管理部门集体智慧的知识创新成果，南京大学拥有CSSCI\CBKCI数据库的知识产权和相关领域的商标所有权。  </p>
+<p>南大核心是南京大学“中文社会科学引文索引CSSCI来源期刊”的简称，“C刊”专指CSSCI来源期刊。南大核心是核心期刊目录的一种，目前是各高校认可度最高的核心目录，受到了学术界的广泛认同，但是它只是对人文社科领域期刊的一种评价指标，而对理工农医类期刊并无评价效力。  </p>
+<h2 id="北大核心"><a href="#北大核心" class="headerlink" title="北大核心"></a>北大核心</h2><p>《中文核心期刊要目总览》是由北京大学图书馆及北京十几所高校图书馆众多期刊工作者及相关单位专家参加的研究项目，项目研究成果以印刷型图书形式出版，此前已由北京大学出版社出了7版：第一版（1992年）、第二版（1996年）、第三版（2000年版）、第四版（2004年版）、第五版（2008年版）、第六版（2011年版）和第七版（2014年版）。最新的第八版（2017年版）于2018年12月由北京大学出版社出版。  </p>
+<p>北大核心指《中文核心期刊要目总览》收录期刊。从影响力来讲，北大核心是除南大核心、中国科学引文数据库以外学术影响力最权威的一种。  </p>
+<h2 id="中国科学引文数据库CSCD"><a href="#中国科学引文数据库CSCD" class="headerlink" title="中国科学引文数据库CSCD"></a>中国科学引文数据库CSCD</h2><p>中国科学引文数据库（Chinese Science Citation Database，简称CSCD）创建于1989年，收录我国数学、物理、化学、天文学、地学、生物学、农林科学、医药卫生、工程技术、环境科学和管理科学等领域出版的中英文科技核心期刊和优秀期刊千余种。  </p>
+<p>中国科学引文数据库具有建库历史最为悠久、专业性强、数据准确规范、检索方式多样、完整、方便等特点，自提供使用以来，深受用户好评，被誉为“中国的SCI”。  </p>
+<p>中国科学引文数据库是我国第一个引文数据库，曾获中国科学院科技进步二等奖。2007年中国科学引文数据库与美国Thomson-Reuters Scientific（科睿唯安公司前身）合作，中国科学引文数据库以ISI Web of Knowledge为平台，实现与Web of Science的跨库检索，中国科学引文数据库是ISI Web of Knowledge平台上第一个非英文语种的数据库。  </p>
+<h2 id="核心期刊"><a href="#核心期刊" class="headerlink" title="核心期刊"></a>核心期刊</h2><p>目前，在国内一共有7大核心期刊遴选体系：  </p>
+<p>1)    北京大学图书馆“中文核心期刊”；<br>2)    南京大学“中文社会科学引文索引（CSSCI）来源期刊”；<br>3)    中国科学技术信息研究所“ 中国科技论文统计源期刊”（又称“中国科技核心期刊”）；<br>4)    中国社会科学院文献信息中心“中国人文社会科学核心期刊”；<br>5)    中国科学院文献情报中心“中国科学引文数据库（CSCD）来源期刊”；<br>6)    中国人文社会科学学报学会“中国人文社科学报核心期刊”；<br>7)    万方数据股份有限公司的“中国核心期刊遴选数据库”。  </p>
+<p>如果期刊被同时被两种核心期刊遴选体系认定为核心，那么该期刊就是双核心期刊，入选北大中文核心期刊和南大CSSCI核心期刊为通常意义的双核心期刊。  </p>
+<p><strong>参考资料</strong><br><a href="http://mp.weixin.qq.com/s?__biz=MzU2NjM3Mzk0Nw==&mid=2247489870&idx=4&sn=f8a7539cf3fbfabd4815cd254ac9de4e&chksm=fcac221acbdbab0cef36e90741a4fc6d4ec01a8aaf409a4fd148bef16b8622f1cdcb9c03a2ac&mpshare=1&scene=23&srcid=0213ShoAbOIwLRfWqFJMVxVS&sharer_sharetime=1581589086709&sharer_shareid=61a4efd63d1bc657755de9ae8ac46c74#rd" target="_blank" rel="noopener">【学术志】期刊分类有哪些？你分的清核心期刊、国家期刊、A类、B类等等吗？这篇文章给你最全的科普！</a>  </p>
+]]></content>
+      <categories>
+        <category>科研</category>
+        <category>科研方法</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电脑软件推荐</title>
+    <url>/2020/e419ec53/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>推荐我经常使用的软件  </p>
+<h2 id="PotPlayer播放器"><a href="#PotPlayer播放器" class="headerlink" title="PotPlayer播放器"></a>PotPlayer播放器</h2><p><strong>推荐理由：</strong><br>用户界面美观，颜值最高的播放器。扁平化设计，简约大气。<br>不流氓，没广告。<br>强制关联文件打开方式、自动开机启动、推送广告、捆绑插件、运行卡顿<br>功能强大，启动速度快，解码能力强，耗内存低。<br>倍速播放，从0.2倍，每隔0.1倍，递增至11.0倍。倍速播放时字幕不会乱，能跟音画同步。  </p>
+<p><strong>参考文献：</strong><br><a href="https://www.jianshu.com/p/a598c0b153c5" target="_blank" rel="noopener">PotPlayer快捷键大全（建议收藏）</a><br><a href="https://zhuanlan.zhihu.com/p/35757176" target="_blank" rel="noopener">PotPlayer：最强播放器，无边框+4款简约皮肤 - 极简君的笔记的文章 - 知乎</a><br><a href="https://www.zhihu.com/question/20710497/answer/214128858" target="_blank" rel="noopener">PotPlayer 到底好在哪里？ - 青春我做主的回答 - 知乎</a><br><a href="http://potplayer.daum.net/" target="_blank" rel="noopener">potplayer官网</a>  </p>
+<h2 id="Ditto剪贴板增强工具"><a href="#Ditto剪贴板增强工具" class="headerlink" title="Ditto剪贴板增强工具"></a>Ditto剪贴板增强工具</h2><p><strong>推荐理由：</strong><br>复制多条关键信息，最后一次性粘贴，非常高效！<br>在看一篇文献时，你可能会「复制粘贴」、「复制粘贴」、「复制粘贴」……<br>不断地切换窗口（切换窗口快捷键：Alt+Tab），将重要信息，粘贴到指定地方。<br>如果你拥有了Ditto，那么问题就变简单了。<br>你只需要「复制」、「复制」、「复制」……最后，再「粘贴」到指定位置就OK了。<br>Ditto快捷键：ctrl+<code>（tab键正上方的键“</code>”）  </p>
+<p><strong>参考文献：</strong><br>citto官网<br><a href="https://ditto-cp.sourceforge.io/" target="_blank" rel="noopener">https://ditto-cp.sourceforge.io/</a><br>这个高效的 Windows 剪贴板工具，我迫不及待推荐给你 - 李大颖的文章 - 知乎<br><a href="https://zhuanlan.zhihu.com/p/37079819" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/37079819</a></p>
+<h2 id="天若OCR文字识别软件"><a href="#天若OCR文字识别软件" class="headerlink" title="天若OCR文字识别软件"></a>天若OCR文字识别软件</h2><p><strong>推荐理由：</strong><br>轻量级<br>识别速度快<br>识别准确率高<br>翻译功能，翻译识别的文字  </p>
+<p><strong>PS：</strong><br>如果文字是倾斜的，那么识别准确率会比较低。这时，需要旋转图片至文字水平，再用天若OCR截屏识别。<br>天若OCR只能截屏识别，不能识别文件，比如识别pdf文件。如果想要识别pdf文件，可以下载ABBYY破解版软件，</p>
+<p><strong>参考文献：</strong><br><a href="http://www.carrotchou.blog/17857.html" target="_blank" rel="noopener">天若OCR文字识别 v5.0.0 – 胡萝卜周</a><br><a href="http://www.carrotchou.blog/13979.html" target="_blank" rel="noopener">OCR文字识别软件 ABBYY FineReader 14 v14.0.107.212 企业便携破解版– 胡萝卜周</a>  </p>
+<h2 id="listary和everything快速搜索文件"><a href="#listary和everything快速搜索文件" class="headerlink" title="listary和everything快速搜索文件"></a>listary和everything快速搜索文件</h2><p><strong>推荐理由：</strong><br>你是否遇到过下列情况：<br>文件路径太深，每次查看文件，都要鼠标点点点。<br>忘记文件放在哪里了，只能记得文件名，只能打开一个个文件，慢慢找。<br>如果你遇到上述问题，并且不知所措；那么，listary和everything值得你拥有。  </p>
+<p>listary和everything快速搜索文件，只要一个文件名，你就可以快速打开文件。不用点点点，更不用记住文件的位置。使用技巧就是规范化文件名。这样可以方便记忆文件名。  </p>
+<p>everything需要打开一下软件，然后直接搜索文件名，调取速度非常快，只要电脑不是行将就木，基本调出速度都蛮快的。<br>listary的调取比较智能，只要键盘点击Ctrl连续两下/或者鼠标左键双击两下，就能调出listary，搜索速度也不错。个人比较倾向于用listary，调取快。  </p>
+<p><strong>参考文献：</strong><br><a href="https://www.listary.com/" target="_blank" rel="noopener">listary官网</a><br><a href="https://www.voidtools.com/zh-cn/" target="_blank" rel="noopener">everything官网</a><br><a href="https://zhuanlan.zhihu.com/p/51381894" target="_blank" rel="noopener">本地文件搜索神器，用everything还是listary？ - 猫猫爱软件的文章 - 知乎</a>  </p>
+<h2 id="资源获取途径"><a href="#资源获取途径" class="headerlink" title="资源获取途径"></a>资源获取途径</h2><p>potplayer、citto、天若OCR、everything、listary软件安装包<br>百度网盘链接：<a href="https://pan.baidu.com/s/1pva57um7BkZRi5x-U4utzA" target="_blank" rel="noopener">https://pan.baidu.com/s/1pva57um7BkZRi5x-U4utzA</a><br>提取码：lxn6  </p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【科研】EndNote文献管理软件</title>
+    <url>/2020/b0d29aca/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>工欲善其事，必先利其器。<br>今天分享一款科研利器——EndNote文献管理软件。软件安装包、用户手册、操作视频……应有尽有。文末附有百度网盘下载。  </p>
+<h2 id="科研小白常见问题"><a href="#科研小白常见问题" class="headerlink" title="科研小白常见问题"></a>科研小白常见问题</h2><p>搞科研的你是否遇到到下列问题：  </p>
+<blockquote>
+<p>写论文时，你是不是还在手动添加参考文献？如何快速添加参考文献？<br>写论文时，在某个地方新插入一篇参考文献。后面所有的参考文献序号都要调整。<br>换投期刊，需要批量修改参考文献格式。<br>过几天再来看同一篇文献，完全不记得讲了什么，又得重新看。  </p>
+</blockquote>
+<p>如果你遇到了上列情况，并且感到无所适从，那么你需要一款文献管理软件。<br>EndNote是文献管理软件中的佼佼者。EndNote，你值得拥有。  </p>
+<h2 id="EndNote介绍"><a href="#EndNote介绍" class="headerlink" title="EndNote介绍"></a>EndNote介绍</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>EndNote是一款主流文献管理软件，有数以百万计的研究人员、学生和图书管理员使用，它能方便地扩展任何语言参考书目，允许你创建任意大小的文献库。通过EndNote可进行文献批量下载和管理、写作论文时添加索引、分析某篇文献的引文索引、分析某领域或者学术课题的经典文献地位等。  </p>
+<p>EndNote X9集成了目前国际期刊的参考文献格式有3776 种，写作模板几百种，涵盖各个领域的杂志。您可以方便地使用这些格式和模板，如果您准备写SCI稿件，更有必要采用此软件。  </p>
+<h3 id="软件特点"><a href="#软件特点" class="headerlink" title="软件特点"></a>软件特点</h3><p>EndNote X9 目前在有全球数百万研究人员、图书管理员和学生在使用这个书目管理和写作软件。研究人员通过EndNote可以在电脑和网络账号之间自由添加或者移动文件附件，查看和批注PDF 文件，并自动更新参考文献。<br><a href="http://www.carrotchou.blog/16669.html" target="_blank" rel="noopener">http://www.carrotchou.blog/16669.html</a>  </p>
+<h3 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h3><p>在线搜索文献：直接从网络搜索相关文献并导入到Endnote的文献库内。<br>建立文献库和图片库：收藏，管理和搜索个人文献和图片、表格。<br>定制文稿：直接在Word中格式化引文和图形，利用文稿模板直接书写合乎杂志社要求的文章。<br>引文编排：可以自动帮助我们编辑参考文献的格式。<br>文献检索工具：可以在软件界面搜索多个数据库，而无需逐一打开数据库网站。<br>文摘及全文的管理工具：可以帮助我们高效管理大量的文献信息。<br>引文编排工具：可以自动帮助我们编辑参考文献的格式。<br>文献共享与协作工具。  </p>
+<h3 id="其他文献管理软件"><a href="#其他文献管理软件" class="headerlink" title="其他文献管理软件"></a>其他文献管理软件</h3><p>NoteExpress<br>Mendeley<br>Citavi<br>Zotero<br>CNKI E-Study<br>……<br>面对琳琅满目的文献管理软件，可以都尝试一下，然后选择自己中意的。</p>
+<h2 id="EndNote学习资源"><a href="#EndNote学习资源" class="headerlink" title="EndNote学习资源"></a>EndNote学习资源</h2><p><strong>软件安装包</strong><br>Endnote X9 最新正版授权免费下载及安装教程 [Win+Mac]<br>PS：“X”是罗马数字10，“X9”是19的意思。“iPhone X”中的“X”也是10的意思。<br><strong>使用手册</strong><br>EndNote×8_UserGuide繁体中文.pdf<br>EndNote X4手册(简体).pdf<br><strong>操作视频</strong><br>【钱增强】陕西师范大学教授 “EndNote X8简明视频教程”视频。<br>【罗昭锋】中国科学技术大学教授 开设中国大学MOOC课程《文献管理与信息分析》。本资源的[Endnote X9快速入门]是这门课程中第七章内容。</p>
+<h2 id="扩展资料"><a href="#扩展资料" class="headerlink" title="扩展资料"></a>扩展资料</h2><p><a href="https://zhuanlan.zhihu.com/p/28214449" target="_blank" rel="noopener">知乎文章【奇睿天软】Citavi、Endnote、Mendeley 功能大比拼！到底哪一款才是众望所归的终极文献管理软件？</a><br><a href="https://mp.weixin.qq.com/s?src=11&timestamp=1553561857&ver=1507&signature=dSXSUPG0In0P3UUSbH*naGqmI7*LGr6dxicL6nj-zBX2S6f9AptduCiZYCzf3uaRgLOjx1aR30wbdWQRXKfc60tlaYVMZLWXJQGdD3fYMLq8kh9Ug1TiJTILkER-t1mL&new=1" target="_blank" rel="noopener">微信文章【浙大学报英文版】Endnote的使用方法（史上最详细）</a><br><a href="http://www.carrotchou.blog/" target="_blank" rel="noopener"><strong>胡萝卜周博客</strong></a><br>非常不错的软件网站</p>
+<h2 id="资源获取途径"><a href="#资源获取途径" class="headerlink" title="资源获取途径"></a>资源获取途径</h2><p>EndNote学习资源（软件、用户手册、操作视频）<br>百度网盘链接：<a href="https://pan.baidu.com/s/1Txfm8v3V4uemIcA3ylO2CA" target="_blank" rel="noopener">https://pan.baidu.com/s/1Txfm8v3V4uemIcA3ylO2CA</a><br>提取码：zij3   </p>
+]]></content>
+      <categories>
+        <category>科研</category>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+        <tag>EndNote</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【科研第一课】文献管理与信息分析</title>
+    <url>/2020/37cbe283/</url>
+    <content><![CDATA[<h2 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h2><p>今天给大家分享的是中科大罗昭锋老师《文献管理与信息分析》慕课课程，文末附有资源获取方式。  </p>
+<h2 id="罗昭锋简介"><a href="#罗昭锋简介" class="headerlink" title="罗昭锋简介"></a>罗昭锋简介</h2><p>2005年获中国科学技术大学硕士学位<br>中科大生命科学实验中心高级实验师<br>中科大图书馆高级顾问<br>致力于帮助科研工作者提高工作效率  </p>
+<h2 id="课程概况"><a href="#课程概况" class="headerlink" title="课程概况"></a>课程概况</h2><p>《文献管理与信息分析》课程内容包括文献信息检索、文献信息管理、文献信息分析和分享协作创新四部分。搞定科研，从这里开始！  </p>
+<p>中科大最火爆的公选课<br>校内每年选课人数超过500人<br>网易云课堂五星评价课程<br>累计学员20多万<br>超过40所高校认可本课程的学分<br>2017年入选国家精品在线课程  </p>
+<p>课程主页：<a href="https://www.icourse163.org/course/USTC-9002" target="_blank" rel="noopener">https://www.icourse163.org/course/USTC-9002</a>  </p>
+<h2 id="课程内容"><a href="#课程内容" class="headerlink" title="课程内容"></a>课程内容</h2><p>信息获取（文献资源、数据库、搜索引擎、RSS等)<br>知识管理（为知笔记、evernote、有道云笔记）<br>文献管理（endnote等主流文献管理软件）<br>文献信息分析（histcite等，帮助你快速找出一个领域最核心的文献）<br>思维导图（提升思考问题和解决问题的能力，提升效率）<br>专利知识（科研的重要信息源，产业化的核心）<br>论文写作等  </p>
+<h2 id="资源获取"><a href="#资源获取" class="headerlink" title="资源获取"></a>资源获取</h2><p>罗昭锋《文献管理与信息分析》(第九次开课)课程完整视频资源。开课时间为2018年09月20日 ~ 2019年01月03日。<br>百度网盘链接：<a href="https://pan.baidu.com/s/1BOOhwh503yy43d-MU8TPXA" target="_blank" rel="noopener">https://pan.baidu.com/s/1BOOhwh503yy43d-MU8TPXA</a><br>提取码：0n23<br><strong>PS:</strong> 没有课件，请见谅！</p>
+<p><strong>参考文献</strong><br><a href="http://blog.sciencenet.cn/blog-304685-722901.html" target="_blank" rel="noopener">http://blog.sciencenet.cn/blog-304685-722901.html</a><br><a href="https://www.icourse163.org/course/USTC-9002" target="_blank" rel="noopener">https://www.icourse163.org/course/USTC-9002</a><br><a href="https://baike.baidu.com/item/%E7%BD%97%E6%98%AD%E9%94%8B" target="_blank" rel="noopener">https://baike.baidu.com/item/%E7%BD%97%E6%98%AD%E9%94%8B</a><br><a href="https://biox.ustc.edu.cn/2011/0106/c685a10916/page.htm" target="_blank" rel="noopener">https://biox.ustc.edu.cn/2011/0106/c685a10916/page.htm</a>  </p>
+<h2 id="扩展资料"><a href="#扩展资料" class="headerlink" title="扩展资料"></a>扩展资料</h2><p>罗昭锋科学网博客：<a href="http://blog.sciencenet.cn/u/smilesun" target="_blank" rel="noopener">http://blog.sciencenet.cn/u/smilesun</a><br>课程讲师团队中有张玉新 知名博客善用佳软的博主 （讲授文件管理）<br><a href="http://blog.sciencenet.cn/blog-304685-722901.html" target="_blank" rel="noopener">http://blog.sciencenet.cn/blog-304685-722901.html</a>  </p>
+]]></content>
+      <categories>
+        <category>科研</category>
+        <category>科研方法</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>编程学习资料整理</title>
     <url>/2020/98746a1e/</url>
     <content><![CDATA[<h2 id="大佬"><a href="#大佬" class="headerlink" title="大佬"></a>大佬</h2><p><a href="http://www.ruanyifeng.com/" target="_blank" rel="noopener"><strong>阮一峰的个人网站</strong></a><br>阮一峰的1500+博客<br><a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener"><strong>廖雪峰的官方网站</strong></a><br>Java教程、Python教程、JavaScript教程、SQL教程、Git教程  </p>
@@ -10,9 +213,28 @@
 ]]></content>
   </entry>
   <entry>
-    <title>ArcGIS安装包&amp;教程</title>
+    <title>ArcGIS入门教程&amp;安装包&amp;GIS数据&amp;使用工具</title>
     <url>/2020/ceddd626/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>地图是地理的第二语言，而ArcGIS是制作地图的重要工具。掌握ArcGIS是必要的。一方面，掌握ArcGIS是GIS专业同学的必备技能；另一方面，对于其他专业同学，掌握ArcGIS后，可以很容易地绘制研究区地理位置图、人口密度分布图等专题地图。<br>本文分享GIS方面的经典书籍，介绍地理信息科学的理论知识；分享ArcGIS的书籍教程和视频教程，入门ArcGIS；分享ArcGIS安装包，配置软件环境；分享GIS数据和实用工具，方便制作地图。  </p>
+<h2 id="GIS理论知识"><a href="#GIS理论知识" class="headerlink" title="GIS理论知识"></a>GIS理论知识</h2><p>黄杏元、马劲松编著的 <strong>《地理信息系统概论（修订版）》</strong><br>张康聪编著、陈健飞翻译的 <strong>《地理信息系统导论（原著第八版）》</strong>    </p>
+<h2 id="ArcGIS教程"><a href="#ArcGIS教程" class="headerlink" title="ArcGIS教程"></a>ArcGIS教程</h2><p>ArcGIS教程包括书籍教程和视频教程。<br>书籍教程方面，推荐南师大汤国安老师的两本书<br><strong>《ArcGIS地理信息系统空间分析实验教程（第二版）》</strong><br>和<br><strong>《地理信息系统基础实验操作100例》</strong>，均有pdf文档和实验练习数据，可以一边看，一边跟着操作。<br>推荐先看《ArcGIS地理信息系统空间分析实验教程（第二版）》，这本书比较系统，方便我们对ArcGIS有个整体的把握。我学习ArcGIS，就是跟着这本书学的，大概花了两个星期，墙裂推荐。<br>《地理信息系统基础实验操作l00例》也不错，通过100个经典的基础实验案例，详细介绍ArcGIS软件操作的具体步骤与方法。  </p>
+<p>视频比文字更加有趣、直观、生动，所以，在B站找了两部播放量较大的视频教程，分别是《ArcGIS新手入门基础视频教程》和《ArcGIS高手进阶视频教程》。因为没有仔细看过，所以，不敢评价质量优劣。这里，列出两部视频教程，供大家参考。  </p>
+<h2 id="ArcGIS安装包"><a href="#ArcGIS安装包" class="headerlink" title="ArcGIS安装包"></a>ArcGIS安装包</h2><p>提供ArcGIS 10.2的安装包、汉化包、安装教程。<br><strong>PS:</strong> 网盘文件夹中的ArcGIS 10.5安装包已失效，请下载ArcGIS 10.2安装包。</p>
+<h2 id="GIS数据-amp-实用工具"><a href="#GIS数据-amp-实用工具" class="headerlink" title="GIS数据&amp;实用工具"></a>GIS数据&amp;实用工具</h2><h3 id="国家级400万基础地理数据"><a href="#国家级400万基础地理数据" class="headerlink" title="国家级400万基础地理数据"></a>国家级400万基础地理数据</h3><p>包括国界、省界、市界、地级市点位等数据<br>利用本数据集制作的中国区划图<br><img src="/2020/ceddd626/08%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%88%92%E5%9B%BE.png" alt="中国区划图">  </p>
+<h3 id="全球GIS数据"><a href="#全球GIS数据" class="headerlink" title="全球GIS数据"></a>全球GIS数据</h3><p>本资源包括以下内容：<br>全球DEM数据（地形数据）及国界、省界、海岸线等矢量数据  </p>
+<p>利用本资源的数据绘制的全球地形图<br><img src="/2020/ceddd626/09%E5%85%A8%E7%90%83%E5%9C%B0%E5%BD%A2%E5%9B%BE.png" alt="全球地形图"><br>利用本资源的数据绘制的全球区划图<br><img src="/2020/ceddd626/10%E5%85%A8%E7%90%83%E5%8C%BA%E5%88%92%E5%9B%BE.jpg" alt="全球区划图">  </p>
+<h3 id="Google-Earth卫星影像下载工具"><a href="#Google-Earth卫星影像下载工具" class="headerlink" title="Google Earth卫星影像下载工具"></a>Google Earth卫星影像下载工具</h3><p><strong>91位图</strong>和<strong>GoogleMapsDownloader</strong><br>GoogleMapsDownloader是免费软件，缺点是只能下载到13级以及在海洋上有google水印。<br>如果想要下载分辨率更高的卫星影像，则需要收费。<br>91位图是收费软件，将指定内容分享到5个QQ群里，可以享受免费版。本资源提供了获取免费版的方法。  </p>
+<h3 id="ArcGIS加载高德、OSM和谷歌等地图"><a href="#ArcGIS加载高德、OSM和谷歌等地图" class="headerlink" title="ArcGIS加载高德、OSM和谷歌等地图"></a>ArcGIS加载高德、OSM和谷歌等地图</h3><p>软件用途：可以在ArcGIS中加载高德地图、谷歌地图<br><img src="/2020/ceddd626/11%E5%8A%A0%E8%BD%BD%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE.png" alt="加载高德地图">  </p>
+<h2 id="资源获取途径"><a href="#资源获取途径" class="headerlink" title="资源获取途径"></a>资源获取途径</h2><p>ArcGIS入门教程&amp;安装包&amp;GIS数据&amp;使用工具<br>百度网盘链接：<br><a href="https://pan.baidu.com/s/1YMLUv_maGs0KNbCGo5WsJg" target="_blank" rel="noopener">https://pan.baidu.com/s/1YMLUv_maGs0KNbCGo5WsJg</a><br>提取码：kdlg  </p>
+]]></content>
+      <categories>
+        <category>科研</category>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>ArcGIS</tag>
+        <tag>地理</tag>
+      </tags>
   </entry>
   <entry>
     <title>无偿献血科普知识</title>
@@ -98,8 +320,8 @@
         <category>其他</category>
       </categories>
       <tags>
-        <tag>南京大学</tag>
         <tag>地理</tag>
+        <tag>南京大学</tag>
       </tags>
   </entry>
   <entry>
