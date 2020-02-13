@@ -28,5 +28,5 @@ date: 2020-01-19 23:09:08
 <!-- 扩列宣言: 渣渣一枚，欢迎来撩 -->
 
 ## 网站说明
-本博客用Github+Hexo搭建，教程https://gerongcun.github.io/2020/42500/。    
+本博客用Github+Hexo搭建，教程：[https://gerongcun.github.io/2020/42500/](https://gerongcun.github.io/2020/42500/)。    
 评论功能使用的是Disqus评论系统，需要“科学上网”，才能使用。所以，如果想要评论，请“科学上网”。
