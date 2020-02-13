@@ -1823,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d02dff;
+  background: #9637ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3158,27 +3158,22 @@ code {
 .pagination .page-number.current {
   border-radius: 0%;
   background-color: #000;
-!important
 }
-!important
+.pagination .page-number:hover,
+.pagination .page-number:active {
+  color: #fff;
+  border: none;
+  border-radius: 0%;
+  background-color: #000;
+}
 .pagination .prev,
 .pagination .next,
 .pagination .page-number {
   margin-bottom: 10px;
   border: none;
-  color: #fff;
-  background-color: #000;
-!important
+  color: #000;
+  background-color: #fff;
 }
-!important
-.page-number:hover,
-.page-number:active {
-  color: #fff;
-  border-radius: 0%;
-  background-color: rgba(0,0,0,0.75);
-!important
-}
-!important
 img {
   mrgin: 0px;
 }
