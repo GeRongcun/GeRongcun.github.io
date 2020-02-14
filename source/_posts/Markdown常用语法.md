@@ -17,7 +17,7 @@ date: 2020-01-19 23:49:07
 [https://www.zybuluo.com/mdeditor](https://www.zybuluo.com/mdeditor) 
 我用的Markdown编辑器是VS Code。Sublime也很好用。  
 [Markdown中文文档](https://markdown-zh.readthedocs.io/en/latest/)  
-
+<!-- more -->
 ---
 **以下是常用语法：**
 

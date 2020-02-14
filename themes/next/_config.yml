@@ -158,13 +158,13 @@ links_layout: block
 
 # Table Of Contents in the Sidebar
 toc:  #设置目录
-  enable: true
+  enable: true #显示目录
 
   # Automatically add list number to toc.
   number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true #自动换行
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
@@ -255,7 +255,7 @@ wechat_subscriber:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -581,7 +581,8 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+# 百度收录 自动添加链接
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -829,3 +830,6 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+# 百度收录
+baidu_site_verification: tgcuQUejH6
