@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>电子书获取途径</title>
+    <url>/2020/f39becc7/</url>
+    <content><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>推荐中文、英文电子书获取途径，轻松下载中英文电子书。</p>
+<a id="more"></a>
+
+<h2 id="英文电子书-书贼网BookSC"><a href="#英文电子书-书贼网BookSC" class="headerlink" title="英文电子书 书贼网BookSC"></a>英文电子书 书贼网BookSC</h2><p>网址：<a href="http://zh.booksc.org/" target="_blank" rel="noopener">http://zh.booksc.org/</a>或<a href="https://booksc.org/" target="_blank" rel="noopener">https://booksc.org/</a>    </p>
+<p>很多科研人员都知道SCI-HUB，但更加强大的BookSC却鲜为人知。<br>1、收录文献数量更多，BookSC目前收录7300万&gt;Sci-Hub的7000万。<br>2、BookSC不仅可以下载文献，还可以下载英文书籍，甚至还有俄语书籍文献。  </p>
+<h2 id="中文电子书1-本本电子书"><a href="#中文电子书1-本本电子书" class="headerlink" title="中文电子书1 本本电子书"></a>中文电子书1 本本电子书</h2><p>联系方式：<br>QQ：3273930580<br>微信：benbenbk<br>价格：200页5元<br>买书流程：<br>1.在读秀网（<a href="http://book.duxiu.com）搜索这本书，然后将这本书的链接通过QQ发给他，方便他确定书名、作者、年份、ISBN号等信息。" target="_blank" rel="noopener">http://book.duxiu.com）搜索这本书，然后将这本书的链接通过QQ发给他，方便他确定书名、作者、年份、ISBN号等信息。</a><br>2.他确定价格之后，通过微信把钱转给他。<br>3.付钱之后，他会把pdf文件通过QQ传给你。  </p>
+<h2 id="中文电子书2-FoundPDF"><a href="#中文电子书2-FoundPDF" class="headerlink" title="中文电子书2 FoundPDF"></a>中文电子书2 FoundPDF</h2><p>QQ 1753409122<br>微信 ibookpdf<br>网站：<a href="https://www.foundpdf.com/" target="_blank" rel="noopener">https://www.foundpdf.com/</a><br><strong>电子书的质量没有“本本电子书”好。</strong><br>买书流程：<br>1.在读秀网（<a href="http://book.duxiu.com）搜索这本书，然后将这本书的链接通过QQ发给他，方便他确定书名、作者、年份、ISBN号等信息。" target="_blank" rel="noopener">http://book.duxiu.com）搜索这本书，然后将这本书的链接通过QQ发给他，方便他确定书名、作者、年份、ISBN号等信息。</a><br>2.他确定价格之后，向他询问付款方式，然后将钱转给他。<br>3.付钱之后，他会把pdf文件通过QQ传给你。  </p>
+]]></content>
+      <categories>
+        <category>科研</category>
+        <category>其他</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Git学习资料</title>
     <url>/2020/3a12b356/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git是“Linux之父”Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。  </p>
@@ -690,7 +706,7 @@
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前段时间，在浏览<a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a>时，知道可以用Github+Hexo搭建个人博客。这几天，参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的教程</a>学习了Git，参考梧雨北辰的教程<a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a>和其他大佬的教程，尝试搭建个人博客。期间，遇到不少问题，在这里贴出来，避免以后再次踩坑。</p>
 <p>个人博客，看效果进入：<a href="https://GeRongcun.github.io">https://GeRongcun.github.io</a><br>Github仓库：<a href="https://github.com/GeRongcun/GeRongcun.github.io" target="_blank" rel="noopener">https://github.com/GeRongcun/GeRongcun.github.io</a>  </p>
 <a id="more"></a>
-<p>推荐学习资料：<br><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a><br><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的Git教程</a><br><a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a>  </p>
+<p>推荐学习资料：<br><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a><br><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的Git教程</a><br><a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a><br><a href="https://www.cnblogs.com/chengxs/p/7402174.html" target="_blank" rel="noopener"><strong>github+hexo搭建自己的博客网站（一）基础入门</strong></a><br>系列教程，介绍得很全。  </p>
 <hr>
 <h1 id="安装Hexo失败"><a href="#安装Hexo失败" class="headerlink" title="安装Hexo失败"></a>安装Hexo失败</h1><p><img src="/2020/42500/01%E9%94%99%E8%AF%AF.png" alt="安装hexo失败"><br><strong>错误提示</strong>  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">FATAL can not read an implicit mapping pair; a colon is missed at line 103, column 16:</span><br><span class="line">    branch:master</span><br><span class="line">                ^</span><br><span class="line">YAMLException: can not read an implicit mapping pair; a colon is missed at line 103, column 16:</span><br><span class="line">    branch:master</span><br></pre></td></tr></table></figure>
