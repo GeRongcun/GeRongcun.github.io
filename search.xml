@@ -17,7 +17,7 @@
   <entry>
     <title>电子书获取途径</title>
     <url>/2020/f39becc7/</url>
-    <content><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>推荐中文、英文电子书获取途径，轻松下载中英文电子书。</p>
+    <content><![CDATA[<p><strong>摘要：</strong> 推荐中文、英文电子书获取途径，轻松下载中英文电子书。</p>
 <a id="more"></a>
 
 <h2 id="英文电子书-书贼网BookSC"><a href="#英文电子书-书贼网BookSC" class="headerlink" title="英文电子书 书贼网BookSC"></a>英文电子书 书贼网BookSC</h2><p>网址：<a href="http://zh.booksc.org/" target="_blank" rel="noopener">http://zh.booksc.org/</a>或<a href="https://booksc.org/" target="_blank" rel="noopener">https://booksc.org/</a>    </p>
@@ -33,7 +33,7 @@
   <entry>
     <title>Git学习资料</title>
     <url>/2020/3a12b356/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git是“Linux之父”Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git是“Linux之父”Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。  </p>
 <a id="more"></a>
 <h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><strong>廖雪峰Git教程</strong><br><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a><br>廖雪峰老师写的教程简明易学，通俗易懂，非常适合入门。  </p>
 <h2 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h2><p>看<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰Git教程</a>，将示例代码全部实现一下。  </p>
@@ -49,7 +49,7 @@
   <entry>
     <title>数据分析软件Matlab入门</title>
     <url>/2020/21b7e720/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>写本科毕业论文时，在李正晨学长的指导下，学习了MATLAB软件。学习的主要目的是处理excel数据和科学绘图。这里，推荐一些MATLAB学习资料。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 写本科毕业论文时，在李正晨学长的指导下，学习了MATLAB软件。学习的主要目的是处理excel数据和科学绘图。这里，推荐一些MATLAB学习资料。  </p>
 <a id="more"></a>
 <h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><strong>matlab官方帮助文档</strong><br><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/" target="_blank" rel="noopener">https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/</a><br>官方写得很全面</p>
 <p><strong>MATLAB数学工具软件实例简明教程</strong><br>南京航空航天大学王正盛老师《MATLAB数学工具软件实例简明教程》<br>百度网盘链接：<a href="https://pan.baidu.com/s/1MN5qupq9so2TdA_aiLimmw" target="_blank" rel="noopener">https://pan.baidu.com/s/1MN5qupq9so2TdA_aiLimmw</a><br>提取码：fk5z</p>
@@ -68,7 +68,7 @@
   <entry>
     <title>【科研】引文分析软件HistCite入门</title>
     <url>/2020/de379eff/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如何从浩瀚的文献数据库中找到关键文献，是广大科研人员普遍面临的难题。在此背景下，大量的<strong>引文分析软件</strong>应运而生。CiteSpace、HistCite、VOSviewer等软件是其中的佼佼者。</p>
+    <content><![CDATA[<p><strong>摘要：</strong> 如何从浩瀚的文献数据库中找到关键文献，是广大科研人员普遍面临的难题。在此背景下，大量的<strong>引文分析软件</strong>应运而生。CiteSpace、HistCite、VOSviewer等软件是其中的佼佼者。</p>
 <a id="more"></a>
 <h2 id="HistCite"><a href="#HistCite" class="headerlink" title="HistCite"></a>HistCite</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>HistCite是由“SCI之父”尤金·加菲尔德和他的同事们开发的引文编年可视化软件。软件名称是“History of Cite”的简写，意为引文历史。它是一款非常强大的引文分析工具，可以快速绘制出某个研究领域的发展脉络，快速锁定某个研究方向的重要文献和学术大牛，还可以找到某些具有开创性成果的无指定关键词的论文！</p>
 <p>HistCite为科睿唯安的一款产品，Histcite的引文数据目前只能来源于WOS(Web of Science)核心合集。目前，HistCite这款软件已经停止更新了。</p>
@@ -89,7 +89,7 @@
   <entry>
     <title>科研背景知识介绍03科研软件</title>
     <url>/2020/477ee937/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在科研领域，前人开发了多款科研软件供广大研究人员使用。学会一款方便的科研软件，可以简化科研流程，极大地提高科研效率。科研软件分为文献管理软件和引文分析软件，文献管理软件可以管理文献、阅读文献等，引文分析软件可以文献调研、理清发展脉络等。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 在科研领域，前人开发了多款科研软件供广大研究人员使用。学会一款方便的科研软件，可以简化科研流程，极大地提高科研效率。科研软件分为文献管理软件和引文分析软件，文献管理软件可以管理文献、阅读文献等，引文分析软件可以文献调研、理清发展脉络等。  </p>
 <a id="more"></a>
 <h2 id="文献管理软件"><a href="#文献管理软件" class="headerlink" title="文献管理软件"></a>文献管理软件</h2><p>市面上上的文献管理软件有EndNote、Mendeley、Citavi、Refworks、Zotero、Papers、ReadCube、NoteExpress等。  </p>
 <h3 id="EndNote"><a href="#EndNote" class="headerlink" title="EndNote"></a>EndNote</h3><p>EndNote由科睿唯安开发，是一款主流文献管理软件。它能方便地扩展任何语言参考书目，允许创建任意大小的文献库。通过EndNote可进行文献批量下载和管理、写作论文时添加索引、分析某篇文献的引文索引等。EndNote X9集成了3776种国际期刊的参考文献格式有以及几百种写作模板，涵盖各个领域的期刊。  </p>
@@ -112,7 +112,7 @@
   <entry>
     <title>科研背景知识介绍02期刊评价指标</title>
     <url>/2020/ac3dde07/</url>
-    <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>本文主要介绍一些科研背景知识，包括JCR分区、中科院分区、IF、H指数、被引半衰期等评价指标的介绍。</p>
+    <content><![CDATA[<p><strong>摘要：</strong> 本文主要介绍一些科研背景知识，包括JCR分区、中科院分区、IF、H指数、被引半衰期等评价指标的介绍。</p>
 <a id="more"></a>
 <h2 id="期刊引证报告JCR"><a href="#期刊引证报告JCR" class="headerlink" title="期刊引证报告JCR"></a>期刊引证报告JCR</h2><p>期刊引证报告（Journal Citation Reports，简称JCR）是由科睿唯安发表的年度出版物。该公司透过旗下Web of Science平台的引文资料来为学术期刊评价，针对自然科学版本（JCR-SCI）和社会科学版本（JCR-SSCI）两部分，基于期刊被引用次数来计算出影响因子等多种评比指标，并作为期刊排名依据。JCR是对世界权威期刊进行系统客观评价的有效工具。  </p>
 <p>SCI分区是JCR的一部分，JCR还有SSCI分区等。  </p>
@@ -147,7 +147,7 @@
   <entry>
     <title>科研背景知识介绍01期刊类别</title>
     <url>/2020/7d7485b9/</url>
-    <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>本文主要介绍一些科研背景知识，包括SCI、SSCI、北大核心、CSCD、核心期刊等期刊类别的介绍。</p>
+    <content><![CDATA[<p><strong>摘要：</strong> 本文主要介绍一些科研背景知识，包括SCI、SSCI、北大核心、CSCD、核心期刊等期刊类别的介绍。</p>
 <a id="more"></a>
 <h2 id="科学引文索引SCI"><a href="#科学引文索引SCI" class="headerlink" title="科学引文索引SCI"></a>科学引文索引SCI</h2><p>科学引文索引（Science Citation Index，简称SCI）是由美国科学信息研究所（Institute for Scientific Information，简称ISI）于1960年上线投入使用的期刊文献检索工具，其出版形式包括印刷版期刊和光盘版及联机数据库。目前，科学引文索引由科睿唯安公司（Clarivate Analytics）运营。  </p>
 <p>SCI（科学引文索引）、EI（工程索引）、ISTP（科技会议录索引）是世界著名的三大科技文献检索系统，是国际公认的进行科学统计与科学评价的主要检索工具，其中以SCI最为重要。SCI是目前国际上被公认的最具权威的科技文献检索工具。SCI创办人是尤金·加菲尔德（Eugene Garfield），被称为“科学引文索引（SCI）之父”。  </p>
@@ -177,7 +177,7 @@
   <entry>
     <title>电脑软件推荐</title>
     <url>/2020/e419ec53/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>推荐我经常使用的软件  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 推荐我经常使用的软件  </p>
 <a id="more"></a>
 <h2 id="PotPlayer播放器"><a href="#PotPlayer播放器" class="headerlink" title="PotPlayer播放器"></a>PotPlayer播放器</h2><p><strong>推荐理由：</strong><br>用户界面美观，颜值最高的播放器。扁平化设计，简约大气。<br>不流氓，没广告。<br>强制关联文件打开方式、自动开机启动、推送广告、捆绑插件、运行卡顿<br>功能强大，启动速度快，解码能力强，耗内存低。<br>倍速播放，从0.2倍，每隔0.1倍，递增至11.0倍。倍速播放时字幕不会乱，能跟音画同步。  </p>
 <p><strong>参考文献：</strong><br><a href="https://www.jianshu.com/p/a598c0b153c5" target="_blank" rel="noopener">PotPlayer快捷键大全（建议收藏）</a><br><a href="https://zhuanlan.zhihu.com/p/35757176" target="_blank" rel="noopener">PotPlayer：最强播放器，无边框+4款简约皮肤 - 极简君的笔记的文章 - 知乎</a><br><a href="https://www.zhihu.com/question/20710497/answer/214128858" target="_blank" rel="noopener">PotPlayer 到底好在哪里？ - 青春我做主的回答 - 知乎</a><br><a href="http://potplayer.daum.net/" target="_blank" rel="noopener">potplayer官网</a>  </p>
@@ -203,7 +203,7 @@
   <entry>
     <title>【科研】EndNote文献管理软件</title>
     <url>/2020/b0d29aca/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>工欲善其事，必先利其器。<br>今天分享一款科研利器——EndNote文献管理软件。软件安装包、用户手册、操作视频……应有尽有。文末附有百度网盘下载。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 工欲善其事，必先利其器。<br>今天分享一款科研利器——EndNote文献管理软件。软件安装包、用户手册、操作视频……应有尽有。文末附有百度网盘下载。  </p>
 <a id="more"></a>
 <h2 id="科研小白常见问题"><a href="#科研小白常见问题" class="headerlink" title="科研小白常见问题"></a>科研小白常见问题</h2><p>搞科研的你是否遇到到下列问题：  </p>
 <blockquote>
@@ -233,7 +233,7 @@
   <entry>
     <title>【科研第一课】文献管理与信息分析</title>
     <url>/2020/37cbe283/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>今天给大家分享的是中科大罗昭锋老师《文献管理与信息分析》慕课课程，文末附有资源获取方式。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 今天给大家分享的是中科大罗昭锋老师《文献管理与信息分析》慕课课程，文末附有资源获取方式。  </p>
 <a id="more"></a>
 <h2 id="罗昭锋简介"><a href="#罗昭锋简介" class="headerlink" title="罗昭锋简介"></a>罗昭锋简介</h2><p>2005年获中国科学技术大学硕士学位<br>中科大生命科学实验中心高级实验师<br>中科大图书馆高级顾问<br>致力于帮助科研工作者提高工作效率  </p>
 <h2 id="课程概况"><a href="#课程概况" class="headerlink" title="课程概况"></a>课程概况</h2><p>《文献管理与信息分析》课程内容包括文献信息检索、文献信息管理、文献信息分析和分享协作创新四部分。搞定科研，从这里开始！  </p>
@@ -267,7 +267,7 @@
   <entry>
     <title>ArcGIS入门教程&amp;安装包&amp;GIS数据&amp;使用工具</title>
     <url>/2020/ceddd626/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>地图是地理的第二语言，而ArcGIS是制作地图的重要工具。掌握ArcGIS是必要的。一方面，掌握ArcGIS是GIS专业同学的必备技能；另一方面，对于其他专业同学，掌握ArcGIS后，可以很容易地绘制研究区地理位置图、人口密度分布图等专题地图。<br>本文分享GIS方面的经典书籍，介绍地理信息科学的理论知识；分享ArcGIS的书籍教程和视频教程，入门ArcGIS；分享ArcGIS安装包，配置软件环境；分享GIS数据和实用工具，方便制作地图。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 地图是地理的第二语言，而ArcGIS是制作地图的重要工具。掌握ArcGIS是必要的。一方面，掌握ArcGIS是GIS专业同学的必备技能；另一方面，对于其他专业同学，掌握ArcGIS后，可以很容易地绘制研究区地理位置图、人口密度分布图等专题地图。<br>本文分享GIS方面的经典书籍，介绍地理信息科学的理论知识；分享ArcGIS的书籍教程和视频教程，入门ArcGIS；分享ArcGIS安装包，配置软件环境；分享GIS数据和实用工具，方便制作地图。  </p>
 <a id="more"></a>
 <h2 id="GIS理论知识"><a href="#GIS理论知识" class="headerlink" title="GIS理论知识"></a>GIS理论知识</h2><p>黄杏元、马劲松编著的 <strong>《地理信息系统概论（修订版）》</strong><br>张康聪编著、陈健飞翻译的 <strong>《地理信息系统导论（原著第八版）》</strong>    </p>
 <h2 id="ArcGIS教程"><a href="#ArcGIS教程" class="headerlink" title="ArcGIS教程"></a>ArcGIS教程</h2><p>ArcGIS教程包括书籍教程和视频教程。<br>书籍教程方面，推荐南师大汤国安老师的两本书<br><strong>《ArcGIS地理信息系统空间分析实验教程（第二版）》</strong><br>和<br><strong>《地理信息系统基础实验操作100例》</strong>，均有pdf文档和实验练习数据，可以一边看，一边跟着操作。<br>推荐先看《ArcGIS地理信息系统空间分析实验教程（第二版）》，这本书比较系统，方便我们对ArcGIS有个整体的把握。我学习ArcGIS，就是跟着这本书学的，大概花了两个星期，墙裂推荐。<br>《地理信息系统基础实验操作l00例》也不错，通过100个经典的基础实验案例，详细介绍ArcGIS软件操作的具体步骤与方法。  </p>
@@ -278,6 +278,7 @@
 <p>利用本资源的数据绘制的全球地形图<br><img src="/2020/ceddd626/09%E5%85%A8%E7%90%83%E5%9C%B0%E5%BD%A2%E5%9B%BE.png" alt="全球地形图"><br>利用本资源的数据绘制的全球区划图<br><img src="/2020/ceddd626/10%E5%85%A8%E7%90%83%E5%8C%BA%E5%88%92%E5%9B%BE.jpg" alt="全球区划图">  </p>
 <h3 id="Google-Earth卫星影像下载工具"><a href="#Google-Earth卫星影像下载工具" class="headerlink" title="Google Earth卫星影像下载工具"></a>Google Earth卫星影像下载工具</h3><p><strong>91位图</strong>和<strong>GoogleMapsDownloader</strong><br>GoogleMapsDownloader是免费软件，缺点是只能下载到13级以及在海洋上有google水印。<br>如果想要下载分辨率更高的卫星影像，则需要收费。<br>91位图是收费软件，将指定内容分享到5个QQ群里，可以享受免费版。本资源提供了获取免费版的方法。  </p>
 <h3 id="ArcGIS加载高德、OSM和谷歌等地图"><a href="#ArcGIS加载高德、OSM和谷歌等地图" class="headerlink" title="ArcGIS加载高德、OSM和谷歌等地图"></a>ArcGIS加载高德、OSM和谷歌等地图</h3><p>软件用途：可以在ArcGIS中加载高德地图、谷歌地图<br><img src="/2020/ceddd626/11%E5%8A%A0%E8%BD%BD%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE.png" alt="加载高德地图">  </p>
+<h2 id="ArcGIS推荐学习路线"><a href="#ArcGIS推荐学习路线" class="headerlink" title="ArcGIS推荐学习路线"></a>ArcGIS推荐学习路线</h2><p>GIS概论的话，建议看张康聪编著、陈健飞翻译的 <strong>《地理信息系统导论（原著第八版）》</strong>，写得很详细；<br>ArcGIS操作，建议学习南师大汤国安老师的两本书<br><strong>《ArcGIS地理信息系统空间分析实验教程（第二版）》</strong><br>和<br><strong>《地理信息系统基础实验操作100例》</strong>；<br>在使用ArcGIS工具时，遇到问题，可以参考<a href="https://desktop.arcgis.com/zh-cn/arcmap/10.6/tools/main/a-quick-tour-of-geoprocessing-tool-references.htm" target="_blank" rel="noopener">地理处理工具参考快速浏览</a>；  </p>
 <h2 id="资源获取途径"><a href="#资源获取途径" class="headerlink" title="资源获取途径"></a>资源获取途径</h2><p>ArcGIS入门教程&amp;安装包&amp;GIS数据&amp;使用工具<br>百度网盘链接：<br><a href="https://pan.baidu.com/s/1YMLUv_maGs0KNbCGo5WsJg" target="_blank" rel="noopener">https://pan.baidu.com/s/1YMLUv_maGs0KNbCGo5WsJg</a><br>提取码：kdlg  </p>
 ]]></content>
       <categories>
@@ -292,8 +293,14 @@
   <entry>
     <title>无偿献血科普知识</title>
     <url>/2020/535f7da0/</url>
-    <content><![CDATA[<a id="more"></a>
-<h1 id="还没有完成"><a href="#还没有完成" class="headerlink" title="还没有完成"></a>还没有完成</h1><p>扩展资料：<br><a href="https://www.bilibili.com/video/av87587677" target="_blank" rel="noopener"><strong>【回形针PaperClip】为什么你要献血？</strong></a><br>回形针PaperClip出品的科普视频，详细介绍了献全血和献血小板的过程。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 介绍无偿献血科普知识、注意事项、相关奖励；</p>
+<a id="more"></a>
+
+<h2 id="献血过程注意事项"><a href="#献血过程注意事项" class="headerlink" title="献血过程注意事项"></a>献血过程注意事项</h2><h3 id="献血前不能空腹，不要吃得过于油腻"><a href="#献血前不能空腹，不要吃得过于油腻" class="headerlink" title="献血前不能空腹，不要吃得过于油腻"></a>献血前不能空腹，不要吃得过于油腻</h3><p>献血过程中，有些献血者由于献血前10至12小时未进食物而出现眩晕反应，主要表现为：软弱无力、头晕、脸色苍白、皮肤冰凉、大汗、恶心、呕吐、脉搏缓慢并短暂性意识模糊。这只是暂时性血糖降低，体内血糖恢复到正常水平时，症状就会消失。血糖是人体分解代谢和氧化过程中能量的主要来源，人体长时间未进食又因献血而使一部分能量被消耗时，耐受力降低就会出现低血糖昏厥。 </p>
+<p>餐后献血是目前无偿献血的主要做法，适量进食既可增加血糖浓度又可增加血容量，可大大减少献血反应，特别是中、重度献血反应的发生。  </p>
+<p>忘记吃饭也没关系，献血车、中心血站一般备有小面包等零食，可以吃一点。    </p>
+<p>虽然献血前不能空腹，但是不能吃得过于油腻。鸡汤、核桃等、花生脂肪含量高，献血前吃这些东西，会导致血脂高，无法献血。</p>
+<h2 id="无偿献血科普知识"><a href="#无偿献血科普知识" class="headerlink" title="无偿献血科普知识"></a>无偿献血科普知识</h2><h3 id="无偿献血的过程"><a href="#无偿献血的过程" class="headerlink" title="无偿献血的过程"></a>无偿献血的过程</h3><p><a href="https://www.bilibili.com/video/av87587677" target="_blank" rel="noopener"><strong>【回形针PaperClip】为什么你要献血？</strong></a><br>回形针PaperClip出品的科普视频，详细介绍了献全血和献血小板的过程。  </p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -306,7 +313,7 @@
   <entry>
     <title>【盐城】一个让人打开心扉的地方</title>
     <url>/2020/184b22d3/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>今天聊聊苏北重镇盐城。<br>我是盐城人，我给自己袋盐！  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 今天聊聊苏北重镇盐城。<br>我是盐城人，我给自己袋盐！  </p>
 <a id="more"></a>
 
 <h2 id="位置特殊"><a href="#位置特殊" class="headerlink" title="位置特殊"></a>位置特殊</h2><h3 id="“盐城”的由来"><a href="#“盐城”的由来" class="headerlink" title="“盐城”的由来"></a>“盐城”的由来</h3><p>盐城盐城，煮海为盐。环城皆盐场，故名“盐城”。盐城在中国地图上非常好辨别，在江苏海岸线上有凸起的小角。<br><img src="/2020/184b22d3/%E7%9B%90%E5%9F%8E%E5%9C%A8%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%BD%8D%E7%BD%AE2.jpg" alt="盐城在中国的位置"><br>▲盐城在中国的位置  </p>
@@ -349,7 +356,7 @@
   <entry>
     <title>南京大学地理学院本科教材</title>
     <url>/2020/71d5c282/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>整理了南京大学地理与海洋科学学院（简称地理学院）本科课程教材，包括地理学院所有学院平台课和自然地理、人文地理、地理信息科学专业核心课的教材，不包括各专业的专业选修课。收集的课程对应于2015级本科生课程，收集时间为2019年10月25日。近几年，课程改革比较大，在使用时，注意时效性。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 整理了南京大学地理与海洋科学学院（简称地理学院）本科课程教材，包括地理学院所有学院平台课和自然地理、人文地理、地理信息科学专业核心课的教材，不包括各专业的专业选修课。收集的课程对应于2015级本科生课程，收集时间为2019年10月25日。近几年，课程改革比较大，在使用时，注意时效性。  </p>
 <a id="more"></a>
 
 <h2 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h2><h3 id="15级-01地理学院平台课"><a href="#15级-01地理学院平台课" class="headerlink" title="15级_01地理学院平台课"></a>15级_01地理学院平台课</h3><p>01《C语言程序设计（一）》C语言程序设计教程 [姜恒远主编][高等教育出版社][2010.08][365页][13026862].pdf<br>01《C语言程序设计（一）》C语言程序设计教程学习指导 [姜恒远主编][高等教育出版社][2010.07][273页][12643703].pdf<br>01《C语言程序设计（一）》_教学大纲及班级周历.pdf<br>02《GIS概论》_教学大纲及班级周历.pdf<br>02《GIS概论》地理信息系统导论  原著第8版 [（美）KANG-TSUNG CHANG著；陈健飞译][科学出版社][2016.01][455页][13925253].pdf<br>02《GIS概论》地理信息系统概论  （第三版）.pdf<br>03《大气科学概论》_教学大纲及班级周历.pdf<br>03《大气科学概论》大气科学概论 [徐玉貌，刘红年，徐桂玉编著][南京大学出版社][2013.06][226页][13334642].pdf<br>04《地理科学知识讲座》_教学大纲及班级周历.pdf<br>05《地理学教学实习》_教学大纲及班级周历.pdf<br>05《地理学教学实习》江苏及若干邻区基础地质认识实习 [刘家润，吴俊奇，蔡元峰著][南京大学出版社][2014.07][.pdf<br>06《地貌学》_教学大纲及班级周历.pdf<br>06《地貌学》地貌学原理 第4版 [杨景春，李有利著][北京大学出版社][2017-07][244页][14343418].pdf<br>07《地球科学概论》_教学大纲及班级周历.pdf<br>08《地图与测量》_教学大纲及班级周历.pdf<br>08《地图与测量》测量与地图学  第3版 [王慧麟，安如，谈俊忠，马永立编著][南京大学出版社][2015.01][504页][13693562].pdf<br>09《地质学教学实习》_教学大纲及班级周历.pdf<br>09《地质学教学实习》庐山地区地理学野外实习指南 [张兆干，王腊春主编][科学出版社][2011.07][199页][12872149].pdf<br>10《海洋科学导论》_教学大纲及班级周历.pdf<br>10《海洋科学导论》海洋科学导论[冯士筰等主编][高等教育出版社][1999][503页][10900437].pdf<br>11《普通地质学》_教学大纲及班级周历.pdf<br>11《普通地质学》普通地质学[舒良树主编][地质出版社][2010.9][292页].pdf<br>12《人文地理学》_教学大纲及班级周历.pdf<br>12《人文地理学》人文地理学导论 [顾朝林主编][科学出版社][2012.09][397页][13095352].pdf<br>13《水文学原理》_教学大纲及班级周历.pdf<br>13《水文学原理》水文学原理 [芮孝芳著][高等教育出版社][2013.07][312页][13869471].pdf<br>14《土壤学》_教学大纲及班级周历.pdf<br>14《土壤学》土壤学 [黄昌勇主编][中国农业出版社][2000][311页][11258212].pdf<br>15《遥感概论》_教学大纲及班级周历.pdf<br>15《遥感概论》遥感导论[梅安新等编著][高等教育出版社][2001.7][324页].pdf<br>16《植物生态学》_教学大纲及班级周历.pdf<br>16《植物生态学》生态学 [李博主编][高等教育出版社][2000][416页][10109159].pdf<br>17《自然地理学导论》_教学大纲及班级周历.pdf<br>17《自然地理学导论》自然地理学 [杨达源主编][科学出版社][2012.01][355页][12913991].pdf  </p>
@@ -385,7 +392,7 @@
   <entry>
     <title>Excel学习资料</title>
     <url>/2020/27115/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Excel是大家非常熟悉的软件，但是，很少有人系统地学习Excel。Excel的函数功能非常强大，系统学习Excel，可以极大地减轻工作负担。<br>这里推荐Excel学习资料，可供参考。</p>
+    <content><![CDATA[<p><strong>摘要：</strong> Excel是大家非常熟悉的软件，但是，很少有人系统地学习Excel。Excel的函数功能非常强大，系统学习Excel，可以极大地减轻工作负担。<br>这里推荐Excel学习资料，可供参考。</p>
 <a id="more"></a>
 <h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><strong>陈杰等编著《Excel函数、图表与数据分析》</strong><br>这本书详细介绍了Excel函数，适合系统学习Excel函数，也适合作为工具书随时翻阅。<br><img src="/2020/27115/1.jpg" alt="封面"><br><img src="/2020/27115/2.jpg" alt="目录1"></p>
 <h2 id="资料获取途径"><a href="#资料获取途径" class="headerlink" title="资料获取途径"></a>资料获取途径</h2><p>百度网盘链接：<a href="https://pan.baidu.com/s/1wDrAE2B7qTqcyPpa1HGZwA" target="_blank" rel="noopener">https://pan.baidu.com/s/1wDrAE2B7qTqcyPpa1HGZwA</a><br>提取码：09fx   </p>
@@ -401,7 +408,7 @@
   <entry>
     <title>【Android】郭霖《第一行代码》过时代码的更新写法</title>
     <url>/2020/21901/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。</p>
+    <content><![CDATA[<p><strong>摘要：</strong> 在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。</p>
 <a id="more"></a>
 <h1 id="过时代码及更新写法"><a href="#过时代码及更新写法" class="headerlink" title="过时代码及更新写法"></a>过时代码及更新写法</h1><h2 id="3-6-更强大的滚动控件——RecyclerView"><a href="#3-6-更强大的滚动控件——RecyclerView" class="headerlink" title="3.6 更强大的滚动控件——RecyclerView"></a>3.6 更强大的滚动控件——RecyclerView</h2><p><strong>位置</strong><br>第3章 软件也要拼脸蛋——UI开发的点点滴滴<br>3.6 更强大的滚动控件——RecyclerView  </p>
 <p><strong>运行错误提示</strong>  </p>
@@ -469,7 +476,7 @@
   <entry>
     <title>紫荆PT站种子简介写作入门</title>
     <url>/2020/51708/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>紫荆PT是南京大学教育网环境下的PT站，站友在上传种子时，需要写种子简介。这里，提供一些入门教程，方便站内快速、高效地写出合格的种子简介。</p>
+    <content><![CDATA[<p><strong>摘要：</strong> 紫荆PT是南京大学教育网环境下的PT站，站友在上传种子时，需要写种子简介。这里，提供一些入门教程，方便站内快速、高效地写出合格的种子简介。</p>
 <a id="more"></a>
 <h1 id="BBCode"><a href="#BBCode" class="headerlink" title="BBCode"></a>BBCode</h1><p>PT站大多使用的是轻量标记语言BBCode，紫荆PT亦是如此。<br>常见的BBCode标签代码：</p>
 <ul>
@@ -525,7 +532,7 @@
   <entry>
     <title>PT站简介及注册方式汇总</title>
     <url>/2020/31857/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>PT站是分享影视，游戏，音乐，动漫，学习等资料的平台。不管是看电影、看电视剧，还是追番，PT站都是不错的选择。PT站的特点是，服务器不存放资源，资源均由用户上传，PT站基本都会设置上传/下载比率限制，防止出现只下载不上传的“吸血鬼”。说不多说，开始简单介绍各大PT站。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> PT站是分享影视，游戏，音乐，动漫，学习等资料的平台。不管是看电影、看电视剧，还是追番，PT站都是不错的选择。PT站的特点是，服务器不存放资源，资源均由用户上传，PT站基本都会设置上传/下载比率限制，防止出现只下载不上传的“吸血鬼”。说不多说，开始简单介绍各大PT站。  </p>
 <a id="more"></a>
 <h1 id="简介及注册方式"><a href="#简介及注册方式" class="headerlink" title="简介及注册方式"></a>简介及注册方式</h1><h2 id="注册方式"><a href="#注册方式" class="headerlink" title="注册方式"></a>注册方式</h2><p>这里是我整理的各大BT、PT站注册方式：<br><a href="https://docs.qq.com/sheet/DSnBBaVBydnBhRHdo?tab=ln32s3&c=A22A0K0" target="_blank" rel="noopener">https://docs.qq.com/sheet/DSnBBaVBydnBhRHdo?tab=ln32s3&amp;c=A22A0K0</a>  </p>
 <h2 id="教育网PT站简介"><a href="#教育网PT站简介" class="headerlink" title="教育网PT站简介"></a>教育网PT站简介</h2><p>教育网PT，是指在教育网（中国教育和科研计算机网）IPv6环境下才能访问的PT站。访问教育网PT，需要插网线。</p>
@@ -583,7 +590,7 @@
   <entry>
     <title>Markdown和微信公众号排版</title>
     <url>/2020/18383/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>微信公众号排版复杂，但推广方便；Github+Hexo搭建个人博客，写作方便（Markdown语言），但推广不易；lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，轻松转化Markdown到给微信特制的HTML。  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 微信公众号排版复杂，但推广方便；Github+Hexo搭建个人博客，写作方便（Markdown语言），但推广不易；lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，轻松转化Markdown到给微信特制的HTML。  </p>
 <a id="more"></a>
 <h1 id="微信公众号"><a href="#微信公众号" class="headerlink" title="微信公众号"></a>微信公众号</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
 <li>受众较多，推广方便； </li>
@@ -617,7 +624,7 @@
   <entry>
     <title>Markdown常用语法</title>
     <url>/2020/52876/</url>
-    <content><![CDATA[<h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><p>作业部落出品的常用语法：<br><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor</a><br>我用的Markdown编辑器是VS Code。Sublime也很好用。<br><a href="https://markdown-zh.readthedocs.io/en/latest/" target="_blank" rel="noopener">Markdown中文文档</a>  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 作业部落出品的常用语法：<br><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor</a><br>我用的Markdown编辑器是VS Code。<br><a href="https://markdown-zh.readthedocs.io/en/latest/" target="_blank" rel="noopener">Markdown中文文档</a>  </p>
 <a id="more"></a>
 <hr>
 <p><strong>以下是常用语法：</strong></p>
@@ -720,9 +727,9 @@
   <entry>
     <title>Github+Hexo搭建个人博客</title>
     <url>/2020/42500/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前段时间，在浏览<a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a>时，知道可以用Github+Hexo搭建个人博客。这几天，参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的教程</a>学习了Git，参考梧雨北辰的教程<a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a>和其他大佬的教程，尝试搭建个人博客。期间，遇到不少问题，在这里贴出来，避免以后再次踩坑。</p>
-<p>个人博客，看效果进入：<a href="https://GeRongcun.github.io">https://GeRongcun.github.io</a><br>Github仓库：<a href="https://github.com/GeRongcun/GeRongcun.github.io" target="_blank" rel="noopener">https://github.com/GeRongcun/GeRongcun.github.io</a>  </p>
+    <content><![CDATA[<p><strong>摘要：</strong> 前段时间，在浏览<a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a>时，知道可以用Github+Hexo搭建个人博客。这几天，参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的教程</a>学习了Git，参考梧雨北辰的教程<a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a>和其他大佬的教程，尝试搭建个人博客。期间，遇到不少问题，在这里贴出来，避免以后再次踩坑。</p>
 <a id="more"></a>
+<p>个人博客，看效果进入：<a href="https://GeRongcun.github.io">https://GeRongcun.github.io</a><br>Github仓库：<a href="https://github.com/GeRongcun/GeRongcun.github.io" target="_blank" rel="noopener">https://github.com/GeRongcun/GeRongcun.github.io</a>  </p>
 <p>推荐学习资料：<br><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a><br><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的Git教程</a><br><a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a><br><a href="https://www.cnblogs.com/chengxs/p/7402174.html" target="_blank" rel="noopener"><strong>github+hexo搭建自己的博客网站（一）基础入门</strong></a><br>系列教程，介绍得很全。  </p>
 <hr>
 <h1 id="安装Hexo失败"><a href="#安装Hexo失败" class="headerlink" title="安装Hexo失败"></a>安装Hexo失败</h1><p><img src="/2020/42500/01%E9%94%99%E8%AF%AF.png" alt="安装hexo失败"><br><strong>错误提示</strong>  </p>
