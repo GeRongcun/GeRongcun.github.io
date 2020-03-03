@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Python学习资料</title>
+    <url>/2020/ba7690fd/</url>
+    <content><![CDATA[<p><strong>摘要：</strong> Python学习资料  </p>
+<a id="more"></a>
+<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><h3 id="入门学习资料"><a href="#入门学习资料" class="headerlink" title="入门学习资料"></a>入门学习资料</h3><p><a href="https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">廖雪峰Python教程</a><br><a href="https://docs.python.org/zh-cn/3/index.html" target="_blank" rel="noopener">Python官方中文文档</a>  </p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>地貌指数提取教程</title>
     <url>/2020/930e6da0/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 用ArcGIS和MATLAB提取河流纵剖面、Hack剖面、地貌指数、测高积分、河长坡降指数SL等地貌指数。</p>
