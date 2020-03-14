@@ -1,11 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>如何绘制业务流程图</title>
+    <url>/2020/b5c79131/</url>
+    <content><![CDATA[<p><strong>摘要：</strong> 介绍业务流程图的概念、绘制方法及相关案例。  </p>
+<a id="more"></a>
+
+<h2 id="业务流程图介绍"><a href="#业务流程图介绍" class="headerlink" title="业务流程图介绍"></a>业务流程图介绍</h2><p>业务流程图，是用来描述业务流程的一种图，通过一些特定的符号和连线来表示具体某个业务的实际处理步骤和过程，详细地描述任务的流程走向，一般没有数据的概念。  </p>
+<p>分析业务流程，并将业务流程图表化可以帮助分析者了解业务如何运转，帮助分析者找到业务流程中不合理的流向。现有产品存在的业务流程未必是合理的，通过业务流程图，钻研关键事件的流程，分析为什么要这么做，探索出更深层次的问题，从而对现有不合理的业务流程进行重组优化，进而制定优化方案，改进现有流程。  </p>
+<p>产品在写需求文档时主要是对业务规则的描述，而配合以业务流程图可以让业务逻辑更清晰；日常梳理关键事件业务流程时，画出业务流程图可以帮助发现不合理流程，从而对关键事件进行优化。  </p>
+<p>在工作中，我们常用到的流程图有：业务流程图、页面流程图和数据流程图。作为产品，经常谈的是业务流程图；作为交互设计师，则比较关心页面流程图；而作为系统分析师，数据流程图最关键。  </p>
+<h2 id="绘制方法"><a href="#绘制方法" class="headerlink" title="绘制方法"></a>绘制方法</h2><p>1.确定有哪些部门和哪些业务环节；<br>2.梳理业务环节之间的逻辑，用文字方式记录逻辑关系；<br>3.绘制业务流程图，记录业务流程中不太确定的地方，留着讨论；<br>4.团队讨论，反复修改，不断优化；  </p>
+<h2 id="Edraw亿图图示"><a href="#Edraw亿图图示" class="headerlink" title="Edraw亿图图示"></a>Edraw亿图图示</h2><p>Edraw亿图图示官网<a href="https://www.edrawsoft.cn/" target="_blank" rel="noopener">https://www.edrawsoft.cn/</a><br>国产收费软件，有破解版；<br>界面相比于Visio较丑；<br>支持绘制流程图、网络拓扑图、平面布置图、组织结构图、工程图等；<br>对齐元素非常容易；<br>拥有很多预定义模板和案例；<br><strong>EDraw公司抓得紧，这里就不提供破解版了。</strong>  </p>
+<h2 id="相关案例"><a href="#相关案例" class="headerlink" title="相关案例"></a>相关案例</h2><p><img src="/2020/b5c79131/%E5%A6%82%E4%BD%95%E7%BB%98%E5%88%B6%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%5C%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%A1%88%E4%BE%8B.jpg" alt="业务流程图案例"><br>这是我使用Edraw亿图图示软件绘制的业务流程图（泳道图），对齐容易，画起来很方便。之前一直使用的是Visio，正是因为对齐麻烦才入坑亿图图示；  </p>
+<p><strong>参考资料</strong><br><a href="https://www.jianshu.com/p/906f04c87124" target="_blank" rel="noopener">产品流程设计：如何绘制业务流程图</a><br><a href="https://www.jianshu.com/p/86ec2abdbfa8" target="_blank" rel="noopener">以美团外卖为例，区别业务流程图和页面流程图</a>  </p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>软件工程</category>
+      </categories>
+      <tags>
+        <tag>流程图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>流程图绘制软件推荐</title>
+    <url>/2020/c5765586/</url>
+    <content><![CDATA[<p><strong>摘要：</strong> 推荐ProcessOn、draw.io、Visio、Edraw亿图图示等绘图软件。</p>
+<a id="more"></a>
+<h2 id="ProcessOn"><a href="#ProcessOn" class="headerlink" title="ProcessOn"></a>ProcessOn</h2><p>ProcessOn网站<a href="https://www.processon.com/" target="_blank" rel="noopener">https://www.processon.com/</a><br>免费在线作图、实时团队协作；<br>拥有海量模板；<br>支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等；<br>免费版可以拥有9张个人图表文件，勉强够用；<br><img src="/2020/c5765586/%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%5CProcessOn%E4%BC%9A%E5%91%98.png" alt="ProcessOn会员">  </p>
+<h2 id="draw-io"><a href="#draw-io" class="headerlink" title="draw.io"></a>draw.io</h2><p>draw.io网站<a href="https://www.draw.io/" target="_blank" rel="noopener">https://www.draw.io/</a>或<a href="https://app.diagrams.net/" target="_blank" rel="noopener">https://app.diagrams.net/</a><br>draw.io是开源软件，每一张图对应的源文件是 XML 格式，通过 XML 能了解每张图的数据结构；<br>功能与ProcessOn类似，语言为英文，界面不太美观；<br>对齐图表元素容易；<br>能导出各类图片（比如 png、jpg、svg）和 PDF，同时也能导出 HTML 格式和 VSDX格式（Microsoft Visio 图形格式）。  </p>
+<h2 id="Visio"><a href="#Visio" class="headerlink" title="Visio"></a>Visio</h2><p>Visio软件，是office软件系列中的负责绘制流程图和示意图的老牌软件，用户非常多；<br>支持绘制流程图、网络拓扑图、平面布置图、组织结构图、工程图等；<br>扁平化设计，界面美观；<br>对齐元素非常麻烦；<br><img src="/2020/c5765586/%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%5CVisio%E6%A8%A1%E6%9D%BF.png" alt="Visio模板">    </p>
+<h2 id="Edraw"><a href="#Edraw" class="headerlink" title="Edraw"></a>Edraw</h2><p>Edraw亿图图示官网<a href="https://www.edrawsoft.cn/" target="_blank" rel="noopener">https://www.edrawsoft.cn/</a><br>国产收费软件，有破解版；<br>界面相比于Visio较丑；<br>支持绘制流程图、网络拓扑图、平面布置图、组织结构图、工程图等；<br>对齐元素非常容易；<br>拥有很多预定义模板和案例；<br><img src="/2020/c5765586/%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%5CEdraw%E6%A8%A1%E6%9D%BF.png" alt="Edraw模板">  </p>
+<h2 id="个人推荐软件"><a href="#个人推荐软件" class="headerlink" title="个人推荐软件"></a>个人推荐软件</h2><p>个人推荐使用Edraw亿图图示，尤其是画业务流程图；拥有很多预定义模板；对齐元素容易；<br>之前一直使用的是Visio，正是因为对齐麻烦才入坑亿图图示；<br><strong>EDraw公司抓得紧，这里就不提供破解版了。</strong>  </p>
+<p><strong>参考资料</strong><br><a href="https://www.jianshu.com/p/70baaec4cf0f" target="_blank" rel="noopener">流程图软件draw.io值得你拥有</a><br><a href="https://www.jianshu.com/p/3ba46a4c8982" target="_blank" rel="noopener">画流程图，选Visio还是选亿图Edraw</a>  </p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>软件工程</category>
+      </categories>
+      <tags>
+        <tag>流程图</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python学习资料</title>
     <url>/2020/ba7690fd/</url>
     <content><![CDATA[<p><strong>摘要：</strong> Python学习资料  </p>
 <a id="more"></a>
-<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><h3 id="入门学习资料"><a href="#入门学习资料" class="headerlink" title="入门学习资料"></a>入门学习资料</h3><p><a href="https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">廖雪峰Python教程</a><br><a href="https://docs.python.org/zh-cn/3/index.html" target="_blank" rel="noopener">Python官方中文文档</a>  </p>
+
+<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><a href="https://www.zhihu.com/question/29138020/answer/778840509" target="_blank" rel="noopener">如何系统地自学 Python？</a><br><a href="https://github.com/jackfrued/Python-100-Days" target="_blank" rel="noopener">Python - 100天从新手到大师</a>  </p>
+<h2 id="入门学习资料"><a href="#入门学习资料" class="headerlink" title="入门学习资料"></a>入门学习资料</h2><p><a href="https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">廖雪峰Python教程</a><br><a href="https://docs.python.org/zh-cn/3/index.html" target="_blank" rel="noopener">Python官方中文文档</a><br><a href="https://www.icourse163.org/course/BIT-268001" target="_blank" rel="noopener">北理工-嵩天-Python语言程序设计MOOC</a>  </p>
+<h2 id="Python操作Excel"><a href="#Python操作Excel" class="headerlink" title="Python操作Excel"></a>Python操作Excel</h2><p>Pandas 是 Python 的核心数据分析支持库，提供了快速、灵活、明确的数据结构，旨在简单、直观地处理关系型、标记型数据。Pandas 的目标是成为 Python 数据分析实践与实战的必备高级工具，其长远目标是成为最强大、最灵活、可以支持任何语言的开源数据分析工具。经过多年不懈的努力，Pandas 离这个目标已经越来越近了。<br>Pandas 的主要数据结构是 Series（一维数据）与 DataFrame（二维数据），这两种数据结构足以处理金融、统计、社会科学、工程等领域里的大多数典型用例。对于 R 用户，DataFrame 提供了比 R 语言 data.frame 更丰富的功能。Pandas 基于 NumPy 开发，可以与其它第三方科学计算支持库完美集成。  </p>
+<p>Pandas官方中文教程：<a href="https://www.pypandas.cn/docs/" target="_blank" rel="noopener">https://www.pypandas.cn/docs/</a></p>
+<h2 id="Python爬虫笔记"><a href="#Python爬虫笔记" class="headerlink" title="Python爬虫笔记"></a>Python爬虫笔记</h2><p><a href="https://www.icourse163.org/course/BIT-268001" target="_blank" rel="noopener">北理工-嵩天-Python语言程序设计MOOC</a><br>嵩天_Python语言程序设计基础（第2版）  </p>
+<h2 id="推荐学习路线"><a href="#推荐学习路线" class="headerlink" title="推荐学习路线"></a>推荐学习路线</h2><p>入门Python可以学习<a href="https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">廖雪峰Python教程</a>，很基础。<br>用Python操作Excel，推荐<a href="https://www.pypandas.cn/docs/" target="_blank" rel="noopener">Pandas官方中文教程</a>  </p>
+<h2 id="资源获取"><a href="#资源获取" class="headerlink" title="资源获取"></a>资源获取</h2><p>Python学习资料<br>包含嵩天_Python语言程序设计基础（第2版）、Python语言程序设计基础（第2版）习题答案<br>链接：<a href="https://pan.baidu.com/s/1q7sCzLJCIEWHxH1kZ-Wxaw" target="_blank" rel="noopener">https://pan.baidu.com/s/1q7sCzLJCIEWHxH1kZ-Wxaw</a><br>提取码：juji  </p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
