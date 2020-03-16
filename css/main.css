@@ -293,7 +293,7 @@ blockquote {
 }
 img {
   display: block;
-  margin: auto;
+  margin: 0;
   max-width: 100%;
   height: auto;
 }
@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffc3;
+  background: #79ffe3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3126,6 +3126,18 @@ pre .javascript .function {
   .pagination {
     margin: 8px 0 0;
   }
+}
+body {
+  background: #eee;
+}
+p {
+  margin: 0 0 20px 0;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 .post-body a {
   color: #fc6423;
