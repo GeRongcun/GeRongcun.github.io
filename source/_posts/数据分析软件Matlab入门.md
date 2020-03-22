@@ -10,9 +10,8 @@ category:
     - 软件
 ---
 
-## 前言
-写本科毕业论文时，在李正晨学长的指导下，学习了MATLAB软件。学习的主要目的是处理excel数据和科学绘图。这里，推荐一些MATLAB学习资料。  
-
+**摘要：** 写本科毕业论文时，在李正晨学长的指导下，学习了MATLAB软件。学习的主要目的是处理excel数据和科学绘图。这里，推荐一些MATLAB学习资料。  
+<!-- more -->
 ## 学习资料
 **matlab官方帮助文档**  
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/  

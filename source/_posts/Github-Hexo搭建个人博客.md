@@ -14,17 +14,18 @@ abbrlink: 42500
 date: 2020-01-19 22:05:11
 ---
 
-# 前言  
-前段时间，在浏览[IT侠博客](https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more)时，知道可以用Github+Hexo搭建个人博客。这几天，参考[廖雪峰老师的教程](https://www.liaoxuefeng.com/wiki/896043488029600)学习了Git，参考梧雨北辰的教程[梧雨北辰 搭建个人博客网站Github、Hexo与Next](https://www.jianshu.com/p/72842e1c63e2)和其他大佬的教程，尝试搭建个人博客。期间，遇到不少问题，在这里贴出来，避免以后再次踩坑。
-
+**摘要：** 前段时间，在浏览[IT侠博客](https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more)时，知道可以用Github+Hexo搭建个人博客。这几天，参考[廖雪峰老师的教程](https://www.liaoxuefeng.com/wiki/896043488029600)学习了Git，参考梧雨北辰的教程[梧雨北辰 搭建个人博客网站Github、Hexo与Next](https://www.jianshu.com/p/72842e1c63e2)和其他大佬的教程，尝试搭建个人博客。期间，遇到不少问题，在这里贴出来，避免以后再次踩坑。
+<!-- more -->
 个人博客，看效果进入：[https://GeRongcun.github.io](https://GeRongcun.github.io)  
-Github仓库：[https://github.com/GeRongcun/GeRongcun.github.io](https://github.com/GeRongcun/GeRongcun.github.io)
+Github仓库：[https://github.com/GeRongcun/GeRongcun.github.io](https://github.com/GeRongcun/GeRongcun.github.io)  
 
 推荐学习资料：  
 [Hexo官方文档](https://hexo.io/zh-cn/docs)  
 [IT侠博客](https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more)  
 [廖雪峰老师的Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)  
 [梧雨北辰 搭建个人博客网站Github、Hexo与Next](https://www.jianshu.com/p/72842e1c63e2)  
+[**github+hexo搭建自己的博客网站（一）基础入门**](https://www.cnblogs.com/chengxs/p/7402174.html)  
+系列教程，介绍得很全。  
 
 -----
 # 安装Hexo失败
