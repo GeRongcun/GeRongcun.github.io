@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="划水小能手">
 <meta property="og:description" content="摘要： 今年疫情严重，宅在家，知晓了不少事情；一个是闰月年贡老坟，另一个是，和长者一样，我家也有过继现象。">
 <meta property="article:published_time" content="2020-03-17T10:51:24.000Z">
-<meta property="article:modified_time" content="2020-03-17T11:56:16.136Z">
+<meta property="article:modified_time" content="2020-03-17T11:56:29.728Z">
 <meta property="article:author" content="GeRongcun">
 <meta property="article:tag" content="过继">
 <meta name="twitter:card" content="summary">
@@ -367,7 +367,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-03-17T19:56:16+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2020-03-17T19:56:29+08:00">
                 2020-03-17
               </time>
             
@@ -416,8 +416,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2020/91fb53e9/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/91fb53e9/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/91fb53e9/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -595,14 +594,7 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
-        </noscript>
-      </div>
     </div>
-
   
 
 
@@ -655,7 +647,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -772,7 +764,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">26.8k</span>
+    <span title="Site words total count">26.5k</span>
   
 </div>
 
@@ -932,26 +924,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://gerongcun.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'https://gerongcun.github.io/2020/91fb53e9/';
-          this.page.identifier = '2020/91fb53e9/';
-          this.page.title = '随笔 | 和长者一样，我家也有过继现象';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://gerongcun.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -967,12 +939,38 @@
 
 
 
+  
 
 
 
 
 
 
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'dbC14LKi4bdlsBpSyInjX8oI-gzGzoHsz',
+        appKey: '3QhAYvGWKaNECOi01Xsbj9b9',
+        placeholder: 'false',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'100' || 10,
+    });
+  </script>
 
 
 
