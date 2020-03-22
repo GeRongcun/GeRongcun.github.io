@@ -64,6 +64,28 @@
       </tags>
   </entry>
   <entry>
+    <title>Python学习资料</title>
+    <url>/2020/ba7690fd/</url>
+    <content><![CDATA[<p><strong>摘要：</strong> Python学习资料  </p>
+<a id="more"></a>
+
+<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><a href="https://www.zhihu.com/question/29138020/answer/778840509" target="_blank" rel="noopener">如何系统地自学 Python？</a><br><a href="https://github.com/jackfrued/Python-100-Days" target="_blank" rel="noopener">Python - 100天从新手到大师</a>  </p>
+<h2 id="入门学习资料"><a href="#入门学习资料" class="headerlink" title="入门学习资料"></a>入门学习资料</h2><p><a href="https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">廖雪峰Python教程</a><br><a href="https://docs.python.org/zh-cn/3/index.html" target="_blank" rel="noopener">Python官方中文文档</a><br><a href="https://www.icourse163.org/course/BIT-268001" target="_blank" rel="noopener">北理工-嵩天-Python语言程序设计MOOC</a>  </p>
+<h2 id="Python操作Excel"><a href="#Python操作Excel" class="headerlink" title="Python操作Excel"></a>Python操作Excel</h2><p>Pandas 是 Python 的核心数据分析支持库，提供了快速、灵活、明确的数据结构，旨在简单、直观地处理关系型、标记型数据。Pandas 的目标是成为 Python 数据分析实践与实战的必备高级工具，其长远目标是成为最强大、最灵活、可以支持任何语言的开源数据分析工具。经过多年不懈的努力，Pandas 离这个目标已经越来越近了。<br>Pandas 的主要数据结构是 Series（一维数据）与 DataFrame（二维数据），这两种数据结构足以处理金融、统计、社会科学、工程等领域里的大多数典型用例。对于 R 用户，DataFrame 提供了比 R 语言 data.frame 更丰富的功能。Pandas 基于 NumPy 开发，可以与其它第三方科学计算支持库完美集成。  </p>
+<p>Pandas官方中文教程：<a href="https://www.pypandas.cn/docs/" target="_blank" rel="noopener">https://www.pypandas.cn/docs/</a></p>
+<h2 id="Python爬虫笔记"><a href="#Python爬虫笔记" class="headerlink" title="Python爬虫笔记"></a>Python爬虫笔记</h2><p><a href="https://www.icourse163.org/course/BIT-268001" target="_blank" rel="noopener">北理工-嵩天-Python语言程序设计MOOC</a><br>嵩天_Python语言程序设计基础（第2版）<br>上野宣_《图解HTTP》，详细讲解了HTTP协议。  </p>
+<h2 id="推荐学习路线"><a href="#推荐学习路线" class="headerlink" title="推荐学习路线"></a>推荐学习路线</h2><p>入门Python可以学习<a href="https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">廖雪峰Python教程</a>，很基础。<br>用Python操作Excel，推荐<a href="https://www.pypandas.cn/docs/" target="_blank" rel="noopener">Pandas官方中文教程</a>  </p>
+<h2 id="资源获取"><a href="#资源获取" class="headerlink" title="资源获取"></a>资源获取</h2><p>Python学习资料<br>包含嵩天_Python语言程序设计基础（第2版）、Python语言程序设计基础（第2版）习题答案<br>链接：<a href="https://pan.baidu.com/s/1q7sCzLJCIEWHxH1kZ-Wxaw" target="_blank" rel="noopener">https://pan.baidu.com/s/1q7sCzLJCIEWHxH1kZ-Wxaw</a><br>提取码：juji  </p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>地貌指数提取教程</title>
     <url>/2020/930e6da0/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 用ArcGIS和MATLAB提取河流纵剖面、Hack剖面、地貌指数、测高积分、河长坡降指数SL等地貌指数。</p>
