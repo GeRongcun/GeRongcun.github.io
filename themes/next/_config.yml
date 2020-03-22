@@ -158,13 +158,13 @@ links_layout: block
 
 # Table Of Contents in the Sidebar
 toc:  #设置目录
-  enable: true
+  enable: true #显示目录
 
   # Automatically add list number to toc.
   number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true #自动换行
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
@@ -218,7 +218,7 @@ excerpt_description: true
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt: #设置摘要长度为150个字，不显示全文
   enable: true
-  length: 150
+  length: 100
 
 #设置博客显示的基本信息：字数统计、阅读时长
 # Post meta display settings
@@ -229,7 +229,6 @@ post_meta:
   categories: true
 
 # 添加文章字数统计、阅读时长（next主题已经集成）
-
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
@@ -237,7 +236,7 @@ post_wordcount:
   wordcount: true # 单篇 字数统计
   min2read: true # 单篇 阅读时长
   totalcount: true #网站 字数统计
-  separated_meta: true
+  separated_meta: true 
 
 # 设置订阅微信公众号
 # Wechat Subscriber
@@ -255,7 +254,7 @@ wechat_subscriber:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -367,9 +366,9 @@ baidu_analytics: 9b76b289c7414c3a434cbf820c5274f1
 # 评论功能
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: gerongcun
-  count: true
+  count: false
 
 # Hypercomments
 #hypercomments_id:
@@ -384,18 +383,20 @@ changyan:
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
+# 评论功能
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: true
+  appid: dbC14LKi4bdlsBpSyInjX8oI-gzGzoHsz # your leancloud application appid
+  appkey: 3QhAYvGWKaNECOi01Xsbj9b9 # your leancloud application appkey
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
-  pageSize: 10 # pagination size
-
-
+  # placeholder: Just go go # comment box placeholder
+  placeholder: 欢迎评论(>▽<) # 评论区显示文字
+  avatar: mm # gravatar style 头像风格
+  # guest_info: nick,mail,link # custom comment header
+  guest_info: nick,mail
+  pageSize: 100 # pagination size
+  
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
 #youyan_uid: your uid
@@ -538,9 +539,10 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: dbC14LKi4bdlsBpSyInjX8oI-gzGzoHsz #<app_id>
   app_key: 3QhAYvGWKaNECOi01Xsbj9b9 #<app_key>
+  # 不使用leancloud_visitors，使用busuanzi_count
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -570,8 +572,9 @@ busuanzi_count:
   site_pv_footer: 次
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer: times.
+  # page_pv_header: <i class="fa fa-file-o"></i> 图标失效
+  page_pv_header: <i class="fa fa-eye"></i>  阅读次数 
+  page_pv_footer: 次
 
 # Tencent analytics ID
 # tencent_analytics:
@@ -581,7 +584,8 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+# 百度收录 自动添加链接
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -829,3 +833,8 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+# 百度收录
+baidu_site_verification: tgcuQUejH6
+# 谷歌收录
+google_site_verification: OlgYpq6d657GfXFvc1Uc_0Z_f4jqFwWxzBz9xssyE6M

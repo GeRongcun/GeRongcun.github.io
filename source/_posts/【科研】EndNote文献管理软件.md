@@ -10,10 +10,9 @@ category:
 abbrlink: b0d29aca
 date: 2020-02-13 17:23:53
 ---
-## 前言
-工欲善其事，必先利其器。  
+**摘要：** 工欲善其事，必先利其器。  
 今天分享一款科研利器——EndNote文献管理软件。软件安装包、用户手册、操作视频……应有尽有。文末附有百度网盘下载。  
-
+<!-- more -->
 ## 科研小白常见问题
 搞科研的你是否遇到到下列问题：  
 >写论文时，你是不是还在手动添加参考文献？如何快速添加参考文献？  
@@ -53,6 +52,11 @@ CNKI E-Study
 ……
 面对琳琅满目的文献管理软件，可以都尝试一下，然后选择自己中意的。
 
+## 南大正版软件
+南京大学为在校师生（含退休教职工）提供EndNote X9正版软件，我校师生可以在电脑上安装EndNote X9正版软件后使用。   
+下载地址：https://itsc.nju.edu.cn/EndNote/list.htm  
+学习资料：https://itsc.nju.edu.cn/21/3b/c32006a467259/page.psp   
+
 ## EndNote学习资源
 **软件安装包**    
 Endnote X9 最新正版授权免费下载及安装教程 [Win+Mac]  
@@ -62,7 +66,15 @@ EndNote×8_UserGuide繁体中文.pdf
 EndNote X4手册(简体).pdf  
 **操作视频**    
 【钱增强】陕西师范大学教授 “EndNote X8简明视频教程”视频。  
-【罗昭锋】中国科学技术大学教授 开设中国大学MOOC课程《文献管理与信息分析》。本资源的[Endnote X9快速入门]是这门课程中第七章内容。
+【罗昭锋】中国科学技术大学教授 开设中国大学MOOC课程《文献管理与信息分析》。本资源的[Endnote X9快速入门]是这门课程中第七章内容。  
+**南大正版软件**  
+EndNote培训视频网址：[https://clarivate.com.cn/e-clarivate/wos.htm](https://clarivate.com.cn/e-clarivate/wos.htm)  
+EndNote-mac版本使用手册.pdf  
+EndNote-Windows版本使用手册.pdf  
+《EndNote X9 快速指南 —— Windows 版》.pdf   
+
+## 推荐学习路线
+将陕西师范大学钱增强教授 “EndNote X8简明视频教程”视频完整看一遍。钱老师的视频讲得很详细，非常适合入门。    
 
 ## 扩展资料
 [知乎文章【奇睿天软】Citavi、Endnote、Mendeley 功能大比拼！到底哪一款才是众望所归的终极文献管理软件？](https://zhuanlan.zhihu.com/p/28214449)  
