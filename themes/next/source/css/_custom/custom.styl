@@ -1,3 +1,25 @@
+// 设置网站背景
+// background-attachment: fixed;
+// 图像不会随页面的其余部分滚动。
+// background-size: cover；
+// 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+body { 
+ // background-image: url(/images/background.png);
+ // background-attachment: fixed;
+ // background-repeat: repeat;
+ // background-size: cover;
+ background: $body-bg-color;
+}
+
+p { margin: 0 0 20px 0; }
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
 // Custom styles.
 // 更改文中链接的颜色
 .post-body a {
@@ -27,9 +49,23 @@
     color: rgb(80, 115, 184);
 }
 
+// 修改文章内code样式
+code {
+    color: #ff7600;
+    background: #fbf7f8;
+    margin: 2px;
+}
 
-//修改文章内code样式
-code {color:#c7254e;background:#f9f2f4;border:1px solid #d6d6d6;}
+// 大代码块的自定义样式
+.highlight, pre {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 0px;
+}
+.highlight, code, pre {
+    border: 1px solid #d6d6d6;
+}
+
 
 
 

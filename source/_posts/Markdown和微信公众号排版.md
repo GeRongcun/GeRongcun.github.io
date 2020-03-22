@@ -13,8 +13,7 @@ abbrlink: 18383
 date: 2020-01-20 22:29:29
 ---
 
-# 前言  
-微信公众号排版复杂，但推广方便；Github+Hexo搭建个人博客，写作方便（Markdown语言），但推广不易；lyricat大神开发[微信公众号排版编辑器](https://github.com/lyricat/wechat-format)，轻松转化Markdown到给微信特制的HTML。  
+**摘要：** 微信公众号排版复杂，但推广方便；Github+Hexo搭建个人博客，写作方便（Markdown语言），但推广不易；lyricat大神开发[微信公众号排版编辑器](https://github.com/lyricat/wechat-format)，轻松转化Markdown到给微信特制的HTML。  
 <!-- more -->
 # 微信公众号  
 ## 优点  

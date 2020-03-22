@@ -12,10 +12,9 @@ abbrlink: 52876
 date: 2020-01-19 23:49:07
 ---
 
-# 教程
-作业部落出品的常用语法：
+**摘要：** 作业部落出品的常用语法：
 [https://www.zybuluo.com/mdeditor](https://www.zybuluo.com/mdeditor) 
-我用的Markdown编辑器是VS Code。Sublime也很好用。  
+我用的Markdown编辑器是VS Code。 
 [Markdown中文文档](https://markdown-zh.readthedocs.io/en/latest/)  
 <!-- more -->
 ---

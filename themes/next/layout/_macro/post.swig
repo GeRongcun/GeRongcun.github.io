@@ -1,3 +1,18 @@
+Sourcegraph 3.14 is now available! Check out the 3.14 release blog post for more details.
+
+
+repo:^github\.com/GeRongcun/GeRongcun\.github\.io$ 
+GeRongcun/GeRongcun.github.io
+codes
+themes
+/
+next
+/
+layout
+/
+_macro
+/
+post.swig
 {% macro render(post, is_index, post_extra_class) %}
 
   {% set headlessPost = Array.prototype.indexOf.call(['quote', 'picture'], post.type) > -1 %}
@@ -192,15 +207,15 @@
                   <span class="post-comments-count gitment-comments-count" data-xid="{{ url_for(post.path) }}" itemprop="commentsCount"></span>
                 </a>
               </span>
-            {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
+            {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey and not is_index %}
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
-                </span>
+                </span>评论:
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
                   <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(post.path) }}" itemprop="commentCount"></span>
-                </a>
+                </a>条
               </span>
             {% endif %}
           {% endif %}
@@ -221,7 +236,7 @@
 
           {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %}
             <span class="post-meta-divider">|</span>
-            <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}
+            <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}:
             <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>{{ theme.busuanzi_count.page_pv_footer }}
             </span>
           {% endif %}
