@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gerongcun.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-03-23T02:50:09.390Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gerongcun.github.io/archives/index.html</loc>
+    
+    <lastmod>2020-03-23T02:49:11.660Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gerongcun.github.io/2020/7d7485b9/</loc>
     
     <lastmod>2020-03-23T01:27:58.177Z</lastmod>
@@ -229,13 +243,6 @@
     <loc>https://gerongcun.github.io/categories/index.html</loc>
     
     <lastmod>2020-01-20T07:34:44.315Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gerongcun.github.io/archives/index.html</loc>
-    
-    <lastmod>2020-01-20T07:03:50.074Z</lastmod>
     
   </url>
   
