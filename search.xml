@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>测试|评论功能测试</title>
+    <url>/2020/3509943/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>ECharts绘制炫酷图表教程</title>
+    <url>/2020/65604ef/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Python+FFmpeg视频处理实例1 批量裁剪视频</title>
+    <url>/2020/undefined/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Python+FFmpeg视频处理入门</title>
+    <url>/2020/7f326749/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>随笔 | 和长者一样，我家也有过继现象</title>
     <url>/2020/91fb53e9/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 今年疫情严重，宅在家，知晓了不少事情；一个是闰月年贡老坟，另一个是，和长者一样，我家也有过继现象。  </p>
@@ -722,8 +742,8 @@
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Blog</tag>
         <tag>Markdown</tag>
+        <tag>Blog</tag>
         <tag>微信公众号</tag>
       </tags>
   </entry>
