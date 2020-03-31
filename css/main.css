@@ -1333,7 +1333,7 @@ pre .javascript .function {
   border: 1px solid #ddd;
 }
 .posts-expand .post-body .fancybox img {
-  margin: 0 auto 25px;
+  margin: 0 auto 0px;
 }
 @media (max-width: 767px) {
   .posts-collapse {
@@ -1392,7 +1392,7 @@ pre .javascript .function {
   border-radius: 50%;
 }
 .posts-collapse .post {
-  margin: 30px 0;
+  margin: 15px 0 0 0;
 }
 .posts-collapse .post-header {
   position: relative;
@@ -1425,8 +1425,8 @@ pre .javascript .function {
   background: #222;
 }
 .posts-collapse .post-meta {
-  position: absolute;
-  font-size: 12px;
+  font-size: 20px;
+  font-weight: bold;
   left: 20px;
   top: 5px;
 }
@@ -1434,9 +1434,9 @@ pre .javascript .function {
   display: none;
 }
 .posts-collapse .post-title {
-  margin-left: 60px;
-  font-size: 16px;
-  font-weight: normal;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
   line-height: inherit;
 }
 .posts-collapse .post-title::after {
@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6e18ff;
+  background: #701f03;
 }
 .links-of-blogroll {
   font-size: 13px;
