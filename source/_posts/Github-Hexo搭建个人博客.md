@@ -26,6 +26,8 @@ Github仓库：[https://github.com/GeRongcun/GeRongcun.github.io](https://github
 [梧雨北辰 搭建个人博客网站Github、Hexo与Next](https://www.jianshu.com/p/72842e1c63e2)  
 [**github+hexo搭建自己的博客网站（一）基础入门**](https://www.cnblogs.com/chengxs/p/7402174.html)  
 系列教程，介绍得很全。  
+[**Hexo 博客搭建**](https://blog.csdn.net/qq_36759224/category_9285510.html)  
+关于 Hexo 博客搭建以及后期优化的系列教程  
 
 -----
 # 安装Hexo失败
