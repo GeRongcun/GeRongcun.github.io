@@ -13,6 +13,9 @@ layout
 _macro
 /
 post.swig
+
+<!--这是主页和文章post的样式-->
+
 {% macro render(post, is_index, post_extra_class) %}
 
   {% set headlessPost = Array.prototype.indexOf.call(['quote', 'picture'], post.type) > -1 %}

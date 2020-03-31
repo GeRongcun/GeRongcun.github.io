@@ -21,23 +21,31 @@
   {% endif %}
 </div>
 
+{#
+hexo强力驱动Github徽章
+#}
 {% if theme.footer.powered %}
-  <div class="powered-by">{#
-  #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
-#}</div>
+  <div class="github-badge">
+    <a style="color: #fff" rel="license" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动">
+    <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+  </div>
 {% endif %}
 
+{#
+不需要分割线了
 {% if theme.footer.powered and theme.footer.theme.enable %}
   <span class="post-meta-divider">|</span>
 {% endif %}
+#}
 
+{#
+Hexo主题Github徽章
+#}
 {% if theme.footer.theme.enable %}
-  <div class="theme-info">{#
-  #}{{ __('footer.theme') }} &mdash; {#
-  #}<a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">{#
-    #}NexT.{{ theme.scheme }}{#
-  #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
-#}</div>
+  <div class="github-badge">
+    <a style="color: #fff" rel="license" href="https://github.com/iissnan/hexo-theme-next" target="_blank" title="由 Hexo 强力驱动">
+    <span class="badge-subject">Theme</span><span class="badge-value bg-blueviolet">NexT.{{ theme.scheme }} {% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}</span></a>
+  </div>
 {% endif %}
 
 {% if theme.footer.custom_text %}
