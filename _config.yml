@@ -216,7 +216,16 @@ deploy:
   branch: master
   # branch: pages
   -type: baidu_url_submitter
-  
+
+backup:
+  type: git
+  theme: material-x-1.2.1
+  message: Back up my blog
+  repository:
+    github: git@github.com:GeRongcun/GeRongcun.github.io.git,backup
+    # coding: git@git.dev.tencent.com:TRHX/TRHX.git,backup
+
+
 #搜索功能
 search:
   path: search.xml

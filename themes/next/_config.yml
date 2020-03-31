@@ -255,8 +255,8 @@ wechat_subscriber:
 # Declare license on posts
 post_copyright:
   enable: true
-  license: CC BY-NC-SA 3.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 
 # ---------------------------------------------------------------
@@ -282,6 +282,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
+# 设置代码主题为黑色 背景为黑色
 highlight_theme: normal
 
 
@@ -297,8 +298,9 @@ highlight_theme: normal
 # To avoid space between header and sidebar in Pisces / Gemini themes recommended to use Web Safe fonts for `global` (and `logo`):
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
+# 设置字体大小
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
   host:
@@ -312,7 +314,7 @@ font:
   global:
     external: true
     family: Lato
-    size:
+    size: 16
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
   # Fallback to `global` font settings.
@@ -388,10 +390,10 @@ valine:
   enable: true
   appid: dbC14LKi4bdlsBpSyInjX8oI-gzGzoHsz # your leancloud application appid
   appkey: 3QhAYvGWKaNECOi01Xsbj9b9 # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  notify: true # mail notifier 用于接收邮件通知 , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   # placeholder: Just go go # comment box placeholder
-  placeholder: 欢迎评论(>▽<) # 评论区显示文字
+  placeholder: 欢迎评论(>▽<)&#10;本站邮件通知功能已开启，建议输入邮箱获取回复消息~ ੧ᐛ੭ # 评论区显示文字
   avatar: mm # gravatar style 头像风格
   # guest_info: nick,mail,link # custom comment header
   guest_info: nick,mail
