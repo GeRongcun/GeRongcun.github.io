@@ -53,7 +53,9 @@
     }
   }
 
-  .post { margin: 30px 0; }
+  //.post { margin: 30px 0; }
+  //博客项间隔太小，调小一点
+  .post { margin: 15px 0 0 0; }
 
   .post-header {
     position: relative;
@@ -84,8 +86,12 @@
   }
 
   .post-meta {
-    position: absolute;
-    font-size: 12px;
+    //position: absolute;
+	//删除上面属性
+    //font-size: 12px;
+	font-size: 20px;
+	font-weight: bold;
+	//添加上面属性
     left: 20px;
     top: 5px;
   }
@@ -93,9 +99,12 @@
   .post-comments-count { display: none; }
 
   .post-title {
-    margin-left: 60px;
-    font-size: 16px;
-    font-weight: normal;
+    //margin-left: 60px;
+	margin-left: 20px;
+    //font-size: 16px;
+	font-size: 20px;
+	//font-weight: normal;
+	font-weight: bold;
     line-height: inherit;
 
     &::after {

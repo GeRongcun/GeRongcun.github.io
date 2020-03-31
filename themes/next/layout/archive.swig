@@ -1,7 +1,7 @@
 {% extends '_layout.swig' %}
 {% import '_macro/post-collapse.swig' as post_template %}
 {% import '_macro/sidebar.swig' as sidebar_template %}
-
+<!--这是归档页的样式-->
 {% block title %}{{ __('title.archive') }} | {{ config.title }}{% endblock %}
 
 {% block page_class %}page-archive{% endblock %}
@@ -14,7 +14,7 @@
   <div class="post-block archive">
     <div id="posts" class="posts-collapse">
       <span class="archive-move-on"></span>
-
+	
       <span class="archive-page-counter">
         {% set cheers %}
         {% set posts_length = site.posts.length %}
@@ -41,10 +41,16 @@
             <{% if theme.seo %}h2{% else %}h1{% endif %} class="archive-year" id="archive-year-{{ year }}">{{ year }}</{% if theme.seo %}h2{% else %}h1{% endif %}>
           </div>
         {% endif %}
+		
         {# endshow #}
-
-        {{ post_template.render(post) }}
-
+		<!--引用了post.swig；显示文章标题-->
+		{{ post_template.render(post) }}
+		
+		<!--显示摘要-->
+		{#{{post.excerpt}}#}
+		{#将前面的摘要去掉<strong>摘要: </strong>#}
+		<p style="margin-left:2em;">{{post.excerpt.substring(23, post.excerpt.length)}}</p>
+		
       {% endfor %}
 
     </div>
