@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff52;
+  background: #ec8f3e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3164,13 +3164,16 @@ img {
   background-color: #000;
 }
 .pagination .page-number:hover,
-.pagination .page-number:active,
-.pagination .prev:active,
-.pagination .next:active {
+.pagination .page-number:active {
   color: #fff;
   border: none;
   border-radius: 0%;
   background-color: #000;
+}
+.pagination .extend.prev:hover,
+.pagination .extend.next:hover {
+  background-color: #000;
+  color: #fff;
 }
 .pagination .prev,
 .pagination .next,
