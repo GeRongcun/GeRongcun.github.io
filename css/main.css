@@ -1830,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d1c9ff;
+  background: #ffff52;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3164,7 +3164,9 @@ img {
   background-color: #000;
 }
 .pagination .page-number:hover,
-.pagination .page-number:active {
+.pagination .page-number:active,
+.pagination .prev:active,
+.pagination .next:active {
   color: #fff;
   border: none;
   border-radius: 0%;
