@@ -37,8 +37,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>FFmpeg</tag>
         <tag>Python</tag>
+        <tag>FFmpeg</tag>
         <tag>ffmpy</tag>
       </tags>
   </entry>
@@ -123,8 +123,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>FFmpeg</tag>
         <tag>Python</tag>
+        <tag>FFmpeg</tag>
         <tag>雷霄骅</tag>
       </tags>
   </entry>
@@ -850,8 +850,8 @@
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Blog</tag>
         <tag>Markdown</tag>
+        <tag>Blog</tag>
         <tag>微信公众号</tag>
       </tags>
   </entry>
@@ -954,8 +954,8 @@
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Github</tag>
         <tag>Markdown</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -993,9 +993,9 @@
         <category>Hexo博客</category>
       </categories>
       <tags>
+        <tag>Blog</tag>
         <tag>Github</tag>
         <tag>Hexo</tag>
-        <tag>Blog</tag>
       </tags>
   </entry>
 </search>
