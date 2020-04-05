@@ -86,9 +86,9 @@
         <category>Hexo博客</category>
       </categories>
       <tags>
+        <tag>Blog</tag>
         <tag>Github</tag>
         <tag>Hexo</tag>
-        <tag>Blog</tag>
         <tag>linux</tag>
         <tag>CentOS</tag>
       </tags>
@@ -1047,8 +1047,8 @@
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Github</tag>
         <tag>Markdown</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -1086,9 +1086,9 @@
         <category>Hexo博客</category>
       </categories>
       <tags>
+        <tag>Blog</tag>
         <tag>Github</tag>
         <tag>Hexo</tag>
-        <tag>Blog</tag>
       </tags>
   </entry>
 </search>
