@@ -7,7 +7,7 @@
 <a id="more"></a>
 
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="Github-Pages的缺陷"><a href="#Github-Pages的缺陷" class="headerlink" title="Github Pages的缺陷"></a>Github Pages的缺陷</h2><p>在此之前，Hexo个人博客部署在GitHub Pages上。因为Github Pages服务器在国外，所以访问速度比较慢，同时，Github屏蔽了百度的爬虫，不能被百度收录。为此，决定将Hexo博客部署到阿里云CentOS服务器上。  </p>
-<h2 id="最终成果"><a href="#最终成果" class="headerlink" title="最终成果"></a>最终成果</h2><p>部署在Github Pages上的博客：<a href="https://gerongcun.github.io/">https://gerongcun.github.io/</a><br>部署在阿里云CentOS服务器上的博客：<a href="http://www.gerongcun.xyz/" target="_blank" rel="noopener">http://www.gerongcun.xyz/</a>  </p>
+<h2 id="最终成果"><a href="#最终成果" class="headerlink" title="最终成果"></a>最终成果</h2><p>部署在Github Pages上的博客：<a href="https://gerongcun.github.io/" target="_blank" rel="noopener">https://gerongcun.github.io/</a><br>部署在阿里云CentOS服务器上的博客：<a href="http://www.gerongcun.xyz/">http://www.gerongcun.xyz/</a>  </p>
 <p><img src="/2020/41277b06/gerongcun_xyz.png" alt="gerongcun.xyz网站主页"></p>
 <h2 id="涉及到的知识"><a href="#涉及到的知识" class="headerlink" title="涉及到的知识"></a>涉及到的知识</h2><p>服务器：购买阿里云服务器、Linux；<br>域名：注册域名、域名解析、ICP备案、公安联网备案；<br>部署博客：Linux、Nginx、Git、Node.js；  </p>
 <h1 id="服务器和域名"><a href="#服务器和域名" class="headerlink" title="服务器和域名"></a>服务器和域名</h1><h2 id="购买服务器"><a href="#购买服务器" class="headerlink" title="购买服务器"></a>购买服务器</h2><p>阿里云推出云翼计划，年龄在12岁~24岁之间的大陆个人实名认证用户和大陆全日制在校大学生在学生认证有效期内，满足上述任一条件即可享受优惠价格。<br>参考了老骥伏枥<a href="https://zhuanlan.zhihu.com/p/77075709" target="_blank" rel="noopener">阿里云ECS、轻量应用服务器、云虚拟主机、云速成美站自助建站系统该如何选择</a>文章，购买了1核2G、1M带宽、40G高效云盘的云服务器ECS。  </p>
@@ -72,13 +72,14 @@
 <h2 id="Git-hooks钩子"><a href="#Git-hooks钩子" class="headerlink" title="Git hooks钩子"></a>Git hooks钩子</h2><h3 id="Git-hooks简介"><a href="#Git-hooks简介" class="headerlink" title="Git hooks简介"></a>Git hooks简介</h3><p>和其它版本控制系统一样，Git能在特定的重要动作发生时触发自定义脚本。有两组这样的钩子：客户端的和服务器端的。客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。你可以随心所欲地运用这些钩子。  </p>
 <p>钩子都被存储在 Git 目录下的 hooks 子目录中。 也即绝大部分项目中的 .git/hooks 。 当你用 git init 初始化一个新版本库时，Git 默认会在这个目录中放置一些示例脚本。 这些脚本除了本身可以被调用外，它们还透露了被触发时所传入的参数。 所有的示例都是 shell 脚本，其中一些还混杂了 Perl 代码，不过，任何正确命名的可执行脚本都可以正常使用 —— 你可以用 Ruby 或 Python，或任何你熟悉的语言编写它们。 这些示例的名字都是以 .sample 结尾，如果你想启用它们，得先移除这个后缀。</p>
 <p>参考资料：<br><a href="https://www.git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90" target="_blank" rel="noopener">git官方中文教程-自定义Git-Git 钩子</a>  </p>
-<h3 id="配置hooks"><a href="#配置hooks" class="headerlink" title="配置hooks"></a>配置hooks</h3><p>要用的是post-update钩子<br>cd /var/www/gerongcun_xyz/blog.git/hooks<br>移除example后缀<br>mv post-update.example post-update<br>添加执行权限<br>chmod +x post-update<br>注释如下行：<br>exec git update-server-info<br>添加如下代码：<br>git –work-tree=”静态文件VPS存放目录” –git-dir=”刚才新建的VPS git地址” checkout -f<br>例如：<br>git –work-tree=/var/www/gerongcun_xyz/website20200404/blog –git-dir=/var/www/gerongcun_xyz/blog.git checkout -f<br><img src="/2020/41277b06/VimPostUpdate.png" alt="编辑post-update">  </p>
+<h3 id="配置hooks"><a href="#配置hooks" class="headerlink" title="配置hooks"></a>配置hooks</h3><p>要用的是post-update钩子（用post-receive也可以，文件内容一样）<br>cd /var/www/gerongcun_xyz/blog.git/hooks<br>移除example后缀<br>mv post-update.example post-update<br>添加执行权限<br>chmod +x post-update<br>注释如下行：<br>exec git update-server-info<br>添加如下代码：<br>git –work-tree=”静态文件VPS存放目录” –git-dir=”刚才新建的VPS git地址” checkout -f<br>例如：<br>git –work-tree=/var/www/gerongcun_xyz/website20200404/blog –git-dir=/var/www/gerongcun_xyz/blog.git checkout -f<br><img src="/2020/41277b06/VimPostUpdate.png" alt="编辑post-update">  </p>
 <p>上面那句 git 命令可以在我们每次 push 完之后，把部署目录更新到博客的最新生成状态。这样便可以完成达到自动部署的目的了。  </p>
 <p>参考文献：<br><a href="https://www.laoyuyu.me/2017/10/10/hexo_deploy_vps/" target="_blank" rel="noopener">HEXO部署到云服务器详细指南</a><br><a href="https://www.cnblogs.com/morethink/p/10867173.html" target="_blank" rel="noopener">在vps上搭建hexo博客</a>  </p>
-<h2 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h2><h3 id="编辑站点配置文件"><a href="#编辑站点配置文件" class="headerlink" title="编辑站点配置文件"></a>编辑站点配置文件</h3><p>编辑站点配置文件_config.yml<br>添加gerongcun_xyz: <a href="mailto:git@118.31.174.117">git@118.31.174.117</a>:/var/www/gerongcun_xyz/blog.git<br><img src="/2020/41277b06/editConfigyml.png" alt="编辑_config.yml"><br>然后<br>hexo clean<br>hexo g<br>hexo d<br>部署成功<br>输入网址：<a href="http://www.gerongcun.xyz/" target="_blank" rel="noopener">http://www.gerongcun.xyz/</a></p>
+<h2 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h2><h3 id="编辑站点配置文件"><a href="#编辑站点配置文件" class="headerlink" title="编辑站点配置文件"></a>编辑站点配置文件</h3><p>编辑站点配置文件_config.yml<br>添加gerongcun_xyz: <a href="mailto:git@118.31.174.117">git@118.31.174.117</a>:/var/www/gerongcun_xyz/blog.git<br><img src="/2020/41277b06/editConfigyml.png" alt="编辑_config.yml"><br>然后<br>hexo clean<br>hexo g<br>hexo d<br>部署成功<br>输入网址：<a href="http://www.gerongcun.xyz/">http://www.gerongcun.xyz/</a></p>
 <h3 id="hexo-d-报错"><a href="#hexo-d-报错" class="headerlink" title="hexo d 报错"></a>hexo d 报错</h3><p>错误信息：<br><a href="mailto:git@github.com">git@github.com</a>: Permission denied (publickey).<br><a href="mailto:git@github.com">git@github.com</a> 拒绝访问<br><img src="/2020/41277b06/error_github.png" alt="github.com没有权限">  </p>
 <p>错误原因：<br>如果在“SSH密钥远程登录”章节，如果使用默认文件名id_rsa作为密钥的文件名，覆盖了Github的SSH密钥，导致hexo d时，无法连接github仓库。<br>最好的方法时，在“SSH密钥远程登录”章节，不要使用默认文件名，添加客户端用户名信息，比如id_rsa_root（root为用户名），作为文件名。  </p>
-<p>解决方法：<br>重新设置github SSH远程登录<br>在Git Bash中定位到本机的.ssh目录<br>cd ~/.ssh<br>重新生成密钥<br>ssh-keygen -t rsa -C “<a href="mailto:gerongcun@gmail.com">gerongcun@gmail.com</a>“<br>文件命名为 id_rsa_github<br>登录Github，删除旧公钥<br>添加新公钥id_rsa_github.pub<br>因为密钥名称不是id_rsa，所以需要添加到ssh代理<br>开启ssh代理<br>$ eval $(ssh-agent -s)<br>ssh-add ~/.ssh/id_rsa_github<br>添加id_rsa_github到代理中  </p>
+<p>解决方法：<br>方法一：重新设置linux远程主机SSH远程登录（推荐）<br>假设与Github的SSH密钥（id_rsa）冲突的用户为root，将root用户SSH远程登录linux主机的密钥换成id_rsa_root；同时，将id_rsa.pub公钥添加到Github的公钥列表中。  </p>
+<p>方法二：重新设置github SSH远程登录（每次都要配置，烦）<br>在Git Bash中定位到本机的.ssh目录<br>cd ~/.ssh<br>重新生成密钥<br>ssh-keygen -t rsa -C “<a href="mailto:gerongcun@gmail.com">gerongcun@gmail.com</a>“<br>文件命名为 id_rsa_github<br>登录Github，删除旧公钥<br>添加新公钥id_rsa_github.pub<br>因为密钥名称不是id_rsa，所以需要添加到ssh代理<br>开启ssh代理<br>$ eval $(ssh-agent -s)<br>ssh-add ~/.ssh/id_rsa_github<br>添加id_rsa_github到代理中  </p>
 <p>参考文献：<br><a href="https://blog.csdn.net/u013778905/article/details/83501204" target="_blank" rel="noopener">GitHub如何配置SSH Key</a><br><a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent" target="_blank" rel="noopener">Generating a new SSH key and adding it to the ssh-agent</a>  </p>
 ]]></content>
       <categories>
@@ -96,11 +97,6 @@
   <entry>
     <title>微信公众号格式化工具</title>
     <url>/2020/59b805d1/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>测试|评论功能测试</title>
-    <url>/2020/3509943/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -195,9 +191,9 @@
 <h3 id="mkv与mp4的转换"><a href="#mkv与mp4的转换" class="headerlink" title="mkv与mp4的转换"></a>mkv与mp4的转换</h3><p>MKV（Matroska Video File）是一种多媒体封装格式，本身是一种容器，可以把各种视频，音频和字幕等内容封装到一个文件里面的格式，MKV是开放，免费没有限制的格式，开发者承诺大家可以自由使用这种格式，和经这种格式所开发的软件，不会在这个格式普遍的时候变成一个商业的项目（给作者一个赞！）。  </p>
 <p>MP4是MPEG-4的简写，是由MPEG（Moving Picture Experts Group）这个组织制定出来的一种多媒体封装格式。之前这个组织比较成功的标准有MPEG-1, MPEG-2, MPEG-3等。解释一个容易搞错的问题，我们平时听音乐常用的MP3（MPEG-1 Layer 3）格式并不是MPEG-3的标准，而是MPEG-1中的音频压缩标准。  </p>
 <p><img src="/2020/7f326749/mp4%E5%92%8Cmkv.png" alt="mp4和mkv">  </p>
-<p>MKV通常用来存储对画质要求高的视频；MP4通常用来存储需要在移动设备上播放的视频；MP4有更好的兼容性，但视频质量比MKV略差；MKV有着更好的质量，但是文件大小更大，且兼容性略差。<br>mkv转mp4，可以参考<a href="https://gerongcun.github.io/2020/37dfd74b/">Python+FFmpeg视频处理实例1 批量裁剪视频</a>  </p>
+<p>MKV通常用来存储对画质要求高的视频；MP4通常用来存储需要在移动设备上播放的视频；MP4有更好的兼容性，但视频质量比MKV略差；MKV有着更好的质量，但是文件大小更大，且兼容性略差。<br>mkv转mp4，可以参考<a href="https://gerongcun.github.io/2020/37dfd74b/" target="_blank" rel="noopener">Python+FFmpeg视频处理实例1 批量裁剪视频</a>  </p>
 <h3 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h3><p>下面的例子是从指定时间开始，连续对1秒钟的视频进行截图。<br>$ ffmpeg \<br>-y \<br>-i input.mp4 \<br>-ss 00:01:24 -t 00:00:01 \<br>output_%3d.jpg<br>如果只需要截一张图，可以指定只截取一帧。<br>$ ffmpeg \<br>-ss 01:23:45 \<br>-i input \<br>-vframes 1 -q:v 2 \<br>output.jpg<br>上面例子中，-vframes 1指定只截取一帧，-q:v 2表示输出的图片质量，一般是1到5之间（1 为质量最高）。  </p>
-<h3 id="裁剪视频"><a href="#裁剪视频" class="headerlink" title="裁剪视频"></a>裁剪视频</h3><p>裁剪（cutting）指的是，截取原始视频里面的一个片段，输出为一个新视频。可以指定开始时间（start）和持续时间（duration），也可以指定结束时间（end）。<br>$ ffmpeg -ss [start] -i [input] -t [duration] -c copy [output]<br>$ ffmpeg -ss [start] -i [input] -to [end] -c copy [output]<br>下面是实际的例子。<br>$ ffmpeg -ss 00:01:50 -i [input] -t 10.5 -c copy [output]<br>$ ffmpeg -ss 2.5 -i [input] -to 10 -c copy [output]<br>上面例子中，-c copy表示不改变音频和视频的编码格式，直接拷贝，这样会快很多。<br>如果精准裁剪视频，可以参考<a href="https://gerongcun.github.io/2020/37dfd74b/">Python+FFmpeg视频处理实例1 批量裁剪视频</a>  </p>
+<h3 id="裁剪视频"><a href="#裁剪视频" class="headerlink" title="裁剪视频"></a>裁剪视频</h3><p>裁剪（cutting）指的是，截取原始视频里面的一个片段，输出为一个新视频。可以指定开始时间（start）和持续时间（duration），也可以指定结束时间（end）。<br>$ ffmpeg -ss [start] -i [input] -t [duration] -c copy [output]<br>$ ffmpeg -ss [start] -i [input] -to [end] -c copy [output]<br>下面是实际的例子。<br>$ ffmpeg -ss 00:01:50 -i [input] -t 10.5 -c copy [output]<br>$ ffmpeg -ss 2.5 -i [input] -to 10 -c copy [output]<br>上面例子中，-c copy表示不改变音频和视频的编码格式，直接拷贝，这样会快很多。<br>如果精准裁剪视频，可以参考<a href="https://gerongcun.github.io/2020/37dfd74b/" target="_blank" rel="noopener">Python+FFmpeg视频处理实例1 批量裁剪视频</a>  </p>
 <h2 id="ffmpy3"><a href="#ffmpy3" class="headerlink" title="ffmpy3"></a>ffmpy3</h2><h3 id="ffmpy3简介"><a href="#ffmpy3简介" class="headerlink" title="ffmpy3简介"></a>ffmpy3简介</h3><p>ffmpy3是一个用于FFmpeg的Python包装器，最初是从ffmpy项目派生出来的。它根据提供的参数及其各自的选项编译FFmpeg命令行，并使用Python的子进程执行它。<br>ffmpy3类似于FFmpeg使用的命令行方法。它可以读取任意数量的输入“文件”(常规文件、管道、网络流、抓取设备等)，并写入任意数量的输出“文件”。有关FFmpeg命令行选项和参数如何工作的详细信息，请参阅FFmpeg文档。<br>ffmpy3支持FFmpeg的管道协议。这意味着可以将输入数据传递到stdin并从stdout获得输出数据。<br>目前，ffmpy3已经为ffmpeg和ffprobe命令提供了包装器，但是应该可以用它运行其他ffmpeg工具(例如ffserver)。  </p>
 <p><strong>安装步骤</strong><br>安装：<br>pip install ffmpy3<br>导入：<br>from ffmpy3 import FFmpeg  </p>
 <p>需要将ffmpeg.exe放进.py文件所在文件夹下，否则报错ffmpy.FFExecutableNotFoundError: Executable ‘ffmpeg’ not found。  </p>
@@ -330,7 +326,7 @@
     <title>科研学习资料整理</title>
     <url>/2020/4785d37f/</url>
     <content><![CDATA[<a id="more"></a>
-<p><a href="https://clarivate.com.cn/e-clarivate/wos.htm" target="_blank" rel="noopener"><strong>Web of Science在线大讲堂</strong></a><br>文献管理软件EndNote、科研选题、论文写作等<br><a href="https://gerongcun.github.io/2020/b0d29aca/"><strong>EndNote学习资料</strong></a><br>EndNote软件安装包、使用手册、学习视频等<br><a href="https://www.bilibili.com/video/av40002909" target="_blank" rel="noopener"><strong>罗昭锋 文献管理与信息分析</strong></a><br>信息获取、知识管理、文献管理、文献信息分析、思维导图  </p>
+<p><a href="https://clarivate.com.cn/e-clarivate/wos.htm" target="_blank" rel="noopener"><strong>Web of Science在线大讲堂</strong></a><br>文献管理软件EndNote、科研选题、论文写作等<br><a href="https://gerongcun.github.io/2020/b0d29aca/" target="_blank" rel="noopener"><strong>EndNote学习资料</strong></a><br>EndNote软件安装包、使用手册、学习视频等<br><a href="https://www.bilibili.com/video/av40002909" target="_blank" rel="noopener"><strong>罗昭锋 文献管理与信息分析</strong></a><br>信息获取、知识管理、文献管理、文献信息分析、思维导图  </p>
 ]]></content>
       <categories>
         <category>科研</category>
@@ -394,7 +390,7 @@
   <entry>
     <title>【科研】引文分析软件HistCite入门</title>
     <url>/2020/de379eff/</url>
-    <content><![CDATA[<p><strong>摘要：</strong> 如何从浩瀚的文献数据库中找到关键文献，是广大科研人员普遍面临的难题。在此背景下，大量的<strong>引文分析软件</strong>应运而生。CiteSpace、HistCite、VOSviewer等软件是其中的佼佼者。</p>
+    <content><![CDATA[<p><strong>摘要：</strong> 如何从浩瀚的文献数据库中找到关键文献，是广大科研人员普遍面临的难题。在此背景下，大量的引文分析软件应运而生。CiteSpace、HistCite、VOSviewer等软件是其中的佼佼者。</p>
 <a id="more"></a>
 <h2 id="HistCite"><a href="#HistCite" class="headerlink" title="HistCite"></a>HistCite</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>HistCite是由“SCI之父”尤金·加菲尔德和他的同事们开发的引文编年可视化软件。软件名称是“History of Cite”的简写，意为引文历史。它是一款非常强大的引文分析工具，可以快速绘制出某个研究领域的发展脉络，快速锁定某个研究方向的重要文献和学术大牛，还可以找到某些具有开创性成果的无指定关键词的论文！</p>
 <p>HistCite为科睿唯安的一款产品，Histcite的引文数据目前只能来源于WOS(Web of Science)核心合集。目前，HistCite这款软件已经停止更新了。</p>
@@ -969,7 +965,7 @@
 <li>排版不美观，样式单调；  </li>
 <li>访问速度慢，需科学上网；</li>
 </ul>
-<h1 id="微信公众号排版编辑器"><a href="#微信公众号排版编辑器" class="headerlink" title="微信公众号排版编辑器"></a>微信公众号排版编辑器</h1><p>为了兼顾微信公众号的推广性和个人博客的方便性，考虑使用lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，先用Markdown写好个人博客，再使用微信公众号排版编辑器，转换为微信特制的HTML。<br><strong>PS</strong>：个人博客：<a href="https://gerongcun.github.io/">https://gerongcun.github.io/</a>，欢迎访问。</p>
+<h1 id="微信公众号排版编辑器"><a href="#微信公众号排版编辑器" class="headerlink" title="微信公众号排版编辑器"></a>微信公众号排版编辑器</h1><p>为了兼顾微信公众号的推广性和个人博客的方便性，考虑使用lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，先用Markdown写好个人博客，再使用微信公众号排版编辑器，转换为微信特制的HTML。<br><strong>PS</strong>：个人博客：<a href="https://gerongcun.github.io/" target="_blank" rel="noopener">https://gerongcun.github.io/</a>，欢迎访问。</p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -1089,7 +1085,7 @@
     <url>/2020/42500/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 前段时间，在浏览<a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a>时，知道可以用Github+Hexo搭建个人博客。这几天，参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的教程</a>学习了Git，参考梧雨北辰的教程<a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a>和其他大佬的教程，尝试搭建个人博客。期间，遇到不少问题，在这里贴出来，避免以后再次踩坑。</p>
 <a id="more"></a>
-<p>个人博客，看效果进入：<a href="https://GeRongcun.github.io">https://GeRongcun.github.io</a><br>Github仓库：<a href="https://github.com/GeRongcun/GeRongcun.github.io" target="_blank" rel="noopener">https://github.com/GeRongcun/GeRongcun.github.io</a>  </p>
+<p>个人博客，看效果进入：<a href="https://GeRongcun.github.io" target="_blank" rel="noopener">https://GeRongcun.github.io</a><br>Github仓库：<a href="https://github.com/GeRongcun/GeRongcun.github.io" target="_blank" rel="noopener">https://github.com/GeRongcun/GeRongcun.github.io</a>  </p>
 <p>推荐学习资料：<br><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a><br><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的Git教程</a><br><a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a><br><a href="https://www.cnblogs.com/chengxs/p/7402174.html" target="_blank" rel="noopener"><strong>github+hexo搭建自己的博客网站（一）基础入门</strong></a><br>系列教程，介绍得很全。<br><a href="https://blog.csdn.net/qq_36759224/category_9285510.html" target="_blank" rel="noopener"><strong>Hexo 博客搭建</strong></a><br>关于 Hexo 博客搭建以及后期优化的系列教程  </p>
 <hr>
 <h1 id="安装Hexo失败"><a href="#安装Hexo失败" class="headerlink" title="安装Hexo失败"></a>安装Hexo失败</h1><p><img src="/2020/42500/01%E9%94%99%E8%AF%AF.png" alt="安装hexo失败"><br><strong>错误提示</strong>  </p>
