@@ -2,26 +2,26 @@
 <search>
   <entry>
     <title>将Hexo博客部署到Linux云服务器</title>
-    <url>/blog/2020/41277b06/</url>
+    <url>/2020/41277b06/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 在阿里云CentOS服务器上创建私有Git仓库, 通过Git hooks（钩子），将Hexo生成的博客静态页面文件，推送到Nginx web服务器的托管目录, 完成部署。</p>
 <a id="more"></a>
 
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="Github-Pages的缺陷"><a href="#Github-Pages的缺陷" class="headerlink" title="Github Pages的缺陷"></a>Github Pages的缺陷</h2><p>在此之前，Hexo个人博客部署在GitHub Pages上。因为Github Pages服务器在国外，所以访问速度比较慢，同时，Github屏蔽了百度的爬虫，不能被百度收录。为此，决定将Hexo博客部署到阿里云CentOS服务器上。  </p>
 <h2 id="最终成果"><a href="#最终成果" class="headerlink" title="最终成果"></a>最终成果</h2><p>部署在Github Pages上的博客：<a href="https://gerongcun.github.io/" target="_blank" rel="noopener">https://gerongcun.github.io/</a><br>部署在阿里云CentOS服务器上的博客：<a href="http://www.gerongcun.xyz/">http://www.gerongcun.xyz/</a>  </p>
-<p><img src="/blog/blog/2020/41277b06/gerongcun_xyz.png" alt="gerongcun.xyz网站主页"></p>
+<p><img src="/blog/2020/41277b06/gerongcun_xyz.png" alt="gerongcun.xyz网站主页"></p>
 <h2 id="涉及到的知识"><a href="#涉及到的知识" class="headerlink" title="涉及到的知识"></a>涉及到的知识</h2><p>服务器：购买阿里云服务器、Linux；<br>域名：注册域名、域名解析、ICP备案、公安联网备案；<br>部署博客：Linux、Nginx、Git、Node.js；  </p>
 <h1 id="服务器和域名"><a href="#服务器和域名" class="headerlink" title="服务器和域名"></a>服务器和域名</h1><h2 id="购买服务器"><a href="#购买服务器" class="headerlink" title="购买服务器"></a>购买服务器</h2><p>阿里云推出云翼计划，年龄在12岁~24岁之间的大陆个人实名认证用户和大陆全日制在校大学生在学生认证有效期内，满足上述任一条件即可享受优惠价格。<br>参考了老骥伏枥<a href="https://zhuanlan.zhihu.com/p/77075709" target="_blank" rel="noopener">阿里云ECS、轻量应用服务器、云虚拟主机、云速成美站自助建站系统该如何选择</a>文章，购买了1核2G、1M带宽、40G高效云盘的云服务器ECS。  </p>
 <p>参考资料：<br><a href="https://promotion.aliyun.com/ntms/act/campus2018.html?userCode=lmp3ps11" target="_blank" rel="noopener">云翼计划购买链接</a><br><a href="https://zhuanlan.zhihu.com/p/77075709" target="_blank" rel="noopener">阿里云ECS、轻量应用服务器、云虚拟主机、云速成美站自助建站系统该如何选择</a>  </p>
 <h2 id="选择操作系统"><a href="#选择操作系统" class="headerlink" title="选择操作系统"></a>选择操作系统</h2><p>一开始选的是Windows Server，发现网上教程太少，换用Linux系统。CentOS和ubuntu是两款比较火的Linux系统。网上的观点是CentOS更适用于服务器（稳定、bug少），Ubuntu则更适用于个人桌面（图形界面、功能更新快）。同时，搜索了部署Hexo博客教程，感觉CentOS关于部署Hexo博客的教程比较多，就选择了CentOS系统。<br>参考文献：<a href="https://www.linuxprobe.com/ubuntu-comparison-centos.html" target="_blank" rel="noopener">ubuntu与centos对比</a></p>
 <h2 id="注册域名"><a href="#注册域名" class="headerlink" title="注册域名"></a>注册域名</h2><p>域名注册网站有国外的GoDaddy和国内的阿里云（万网）。因为国外域名不能备案，所以选择了阿里云。<br>参考文献：<a href="https://zhuanlan.zhihu.com/p/67528427" target="_blank" rel="noopener">云师兄-关于域名备案那些事</a>  </p>
-<h2 id="域名备案"><a href="#域名备案" class="headerlink" title="域名备案"></a>域名备案</h2><p>域名备案分为ICP（Internet Content Provider，网络内容提供商）备案和公安联网备案，流程如下图所示：<br><img src="/blog/blog/2020/41277b06/beian.png" alt="域名备案图片"><br>ICP备案可以用<a href="https://beian.aliyun.com/order/index.htm" target="_blank" rel="noopener">阿里云ICP代备案管理系统</a>；公安联网备案只能登录<a href="http://www.beian.gov.cn/portal/index" target="_blank" rel="noopener">全国互联网安全管理服务平台</a>操作。<br>参考资料：<a href="https://help.aliyun.com/document_detail/61819.html?spm=a2c4g.11186623.6.560.2b9743857VlMbn" target="_blank" rel="noopener">阿里云-ICP备案流程概述</a>  </p>
+<h2 id="域名备案"><a href="#域名备案" class="headerlink" title="域名备案"></a>域名备案</h2><p>域名备案分为ICP（Internet Content Provider，网络内容提供商）备案和公安联网备案，流程如下图所示：<br><img src="/blog/2020/41277b06/beian.png" alt="域名备案图片"><br>ICP备案可以用<a href="https://beian.aliyun.com/order/index.htm" target="_blank" rel="noopener">阿里云ICP代备案管理系统</a>；公安联网备案只能登录<a href="http://www.beian.gov.cn/portal/index" target="_blank" rel="noopener">全国互联网安全管理服务平台</a>操作。<br>参考资料：<a href="https://help.aliyun.com/document_detail/61819.html?spm=a2c4g.11186623.6.560.2b9743857VlMbn" target="_blank" rel="noopener">阿里云-ICP备案流程概述</a>  </p>
 <p><strong>备案相关规定</strong><br>《互联网信息服务管理办法》指出互联网信息服务分为经营性和非经营性两类。国家对经营性互联网信息服务实行许可制度；对非经营性互联网信息服务实行备案制度。未取得许可或者未履行备案手续的，不得从事互联网信息服务。</p>
-<p><strong>备案实例</strong><br>以<a href="https://baike.baidu.com/item/ICP%E5%A4%87%E6%A1%88/1220667?fr=aladdin" target="_blank" rel="noopener">ICP百度百科词条网页</a>为例。下滑到网页底部，可以看到：<br><img src="/blog/blog/2020/41277b06/baidu_beian.png" alt="域名备案图片"><br>“京ICP证030173号”是域名baidu.com的ICP备案编号，“京公网安备11000002000001号”是公安联网备案编号。  </p>
-<h1 id="部署Hexo博客"><a href="#部署Hexo博客" class="headerlink" title="部署Hexo博客"></a>部署Hexo博客</h1><h2 id="部署Hexo博客原理"><a href="#部署Hexo博客原理" class="headerlink" title="部署Hexo博客原理"></a>部署Hexo博客原理</h2><p><img src="/blog/blog/2020/41277b06/PrincipleOfBlog.png" alt="设置Nginx根目录"><br>整个流程就是本地将*.md 渲染成静态文件，然后Git推送到服务器的repository，服务器再通过git-hooks同步到网站根目录（Nginx服务的托管目录），完成部署。<br>参考资料：<br><a href="https://www.jianshu.com/p/e1ccd49b4e5d" target="_blank" rel="noopener">Hexo部署在阿里云服务器上</a>  </p>
+<p><strong>备案实例</strong><br>以<a href="https://baike.baidu.com/item/ICP%E5%A4%87%E6%A1%88/1220667?fr=aladdin" target="_blank" rel="noopener">ICP百度百科词条网页</a>为例。下滑到网页底部，可以看到：<br><img src="/blog/2020/41277b06/baidu_beian.png" alt="域名备案图片"><br>“京ICP证030173号”是域名baidu.com的ICP备案编号，“京公网安备11000002000001号”是公安联网备案编号。  </p>
+<h1 id="部署Hexo博客"><a href="#部署Hexo博客" class="headerlink" title="部署Hexo博客"></a>部署Hexo博客</h1><h2 id="部署Hexo博客原理"><a href="#部署Hexo博客原理" class="headerlink" title="部署Hexo博客原理"></a>部署Hexo博客原理</h2><p><img src="/blog/2020/41277b06/PrincipleOfBlog.png" alt="设置Nginx根目录"><br>整个流程就是本地将*.md 渲染成静态文件，然后Git推送到服务器的repository，服务器再通过git-hooks同步到网站根目录（Nginx服务的托管目录），完成部署。<br>参考资料：<br><a href="https://www.jianshu.com/p/e1ccd49b4e5d" target="_blank" rel="noopener">Hexo部署在阿里云服务器上</a>  </p>
 <h2 id="学习Linux"><a href="#学习Linux" class="headerlink" title="学习Linux"></a>学习Linux</h2><p>在部署Hexo之前，需要学习Linux。我找了两份教程，分别是<a href="https://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html" target="_blank" rel="noopener">Linux Tools Quick Tutorial Linux工具快速教程</a>和<a href="http://cn.linux.vbird.org/linux_basic/linux_basic.php" target="_blank" rel="noopener">蔡德明-鸟哥的linux私房菜</a>。<br>本着先入门再精通的原则，选择了篇幅比较少的Linux Tools Quick Tutorial，看了两章，觉得解释太少，看不下去；又开始看《鸟哥的linux私房菜》，篇幅长是长了点，但是解释得好，可以看下去。刚好借此机会，熟悉了繁体字（鸟哥是台湾人）。<br>参考资料：<a href="https://www.zhihu.com/question/30328004/answer/751243297" target="_blank" rel="noopener">程序员良许-学习Linux有没有比《鸟哥的Linux私房菜》更好的书</a>  </p>
 <h2 id="SSH远程连接Linux服务器"><a href="#SSH远程连接Linux服务器" class="headerlink" title="SSH远程连接Linux服务器"></a>SSH远程连接Linux服务器</h2><h3 id="shell、Xshell、SSH介绍"><a href="#shell、Xshell、SSH介绍" class="headerlink" title="shell、Xshell、SSH介绍"></a>shell、Xshell、SSH介绍</h3><p><strong>什么是shell</strong><br>inux系统由硬件、内核（核心、kernel）、shell三部分组成。  </p>
-<p><img src="/blog/blog/2020/41277b06/shell.png" alt="shell"><br>操作系统（kernel，核心）是一组软件，控制整个硬件与管理系统的活动监测。如果这组软件能被用户随意的操作，若使用者应用不当，将会使得整个系统崩溃！但是我们总是需要让用户操作系统的，所以就有了在操作系统上面发展的应用程序（shell，壳程序）啦！</p>
-<p><img src="/blog/blog/2020/41277b06/ComponentsOfLinux.jpg" alt="linux组成"><br>用户可以透过shell来指挥核心，让核心达成我们所需要的硬件任务！我们可以发现shell其实是在最外层，就如同鸡蛋的外壳一样，因此就被称呼为壳程序 (shell) ！</p>
+<p><img src="/blog/2020/41277b06/shell.png" alt="shell"><br>操作系统（kernel，核心）是一组软件，控制整个硬件与管理系统的活动监测。如果这组软件能被用户随意的操作，若使用者应用不当，将会使得整个系统崩溃！但是我们总是需要让用户操作系统的，所以就有了在操作系统上面发展的应用程序（shell，壳程序）啦！</p>
+<p><img src="/blog/2020/41277b06/ComponentsOfLinux.jpg" alt="linux组成"><br>用户可以透过shell来指挥核心，让核心达成我们所需要的硬件任务！我们可以发现shell其实是在最外层，就如同鸡蛋的外壳一样，因此就被称呼为壳程序 (shell) ！</p>
 <p>只要能够操作应用程序的接口都能够称为壳程序。狭义的壳程序指的是命令行之类的软件。 广义的壳程序则包括图形接口的软件！因为图形接口其实也能够操作各种应用程序来呼叫核心工作啊！</p>
 <p>参考文献：<br><a href="https://blog.csdn.net/jiewu5/article/details/78060306" target="_blank" rel="noopener">linux系统组成——硬件、内核、shell</a><br><a href="http://cn.linux.vbird.org/linux_basic/0320bash_1.php" target="_blank" rel="noopener">鸟哥-认识BASH这个Shell</a>  </p>
 <p><strong>下载Xshell</strong><br>Xshell可以在Windows界面下用来访问远端不同系统下的服务器，从而比较好的达到远程控制终端的目的。下载地址：<a href="https://www.netsarang.com/en/xshell/" target="_blank" rel="noopener">Xshell官网</a>。用途请选择个人使用，提交邮箱信息。  </p>
@@ -30,12 +30,12 @@
 <p>传统的网络服务程序，如FTP、Pop和Telnet其本质上都是不安全的；因为它们在网络上用明文传送数据、用户帐号和用户口令，很容易受到中间人（man-in-the-middle）攻击方式的攻击。就是存在另一个人或者一台机器冒充真正的服务器接收用户传给服务器的数据，然后再冒充用户把数据传给真正的服务器。</p>
 <p>但并不是说SSH就是绝对安全的，因为它本身提供两种级别的验证方法：  </p>
 <p>第一种级别（基于口令的安全验证）：只要你知道自己帐号和口令，就可以登录到远程主机。所有传输的数据都会被加密，但是不能保证你正在连接的服务器就是你想连接的服务器。可能会有别的服务器在冒充真正的服务器，也就是受到“中间人攻击”这种方式的攻击。</p>
-<p>第二种级别（基于密钥的安全验证）：你必须为自己创建一对密钥，并把公钥放在需要访问的服务器上。如果你要连接到SSH服务器上，客户端软件就会向服务器发出请求，请求用你的密钥进行安全验证。服务器收到请求之后，先在该服务器上你的主目录下寻找你的公钥，然后把它和你发送过来的公钥进行比较。如果两个密钥一致，服务器就用公钥加密“质询”(challenge)并把它发送给客户端软件。客户端软件收到“质询”之后就可以用你的私钥在本地解密再把它发送给服务器完成登录。与第一种级别相比，第二种级别不仅加密所有传输的数据，也不需要在网络上传送口令，因此安全性更高，可以有效防止中间人攻击。<br><img src="/blog/blog/2020/41277b06/PrincipleOfSSH.png" alt="SSH原理">  </p>
+<p>第二种级别（基于密钥的安全验证）：你必须为自己创建一对密钥，并把公钥放在需要访问的服务器上。如果你要连接到SSH服务器上，客户端软件就会向服务器发出请求，请求用你的密钥进行安全验证。服务器收到请求之后，先在该服务器上你的主目录下寻找你的公钥，然后把它和你发送过来的公钥进行比较。如果两个密钥一致，服务器就用公钥加密“质询”(challenge)并把它发送给客户端软件。客户端软件收到“质询”之后就可以用你的私钥在本地解密再把它发送给服务器完成登录。与第一种级别相比，第二种级别不仅加密所有传输的数据，也不需要在网络上传送口令，因此安全性更高，可以有效防止中间人攻击。<br><img src="/blog/2020/41277b06/PrincipleOfSSH.png" alt="SSH原理">  </p>
 <p>远程主机上的authorized_keys文件中可以保存多个公钥。多个公钥直接追加在末尾。<br>了解ssh免密登录的过程，再回过头来，我们发现其实这种方式和远程主机的密码没有任何关系，我们无需知道密码，或者密码随便更改，我们只要保证远程主机有我们的公钥，而我们本地有这么一对公钥和私钥就可以了。</p>
 <p>SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。OpenSSH是免费开源实现在Ubuntu、CentOS中的应用。OpenSSH分为客户端openssh-client和服务器openssh-server，阿里云CentOS服务器默认安装了openssh。</p>
-<h3 id="SSH口令远程登录"><a href="#SSH口令远程登录" class="headerlink" title="SSH口令远程登录"></a>SSH口令远程登录</h3><p>口令登录非常简单，只需要一条命令，命令格式为：ssh 客户端用户名@服务器ip地址，如ssh <a href="mailto:root@118.31.174.117">root@118.31.174.117</a>，然后输入口令（密码）。<br>CentOS服务器的默认账号是root，密码需要自己设置。设置方法如下：<br>进入阿里云控制台，点击更多-实例设置-重置实例密码。<br><img src="/blog/blog/2020/41277b06/SetAPasswordForInstance.png" alt="设置实例密码">  </p>
+<h3 id="SSH口令远程登录"><a href="#SSH口令远程登录" class="headerlink" title="SSH口令远程登录"></a>SSH口令远程登录</h3><p>口令登录非常简单，只需要一条命令，命令格式为：ssh 客户端用户名@服务器ip地址，如ssh <a href="mailto:root@118.31.174.117">root@118.31.174.117</a>，然后输入口令（密码）。<br>CentOS服务器的默认账号是root，密码需要自己设置。设置方法如下：<br>进入阿里云控制台，点击更多-实例设置-重置实例密码。<br><img src="/blog/2020/41277b06/SetAPasswordForInstance.png" alt="设置实例密码">  </p>
 <h3 id="SSH密钥远程登录"><a href="#SSH密钥远程登录" class="headerlink" title="SSH密钥远程登录"></a>SSH密钥远程登录</h3><p>每次登录远程主机都需要输入密码是很不方便的，如果想要省去这一步骤，可以利用密钥对进行连接，还可以提高安全性。  </p>
-<p>1、在本机生成密钥对<br>使用Git Bash而不是xshell。<br>输入ssh-keygen -t rsa  #-t表示类型选项，这里采用rsa加密算法<br><img src="/blog/blog/2020/41277b06/GenerateTheKey.png" alt="生成密钥"><br>这里强烈建议不要使用默认文件名id_rsa作为文件名，后面会提到（覆盖了Github的SSH密钥，导致hexo d时，无法连接github仓库；以后还会提到），可以添加客户端用户名信息，比如id_rsa_root（root为用户名）。  </p>
+<p>1、在本机生成密钥对<br>使用Git Bash而不是xshell。<br>输入ssh-keygen -t rsa  #-t表示类型选项，这里采用rsa加密算法<br><img src="/blog/2020/41277b06/GenerateTheKey.png" alt="生成密钥"><br>这里强烈建议不要使用默认文件名id_rsa作为文件名，后面会提到（覆盖了Github的SSH密钥，导致hexo d时，无法连接github仓库；以后还会提到），可以添加客户端用户名信息，比如id_rsa_root（root为用户名）。  </p>
 <p>下面的命令提示输入密钥的密码：<br>Enter passphrase （empty for no passphrase）：<br>Enter same passphrase again：<br>直接连按两次Enter，不设置密码。</p>
 <p>密钥一般存放在~/.ssh文件目录内。~表示用户家（home）目录，一般是C:\Users\+用户名，比如我的家目录是C:\Users\16121，用户名为16121。</p>
 <p>用Git Bash进入.ssh文件目录后，<br>输入cat id_rsa_root.pub<br>查看windows本机上的公钥。</p>
@@ -44,13 +44,13 @@
 <p>可能还要设置.ssh和authorzied_keys的权限<br>chmod 600 ~/.ssh/authorzied_keys<br>chmod 700 ~/.ssh</p>
 <p><strong>报错Add correct host key</strong><br>报错信息：  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ERROR: Add correct host key in &#x2F;c&#x2F;Users&#x2F;16121&#x2F;.ssh&#x2F;known_hosts to get rid of this message.</span><br><span class="line">ERROR: Offending ECDSA key in &#x2F;c&#x2F;Users&#x2F;16121&#x2F;.ssh&#x2F;known_hosts:8</span><br><span class="line">ERROR: ECDSA host key for 118.31.174.117 has changed and you have requested strict checking.</span><br><span class="line">ERROR: Host key verification failed.</span><br></pre></td></tr></table></figure>
-<p><img src="/blog/blog/2020/41277b06/errer_AddCorrectHostKey.png" alt="报错Add correct host key">  </p>
+<p><img src="/blog/2020/41277b06/errer_AddCorrectHostKey.png" alt="报错Add correct host key">  </p>
 <p>报错原因及解放方法：<br>查看本机的.ssh目录下的known_hosts文件；<br>因为我重装了CentOS系统，known_hosts文件残留之前的主机信息；<br>删除之前的信息，再次复制公钥，成功。</p>
 <p>3、验证是否可以SSH密钥登录<br>在Xshell或者Git Bash（Git Bash也能远程登录！）中输入：<br>ssh <a href="mailto:root@118.31.174.117">root@118.31.174.117</a><br>如果登录成功，表明可以密钥登录。  </p>
 <p>在远程主机上，输入<br>cat ~/.ssh/authorized_keys<br>可以查看添加的公钥信息。  </p>
 <p>参考文献：<br><a href="https://blog.csdn.net/li528405176/article/details/82810342" target="_blank" rel="noopener">SSH简介及两种远程登录的方法</a>  </p>
 <h2 id="安装Nginx、Git、Hexo"><a href="#安装Nginx、Git、Hexo" class="headerlink" title="安装Nginx、Git、Hexo"></a>安装Nginx、Git、Hexo</h2><h3 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h3><p><strong>安装Nginx</strong><br>CentOS默认安装Nginx。<br>通过yum search nginx看看是否已经添加源成功。如果成功则执行下列命令安装Nginx。<br>sudo yum install -y nginx<br>启动Nginx并设置开机自动运行<br>sudo systemctl start nginx.service<br>sudo systemctl enable nginx.service  </p>
-<p><strong>检验是否安装成功</strong><br>在浏览器输入远程主机的ip或者域名；如&lt;118.31.174.117&gt;或者&lt;<a href="http://www.gerongcun.xyz&gt;。" target="_blank" rel="noopener">www.gerongcun.xyz&gt;。</a><br>显示如下画面：<br><img src="/blog/blog/2020/41277b06/InstallNginx.png" alt="安装Nginx成功后的画面"><br>如果没有成功，可能是端口没打开。默认端口是80端口（http协议默认端口），如果没有打开，可以进入阿里云控制台，添加安全组规则。  </p>
+<p><strong>检验是否安装成功</strong><br>在浏览器输入远程主机的ip或者域名；如&lt;118.31.174.117&gt;或者&lt;<a href="http://www.gerongcun.xyz&gt;。" target="_blank" rel="noopener">www.gerongcun.xyz&gt;。</a><br>显示如下画面：<br><img src="/blog/2020/41277b06/InstallNginx.png" alt="安装Nginx成功后的画面"><br>如果没有成功，可能是端口没打开。默认端口是80端口（http协议默认端口），如果没有打开，可以进入阿里云控制台，添加安全组规则。  </p>
 <p><strong>nginx的常用命令</strong><br>验证配置是否正确: nginx -t<br>查看Nginx的详细的版本号：nginx  -V<br>查看Nginx的简洁版本号：nginx  -v<br>启动Nginx：nginx<br>快速停止或关闭Nginx：nginx -s stop<br>正常、完整停止或关闭Nginx：nginx -s quit<br>重新打开日志文件nginx -s reopen<br>重新启动service nginx restart<br>配置文件修改重装载命令：nginx -s reload<br>用man nginx查看其他用法<br>Nginx配置文件：/etc/nginx/nginx.conf  </p>
 <p>参考文献：<br><a href="https://www.jianshu.com/p/ce93e2307c25" target="_blank" rel="noopener">Linux使用yum安装nginx</a><br><a href="https://blog.csdn.net/wjg8209/article/details/94899191" target="_blank" rel="noopener">nginx实战操作（常用命令及配置）</a><br><a href="http://www.imooc.com/wenda/detail/433845" target="_blank" rel="noopener">service nginx restart 重启快吗</a>  </p>
 <h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>新建Git用户<br>useradd -m git<br>设置git用户的密码<br>passwd git<br>然后添加公钥（参考上面“SSH密钥远程登录”章节），实现SSH密钥远程登录。  </p>
@@ -64,19 +64,19 @@
 
 <h3 id="新建git仓库"><a href="#新建git仓库" class="headerlink" title="新建git仓库"></a>新建git仓库</h3><p>定位到/var/www/gerongcun_xyz<br>输入git init –bare blog.git<br>新建一个名为blog的git仓库（空库）<br>改变blog.git目录的拥有者为git用户<br>chown -R git:git blog.git  </p>
 <p><strong>检验新建git仓库是否成功</strong><br>当上述步骤都完成后，我们就可以测试下git仓库是否创建成功，最简单的方法便是使用clone<br>在Git Bash中输入：<br>git clone <a href="mailto:git@118.31.174.117">git@118.31.174.117</a>:/var/www/gerongcun_xyz/blog.git<br>如果复制成功，表明git仓库创建成功！  </p>
-<h3 id="网站根目录"><a href="#网站根目录" class="headerlink" title="网站根目录"></a>网站根目录</h3><p>编辑Nginx配置文件：<br>vi /etc/nginx/nginx.conf<br><img src="/blog/blog/2020/41277b06/RootDirectory.png" alt="设置Nginx根目录"><br>将root设置为/var/www/gerongcun_xyz/website20200404/blog  </p>
+<h3 id="网站根目录"><a href="#网站根目录" class="headerlink" title="网站根目录"></a>网站根目录</h3><p>编辑Nginx配置文件：<br>vi /etc/nginx/nginx.conf<br><img src="/blog/2020/41277b06/RootDirectory.png" alt="设置Nginx根目录"><br>将root设置为/var/www/gerongcun_xyz/website20200404/blog  </p>
 <p>最后重启服务，让 Nginx 生效:<br>service nginx restart<br>PS: 不要用nginx -s reopen，这是重新打开日志的命令  </p>
 <p>改变根目录目录的拥有者为git用户<br>chown -R git:git /var/www/gerongcun_xyz/website20200404/blog<br>配置权限<br>chmod -R 755 /var/www/gerongcun_xyz/website20200404/blog  </p>
-<p><strong>检验设置根目录是否成功</strong><br>进入网站根目录<br>cd /var/www/gerongcun_xyz/website20200404/blog<br>创建一个txt文件<br>vi test.txt<br>输入一些内容，比如This is a file.<br>然后在浏览器输入gerongcun.xyz/test.txt<br>查看是否显示txt文件内容<br><img src="/blog/blog/2020/41277b06/JudgeRoot.png" alt="判断设置根目录是否成功">  </p>
+<p><strong>检验设置根目录是否成功</strong><br>进入网站根目录<br>cd /var/www/gerongcun_xyz/website20200404/blog<br>创建一个txt文件<br>vi test.txt<br>输入一些内容，比如This is a file.<br>然后在浏览器输入gerongcun.xyz/test.txt<br>查看是否显示txt文件内容<br><img src="/blog/2020/41277b06/JudgeRoot.png" alt="判断设置根目录是否成功">  </p>
 <p>参考文献：<br><a href="https://www.laoyuyu.me/2017/10/10/hexo_deploy_vps/" target="_blank" rel="noopener">HEXO部署到云服务器详细指南</a>  </p>
 <h2 id="Git-hooks钩子"><a href="#Git-hooks钩子" class="headerlink" title="Git hooks钩子"></a>Git hooks钩子</h2><h3 id="Git-hooks简介"><a href="#Git-hooks简介" class="headerlink" title="Git hooks简介"></a>Git hooks简介</h3><p>和其它版本控制系统一样，Git能在特定的重要动作发生时触发自定义脚本。有两组这样的钩子：客户端的和服务器端的。客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。你可以随心所欲地运用这些钩子。  </p>
 <p>钩子都被存储在 Git 目录下的 hooks 子目录中。 也即绝大部分项目中的 .git/hooks 。 当你用 git init 初始化一个新版本库时，Git 默认会在这个目录中放置一些示例脚本。 这些脚本除了本身可以被调用外，它们还透露了被触发时所传入的参数。 所有的示例都是 shell 脚本，其中一些还混杂了 Perl 代码，不过，任何正确命名的可执行脚本都可以正常使用 —— 你可以用 Ruby 或 Python，或任何你熟悉的语言编写它们。 这些示例的名字都是以 .sample 结尾，如果你想启用它们，得先移除这个后缀。</p>
 <p>参考资料：<br><a href="https://www.git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90" target="_blank" rel="noopener">git官方中文教程-自定义Git-Git 钩子</a>  </p>
-<h3 id="配置hooks"><a href="#配置hooks" class="headerlink" title="配置hooks"></a>配置hooks</h3><p>要用的是post-update钩子（用post-receive也可以，文件内容一样）<br>cd /var/www/gerongcun_xyz/blog.git/hooks<br>移除example后缀<br>mv post-update.example post-update<br>添加执行权限<br>chmod +x post-update<br>注释如下行：<br>exec git update-server-info<br>添加如下代码：<br>git –work-tree=”静态文件VPS存放目录” –git-dir=”刚才新建的VPS git地址” checkout -f<br>例如：<br>git –work-tree=/var/www/gerongcun_xyz/website20200404/blog –git-dir=/var/www/gerongcun_xyz/blog.git checkout -f<br><img src="/blog/blog/2020/41277b06/VimPostUpdate.png" alt="编辑post-update">  </p>
+<h3 id="配置hooks"><a href="#配置hooks" class="headerlink" title="配置hooks"></a>配置hooks</h3><p>要用的是post-update钩子（用post-receive也可以，文件内容一样）<br>cd /var/www/gerongcun_xyz/blog.git/hooks<br>移除example后缀<br>mv post-update.example post-update<br>添加执行权限<br>chmod +x post-update<br>注释如下行：<br>exec git update-server-info<br>添加如下代码：<br>git –work-tree=”静态文件VPS存放目录” –git-dir=”刚才新建的VPS git地址” checkout -f<br>例如：<br>git –work-tree=/var/www/gerongcun_xyz/website20200404/blog –git-dir=/var/www/gerongcun_xyz/blog.git checkout -f<br><img src="/blog/2020/41277b06/VimPostUpdate.png" alt="编辑post-update">  </p>
 <p>上面那句 git 命令可以在我们每次 push 完之后，把部署目录更新到博客的最新生成状态。这样便可以完成达到自动部署的目的了。  </p>
 <p>参考文献：<br><a href="https://www.laoyuyu.me/2017/10/10/hexo_deploy_vps/" target="_blank" rel="noopener">HEXO部署到云服务器详细指南</a><br><a href="https://www.cnblogs.com/morethink/p/10867173.html" target="_blank" rel="noopener">在vps上搭建hexo博客</a>  </p>
-<h2 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h2><h3 id="编辑站点配置文件"><a href="#编辑站点配置文件" class="headerlink" title="编辑站点配置文件"></a>编辑站点配置文件</h3><p>编辑站点配置文件_config.yml<br>添加gerongcun_xyz: <a href="mailto:git@118.31.174.117">git@118.31.174.117</a>:/var/www/gerongcun_xyz/blog.git<br><img src="/blog/blog/2020/41277b06/editConfigyml.png" alt="编辑_config.yml"><br>然后<br>hexo clean<br>hexo g<br>hexo d<br>部署成功<br>输入网址：<a href="http://www.gerongcun.xyz/">http://www.gerongcun.xyz/</a></p>
-<h3 id="hexo-d-报错"><a href="#hexo-d-报错" class="headerlink" title="hexo d 报错"></a>hexo d 报错</h3><p>错误信息：<br><a href="mailto:git@github.com">git@github.com</a>: Permission denied (publickey).<br><a href="mailto:git@github.com">git@github.com</a> 拒绝访问<br><img src="/blog/blog/2020/41277b06/error_github.png" alt="github.com没有权限">  </p>
+<h2 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h2><h3 id="编辑站点配置文件"><a href="#编辑站点配置文件" class="headerlink" title="编辑站点配置文件"></a>编辑站点配置文件</h3><p>编辑站点配置文件_config.yml<br>添加gerongcun_xyz: <a href="mailto:git@118.31.174.117">git@118.31.174.117</a>:/var/www/gerongcun_xyz/blog.git<br><img src="/blog/2020/41277b06/editConfigyml.png" alt="编辑_config.yml"><br>然后<br>hexo clean<br>hexo g<br>hexo d<br>部署成功<br>输入网址：<a href="http://www.gerongcun.xyz/">http://www.gerongcun.xyz/</a></p>
+<h3 id="hexo-d-报错"><a href="#hexo-d-报错" class="headerlink" title="hexo d 报错"></a>hexo d 报错</h3><p>错误信息：<br><a href="mailto:git@github.com">git@github.com</a>: Permission denied (publickey).<br><a href="mailto:git@github.com">git@github.com</a> 拒绝访问<br><img src="/blog/2020/41277b06/error_github.png" alt="github.com没有权限">  </p>
 <p>错误原因：<br>如果在“SSH密钥远程登录”章节，如果使用默认文件名id_rsa作为密钥的文件名，覆盖了Github的SSH密钥，导致hexo d时，无法连接github仓库。<br>最好的方法时，在“SSH密钥远程登录”章节，不要使用默认文件名，添加客户端用户名信息，比如id_rsa_root（root为用户名），作为文件名。  </p>
 <p>解决方法：<br>方法一：重新设置linux远程主机SSH远程登录（推荐）<br>假设与Github的SSH密钥（id_rsa）冲突的用户为root，将root用户SSH远程登录linux主机的密钥换成id_rsa_root；同时，将id_rsa.pub公钥添加到Github的公钥列表中。  </p>
 <p>方法二：重新设置github SSH远程登录（每次都要配置，烦）<br>在Git Bash中定位到本机的.ssh目录<br>cd ~/.ssh<br>重新生成密钥<br>ssh-keygen -t rsa -C “<a href="mailto:gerongcun@gmail.com">gerongcun@gmail.com</a>“<br>文件命名为 id_rsa_github<br>登录Github，删除旧公钥<br>添加新公钥id_rsa_github.pub<br>因为密钥名称不是id_rsa，所以需要添加到ssh代理<br>开启ssh代理<br>$ eval $(ssh-agent -s)<br>ssh-add ~/.ssh/id_rsa_github<br>添加id_rsa_github到代理中  </p>
@@ -96,24 +96,24 @@
   </entry>
   <entry>
     <title>微信公众号格式化工具</title>
-    <url>/blog/2020/59b805d1/</url>
+    <url>/2020/59b805d1/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>ECharts绘制炫酷图表教程</title>
-    <url>/blog/2020/65604ef/</url>
+    <url>/2020/65604ef/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Python+FFmpeg视频处理实例1 批量裁剪视频</title>
-    <url>/blog/2020/37dfd74b/</url>
+    <url>/2020/37dfd74b/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 利用PotPlayer播放软件记录精彩片段时间区间，借助Python+FFmpeg批量裁剪视频，实现《逃避虽可耻但有用》剧集片段批量裁剪。</p>
 <a id="more"></a>
 
 <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>最近在看《逃避虽可耻但有用》，想把精彩片段录下来纪念。可选方案有三个，一是用录屏软件录屏；二是采用Premiere视频剪辑软件；三是采用PotPlayer播放软件+FFmpeg视频处理软件。用录屏软件录屏，非常浪费时间，直接pass；采用Premiere，边播放边剪辑，播放窗口很小，影响观看体验，不过Premiere好像可以用XML和AAF批量裁剪，我还不会；采用PotPlayer播放软件+FFmpeg视频处理软件，观看体验好，裁剪效率很高，存在的不足是PotPlayer无法显示音频波形，难以判断人物是否说完台词，较难确定剪辑出入点。  </p>
 <p>主要步骤为两部，第一步是利用PotPlayer播放软件记录片段时间区间，第二步是借助Python+FFmpeg批量裁剪视频。话不多说，进入主题。  </p>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="输入文件"><a href="#输入文件" class="headerlink" title="输入文件"></a>输入文件</h3><p>《逃避虽可耻但有用》第一集视频文件和字幕文件<br>We.Married.As.A.Job.E01.2016.720p.BluRay.x264-WiKi.mkv<br>We.Married.As.A.Job.E01.2016.720p.BluRay.x264-WiKi.ass<br>封装格式：mkv（Matroska）<br>总体码率：4846kb/s<br>分辨率：720p（1280x720）  </p>
-<h3 id="PotPlayer记录片段时间区间"><a href="#PotPlayer记录片段时间区间" class="headerlink" title="PotPlayer记录片段时间区间"></a>PotPlayer记录片段时间区间</h3><p>PotPlayer是一款卓越的播放软件，按快捷键H，调出书签编辑器；<br><img src="/blog/blog/2020/37dfd74b/potplayer%E8%AE%B0%E5%BD%95%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4.png" alt="potplayer记录时间区间"><br>看到精彩片段，利用书签编辑器添加书签，记录片段时间区间；<br>看完一整集后，点击书签编辑器的“全体编辑”按钮，复制全部书签；<br>格式如下：  </p>
+<h3 id="PotPlayer记录片段时间区间"><a href="#PotPlayer记录片段时间区间" class="headerlink" title="PotPlayer记录片段时间区间"></a>PotPlayer记录片段时间区间</h3><p>PotPlayer是一款卓越的播放软件，按快捷键H，调出书签编辑器；<br><img src="/blog/2020/37dfd74b/potplayer%E8%AE%B0%E5%BD%95%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4.png" alt="potplayer记录时间区间"><br>看到精彩片段，利用书签编辑器添加书签，记录片段时间区间；<br>看完一整集后，点击书签编辑器的“全体编辑”按钮，复制全部书签；<br>格式如下：  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">00:03:51.285 实栗被解雇 开始</span><br><span class="line">00:04:17.609 实栗被解雇 结束</span><br><span class="line">00:05:03.767 百合请实栗打扫房间 开始</span><br><span class="line">00:05:24.788 百合请实栗打扫房间 结束</span><br><span class="line">00:05:27.160 实栗爸爸安排实栗去平匡家打扫卫生 开始</span><br><span class="line">00:07:11.997 实栗爸爸安排实栗去平匡家打扫卫生 结束</span><br><span class="line">00:07:15.035 实栗第一次去平匡家打扫卫生 开始</span><br><span class="line">00:08:09.653 实栗第一次去平匡家打扫卫生 结束</span><br></pre></td></tr></table></figure>
 <p>奇数行表示剪辑片段入点，偶数行表示剪辑片段出点，中间的文字表示片段名称；<br>将全部书签复制粘贴到txt文件夹，文件名称与视频文件名称对应，比如We.Married.As.A.Job.E01.2016.720p.BluRay.x264-WiKi.txt。  </p>
 <h2 id="借助FFmpeg批量裁剪视频"><a href="#借助FFmpeg批量裁剪视频" class="headerlink" title="借助FFmpeg批量裁剪视频"></a>借助FFmpeg批量裁剪视频</h2><h3 id="主要步骤"><a href="#主要步骤" class="headerlink" title="主要步骤"></a>主要步骤</h3><p>主要步骤是：<br>将mkv视频文件和ass字幕文件合并为含有字幕的视频文件；<br>读取txt书签，获取片段出入点，批量裁剪成精彩片段；<br>在精彩片段片头添加字幕，显示片段名称，导出为含有片头字幕的精彩片段；<br>将含有片头字幕的精彩片段拼合成精彩片段完整视频；<br>至此，完成了精彩视频的批量剪辑；因为mkv封装格式不支持几乎所有移动设备，可能无法播放或者丢失字幕；</p>
@@ -133,11 +133,11 @@
   </entry>
   <entry>
     <title>Python+FFmpeg视频处理入门</title>
-    <url>/blog/2020/7f326749/</url>
+    <url>/2020/7f326749/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 介绍FFmpeg、视音频编解码技术、ffmpeg常用命令等。FFmpeg是领先的多媒体框架，能够解码、编码、转码、多路复用、多路分解、流化、滤镜和播放人类和机器创造的几乎所有东西。</p>
 <a id="more"></a>
 
-<h2 id="FFmpeg简介"><a href="#FFmpeg简介" class="headerlink" title="FFmpeg简介"></a>FFmpeg简介</h2><h3 id="FFmpeg开源框架"><a href="#FFmpeg开源框架" class="headerlink" title="FFmpeg开源框架"></a>FFmpeg开源框架</h3><p>FFmpeg是领先的多媒体框架，是视频处理最常用的开源软件，能够解码、编码、转码、多路复用、多路分解、流化、滤镜和播放人类和机器创造的几乎所有东西。它功能强大，用途广泛，大量用于视频网站和商业软件（比如 Youtube 和 iTunes），也是许多音频和视频格式的标准编码/解码实现。<br>FFmpeg本身是一个庞大的项目，包含许多组件和库文件，最常用的是它的工具ffmpeg（用于视音频转码的命令行工具）、ffplay（用于播放的应用程序）、ffprobe（用于查看文件格式的应用程序）。<br>PS：有不少人不清楚“FFmpeg”应该怎么读。它读作“ef ef em peg”。<br><img src="/blog/blog/2020/7f326749/ffmpeg.png" alt="ffmpeg&#39;s logo">  </p>
+<h2 id="FFmpeg简介"><a href="#FFmpeg简介" class="headerlink" title="FFmpeg简介"></a>FFmpeg简介</h2><h3 id="FFmpeg开源框架"><a href="#FFmpeg开源框架" class="headerlink" title="FFmpeg开源框架"></a>FFmpeg开源框架</h3><p>FFmpeg是领先的多媒体框架，是视频处理最常用的开源软件，能够解码、编码、转码、多路复用、多路分解、流化、滤镜和播放人类和机器创造的几乎所有东西。它功能强大，用途广泛，大量用于视频网站和商业软件（比如 Youtube 和 iTunes），也是许多音频和视频格式的标准编码/解码实现。<br>FFmpeg本身是一个庞大的项目，包含许多组件和库文件，最常用的是它的工具ffmpeg（用于视音频转码的命令行工具）、ffplay（用于播放的应用程序）、ffprobe（用于查看文件格式的应用程序）。<br>PS：有不少人不清楚“FFmpeg”应该怎么读。它读作“ef ef em peg”。<br><img src="/blog/2020/7f326749/ffmpeg.png" alt="ffmpeg&#39;s logo">  </p>
 <h3 id="FFmpeg的应用案例"><a href="#FFmpeg的应用案例" class="headerlink" title="FFmpeg的应用案例"></a>FFmpeg的应用案例</h3><p>使用FFMPEG作为内核视频播放器：<br>Mplayer，ffplay，射手播放器，暴风影音，KMPlayer，QQ影音…<br>使用FFMPEG作为内核的Directshow Filter：<br>ffdshow，lav filters…<br>使用FFMPEG作为内核的转码工具：<br>ffmpeg，格式工厂…<br>事实上，FFMPEG的视音频编解码功能确实太强大了，几乎囊括了现存所有的视音频编码标准，因此只要做视音频开发，几乎离不开它。  </p>
 <h3 id="ffmpeg、ffplay、ffprobe"><a href="#ffmpeg、ffplay、ffprobe" class="headerlink" title="ffmpeg、ffplay、ffprobe"></a>ffmpeg、ffplay、ffprobe</h3><p>主要介绍一下ffmpeg工程包含的三个exe的使用方法。<br>ffmpeg的官方网站是：<a href="http://ffmpeg.org/" target="_blank" rel="noopener">http://ffmpeg.org/</a>。<br>编译好的windows可用版本的下载地址：<a href="http://ffmpeg.zeranoe.com/builds/" target="_blank" rel="noopener">http://ffmpeg.zeranoe.com/builds/</a><br>该网站中的FFMPEG分为3个版本：Static，Shared，Dev。前两个版本可以直接在命令行中使用，他们的区别在于：Static里面只有3个应用程序：ffmpeg.exe，ffplay.exe，ffprobe.exe，每个exe的体积都很大，相关的DLL已经被编译到exe里面去了。Shared里面除了3个应用程序：ffmpeg.exe，ffplay.exe，ffprobe.exe之外，还有一些DLL，比如说avcodec-54.dll之类的。Shared里面的exe体积很小，他们在运行的时候，到相应的Dll中调用功能。Dev版本是用于开发的，里面包含了库文件xxx.lib以及头文件xxx.h，这个版本不包含exe文件。  </p>
 <p>打开系统命令行界面，切换到ffmpeg所在的目录，就可以使用这3个应用程序了。ffmpeg是用于转码的应用程序，ffplay是用于播放的应用程序，ffprobe是用于查看文件格式的应用程序。  </p>
@@ -151,17 +151,17 @@
 <p>MediaInfo的主要功能特点：<br>支持众多视频和音频文件格式<br>多种查看方式：文本，表格，树形图，网页……<br>自定义查看方式<br>信息导出：文本，CSV，HTML……<br>三种发布版本：图形界面，命令行，DLL(动态链接库)<br>与Windows资源管理器整合：拖放，右键菜单<br>国际化：有多种界面语言供选择<br>(软件界面)轻松实现本地化 (需要志愿者翻译语言文件)  </p>
 <p>下载地址：<a href="http://sourceforge.net/projects/mediainfo/files/binary/mediainfo-gui/" target="_blank" rel="noopener">http://sourceforge.net/projects/mediainfo/files/binary/mediainfo-gui/</a>  </p>
 <h3 id="视频播放器原理"><a href="#视频播放器原理" class="headerlink" title="视频播放器原理"></a>视频播放器原理</h3><p>视音频技术主要包含以下几点：封装技术，视频压缩编码技术以及音频压缩编码技术。如果考虑到网络传输的话，还包括流媒体协议技术。  </p>
-<p>视频播放器播放一个互联网上的视频文件，需要经过以下几个步骤：解协议，解封装，解码视音频，视音频同步。如果播放本地文件则不需要解协议，为以下几个步骤：解封装，解码视音频，视音频同步。他们的过程如图所示:<br><img src="/blog/blog/2020/7f326749/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8%E5%8E%9F%E7%90%86.png" alt="视频播放器原理">  </p>
+<p>视频播放器播放一个互联网上的视频文件，需要经过以下几个步骤：解协议，解封装，解码视音频，视音频同步。如果播放本地文件则不需要解协议，为以下几个步骤：解封装，解码视音频，视音频同步。他们的过程如图所示:<br><img src="/blog/2020/7f326749/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8%E5%8E%9F%E7%90%86.png" alt="视频播放器原理">  </p>
 <p>解协议的作用，就是将流媒体协议的数据，解析为标准的相应的封装格式数据。视音频在网络上传播的时候，常常采用各种流媒体协议，例如HTTP，RTMP，或是MMS等等。这些协议在传输视音频数据的同时，也会传输一些信令数据。这些信令数据包括对播放的控制（播放，暂停，停止），或者对网络状态的描述等。解协议的过程中会去除掉信令数据而只保留视音频数据。例如，采用RTMP协议传输的数据，经过解协议操作后，输出FLV格式的数据。  </p>
 <p>解封装的作用，就是将输入的封装格式的数据，分离成为音频流压缩编码数据和视频流压缩编码数据。封装格式种类很多，例如MP4，MKV，RMVB，TS，FLV，AVI等等，它的作用就是将已经压缩编码的视频数据和音频数据按照一定的格式放到一起。例如，FLV格式的数据，经过解封装操作后，输出H.264编码的视频码流和AAC编码的音频码流。  </p>
 <p>解码的作用，就是将视频/音频压缩编码数据，解码成为非压缩的视频/音频原始数据。音频的压缩编码标准包含AAC，MP3，AC-3等等，视频的压缩编码标准则包含H.264，MPEG2，VC-1等等。解码是整个系统中最重要也是最复杂的一个环节。通过解码，压缩编码的视频数据输出成为非压缩的颜色数据，例如YUV420P，RGB等等；压缩编码的音频数据输出成为非压缩的音频抽样数据，例如PCM数据。  </p>
 <p>视音频同步的作用，就是根据解封装模块处理过程中获取到的参数信息，同步解码出来的视频和音频数据，并将视频音频数据送至系统的显卡和声卡播放出来。  </p>
-<h4 id="流媒体协议"><a href="#流媒体协议" class="headerlink" title="流媒体协议"></a>流媒体协议</h4><p>流媒体协议是服务器与客户端之间通信遵循的规定。当前网络上主要的流媒体协议如表所示。<br><img src="/blog/blog/2020/7f326749/%E6%B5%81%E5%AA%92%E4%BD%93%E5%8D%8F%E8%AE%AE.png" alt="流媒体协议">  </p>
+<h4 id="流媒体协议"><a href="#流媒体协议" class="headerlink" title="流媒体协议"></a>流媒体协议</h4><p>流媒体协议是服务器与客户端之间通信遵循的规定。当前网络上主要的流媒体协议如表所示。<br><img src="/blog/2020/7f326749/%E6%B5%81%E5%AA%92%E4%BD%93%E5%8D%8F%E8%AE%AE.png" alt="流媒体协议">  </p>
 <p>RTSP+RTP经常用于IPTV领域。因为其采用UDP传输视音频，支持组播，效率较高。但其缺点是网络不好的情况下可能会丢包，影响视频观看质量。因而围绕IPTV的视频质量的研究还是挺多的。  </p>
 <p>因为互联网网络环境的不稳定性，RTSP+RTP较少用于互联网视音频传输。互联网视频服务通常采用TCP作为其流媒体的传输层协议，因而像RTMP，MMS，HTTP这类的协议广泛用于互联网视音频服务之中。这类协议不会发生丢包，因而保证了视频的质量，但是传输的效率会相对低一些。  </p>
 <p>此外RTMFP是一种比较新的流媒体协议，特点是支持P2P。  </p>
-<h4 id="封装格式"><a href="#封装格式" class="headerlink" title="封装格式"></a>封装格式</h4><p>封装格式（容器）的主要作用是把视频码流和音频码流按照一定的格式存储在一个文件（容器）中。现如今流行的封装格式如下表所示：<br><img src="/blog/blog/2020/7f326749/%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F.png" alt="封装格式"><br>由表可见，除了AVI之外，其他封装格式都支持流媒体，即可以“边下边播”。有些格式更“万能”一些，支持的视音频编码标准多一些，比如MKV。而有些格式则支持的相对比较少，比如说RMVB。<br>下面的命令查看ffmpeg支持的容器。<br>$ ffmpeg -formats  </p>
-<h4 id="视频编码"><a href="#视频编码" class="headerlink" title="视频编码"></a>视频编码</h4><p>视频编码的主要作用是将视频像素数据（RGB，YUV等）压缩成为视频码流，从而降低视频的数据量。如果视频不经过压缩编码的话，体积通常是非常大的，一部电影可能就要上百G的空间。视频编码是视音频技术中最重要的技术之一。视频码流的数据量占了视音频总数据量的绝大部分。高效率的视频编码在同等的码率下，可以获得更高的视频质量。<br><img src="/blog/blog/2020/7f326749/%E8%A7%86%E9%A2%91%E7%BC%96%E7%A0%81.png" alt="视频编码"><br>由表可见，有两种视频编码方案是最新推出的：VP9和HEVC。目前这两种方案都处于研发阶段，还没有到达实用的程度。当前使用最多的视频编码方案就是H.264。  </p>
+<h4 id="封装格式"><a href="#封装格式" class="headerlink" title="封装格式"></a>封装格式</h4><p>封装格式（容器）的主要作用是把视频码流和音频码流按照一定的格式存储在一个文件（容器）中。现如今流行的封装格式如下表所示：<br><img src="/blog/2020/7f326749/%E5%B0%81%E8%A3%85%E6%A0%BC%E5%BC%8F.png" alt="封装格式"><br>由表可见，除了AVI之外，其他封装格式都支持流媒体，即可以“边下边播”。有些格式更“万能”一些，支持的视音频编码标准多一些，比如MKV。而有些格式则支持的相对比较少，比如说RMVB。<br>下面的命令查看ffmpeg支持的容器。<br>$ ffmpeg -formats  </p>
+<h4 id="视频编码"><a href="#视频编码" class="headerlink" title="视频编码"></a>视频编码</h4><p>视频编码的主要作用是将视频像素数据（RGB，YUV等）压缩成为视频码流，从而降低视频的数据量。如果视频不经过压缩编码的话，体积通常是非常大的，一部电影可能就要上百G的空间。视频编码是视音频技术中最重要的技术之一。视频码流的数据量占了视音频总数据量的绝大部分。高效率的视频编码在同等的码率下，可以获得更高的视频质量。<br><img src="/blog/2020/7f326749/%E8%A7%86%E9%A2%91%E7%BC%96%E7%A0%81.png" alt="视频编码"><br>由表可见，有两种视频编码方案是最新推出的：VP9和HEVC。目前这两种方案都处于研发阶段，还没有到达实用的程度。当前使用最多的视频编码方案就是H.264。  </p>
 <p><strong>H.264的编码器X264</strong><br>H.264仅仅是一个主流编码标准，而不是一个具体的编码器，H.264只是给编码器的实现提供参照用的。<br>基于H.264标准的编码器还是很多的，其中使用最多的就是x264了，性能强悍（超过了很多商业编码器），而且开源。其基本教程网上极多，不再赘述。Google推出的VP8属于和H.264同一时代的标准。总体而言，VP8比H.264要稍微差一点。此外，我国还推出了自己的国产标准AVS，性能也不错，但目前比H.264还是要稍微逊色一点。不过感觉我国在视频编解码领域还算比较先进的。  </p>
 <p><strong>下一代编码标准H.265（HEVC）</strong><br>下一代的编解码标准就要数HEVC和VP9了。VP9是Google继VP8之后推出的新一代标准。VP9和HEVC相比，要稍微逊色一些。HEVC在未来拥有很多大的优势，可参考：<a href="https://blog.csdn.net/leixiaohua1020/article/details/11844949" target="_blank" rel="noopener">HEVC将会取代H.264的原因</a>。  </p>
 <p>未来实际使用的HEVC开源编码器很有可能是x265，目前该项目还处于发展阶段，可参考：<a href="https://blog.csdn.net/leixiaohua1020/article/details/13991351" target="_blank" rel="noopener">x265(HEVC编码器，基于x264)介绍</a>。  </p>
@@ -170,15 +170,15 @@
 <h4 id="编码器"><a href="#编码器" class="headerlink" title="编码器"></a>编码器</h4><p>编码器（encoders）是实现某种编码格式的库文件。只有安装了某种格式的编码器，才能实现该格式视频/音频的编码和解码。<br>以下是一些 FFmpeg 内置的视频编码器：<br>libx264：最流行的开源H.264编码器X264<br>NVENC：基于 NVIDIA GPU 的H.264编码器<br>libx265：开源的 HEVC 编码器<br>libvpx：谷歌的 VP8 和 VP9 编码器<br>libaom：AV1 编码器  </p>
 <p>音频编码器如下：<br>libfdk-aac<br>aac  </p>
 <p>下面的命令可以查看 FFmpeg 已安装的编码器。<br>$ ffmpeg -encoders  </p>
-<h4 id="音频编码"><a href="#音频编码" class="headerlink" title="音频编码"></a>音频编码</h4><p>音频编码的主要作用是将音频采样数据（PCM等）压缩成为音频码流，从而降低音频的数据量。音频编码也是互联网视音频技术中一个重要的技术。但是一般情况下音频的数据量要远小于视频的数据量，因而即使使用稍微落后的音频编码标准，而导致音频数据量有所增加，也不会对视音频的总数据量产生太大的影响。高效率的音频编码在同等的码率下，可以获得更高的音质。<br><img src="/blog/blog/2020/7f326749/%E9%9F%B3%E9%A2%91%E7%BC%96%E7%A0%81.png" alt="音频编码"><br>由表可见，近年来并未推出全新的音频编码方案，可见音频编码技术已经基本可以满足人们的需要。音频编码技术近期绝大部分的改动都是在MP3的继任者——AAC的基础上完成的。<br>这些编码标准之间的比较可以参考文章：<a href="https://blog.csdn.net/leixiaohua1020/article/details/11730661" target="_blank" rel="noopener">音频编码方案之间音质比较（AAC，MP3，WMA等）</a>。结果大致是这样的：AAC+ &gt; MP3PRO &gt; AAC&gt; RealAudio &gt; WMA &gt; MP3。<br>此外杜比数字的编码标准也比较流行，但是貌似比最新的AAC稍为逊色：<a href="http://blog.csdn.net/leixiaohua1020/article/details/11822737" target="_blank" rel="noopener">AC-3技术综述</a>。<br>下面的命令可以查看 FFmpeg 支持的编码格式，视频编码和音频编码都在内。<br>$ ffmpeg -codecs  </p>
+<h4 id="音频编码"><a href="#音频编码" class="headerlink" title="音频编码"></a>音频编码</h4><p>音频编码的主要作用是将音频采样数据（PCM等）压缩成为音频码流，从而降低音频的数据量。音频编码也是互联网视音频技术中一个重要的技术。但是一般情况下音频的数据量要远小于视频的数据量，因而即使使用稍微落后的音频编码标准，而导致音频数据量有所增加，也不会对视音频的总数据量产生太大的影响。高效率的音频编码在同等的码率下，可以获得更高的音质。<br><img src="/blog/2020/7f326749/%E9%9F%B3%E9%A2%91%E7%BC%96%E7%A0%81.png" alt="音频编码"><br>由表可见，近年来并未推出全新的音频编码方案，可见音频编码技术已经基本可以满足人们的需要。音频编码技术近期绝大部分的改动都是在MP3的继任者——AAC的基础上完成的。<br>这些编码标准之间的比较可以参考文章：<a href="https://blog.csdn.net/leixiaohua1020/article/details/11730661" target="_blank" rel="noopener">音频编码方案之间音质比较（AAC，MP3，WMA等）</a>。结果大致是这样的：AAC+ &gt; MP3PRO &gt; AAC&gt; RealAudio &gt; WMA &gt; MP3。<br>此外杜比数字的编码标准也比较流行，但是貌似比最新的AAC稍为逊色：<a href="http://blog.csdn.net/leixiaohua1020/article/details/11822737" target="_blank" rel="noopener">AC-3技术综述</a>。<br>下面的命令可以查看 FFmpeg 支持的编码格式，视频编码和音频编码都在内。<br>$ ffmpeg -codecs  </p>
 <h2 id="ffmpeg命令行工具"><a href="#ffmpeg命令行工具" class="headerlink" title="ffmpeg命令行工具"></a>ffmpeg命令行工具</h2><p>这一章几乎全部参考了<a href="http://www.ruanyifeng.com/blog/2020/01/ffmpeg.html" target="_blank" rel="noopener">阮一峰-FFmpeg命令行视频处理入门教程</a>，略作删减。    </p>
 <h3 id="ffmpeg简介"><a href="#ffmpeg简介" class="headerlink" title="ffmpeg简介"></a>ffmpeg简介</h3><p>ffmpeg处理视频，比桌面视频处理软件更简洁高效；同时，可以在python中借助ffmpy3包装器调用ffmpeg，实现批量处理。  </p>
 <p><strong>基本语法</strong><br>FFmpeg 的命令行参数非常多，可以分成五个部分。<br>$ ffmpeg {1} {2} -i {3} {4} {5}<br>上面命令中，五个部分的参数依次如下。<br>全局参数<br>输入文件参数<br>输入文件<br>输出文件参数<br>输出文件  </p>
 <p>参数太多的时候，为了便于查看，ffmpeg 命令可以写成多行。<br>$ ffmpeg \<br>[全局参数] \<br>[输入文件参数] \<br>-i [输入文件] \<br>[输出文件参数] \<br>[输出文件]  </p>
 <p>下面是一个例子。<br>$ ffmpeg \<br>-y \ # 全局参数<br>-c:a libfdk_aac -c:v libx264 \ # 输入文件参数<br>-i input.mp4 \ # 输入文件<br>-c:v libvpx-vp9 -c:a libvorbis \ # 输出文件参数<br>output.webm # 输出文件<br>上面的命令将 mp4 文件转成 webm 文件，这两个都是容器格式。输入的 mp4 文件的音频编码格式是aac，视频编码格式是H.264；输出的webm文件的视频编码格式是 VP9，音频格式是 Vorbis。  </p>
 <p>如果不指明编码格式，FFmpeg 会自己判断输入文件的编码。因此，上面的命令可以简单写成下面的样子。<br>$ ffmpeg -i input.avi output.mp4  </p>
-<p><strong>处理过程</strong><br><img src="/blog/blog/2020/7f326749/ffmpeg%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B.png" alt="ffmpeg处理过程"><br>ffmpeg调用libavformat库（含分离器）读取输入文件，分离出各类编码的数据包（流），当有多个输入文件时，ffmpeg试图跟踪最低时间戳实现任意输入流同步。编码数据包（除非是指定为流式拷贝，相关内容请参考特性描述对流式拷贝的说明）通过解码器解码出非压缩的数据帧（raw视频/PCM格式音频…），这些数据帧可以被滤镜进一步处理（下面会讲到）。经过滤镜处理的数据被重新编码为新的数据包（流），然后经过混合器混合（例如按一定顺序和比例把音频数据包和视频数据包交叉组合），写入到输出文件。  </p>
-<p><strong>安装步骤</strong><br>ffmpeg的官方网站是：<a href="http://ffmpeg.org/" target="_blank" rel="noopener">http://ffmpeg.org/</a>。<br>编译好的windows可用版本的下载地址：<a href="http://ffmpeg.zeranoe.com/builds/" target="_blank" rel="noopener">http://ffmpeg.zeranoe.com/builds/</a>。<br>该网站中的FFMPEG分为3个版本：Static，Shared，Dev，下载Static版本。前面已经作了介绍，这里不再赘述。<br>然后，配置环境变量：<br><img src="/blog/blog/2020/7f326749/ffmpeg%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt="ffmpeg配置环境变量"><br>可以参考<a href="https://www.cnblogs.com/xswl/p/10042195.html" target="_blank" rel="noopener">【win10】 ffmpeg的安装</a>。  </p>
+<p><strong>处理过程</strong><br><img src="/blog/2020/7f326749/ffmpeg%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B.png" alt="ffmpeg处理过程"><br>ffmpeg调用libavformat库（含分离器）读取输入文件，分离出各类编码的数据包（流），当有多个输入文件时，ffmpeg试图跟踪最低时间戳实现任意输入流同步。编码数据包（除非是指定为流式拷贝，相关内容请参考特性描述对流式拷贝的说明）通过解码器解码出非压缩的数据帧（raw视频/PCM格式音频…），这些数据帧可以被滤镜进一步处理（下面会讲到）。经过滤镜处理的数据被重新编码为新的数据包（流），然后经过混合器混合（例如按一定顺序和比例把音频数据包和视频数据包交叉组合），写入到输出文件。  </p>
+<p><strong>安装步骤</strong><br>ffmpeg的官方网站是：<a href="http://ffmpeg.org/" target="_blank" rel="noopener">http://ffmpeg.org/</a>。<br>编译好的windows可用版本的下载地址：<a href="http://ffmpeg.zeranoe.com/builds/" target="_blank" rel="noopener">http://ffmpeg.zeranoe.com/builds/</a>。<br>该网站中的FFMPEG分为3个版本：Static，Shared，Dev，下载Static版本。前面已经作了介绍，这里不再赘述。<br>然后，配置环境变量：<br><img src="/blog/2020/7f326749/ffmpeg%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt="ffmpeg配置环境变量"><br>可以参考<a href="https://www.cnblogs.com/xswl/p/10042195.html" target="_blank" rel="noopener">【win10】 ffmpeg的安装</a>。  </p>
 <p>下面介绍FFmpeg几种常见用法。  </p>
 <h3 id="查看文件信息"><a href="#查看文件信息" class="headerlink" title="查看文件信息"></a>查看文件信息</h3><p>查看视频文件的元信息，比如编码格式和比特率，可以只使用-i参数。<br>$ ffmpeg -i input.mp4<br>上面命令会输出很多冗余信息，加上-hide_banner参数，可以只显示元信息。<br>$ ffmpeg -i input.mp4 -hide_banner</p>
 <h3 id="转换编码格式"><a href="#转换编码格式" class="headerlink" title="转换编码格式"></a>转换编码格式</h3><p>转换编码格式（transcoding）指的是， 将视频文件从一种编码转成另一种编码。比如转成 H.264 编码，一般使用编码器libx264，所以只需指定输出文件的视频编码器即可。<br>$ ffmpeg -i [input.file] -c:v libx264 output.mp4<br>下面是转成 H.265 编码的写法。<br>$ ffmpeg -i [input.file] -c:v libx265 output.mp4  </p>
@@ -190,14 +190,14 @@
 <h3 id="添加字幕"><a href="#添加字幕" class="headerlink" title="添加字幕"></a>添加字幕</h3><p>ffmpeg -i input.mp4 -vf subtitles=”sample.ass” out.mp4<br>上面例子中，字幕以内嵌字幕形式（硬字幕，类似于水印）烧进mp4文件。<br>ffmpeg -i input.mkv -i subtitles.srt -c copy output.mkv<br>上面例子中，字幕以软字幕形式（字幕流，可以选择是否显示）嵌入mkv文件。<br>软字幕就是所谓的字幕流，和视频流、音频流同等地位。值得说明的是，并非所有的容器都支持字幕流，先进的MKV是支持的，MP4目前我只知道支持苹果的MOV text。</p>
 <h3 id="mkv与mp4的转换"><a href="#mkv与mp4的转换" class="headerlink" title="mkv与mp4的转换"></a>mkv与mp4的转换</h3><p>MKV（Matroska Video File）是一种多媒体封装格式，本身是一种容器，可以把各种视频，音频和字幕等内容封装到一个文件里面的格式，MKV是开放，免费没有限制的格式，开发者承诺大家可以自由使用这种格式，和经这种格式所开发的软件，不会在这个格式普遍的时候变成一个商业的项目（给作者一个赞！）。  </p>
 <p>MP4是MPEG-4的简写，是由MPEG（Moving Picture Experts Group）这个组织制定出来的一种多媒体封装格式。之前这个组织比较成功的标准有MPEG-1, MPEG-2, MPEG-3等。解释一个容易搞错的问题，我们平时听音乐常用的MP3（MPEG-1 Layer 3）格式并不是MPEG-3的标准，而是MPEG-1中的音频压缩标准。  </p>
-<p><img src="/blog/blog/2020/7f326749/mp4%E5%92%8Cmkv.png" alt="mp4和mkv">  </p>
+<p><img src="/blog/2020/7f326749/mp4%E5%92%8Cmkv.png" alt="mp4和mkv">  </p>
 <p>MKV通常用来存储对画质要求高的视频；MP4通常用来存储需要在移动设备上播放的视频；MP4有更好的兼容性，但视频质量比MKV略差；MKV有着更好的质量，但是文件大小更大，且兼容性略差。<br>mkv转mp4，可以参考<a href="https://gerongcun.github.io/2020/37dfd74b/" target="_blank" rel="noopener">Python+FFmpeg视频处理实例1 批量裁剪视频</a>  </p>
 <h3 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h3><p>下面的例子是从指定时间开始，连续对1秒钟的视频进行截图。<br>$ ffmpeg \<br>-y \<br>-i input.mp4 \<br>-ss 00:01:24 -t 00:00:01 \<br>output_%3d.jpg<br>如果只需要截一张图，可以指定只截取一帧。<br>$ ffmpeg \<br>-ss 01:23:45 \<br>-i input \<br>-vframes 1 -q:v 2 \<br>output.jpg<br>上面例子中，-vframes 1指定只截取一帧，-q:v 2表示输出的图片质量，一般是1到5之间（1 为质量最高）。  </p>
 <h3 id="裁剪视频"><a href="#裁剪视频" class="headerlink" title="裁剪视频"></a>裁剪视频</h3><p>裁剪（cutting）指的是，截取原始视频里面的一个片段，输出为一个新视频。可以指定开始时间（start）和持续时间（duration），也可以指定结束时间（end）。<br>$ ffmpeg -ss [start] -i [input] -t [duration] -c copy [output]<br>$ ffmpeg -ss [start] -i [input] -to [end] -c copy [output]<br>下面是实际的例子。<br>$ ffmpeg -ss 00:01:50 -i [input] -t 10.5 -c copy [output]<br>$ ffmpeg -ss 2.5 -i [input] -to 10 -c copy [output]<br>上面例子中，-c copy表示不改变音频和视频的编码格式，直接拷贝，这样会快很多。<br>如果精准裁剪视频，可以参考<a href="https://gerongcun.github.io/2020/37dfd74b/" target="_blank" rel="noopener">Python+FFmpeg视频处理实例1 批量裁剪视频</a>  </p>
 <h2 id="ffmpy3"><a href="#ffmpy3" class="headerlink" title="ffmpy3"></a>ffmpy3</h2><h3 id="ffmpy3简介"><a href="#ffmpy3简介" class="headerlink" title="ffmpy3简介"></a>ffmpy3简介</h3><p>ffmpy3是一个用于FFmpeg的Python包装器，最初是从ffmpy项目派生出来的。它根据提供的参数及其各自的选项编译FFmpeg命令行，并使用Python的子进程执行它。<br>ffmpy3类似于FFmpeg使用的命令行方法。它可以读取任意数量的输入“文件”(常规文件、管道、网络流、抓取设备等)，并写入任意数量的输出“文件”。有关FFmpeg命令行选项和参数如何工作的详细信息，请参阅FFmpeg文档。<br>ffmpy3支持FFmpeg的管道协议。这意味着可以将输入数据传递到stdin并从stdout获得输出数据。<br>目前，ffmpy3已经为ffmpeg和ffprobe命令提供了包装器，但是应该可以用它运行其他ffmpeg工具(例如ffserver)。  </p>
 <p><strong>安装步骤</strong><br>安装：<br>pip install ffmpy3<br>导入：<br>from ffmpy3 import FFmpeg  </p>
 <p>需要将ffmpeg.exe放进.py文件所在文件夹下，否则报错ffmpy.FFExecutableNotFoundError: Executable ‘ffmpeg’ not found。  </p>
-<p><strong>FFmpeg类</strong><br>ffmpy3.FFmpeg(executable=’ffmpeg’, global_options=None, inputs=None, outputs=None)<br><img src="/blog/blog/2020/7f326749/ffmpeg%E5%8F%82%E6%95%B0.png" alt="ffmpeg参数"><br>executable表示ffmpeg.exe的位置；global_options表示全局参数；inputs表示输入文件；outputs表示输出文件。  </p>
+<p><strong>FFmpeg类</strong><br>ffmpy3.FFmpeg(executable=’ffmpeg’, global_options=None, inputs=None, outputs=None)<br><img src="/blog/2020/7f326749/ffmpeg%E5%8F%82%E6%95%B0.png" alt="ffmpeg参数"><br>executable表示ffmpeg.exe的位置；global_options表示全局参数；inputs表示输入文件；outputs表示输出文件。  </p>
 <p>下面介绍ffmpy3几种常见用法。  </p>
 <h3 id="格式转换"><a href="#格式转换" class="headerlink" title="格式转换"></a>格式转换</h3><p>最简单的用法例子是将媒体从一种格式转换为另一种格式(在本例中是从MP4转换为MPEG传输流)，同时保留所有其他属性:<br>from ffmpy3 import FFmpeg<br>ff = FFmpeg(inputs={‘test.mp4’: None},<br>            outputs={‘output.ts’: None})<br>print(ff.cmd)<br>ff.run()  </p>
 <h3 id="转码"><a href="#转码" class="headerlink" title="转码"></a>转码</h3><p>如果同时我们想用不同的解码器重新编码视频和音频，我们必须指定额外的输出选项:<br>下面的例子：将音频编码为mp2格式，将视频编码为mpeg2video模式<br>ff = FFmpeg(inputs={‘test.mp4’: None},<br>            outputs={‘output.ts’: ‘-c:a mp2 -c:v mpeg2video’})<br>print(ff.cmd)<br>ff.run()<br>这里a就是指audio，v就是指video</p>
@@ -219,7 +219,7 @@
   </entry>
   <entry>
     <title>随笔 | 和长者一样，我家也有过继现象</title>
-    <url>/blog/2020/91fb53e9/</url>
+    <url>/2020/91fb53e9/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 今年疫情严重，宅在家，知晓了不少事情；一个是闰月年贡老坟，另一个是，和长者一样，我家也有过继现象。  </p>
 <a id="more"></a>
 <h2 id="闰月年贡老坟"><a href="#闰月年贡老坟" class="headerlink" title="闰月年贡老坟"></a>闰月年贡老坟</h2><p>今年是庚子鼠年，闰月年，闰四月。我刚好是农历四月份生日，不要脸的我可以过3个生日（阳历、农历四月、农历闰四月）。我家在江苏盐城，典型的苏北农村。我们这边有“闰月年贡老坟”的习俗，在闰月年农历二月初（阳历二月底三月初）左右，出嫁的姑娘回娘家到父母坟前祭祀。之前，也有过闰月年，但是我要么还小，不懂事；要么在农历二月初就出去上学了，所以不知道有“闰月年贡老坟”的习俗。  </p>
@@ -239,7 +239,7 @@
   </entry>
   <entry>
     <title>如何绘制业务流程图</title>
-    <url>/blog/2020/b5c79131/</url>
+    <url>/2020/b5c79131/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 介绍业务流程图的概念、绘制方法及相关案例。  </p>
 <a id="more"></a>
 
@@ -249,7 +249,7 @@
 <p>在工作中，我们常用到的流程图有：业务流程图、页面流程图和数据流程图。作为产品，经常谈的是业务流程图；作为交互设计师，则比较关心页面流程图；而作为系统分析师，数据流程图最关键。  </p>
 <h2 id="绘制方法"><a href="#绘制方法" class="headerlink" title="绘制方法"></a>绘制方法</h2><p>1.确定有哪些部门和哪些业务环节；<br>2.梳理业务环节之间的逻辑，用文字方式记录逻辑关系；<br>3.绘制业务流程图，记录业务流程中不太确定的地方，留着讨论；<br>4.团队讨论，反复修改，不断优化；  </p>
 <h2 id="Edraw亿图图示"><a href="#Edraw亿图图示" class="headerlink" title="Edraw亿图图示"></a>Edraw亿图图示</h2><p>Edraw亿图图示官网<a href="https://www.edrawsoft.cn/" target="_blank" rel="noopener">https://www.edrawsoft.cn/</a><br>国产收费软件，有破解版；<br>界面相比于Visio较丑；<br>支持绘制流程图、网络拓扑图、平面布置图、组织结构图、工程图等；<br>对齐元素非常容易；<br>拥有很多预定义模板和案例；<br><strong>EDraw公司抓得紧，这里就不提供破解版了。</strong>  </p>
-<h2 id="相关案例"><a href="#相关案例" class="headerlink" title="相关案例"></a>相关案例</h2><p><img src="/blog/blog/2020/b5c79131/%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%A1%88%E4%BE%8B.jpg" alt="业务流程图案例"><br>这是我使用Edraw亿图图示软件绘制的业务流程图（泳道图），对齐容易，画起来很方便。之前一直使用的是Visio，正是因为对齐麻烦才入坑亿图图示；  </p>
+<h2 id="相关案例"><a href="#相关案例" class="headerlink" title="相关案例"></a>相关案例</h2><p><img src="/blog/2020/b5c79131/%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%A1%88%E4%BE%8B.jpg" alt="业务流程图案例"><br>这是我使用Edraw亿图图示软件绘制的业务流程图（泳道图），对齐容易，画起来很方便。之前一直使用的是Visio，正是因为对齐麻烦才入坑亿图图示；  </p>
 <p><strong>参考资料</strong><br><a href="https://www.jianshu.com/p/906f04c87124" target="_blank" rel="noopener">产品流程设计：如何绘制业务流程图</a><br><a href="https://www.jianshu.com/p/86ec2abdbfa8" target="_blank" rel="noopener">以美团外卖为例，区别业务流程图和页面流程图</a>  </p>
 ]]></content>
       <categories>
@@ -262,13 +262,13 @@
   </entry>
   <entry>
     <title>流程图绘制软件推荐</title>
-    <url>/blog/2020/c5765586/</url>
+    <url>/2020/c5765586/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 推荐ProcessOn、draw.io、Visio、Edraw亿图图示等绘图软件。</p>
 <a id="more"></a>
-<h2 id="ProcessOn"><a href="#ProcessOn" class="headerlink" title="ProcessOn"></a>ProcessOn</h2><p>ProcessOn网站<a href="https://www.processon.com/" target="_blank" rel="noopener">https://www.processon.com/</a><br>免费在线作图、实时团队协作；<br>拥有海量模板；<br>支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等；<br>免费版可以拥有9张个人图表文件，勉强够用；<br><img src="/blog/blog/2020/c5765586/ProcessOn%E4%BC%9A%E5%91%98.png" alt="ProcessOn会员">  </p>
+<h2 id="ProcessOn"><a href="#ProcessOn" class="headerlink" title="ProcessOn"></a>ProcessOn</h2><p>ProcessOn网站<a href="https://www.processon.com/" target="_blank" rel="noopener">https://www.processon.com/</a><br>免费在线作图、实时团队协作；<br>拥有海量模板；<br>支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等；<br>免费版可以拥有9张个人图表文件，勉强够用；<br><img src="/blog/2020/c5765586/ProcessOn%E4%BC%9A%E5%91%98.png" alt="ProcessOn会员">  </p>
 <h2 id="draw-io"><a href="#draw-io" class="headerlink" title="draw.io"></a>draw.io</h2><p>draw.io网站<a href="https://www.draw.io/" target="_blank" rel="noopener">https://www.draw.io/</a>或<a href="https://app.diagrams.net/" target="_blank" rel="noopener">https://app.diagrams.net/</a><br>draw.io是开源软件，每一张图对应的源文件是 XML 格式，通过 XML 能了解每张图的数据结构；<br>功能与ProcessOn类似，语言为英文，界面不太美观；<br>对齐图表元素容易；<br>能导出各类图片（比如 png、jpg、svg）和 PDF，同时也能导出 HTML 格式和 VSDX格式（Microsoft Visio 图形格式）。  </p>
-<h2 id="Visio"><a href="#Visio" class="headerlink" title="Visio"></a>Visio</h2><p>Visio软件，是office软件系列中的负责绘制流程图和示意图的老牌软件，用户非常多；<br>支持绘制流程图、网络拓扑图、平面布置图、组织结构图、工程图等；<br>扁平化设计，界面美观；<br>对齐元素非常麻烦；<br><img src="/blog/blog/2020/c5765586/Visio%E6%A8%A1%E6%9D%BF.png" alt="Visio模板">   </p>
-<h2 id="Edraw"><a href="#Edraw" class="headerlink" title="Edraw"></a>Edraw</h2><p>Edraw亿图图示官网<a href="https://www.edrawsoft.cn/" target="_blank" rel="noopener">https://www.edrawsoft.cn/</a><br>国产收费软件，有破解版；<br>界面相比于Visio较丑；<br>支持绘制流程图、网络拓扑图、平面布置图、组织结构图、工程图等；<br>对齐元素非常容易；<br>拥有很多预定义模板和案例；<br><img src="/blog/blog/2020/c5765586/Edraw%E6%A8%A1%E6%9D%BF.png" alt="Edraw模板">  </p>
+<h2 id="Visio"><a href="#Visio" class="headerlink" title="Visio"></a>Visio</h2><p>Visio软件，是office软件系列中的负责绘制流程图和示意图的老牌软件，用户非常多；<br>支持绘制流程图、网络拓扑图、平面布置图、组织结构图、工程图等；<br>扁平化设计，界面美观；<br>对齐元素非常麻烦；<br><img src="/blog/2020/c5765586/Visio%E6%A8%A1%E6%9D%BF.png" alt="Visio模板">   </p>
+<h2 id="Edraw"><a href="#Edraw" class="headerlink" title="Edraw"></a>Edraw</h2><p>Edraw亿图图示官网<a href="https://www.edrawsoft.cn/" target="_blank" rel="noopener">https://www.edrawsoft.cn/</a><br>国产收费软件，有破解版；<br>界面相比于Visio较丑；<br>支持绘制流程图、网络拓扑图、平面布置图、组织结构图、工程图等；<br>对齐元素非常容易；<br>拥有很多预定义模板和案例；<br><img src="/blog/2020/c5765586/Edraw%E6%A8%A1%E6%9D%BF.png" alt="Edraw模板">  </p>
 <h2 id="个人推荐软件"><a href="#个人推荐软件" class="headerlink" title="个人推荐软件"></a>个人推荐软件</h2><p>个人推荐使用Edraw亿图图示，尤其是画业务流程图；拥有很多预定义模板；对齐元素容易；<br>之前一直使用的是Visio，正是因为对齐麻烦才入坑亿图图示；<br><strong>EDraw公司抓得紧，这里就不提供破解版了。</strong>  </p>
 <p><strong>参考资料</strong><br><a href="https://www.jianshu.com/p/70baaec4cf0f" target="_blank" rel="noopener">流程图软件draw.io值得你拥有</a><br><a href="https://www.jianshu.com/p/3ba46a4c8982" target="_blank" rel="noopener">画流程图，选Visio还是选亿图Edraw</a>  </p>
 ]]></content>
@@ -282,7 +282,7 @@
   </entry>
   <entry>
     <title>Python学习资料</title>
-    <url>/blog/2020/ba7690fd/</url>
+    <url>/2020/ba7690fd/</url>
     <content><![CDATA[<p><strong>摘要：</strong> Python学习资料  </p>
 <a id="more"></a>
 
@@ -304,14 +304,14 @@
   </entry>
   <entry>
     <title>地貌指数提取教程</title>
-    <url>/blog/2020/930e6da0/</url>
+    <url>/2020/930e6da0/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 用ArcGIS和MATLAB提取河流纵剖面、Hack剖面、地貌指数、测高积分、河长坡降指数SL等地貌指数。</p>
 <a id="more"></a>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本科，跟着王先彦教授做大创项目和本科毕业论文，题目是”党河流域地貌特征的定量表达及其对新构造活动的指示”，其中，难度最大的是地貌指数的提取。这里，介绍如何提取河流纵剖面、Hack剖面、地貌指数、测高积分、河长坡降指数SL等地貌指数。<br>PS：提取陡峭指数和凹曲指数，请使用Geomorphologytools插件，用本文方法无法提取。  </p>
 <h2 id="资源获取途径"><a href="#资源获取途径" class="headerlink" title="资源获取途径"></a>资源获取途径</h2><p>地貌指数提取教程<br>包括ArcGIS软件和教程、MATLAB软件和教程、地貌指数提取教程、实验数据（mxd文档、MATLAB代码）。<br>百度网盘链接：<a href="https://pan.baidu.com/s/1mAMnz4oQWP8DC4Fvql4iIw" target="_blank" rel="noopener">https://pan.baidu.com/s/1mAMnz4oQWP8DC4Fvql4iIw</a><br>提取码：jvxv  </p>
-<h2 id="成果图展示"><a href="#成果图展示" class="headerlink" title="成果图展示"></a>成果图展示</h2><h3 id="河流纵剖面"><a href="#河流纵剖面" class="headerlink" title="河流纵剖面"></a>河流纵剖面</h3><p><img src="/blog/blog/2020/930e6da0/%E6%B2%B3%E6%B5%81%E7%BA%B5%E5%89%96%E9%9D%A2.png" alt="河流纵剖面"></p>
-<h3 id="Hack剖面"><a href="#Hack剖面" class="headerlink" title="Hack剖面"></a>Hack剖面</h3><p><img src="/blog/blog/2020/930e6da0/Hack%E5%89%96%E9%9D%A2.png" alt="Hack剖面"></p>
-<h3 id="测高积分图"><a href="#测高积分图" class="headerlink" title="测高积分图"></a>测高积分图</h3><p><img src="/blog/blog/2020/930e6da0/%E6%B5%8B%E9%AB%98%E7%A7%AF%E5%88%86.png" alt="测高积分"></p>
+<h2 id="成果图展示"><a href="#成果图展示" class="headerlink" title="成果图展示"></a>成果图展示</h2><h3 id="河流纵剖面"><a href="#河流纵剖面" class="headerlink" title="河流纵剖面"></a>河流纵剖面</h3><p><img src="/blog/2020/930e6da0/%E6%B2%B3%E6%B5%81%E7%BA%B5%E5%89%96%E9%9D%A2.png" alt="河流纵剖面"></p>
+<h3 id="Hack剖面"><a href="#Hack剖面" class="headerlink" title="Hack剖面"></a>Hack剖面</h3><p><img src="/blog/2020/930e6da0/Hack%E5%89%96%E9%9D%A2.png" alt="Hack剖面"></p>
+<h3 id="测高积分图"><a href="#测高积分图" class="headerlink" title="测高积分图"></a>测高积分图</h3><p><img src="/blog/2020/930e6da0/%E6%B5%8B%E9%AB%98%E7%A7%AF%E5%88%86.png" alt="测高积分"></p>
 ]]></content>
       <categories>
         <category>科研</category>
@@ -324,7 +324,7 @@
   </entry>
   <entry>
     <title>科研学习资料整理</title>
-    <url>/blog/2020/4785d37f/</url>
+    <url>/2020/4785d37f/</url>
     <content><![CDATA[<a id="more"></a>
 <p><a href="https://clarivate.com.cn/e-clarivate/wos.htm" target="_blank" rel="noopener"><strong>Web of Science在线大讲堂</strong></a><br>文献管理软件EndNote、科研选题、论文写作等<br><a href="https://gerongcun.github.io/2020/b0d29aca/" target="_blank" rel="noopener"><strong>EndNote学习资料</strong></a><br>EndNote软件安装包、使用手册、学习视频等<br><a href="https://www.bilibili.com/video/av40002909" target="_blank" rel="noopener"><strong>罗昭锋 文献管理与信息分析</strong></a><br>信息获取、知识管理、文献管理、文献信息分析、思维导图  </p>
 ]]></content>
@@ -338,7 +338,7 @@
   </entry>
   <entry>
     <title>电子书获取途径</title>
-    <url>/blog/2020/f39becc7/</url>
+    <url>/2020/f39becc7/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 推荐中文、英文电子书获取途径，轻松下载中英文电子书。</p>
 <a id="more"></a>
 
@@ -354,7 +354,7 @@
   </entry>
   <entry>
     <title>Git学习资料</title>
-    <url>/blog/2020/3a12b356/</url>
+    <url>/2020/3a12b356/</url>
     <content><![CDATA[<p><strong>摘要：</strong> Git（读音为/gɪt/）是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git是“Linux之父”Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。  </p>
 <a id="more"></a>
 <h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><strong>廖雪峰Git教程</strong><br><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a><br>廖雪峰老师写的教程简明易学，通俗易懂，非常适合入门。  </p>
@@ -370,7 +370,7 @@
   </entry>
   <entry>
     <title>数据分析软件Matlab入门</title>
-    <url>/blog/2020/21b7e720/</url>
+    <url>/2020/21b7e720/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 写本科毕业论文时，在李正晨学长的指导下，学习了MATLAB软件。学习的主要目的是处理excel数据和科学绘图。这里，推荐一些MATLAB学习资料。  </p>
 <a id="more"></a>
 <h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><strong>matlab官方帮助文档</strong><br><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/" target="_blank" rel="noopener">https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/</a><br>官方写得很全面</p>
@@ -389,7 +389,7 @@
   </entry>
   <entry>
     <title>【科研】引文分析软件HistCite入门</title>
-    <url>/blog/2020/de379eff/</url>
+    <url>/2020/de379eff/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 如何从浩瀚的文献数据库中找到关键文献，是广大科研人员普遍面临的难题。在此背景下，大量的引文分析软件应运而生。CiteSpace、HistCite、VOSviewer等软件是其中的佼佼者。</p>
 <a id="more"></a>
 <h2 id="HistCite"><a href="#HistCite" class="headerlink" title="HistCite"></a>HistCite</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>HistCite是由“SCI之父”尤金·加菲尔德和他的同事们开发的引文编年可视化软件。软件名称是“History of Cite”的简写，意为引文历史。它是一款非常强大的引文分析工具，可以快速绘制出某个研究领域的发展脉络，快速锁定某个研究方向的重要文献和学术大牛，还可以找到某些具有开创性成果的无指定关键词的论文！</p>
@@ -397,7 +397,7 @@
 <h3 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h3><p>A、理出一个领域的发展脉络<br>B、快速定位某个领域的重要文献<br>C、查找领域的重要科学家和机构<br>D、总结某个领域的最新进展<br>E、找出无指定关键词的重要文献</p>
 <h3 id="HistCite-Pro"><a href="#HistCite-Pro" class="headerlink" title="HistCite Pro"></a>HistCite Pro</h3><p>中国科学技术大学的王庆学长在Histcite基础上开发了HistCite Pro，延续了软件的生命。<br>王庆学长，知乎账号：Tsing；微信公众号：科研利器。  </p>
 <h3 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h3><p>HistCite非常容易上手，王庆学长写了教程，详见文末“资源获取途径”。</p>
-<h2 id="示例项目"><a href="#示例项目" class="headerlink" title="示例项目"></a>示例项目</h2><p><img src="/blog/blog/2020/de379eff/%E6%9E%84%E9%80%A0%E5%9C%B0%E8%B2%8C%E5%AD%A6%E5%BC%95%E6%96%87%E5%9B%BE%E8%B0%B1.png" alt="构造地貌学引文图谱"><br>以“Tectonic geomorphology”（构造地貌学）为关键词搜索到构造地貌学研究领域1379篇文献。按本地引用次数排序，取前30篇作引文图谱（上图）。其中，序号为167、188、269的文献圆圈较大，有较多文献引用这些文献，说明这些文献的影响力较大，可能是研究领域里程碑式的文章。序号为291、356、415、757的文献引用了较多文献，极有可能是重要的综述文章。通过查阅属性，序号为356的文献是会议论文，其他3篇为综述，证实了推测。通过引文图谱筛选出的的7篇文献值得细读精读。  </p>
+<h2 id="示例项目"><a href="#示例项目" class="headerlink" title="示例项目"></a>示例项目</h2><p><img src="/blog/2020/de379eff/%E6%9E%84%E9%80%A0%E5%9C%B0%E8%B2%8C%E5%AD%A6%E5%BC%95%E6%96%87%E5%9B%BE%E8%B0%B1.png" alt="构造地貌学引文图谱"><br>以“Tectonic geomorphology”（构造地貌学）为关键词搜索到构造地貌学研究领域1379篇文献。按本地引用次数排序，取前30篇作引文图谱（上图）。其中，序号为167、188、269的文献圆圈较大，有较多文献引用这些文献，说明这些文献的影响力较大，可能是研究领域里程碑式的文章。序号为291、356、415、757的文献引用了较多文献，极有可能是重要的综述文章。通过查阅属性，序号为356的文献是会议论文，其他3篇为综述，证实了推测。通过引文图谱筛选出的的7篇文献值得细读精读。  </p>
 <h2 id="资源获取途径"><a href="#资源获取途径" class="headerlink" title="资源获取途径"></a>资源获取途径</h2><p>引文分析软件HistCite<br>百度网盘链接：<a href="https://pan.baidu.com/s/1QEpR4zASQ22_p6dxPwlHAA" target="_blank" rel="noopener">https://pan.baidu.com/s/1QEpR4zASQ22_p6dxPwlHAA</a><br>提取码：b8q1  </p>
 ]]></content>
       <categories>
@@ -410,7 +410,7 @@
   </entry>
   <entry>
     <title>科研背景知识介绍03科研软件</title>
-    <url>/blog/2020/477ee937/</url>
+    <url>/2020/477ee937/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 在科研领域，前人开发了多款科研软件供广大研究人员使用。学会一款方便的科研软件，可以简化科研流程，极大地提高科研效率。科研软件分为文献管理软件和引文分析软件，文献管理软件可以管理文献、阅读文献等，引文分析软件可以文献调研、理清发展脉络等。  </p>
 <a id="more"></a>
 <h2 id="文献管理软件"><a href="#文献管理软件" class="headerlink" title="文献管理软件"></a>文献管理软件</h2><p>市面上上的文献管理软件有EndNote、Mendeley、Citavi、Refworks、Zotero、Papers、ReadCube、NoteExpress等。  </p>
@@ -433,7 +433,7 @@
   </entry>
   <entry>
     <title>科研背景知识介绍02期刊评价指标</title>
-    <url>/blog/2020/ac3dde07/</url>
+    <url>/2020/ac3dde07/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 本文主要介绍一些科研背景知识，包括JCR分区、中科院分区、IF、H指数、被引半衰期等评价指标的介绍。</p>
 <a id="more"></a>
 <h2 id="期刊引证报告JCR"><a href="#期刊引证报告JCR" class="headerlink" title="期刊引证报告JCR"></a>期刊引证报告JCR</h2><p>期刊引证报告（Journal Citation Reports，简称JCR）是由科睿唯安发表的年度出版物。该公司透过旗下Web of Science平台的引文资料来为学术期刊评价，针对自然科学版本（JCR-SCI）和社会科学版本（JCR-SSCI）两部分，基于期刊被引用次数来计算出影响因子等多种评比指标，并作为期刊排名依据。JCR是对世界权威期刊进行系统客观评价的有效工具。  </p>
@@ -468,7 +468,7 @@
   </entry>
   <entry>
     <title>科研背景知识介绍01期刊类别</title>
-    <url>/blog/2020/7d7485b9/</url>
+    <url>/2020/7d7485b9/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 本文主要介绍一些科研背景知识，包括SCI、SSCI、北大核心、CSCD、核心期刊等期刊类别的介绍。</p>
 <a id="more"></a>
 <h2 id="科学引文索引SCI"><a href="#科学引文索引SCI" class="headerlink" title="科学引文索引SCI"></a>科学引文索引SCI</h2><p>科学引文索引（Science Citation Index，简称SCI）是由美国科学信息研究所（Institute for Scientific Information，简称ISI）于1960年上线投入使用的期刊文献检索工具，其出版形式包括印刷版期刊和光盘版及联机数据库。目前，科学引文索引由科睿唯安公司（Clarivate Analytics）运营。  </p>
@@ -498,10 +498,10 @@
   </entry>
   <entry>
     <title>电脑软件推荐</title>
-    <url>/blog/2020/e419ec53/</url>
+    <url>/2020/e419ec53/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 推荐我经常使用的良心软件  </p>
 <a id="more"></a>
-<h2 id="PotPlayer播放器"><a href="#PotPlayer播放器" class="headerlink" title="PotPlayer播放器"></a>PotPlayer播放器</h2><p><img src="/blog/blog/2020/e419ec53/potplayer.png" alt="potplayer">  </p>
+<h2 id="PotPlayer播放器"><a href="#PotPlayer播放器" class="headerlink" title="PotPlayer播放器"></a>PotPlayer播放器</h2><p><img src="/blog/2020/e419ec53/potplayer.png" alt="potplayer">  </p>
 <p><strong>推荐理由：</strong><br>用户界面美观，颜值最高的播放器。扁平化设计，简约大气；<br>没有流氓广告；<br>功能强大，启动速度快，解码能力强，耗内存低；<br>倍速播放，从0.2倍，每隔0.1倍，递增至11.0倍。倍速播放时字幕不会乱，能跟音画同步；  </p>
 <p><strong>参考文献：</strong><br><a href="http://potplayer.daum.net/" target="_blank" rel="noopener">potplayer官网</a><br><a href="https://www.jianshu.com/p/a598c0b153c5" target="_blank" rel="noopener">PotPlayer快捷键大全（建议收藏）</a><br><a href="https://zhuanlan.zhihu.com/p/35757176" target="_blank" rel="noopener">PotPlayer：最强播放器，无边框+4款简约皮肤 - 极简君的笔记的文章 - 知乎</a><br><a href="https://www.zhihu.com/question/20710497/answer/214128858" target="_blank" rel="noopener">PotPlayer 到底好在哪里？ - 青春我做主的回答 - 知乎</a>  </p>
 <h2 id="Ditto剪贴板增强工具"><a href="#Ditto剪贴板增强工具" class="headerlink" title="Ditto剪贴板增强工具"></a>Ditto剪贴板增强工具</h2><p><strong>推荐理由：</strong><br>复制多条关键信息，最后一次性粘贴，非常高效！<br>在看一篇文献时，你可能会「复制粘贴」、「复制粘贴」、「复制粘贴」……<br>不断地切换窗口（切换窗口快捷键：Alt+Tab），将重要信息，粘贴到指定地方。<br>如果你拥有了Ditto，那么问题就变简单了。<br>你只需要「复制」、「复制」、「复制」……最后，再「粘贴」到指定位置就OK了。<br>Ditto快捷键：ctrl+`（tab键正上方的键“`”）。  </p>
@@ -513,12 +513,12 @@
 <p>listary和everything快速搜索文件，只要一个文件名，你就可以快速打开文件。不用点点点，更不用记住文件的位置。使用技巧就是规范化文件名。这样可以方便记忆文件名。  </p>
 <p>everything需要打开一下软件，然后直接搜索文件名，调取速度非常快，只要电脑不是行将就木，基本调出速度都蛮快的。<br>listary的调取比较智能，只要键盘点击Ctrl连续两下/或者鼠标左键双击两下，就能调出listary，搜索速度也不错。个人比较倾向于用listary，调取快。  </p>
 <p><strong>参考文献：</strong><br><a href="https://www.listary.com/" target="_blank" rel="noopener">listary官网</a><br><a href="https://www.voidtools.com/zh-cn/" target="_blank" rel="noopener">everything官网</a><br><a href="https://zhuanlan.zhihu.com/p/51381894" target="_blank" rel="noopener">本地文件搜索神器，用everything还是listary？ - 猫猫爱软件的文章 - 知乎</a>  </p>
-<h2 id="ImageGlass开源轻量级看图软件"><a href="#ImageGlass开源轻量级看图软件" class="headerlink" title="ImageGlass开源轻量级看图软件"></a>ImageGlass开源轻量级看图软件</h2><p><img src="/blog/blog/2020/e419ec53/ImageGlass.png" alt="ImageGlass">  </p>
+<h2 id="ImageGlass开源轻量级看图软件"><a href="#ImageGlass开源轻量级看图软件" class="headerlink" title="ImageGlass开源轻量级看图软件"></a>ImageGlass开源轻量级看图软件</h2><p><img src="/blog/2020/e419ec53/ImageGlass.png" alt="ImageGlass">  </p>
 <p><strong>推荐理由：</strong><br>开源免费；<br>打开速度快；<br>界面简洁，美观；  </p>
 <p><strong>参考文献：</strong><br><a href="https://imageglass.org" target="_blank" rel="noopener">ImageGlass官网</a><br><a href="https://www.zhihu.com/question/36847530/answer/788305140" target="_blank" rel="noopener">ImageGlass—替代win10默认的图片查看器</a>  </p>
-<h2 id="Eagle图片收集及管理工具"><a href="#Eagle图片收集及管理工具" class="headerlink" title="Eagle图片收集及管理工具"></a>Eagle图片收集及管理工具</h2><p><img src="/blog/blog/2020/e419ec53/eagle.png" alt="eagle">  </p>
+<h2 id="Eagle图片收集及管理工具"><a href="#Eagle图片收集及管理工具" class="headerlink" title="Eagle图片收集及管理工具"></a>Eagle图片收集及管理工具</h2><p><img src="/blog/2020/e419ec53/eagle.png" alt="eagle">  </p>
 <p>Eagle主要被我用来整理表情包（数量3000+）；<br>Eagle是款付费软件，199元即可获得终身授权；教育、公益机构（学生、教师）提供 7 折优惠！价格（140元）真的很良心！  </p>
-<p><strong>推荐理由：</strong><br>支持浏览器扩展，快速收集图片；<br>支持多种文件格式（jpg、png、ps、ppt、pdf、word、Photoshop、illustrator、AutoCAD、CoreDraw、）；<br><img src="/blog/blog/2020/e419ec53/EagleDocumentFormat.png" alt="EagleDocumentFormat"><br>界面简洁，美观；<br>支持多级文件目录、标签管理；<br>快速搜索，迅速找到图片；  </p>
+<p><strong>推荐理由：</strong><br>支持浏览器扩展，快速收集图片；<br>支持多种文件格式（jpg、png、ps、ppt、pdf、word、Photoshop、illustrator、AutoCAD、CoreDraw、）；<br><img src="/blog/2020/e419ec53/EagleDocumentFormat.png" alt="EagleDocumentFormat"><br>界面简洁，美观；<br>支持多级文件目录、标签管理；<br>快速搜索，迅速找到图片；  </p>
 <p><strong>参考文献：</strong><br><a href="https://cn.eagle.cool/" target="_blank" rel="noopener">Eagle官网</a>  </p>
 <h2 id="FastStone-Capture截图工具"><a href="#FastStone-Capture截图工具" class="headerlink" title="FastStone Capture截图工具"></a>FastStone Capture截图工具</h2><p><strong>推荐理由：</strong><br>界面简洁，美观；<br>功能过于强大，支持截图、录屏、取色、滚动截图（电脑也能截长图！）、标尺、简单编辑功能（添加文字、矩形框）等功能；  </p>
 <p><strong>参考文献：</strong><br><a href="http://www.softerviews.org/FastStone.html" target="_blank" rel="noopener">FastStone Capture官网</a><br><a href="http://www.carrotchou.com/3043.html" target="_blank" rel="noopener">截图录像软件 FastStone Capture v9.3 完美汉化版</a>  </p>
@@ -537,7 +537,7 @@
   </entry>
   <entry>
     <title>【科研】EndNote文献管理软件</title>
-    <url>/blog/2020/b0d29aca/</url>
+    <url>/2020/b0d29aca/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 工欲善其事，必先利其器。<br>今天分享一款科研利器——EndNote文献管理软件。软件安装包、用户手册、操作视频……应有尽有。文末附有百度网盘下载。  </p>
 <a id="more"></a>
 <h2 id="科研小白常见问题"><a href="#科研小白常见问题" class="headerlink" title="科研小白常见问题"></a>科研小白常见问题</h2><p>搞科研的你是否遇到到下列问题：  </p>
@@ -567,7 +567,7 @@
   </entry>
   <entry>
     <title>【科研第一课】文献管理与信息分析</title>
-    <url>/blog/2020/37cbe283/</url>
+    <url>/2020/37cbe283/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 今天给大家分享的是中科大罗昭锋老师《文献管理与信息分析》慕课课程，文末附有资源获取方式。  </p>
 <a id="more"></a>
 <h2 id="罗昭锋简介"><a href="#罗昭锋简介" class="headerlink" title="罗昭锋简介"></a>罗昭锋简介</h2><p>2005年获中国科学技术大学硕士学位<br>中科大生命科学实验中心高级实验师<br>中科大图书馆高级顾问<br>致力于帮助科研工作者提高工作效率  </p>
@@ -589,7 +589,7 @@
   </entry>
   <entry>
     <title>编程学习资料整理</title>
-    <url>/blog/2020/98746a1e/</url>
+    <url>/2020/98746a1e/</url>
     <content><![CDATA[<a id="more"></a>
 
 <h2 id="大佬"><a href="#大佬" class="headerlink" title="大佬"></a>大佬</h2><p><a href="http://www.ruanyifeng.com/" target="_blank" rel="noopener"><strong>阮一峰的个人网站</strong></a><br>阮一峰的1500+博客<br><a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener"><strong>廖雪峰的官方网站</strong></a><br>Java教程、Python教程、JavaScript教程、SQL教程、Git教程  </p>
@@ -601,18 +601,18 @@
   </entry>
   <entry>
     <title>ArcGIS入门教程&amp;安装包&amp;GIS数据&amp;使用工具</title>
-    <url>/blog/2020/ceddd626/</url>
+    <url>/2020/ceddd626/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 地图是地理的第二语言，而ArcGIS是制作地图的重要工具。掌握ArcGIS是必要的。一方面，掌握ArcGIS是GIS专业同学的必备技能；另一方面，对于其他专业同学，掌握ArcGIS后，可以很容易地绘制研究区地理位置图、人口密度分布图等专题地图。<br>本文分享GIS方面的经典书籍，介绍地理信息科学的理论知识；分享ArcGIS的书籍教程和视频教程，入门ArcGIS；分享ArcGIS安装包，配置软件环境；分享GIS数据和实用工具，方便制作地图。  </p>
 <a id="more"></a>
 <h2 id="GIS理论知识"><a href="#GIS理论知识" class="headerlink" title="GIS理论知识"></a>GIS理论知识</h2><p>黄杏元、马劲松编著的 <strong>《地理信息系统概论（修订版）》</strong><br>张康聪编著、陈健飞翻译的 <strong>《地理信息系统导论（原著第八版）》</strong>    </p>
 <h2 id="ArcGIS教程"><a href="#ArcGIS教程" class="headerlink" title="ArcGIS教程"></a>ArcGIS教程</h2><p>ArcGIS教程包括书籍教程和视频教程。<br>书籍教程方面，推荐南师大汤国安老师的两本书<br><strong>《ArcGIS地理信息系统空间分析实验教程（第二版）》</strong><br>和<br><strong>《地理信息系统基础实验操作100例》</strong>，均有pdf文档和实验练习数据，可以一边看，一边跟着操作。<br>推荐先看《ArcGIS地理信息系统空间分析实验教程（第二版）》，这本书比较系统，方便我们对ArcGIS有个整体的把握。我学习ArcGIS，就是跟着这本书学的，大概花了两个星期，墙裂推荐。<br>《地理信息系统基础实验操作l00例》也不错，通过100个经典的基础实验案例，详细介绍ArcGIS软件操作的具体步骤与方法。  </p>
 <p>视频比文字更加有趣、直观、生动，所以，在B站找了两部播放量较大的视频教程，分别是《ArcGIS新手入门基础视频教程》和《ArcGIS高手进阶视频教程》。因为没有仔细看过，所以，不敢评价质量优劣。这里，列出两部视频教程，供大家参考。  </p>
 <h2 id="ArcGIS安装包"><a href="#ArcGIS安装包" class="headerlink" title="ArcGIS安装包"></a>ArcGIS安装包</h2><p>提供ArcGIS 10.2的安装包、汉化包、安装教程。<br><strong>PS:</strong> 网盘文件夹中的ArcGIS 10.5安装包已失效，请下载ArcGIS 10.2安装包。</p>
-<h2 id="GIS数据-amp-实用工具"><a href="#GIS数据-amp-实用工具" class="headerlink" title="GIS数据&amp;实用工具"></a>GIS数据&amp;实用工具</h2><h3 id="国家级400万基础地理数据"><a href="#国家级400万基础地理数据" class="headerlink" title="国家级400万基础地理数据"></a>国家级400万基础地理数据</h3><p>包括国界、省界、市界、地级市点位等数据<br>利用本数据集制作的中国区划图<br><img src="/blog/blog/2020/ceddd626/08%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%88%92%E5%9B%BE.png" alt="中国区划图">  </p>
+<h2 id="GIS数据-amp-实用工具"><a href="#GIS数据-amp-实用工具" class="headerlink" title="GIS数据&amp;实用工具"></a>GIS数据&amp;实用工具</h2><h3 id="国家级400万基础地理数据"><a href="#国家级400万基础地理数据" class="headerlink" title="国家级400万基础地理数据"></a>国家级400万基础地理数据</h3><p>包括国界、省界、市界、地级市点位等数据<br>利用本数据集制作的中国区划图<br><img src="/blog/2020/ceddd626/08%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%88%92%E5%9B%BE.png" alt="中国区划图">  </p>
 <h3 id="全球GIS数据"><a href="#全球GIS数据" class="headerlink" title="全球GIS数据"></a>全球GIS数据</h3><p>本资源包括以下内容：<br>全球DEM数据（地形数据）及国界、省界、海岸线等矢量数据  </p>
-<p>利用本资源的数据绘制的全球地形图<br><img src="/blog/blog/2020/ceddd626/09%E5%85%A8%E7%90%83%E5%9C%B0%E5%BD%A2%E5%9B%BE.png" alt="全球地形图"><br>利用本资源的数据绘制的全球区划图<br><img src="/blog/blog/2020/ceddd626/10%E5%85%A8%E7%90%83%E5%8C%BA%E5%88%92%E5%9B%BE.jpg" alt="全球区划图">  </p>
+<p>利用本资源的数据绘制的全球地形图<br><img src="/blog/2020/ceddd626/09%E5%85%A8%E7%90%83%E5%9C%B0%E5%BD%A2%E5%9B%BE.png" alt="全球地形图"><br>利用本资源的数据绘制的全球区划图<br><img src="/blog/2020/ceddd626/10%E5%85%A8%E7%90%83%E5%8C%BA%E5%88%92%E5%9B%BE.jpg" alt="全球区划图">  </p>
 <h3 id="Google-Earth卫星影像下载工具"><a href="#Google-Earth卫星影像下载工具" class="headerlink" title="Google Earth卫星影像下载工具"></a>Google Earth卫星影像下载工具</h3><p><strong>91位图</strong>和<strong>GoogleMapsDownloader</strong><br>GoogleMapsDownloader是免费软件，缺点是只能下载到13级以及在海洋上有google水印。<br>如果想要下载分辨率更高的卫星影像，则需要收费。<br>91位图是收费软件，将指定内容分享到5个QQ群里，可以享受免费版。本资源提供了获取免费版的方法。  </p>
-<h3 id="ArcGIS加载高德、OSM和谷歌等地图"><a href="#ArcGIS加载高德、OSM和谷歌等地图" class="headerlink" title="ArcGIS加载高德、OSM和谷歌等地图"></a>ArcGIS加载高德、OSM和谷歌等地图</h3><p>软件用途：可以在ArcGIS中加载高德地图、谷歌地图<br><img src="/blog/blog/2020/ceddd626/11%E5%8A%A0%E8%BD%BD%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE.png" alt="加载高德地图">  </p>
+<h3 id="ArcGIS加载高德、OSM和谷歌等地图"><a href="#ArcGIS加载高德、OSM和谷歌等地图" class="headerlink" title="ArcGIS加载高德、OSM和谷歌等地图"></a>ArcGIS加载高德、OSM和谷歌等地图</h3><p>软件用途：可以在ArcGIS中加载高德地图、谷歌地图<br><img src="/blog/2020/ceddd626/11%E5%8A%A0%E8%BD%BD%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE.png" alt="加载高德地图">  </p>
 <h2 id="ArcGIS推荐学习路线"><a href="#ArcGIS推荐学习路线" class="headerlink" title="ArcGIS推荐学习路线"></a>ArcGIS推荐学习路线</h2><p>GIS概论的话，建议看张康聪编著、陈健飞翻译的 <strong>《地理信息系统导论（原著第八版）》</strong>，写得很详细；<br>ArcGIS操作，建议学习南师大汤国安老师的两本书<br><strong>《ArcGIS地理信息系统空间分析实验教程（第二版）》</strong><br>和<br><strong>《地理信息系统基础实验操作100例》</strong>；<br>在使用ArcGIS工具时，遇到问题，可以参考<a href="https://desktop.arcgis.com/zh-cn/arcmap/10.6/tools/main/a-quick-tour-of-geoprocessing-tool-references.htm" target="_blank" rel="noopener">地理处理工具参考快速浏览</a>；  </p>
 <h2 id="资源获取途径"><a href="#资源获取途径" class="headerlink" title="资源获取途径"></a>资源获取途径</h2><p>ArcGIS入门教程&amp;安装包&amp;GIS数据&amp;使用工具<br>百度网盘链接：<br><a href="https://pan.baidu.com/s/1YMLUv_maGs0KNbCGo5WsJg" target="_blank" rel="noopener">https://pan.baidu.com/s/1YMLUv_maGs0KNbCGo5WsJg</a><br>提取码：kdlg  </p>
 ]]></content>
@@ -627,12 +627,12 @@
   </entry>
   <entry>
     <title>无偿献血科普知识</title>
-    <url>/blog/2020/535f7da0/</url>
+    <url>/2020/535f7da0/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 作为献血达人，介绍无偿献血科普知识、注意事项、相关奖励；</p>
 <a id="more"></a>
 
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>截止2020年4月5日，本人在南京、盐城无偿献血57次，包括3次全血和54次血小板，累计捐献全血1200ml、血小板107单位（治疗量）。作为一位献血达人，科普一下无偿献血知识、注意事项。  </p>
-<p><img src="/blog/blog/2020/535f7da0/BloodDonationCertificate.jpg" alt="无偿献血电子证图片">  </p>
+<p><img src="/blog/2020/535f7da0/BloodDonationCertificate.jpg" alt="无偿献血电子证图片">  </p>
 <p>这里声明，这篇博客不是道德绑架，不是强迫大家献血。无偿献血本身就是个人志愿行为，献与不献是个人的权利。  </p>
 <h1 id="无偿献血科普"><a href="#无偿献血科普" class="headerlink" title="无偿献血科普"></a>无偿献血科普</h1><h2 id="全血-amp-血小板"><a href="#全血-amp-血小板" class="headerlink" title="全血 &amp; 血小板"></a>全血 &amp; 血小板</h2><h1 id="献血流程"><a href="#献血流程" class="headerlink" title="献血流程"></a>献血流程</h1><h2 id="献血基本要求"><a href="#献血基本要求" class="headerlink" title="献血基本要求"></a>献血基本要求</h2><p>体重：男≥50公斤；女≥45公斤；<br>如有感冒发烧症状，痊愈一周方可献血；<br>献血前几天，保证睡眠，不要通宵、过量饮酒、饮食过于油腻，否则可能出现谷丙转氨酶过高的情况；  </p>
 <p>详细的献血者体格检查要求，请参考<a href="https://www.njrcbc.org.cn/" target="_blank" rel="noopener">南京红十字血液中心官网</a>发布的<a href="南京红十字血液中心-献血者体格检查标准.pdf">附件-南京红十字血液中心-献血者体格检查标准.pdf</a>。  </p>
@@ -668,28 +668,28 @@
   </entry>
   <entry>
     <title>【盐城】一个让人打开心扉的地方</title>
-    <url>/blog/2020/184b22d3/</url>
+    <url>/2020/184b22d3/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 今天聊聊苏北重镇盐城。<br>我是盐城人，我给自己袋盐！  </p>
 <a id="more"></a>
 
-<h2 id="位置特殊"><a href="#位置特殊" class="headerlink" title="位置特殊"></a>位置特殊</h2><h3 id="“盐城”的由来"><a href="#“盐城”的由来" class="headerlink" title="“盐城”的由来"></a>“盐城”的由来</h3><p>盐城盐城，煮海为盐。环城皆盐场，故名“盐城”。盐城在中国地图上非常好辨别，在江苏海岸线上有凸起的小角。<br><img src="/blog/blog/2020/184b22d3/%E7%9B%90%E5%9F%8E%E5%9C%A8%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%BD%8D%E7%BD%AE2.jpg" alt="盐城在中国的位置"><br>▲盐城在中国的位置  </p>
-<h3 id="淮河入海口"><a href="#淮河入海口" class="headerlink" title="淮河入海口"></a>淮河入海口</h3><p>盐城是淮河入海口之一，位于南北分界线。<br><img src="/blog/blog/2020/184b22d3/%E7%A7%A6%E5%B2%AD%E6%B7%AE%E6%B2%B3%E4%B8%80%E7%BA%BF.jpg" alt="秦岭-淮河一线"><br>▲秦岭-淮河一线<br>图片来源：星球研究所<br><img src="/blog/blog/2020/184b22d3/%E8%8B%8F%E5%8C%97%E7%81%8C%E6%BA%89%E6%80%BB%E6%B8%A0_%E6%B7%AE%E6%B2%B3%E5%85%A5%E6%B5%B7%E6%B0%B4%E9%81%93.jpg" alt="苏北灌溉总渠_淮河入海水道"><br>▲淮河入海水道<br>来源：地球知识局   </p>
-<h3 id="黄淮海平原"><a href="#黄淮海平原" class="headerlink" title="黄淮海平原"></a>黄淮海平原</h3><p>盐城位于黄淮海平原和长江中下游平原过渡带，是江苏省面积最大、海岸线最长的地级市。<br><img src="/blog/blog/2020/184b22d3/00%E6%B1%9F%E8%8B%8F%E7%9C%813.jpg" alt="盐城在江苏省的位置"><br>▲盐城在江苏省的位置  </p>
-<h3 id="唯一一座没有山的地级市"><a href="#唯一一座没有山的地级市" class="headerlink" title="唯一一座没有山的地级市"></a>唯一一座没有山的地级市</h3><p>盐城是唯一一座没有山的地级市，是黄河、淮河、长江冲积形成的冲积平原。黄河曾在此入海，如今已经废弃，称为“废黄河口”。<br><img src="/blog/blog/2020/184b22d3/%E7%9B%90%E5%9F%8E%E6%88%90%E6%9E%9C%E5%9B%BE_%E4%BD%8E%E5%88%86%E8%BE%A8%E7%8E%87.jpg" alt="盐城卫星影像图"><br>▲盐城卫星影像图 </p>
+<h2 id="位置特殊"><a href="#位置特殊" class="headerlink" title="位置特殊"></a>位置特殊</h2><h3 id="“盐城”的由来"><a href="#“盐城”的由来" class="headerlink" title="“盐城”的由来"></a>“盐城”的由来</h3><p>盐城盐城，煮海为盐。环城皆盐场，故名“盐城”。盐城在中国地图上非常好辨别，在江苏海岸线上有凸起的小角。<br><img src="/blog/2020/184b22d3/%E7%9B%90%E5%9F%8E%E5%9C%A8%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%BD%8D%E7%BD%AE2.jpg" alt="盐城在中国的位置"><br>▲盐城在中国的位置  </p>
+<h3 id="淮河入海口"><a href="#淮河入海口" class="headerlink" title="淮河入海口"></a>淮河入海口</h3><p>盐城是淮河入海口之一，位于南北分界线。<br><img src="/blog/2020/184b22d3/%E7%A7%A6%E5%B2%AD%E6%B7%AE%E6%B2%B3%E4%B8%80%E7%BA%BF.jpg" alt="秦岭-淮河一线"><br>▲秦岭-淮河一线<br>图片来源：星球研究所<br><img src="/blog/2020/184b22d3/%E8%8B%8F%E5%8C%97%E7%81%8C%E6%BA%89%E6%80%BB%E6%B8%A0_%E6%B7%AE%E6%B2%B3%E5%85%A5%E6%B5%B7%E6%B0%B4%E9%81%93.jpg" alt="苏北灌溉总渠_淮河入海水道"><br>▲淮河入海水道<br>来源：地球知识局   </p>
+<h3 id="黄淮海平原"><a href="#黄淮海平原" class="headerlink" title="黄淮海平原"></a>黄淮海平原</h3><p>盐城位于黄淮海平原和长江中下游平原过渡带，是江苏省面积最大、海岸线最长的地级市。<br><img src="/blog/2020/184b22d3/00%E6%B1%9F%E8%8B%8F%E7%9C%813.jpg" alt="盐城在江苏省的位置"><br>▲盐城在江苏省的位置  </p>
+<h3 id="唯一一座没有山的地级市"><a href="#唯一一座没有山的地级市" class="headerlink" title="唯一一座没有山的地级市"></a>唯一一座没有山的地级市</h3><p>盐城是唯一一座没有山的地级市，是黄河、淮河、长江冲积形成的冲积平原。黄河曾在此入海，如今已经废弃，称为“废黄河口”。<br><img src="/blog/2020/184b22d3/%E7%9B%90%E5%9F%8E%E6%88%90%E6%9E%9C%E5%9B%BE_%E4%BD%8E%E5%88%86%E8%BE%A8%E7%8E%87.jpg" alt="盐城卫星影像图"><br>▲盐城卫星影像图 </p>
 <h3 id="百河之城，鱼米之乡"><a href="#百河之城，鱼米之乡" class="headerlink" title="百河之城，鱼米之乡"></a>百河之城，鱼米之乡</h3><p>盐城是百河之城，鱼米之乡。<br>上海在盐城大丰区拥有300平方千米飞地，包括上海农场、海丰农场、川东农场，是上海重要的“米袋子”、“菜篮子”和“肉盘子”。<br>飞地：隶属于某一行政区管辖但不与本区毗连的土地。</p>
-<h2 id="风景如画"><a href="#风景如画" class="headerlink" title="风景如画"></a>风景如画</h2><h3 id="盐城——一个让人打开心扉的地方"><a href="#盐城——一个让人打开心扉的地方" class="headerlink" title="盐城——一个让人打开心扉的地方"></a>盐城——一个让人打开心扉的地方</h3><p><img src="/blog/blog/2020/184b22d3/%E7%9B%90%E5%9F%8E%E4%B8%80%E4%B8%AA%E8%AE%A9%E4%BA%BA%E6%89%93%E5%BC%80%E5%BF%83%E6%89%89%E7%9A%84%E5%9C%B0%E6%96%B91.png" alt="盐城宣传画"><br>▲盐城宣传画 </p>
+<h2 id="风景如画"><a href="#风景如画" class="headerlink" title="风景如画"></a>风景如画</h2><h3 id="盐城——一个让人打开心扉的地方"><a href="#盐城——一个让人打开心扉的地方" class="headerlink" title="盐城——一个让人打开心扉的地方"></a>盐城——一个让人打开心扉的地方</h3><p><img src="/blog/2020/184b22d3/%E7%9B%90%E5%9F%8E%E4%B8%80%E4%B8%AA%E8%AE%A9%E4%BA%BA%E6%89%93%E5%BC%80%E5%BF%83%E6%89%89%E7%9A%84%E5%9C%B0%E6%96%B91.png" alt="盐城宣传画"><br>▲盐城宣传画 </p>
 <h3 id="江苏省2-3的国家级自然保护区"><a href="#江苏省2-3的国家级自然保护区" class="headerlink" title="江苏省2/3的国家级自然保护区"></a>江苏省2/3的国家级自然保护区</h3><p>拥有江苏省2/3的国家级自然保护区：盐城沿海滩涂珍禽国家级自然保护区（丹顶鹤）和大丰麋鹿国家级自然保护区（麋鹿）。江苏还有一个保护区是泗洪洪泽湖湿地国家级自然保护区。 </p>
-<h3 id="太平洋西岸最大、最完好的滩涂湿地"><a href="#太平洋西岸最大、最完好的滩涂湿地" class="headerlink" title="太平洋西岸最大、最完好的滩涂湿地"></a>太平洋西岸最大、最完好的滩涂湿地</h3><p>盐城沿海滩涂面积683万亩，并以每年5万亩的成陆速度增长。拥有太平洋西岸最大、最完好的滩涂湿地。<br><img src="/blog/blog/2020/184b22d3/%E4%B8%B9%E9%A1%B6%E9%B9%A43.jpg" alt="丹顶鹤"><br>▲丹顶鹤<br><img src="/blog/blog/2020/184b22d3/%E4%B8%B9%E9%A1%B6%E9%B9%A413.jpg" alt="丹顶鹤"><br>▲丹顶鹤<br>丹顶鹤是候鸟。每年的11月份到次年的3月份，黑龙江扎龙等地的丹顶鹤来此越冬。<br><img src="/blog/blog/2020/184b22d3/%E4%B8%B9%E9%A1%B6%E9%B9%A44.jpg" alt="丹顶鹤"><br>▲丹顶鹤   </p>
-<h3 id="“东方湿地之都，仙鹤神鹿世界”"><a href="#“东方湿地之都，仙鹤神鹿世界”" class="headerlink" title="“东方湿地之都，仙鹤神鹿世界”"></a>“东方湿地之都，仙鹤神鹿世界”</h3><p>仙鹤：丹顶鹤（一般而言，”鹤“、”仙鹤“均指丹顶鹤）<br>神鹿：麋鹿（四不像，姜子牙坐骑）。<br>四不像：脸似马非马、角似鹿非鹿、蹄似牛非牛、尾似驴非驴。<br><img src="/blog/blog/2020/184b22d3/%E9%BA%8B%E9%B9%BF1.jpg" alt="麋鹿"><br>▲麋鹿<br><img src="/blog/blog/2020/184b22d3/%E9%BA%8B%E9%B9%BF2.jpg" alt="麋鹿"><br>▲麋鹿 </p>
+<h3 id="太平洋西岸最大、最完好的滩涂湿地"><a href="#太平洋西岸最大、最完好的滩涂湿地" class="headerlink" title="太平洋西岸最大、最完好的滩涂湿地"></a>太平洋西岸最大、最完好的滩涂湿地</h3><p>盐城沿海滩涂面积683万亩，并以每年5万亩的成陆速度增长。拥有太平洋西岸最大、最完好的滩涂湿地。<br><img src="/blog/2020/184b22d3/%E4%B8%B9%E9%A1%B6%E9%B9%A43.jpg" alt="丹顶鹤"><br>▲丹顶鹤<br><img src="/blog/2020/184b22d3/%E4%B8%B9%E9%A1%B6%E9%B9%A413.jpg" alt="丹顶鹤"><br>▲丹顶鹤<br>丹顶鹤是候鸟。每年的11月份到次年的3月份，黑龙江扎龙等地的丹顶鹤来此越冬。<br><img src="/blog/2020/184b22d3/%E4%B8%B9%E9%A1%B6%E9%B9%A44.jpg" alt="丹顶鹤"><br>▲丹顶鹤   </p>
+<h3 id="“东方湿地之都，仙鹤神鹿世界”"><a href="#“东方湿地之都，仙鹤神鹿世界”" class="headerlink" title="“东方湿地之都，仙鹤神鹿世界”"></a>“东方湿地之都，仙鹤神鹿世界”</h3><p>仙鹤：丹顶鹤（一般而言，”鹤“、”仙鹤“均指丹顶鹤）<br>神鹿：麋鹿（四不像，姜子牙坐骑）。<br>四不像：脸似马非马、角似鹿非鹿、蹄似牛非牛、尾似驴非驴。<br><img src="/blog/2020/184b22d3/%E9%BA%8B%E9%B9%BF1.jpg" alt="麋鹿"><br>▲麋鹿<br><img src="/blog/2020/184b22d3/%E9%BA%8B%E9%B9%BF2.jpg" alt="麋鹿"><br>▲麋鹿 </p>
 <h3 id="中国第一位驯鹤姑娘。"><a href="#中国第一位驯鹤姑娘。" class="headerlink" title="中国第一位驯鹤姑娘。"></a>中国第一位驯鹤姑娘。</h3><p>徐秀娟出生于养鹤世家，离开扎龙，远赴盐城，援助丹顶鹤保护事业。在找寻走失丹顶鹤时，不幸溺水身亡，年仅23岁。<br>歌曲《一个真实的故事》，即是为了纪念她。  </p>
-<h2 id="革命老区"><a href="#革命老区" class="headerlink" title="革命老区"></a>革命老区</h2><p>皖南事变后，新四军在盐城重建军部。<br>拥有全国唯一的专业性新四军纪念馆。<br><img src="/blog/blog/2020/184b22d3/%E6%96%B0%E5%9B%9B%E5%86%9B%E7%BA%AA%E5%BF%B5%E9%A6%86.jpg" alt="新四军纪念馆"><br>▲新四军纪念馆<br>N4A：New 4 Army<br>革命老区，全国双拥模范城市（拥政爱民，拥军优属）。<br>市中心核心地段是建军路和解放路交界处，坐落着“大铜马”（新四军重建军部纪念塔）。它是盐城最显著的城市地标与精神象征。<br><img src="/blog/blog/2020/184b22d3/%E5%A4%A7%E9%93%9C%E9%A9%AC.jpg" alt="大铜马"><br>▲新四军重建军部纪念塔<br>原新四军第四师师长、原国务院副总理张爱萍将军亲笔题词</p>
-<h2 id="经济发达"><a href="#经济发达" class="headerlink" title="经济发达"></a>经济发达</h2><p>盐城面积1.69万平方千米，人口724万（2018年数据）。<br>2018年，盐城GDP5487亿元，在全国约300座城市中，排名36位，江苏第七，苏北第二（苏北第一是徐州）。<br>拥有江苏最大的汽车制造企业——东风悦达·起亚（中韩合资）。<br><img src="/blog/blog/2020/184b22d3/%E4%B8%9C%E9%A3%8E%E6%82%A6%E8%BE%BE%E8%B5%B7%E4%BA%9Alogo.png" alt="东风悦达起亚logo"><br>▲东风悦达·起亚Logo<br>东风集团，中国四大汽车集团之一。<br>悦达集团，江苏长江以北最大的国有企业。<br>起亚集团，韩国最早的汽车制造商，世界产量第五大的汽车生产商。<br><img src="/blog/blog/2020/184b22d3/%E8%B5%B7%E4%BA%9Alogo.jpg" alt="起亚logo"><br>▲起亚汽车Logo  </p>
-<h2 id="人才辈出"><a href="#人才辈出" class="headerlink" title="人才辈出"></a>人才辈出</h2><h3 id="锦鲤女孩杨超越"><a href="#锦鲤女孩杨超越" class="headerlink" title="锦鲤女孩杨超越"></a>锦鲤女孩杨超越</h3><p><img src="/blog/blog/2020/184b22d3/%E9%94%A6%E9%B2%A4%E5%A5%B3%E5%AD%A9%E6%9D%A8%E8%B6%85%E8%B6%8A.jpg" alt="▲锦鲤女孩杨超越"><br>▲锦鲤女孩杨超越</p>
-<h3 id="外交部部长乔冠华"><a href="#外交部部长乔冠华" class="headerlink" title="外交部部长乔冠华"></a>外交部部长乔冠华</h3><p>外交部部长乔冠华。1971年10月，中国重返联合国。11月，乔冠华率中国代表团首次参加26届联合国代表大会。乔冠华激动之情难以言表，遂仰天大笑。这一情景被记者拍下，被称为“乔的笑”，获普利策奖。<br><img src="/blog/blog/2020/184b22d3/%E4%B9%94%E7%9A%84%E7%AC%91.jpg" alt="乔的笑"><br>▲“乔的笑”</p>
+<h2 id="革命老区"><a href="#革命老区" class="headerlink" title="革命老区"></a>革命老区</h2><p>皖南事变后，新四军在盐城重建军部。<br>拥有全国唯一的专业性新四军纪念馆。<br><img src="/blog/2020/184b22d3/%E6%96%B0%E5%9B%9B%E5%86%9B%E7%BA%AA%E5%BF%B5%E9%A6%86.jpg" alt="新四军纪念馆"><br>▲新四军纪念馆<br>N4A：New 4 Army<br>革命老区，全国双拥模范城市（拥政爱民，拥军优属）。<br>市中心核心地段是建军路和解放路交界处，坐落着“大铜马”（新四军重建军部纪念塔）。它是盐城最显著的城市地标与精神象征。<br><img src="/blog/2020/184b22d3/%E5%A4%A7%E9%93%9C%E9%A9%AC.jpg" alt="大铜马"><br>▲新四军重建军部纪念塔<br>原新四军第四师师长、原国务院副总理张爱萍将军亲笔题词</p>
+<h2 id="经济发达"><a href="#经济发达" class="headerlink" title="经济发达"></a>经济发达</h2><p>盐城面积1.69万平方千米，人口724万（2018年数据）。<br>2018年，盐城GDP5487亿元，在全国约300座城市中，排名36位，江苏第七，苏北第二（苏北第一是徐州）。<br>拥有江苏最大的汽车制造企业——东风悦达·起亚（中韩合资）。<br><img src="/blog/2020/184b22d3/%E4%B8%9C%E9%A3%8E%E6%82%A6%E8%BE%BE%E8%B5%B7%E4%BA%9Alogo.png" alt="东风悦达起亚logo"><br>▲东风悦达·起亚Logo<br>东风集团，中国四大汽车集团之一。<br>悦达集团，江苏长江以北最大的国有企业。<br>起亚集团，韩国最早的汽车制造商，世界产量第五大的汽车生产商。<br><img src="/blog/2020/184b22d3/%E8%B5%B7%E4%BA%9Alogo.jpg" alt="起亚logo"><br>▲起亚汽车Logo  </p>
+<h2 id="人才辈出"><a href="#人才辈出" class="headerlink" title="人才辈出"></a>人才辈出</h2><h3 id="锦鲤女孩杨超越"><a href="#锦鲤女孩杨超越" class="headerlink" title="锦鲤女孩杨超越"></a>锦鲤女孩杨超越</h3><p><img src="/blog/2020/184b22d3/%E9%94%A6%E9%B2%A4%E5%A5%B3%E5%AD%A9%E6%9D%A8%E8%B6%85%E8%B6%8A.jpg" alt="▲锦鲤女孩杨超越"><br>▲锦鲤女孩杨超越</p>
+<h3 id="外交部部长乔冠华"><a href="#外交部部长乔冠华" class="headerlink" title="外交部部长乔冠华"></a>外交部部长乔冠华</h3><p>外交部部长乔冠华。1971年10月，中国重返联合国。11月，乔冠华率中国代表团首次参加26届联合国代表大会。乔冠华激动之情难以言表，遂仰天大笑。这一情景被记者拍下，被称为“乔的笑”，获普利策奖。<br><img src="/blog/2020/184b22d3/%E4%B9%94%E7%9A%84%E7%AC%91.jpg" alt="乔的笑"><br>▲“乔的笑”</p>
 <h3 id="毛泽东秘书胡乔木"><a href="#毛泽东秘书胡乔木" class="headerlink" title="毛泽东秘书胡乔木"></a>毛泽东秘书胡乔木</h3><p>“中共中央第一支笔”、毛泽东秘书胡乔木。  </p>
 <h3 id="国民党一级上将郝柏村"><a href="#国民党一级上将郝柏村" class="headerlink" title="国民党一级上将郝柏村"></a>国民党一级上将郝柏村</h3><p>国民党一级上将、原台湾当局“行政院长”郝柏村。  </p>
-<h3 id="儿童文学作家曹文轩"><a href="#儿童文学作家曹文轩" class="headerlink" title="儿童文学作家曹文轩"></a>儿童文学作家曹文轩</h3><p>儿童文学作家曹文轩，著有《草房子》，获”国际安徒生奖“。<br><img src="/blog/blog/2020/184b22d3/%E6%9B%B9%E6%96%87%E8%BD%A9.jpg" alt="曹文轩"><br>▲曹文轩</p>
-<h2 id="旅游景点"><a href="#旅游景点" class="headerlink" title="旅游景点"></a>旅游景点</h2><h3 id="盐城行政区划"><a href="#盐城行政区划" class="headerlink" title="盐城行政区划"></a>盐城行政区划</h3><p>盐城下辖3区5县1市，面积1.69万平方千米，人口724万（2018年数据）。<br><img src="/blog/blog/2020/184b22d3/%E7%9B%90%E5%9F%8E%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92%E5%9B%BE.jpg" alt="盐城行政区划图"><br>▲盐城市行政区划图</p>
+<h3 id="儿童文学作家曹文轩"><a href="#儿童文学作家曹文轩" class="headerlink" title="儿童文学作家曹文轩"></a>儿童文学作家曹文轩</h3><p>儿童文学作家曹文轩，著有《草房子》，获”国际安徒生奖“。<br><img src="/blog/2020/184b22d3/%E6%9B%B9%E6%96%87%E8%BD%A9.jpg" alt="曹文轩"><br>▲曹文轩</p>
+<h2 id="旅游景点"><a href="#旅游景点" class="headerlink" title="旅游景点"></a>旅游景点</h2><h3 id="盐城行政区划"><a href="#盐城行政区划" class="headerlink" title="盐城行政区划"></a>盐城行政区划</h3><p>盐城下辖3区5县1市，面积1.69万平方千米，人口724万（2018年数据）。<br><img src="/blog/2020/184b22d3/%E7%9B%90%E5%9F%8E%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92%E5%9B%BE.jpg" alt="盐城行政区划图"><br>▲盐城市行政区划图</p>
 <h3 id="亭湖区（市中心）"><a href="#亭湖区（市中心）" class="headerlink" title="亭湖区（市中心）"></a>亭湖区（市中心）</h3><p>新四军纪念馆<br>盐城海盐历史文化景区（盐渎公园、中国海盐博物馆、盐镇水街）<br>盐城人民公园<br>特产：步凤猪头肉、伍佑醉螺、伍佑糖麻花、盐城鸡蛋饼等。  </p>
 <h3 id="大丰区"><a href="#大丰区" class="headerlink" title="大丰区"></a>大丰区</h3><p>5A级景区中华麋鹿园（江苏大丰麋鹿国家级自然保护区）<br>大丰中华水浒园（施耐庵写作《水浒传》的地方）<br>大丰梦幻迷宫（游乐场性质）<br>大丰港海洋世界（海洋科技馆、海洋水族馆、海洋植物馆等）<br>大丰荷兰花海（种植七大类花卉计100多万株）<br>上海知青纪念馆<br>梅花湾（5000多株梅树、400多盆梅花盆景）<br>特产：海丰大米、大丰东沙紫菜、宝龙龙虾等。  </p>
 <h3 id="射阳县"><a href="#射阳县" class="headerlink" title="射阳县"></a>射阳县</h3><p>江苏盐城湿地珍禽国家级自然保护区（11月至次年3月，丹顶鹤来此越冬）<br>十里菊香景区（菊花种植面积4万亩，为全国之最，是华东地区最大的中药材种植基地）<br>特产：射阳大米、盐城海盐、洋马菊花等。  </p>
@@ -711,7 +711,7 @@
   </entry>
   <entry>
     <title>南京大学地理学院本科教材</title>
-    <url>/blog/2020/71d5c282/</url>
+    <url>/2020/71d5c282/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 整理了南京大学地理与海洋科学学院（简称地理学院）本科课程教材，包括地理学院所有学院平台课和自然地理、人文地理、地理信息科学专业核心课的教材，不包括各专业的专业选修课。收集的课程对应于2015级本科生课程，收集时间为2019年10月25日。近几年，课程改革比较大，在使用时，注意时效性。  </p>
 <a id="more"></a>
 
@@ -747,10 +747,10 @@
   </entry>
   <entry>
     <title>Excel学习资料</title>
-    <url>/blog/2020/27115/</url>
+    <url>/2020/27115/</url>
     <content><![CDATA[<p><strong>摘要：</strong> Excel是大家非常熟悉的软件，但是，很少有人系统地学习Excel。Excel的函数功能非常强大，系统学习Excel，可以极大地减轻工作负担。<br>这里推荐Excel学习资料，可供参考。</p>
 <a id="more"></a>
-<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><strong>陈杰等编著《Excel函数、图表与数据分析》</strong><br>这本书详细介绍了Excel函数，适合系统学习Excel函数，也适合作为工具书随时翻阅。<br><img src="/blog/blog/2020/27115/1.jpg" alt="封面"><br><img src="/blog/blog/2020/27115/2.jpg" alt="目录1"></p>
+<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><strong>陈杰等编著《Excel函数、图表与数据分析》</strong><br>这本书详细介绍了Excel函数，适合系统学习Excel函数，也适合作为工具书随时翻阅。<br><img src="/blog/2020/27115/1.jpg" alt="封面"><br><img src="/blog/2020/27115/2.jpg" alt="目录1"></p>
 <h2 id="资料获取途径"><a href="#资料获取途径" class="headerlink" title="资料获取途径"></a>资料获取途径</h2><p>百度网盘链接：<a href="https://pan.baidu.com/s/1wDrAE2B7qTqcyPpa1HGZwA" target="_blank" rel="noopener">https://pan.baidu.com/s/1wDrAE2B7qTqcyPpa1HGZwA</a><br>提取码：09fx   </p>
 ]]></content>
       <categories>
@@ -763,12 +763,12 @@
   </entry>
   <entry>
     <title>【Android】郭霖《第一行代码》过时代码的更新写法</title>
-    <url>/blog/2020/21901/</url>
+    <url>/2020/21901/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 在学习郭霖大神《第一行代码——Android 第2版》（成书于2016年）过程中，因为代码过时，导致程序无法运行，耽误了很多时间，这里贴出我遇到的过时代码及更新写法。</p>
 <a id="more"></a>
 <h1 id="过时代码及更新写法"><a href="#过时代码及更新写法" class="headerlink" title="过时代码及更新写法"></a>过时代码及更新写法</h1><h2 id="3-6-更强大的滚动控件——RecyclerView"><a href="#3-6-更强大的滚动控件——RecyclerView" class="headerlink" title="3.6 更强大的滚动控件——RecyclerView"></a>3.6 更强大的滚动控件——RecyclerView</h2><p><strong>位置</strong><br>第3章 软件也要拼脸蛋——UI开发的点点滴滴<br>3.6 更强大的滚动控件——RecyclerView  </p>
 <p><strong>运行错误提示</strong>  </p>
-<p><img src="/blog/blog/2020/21901/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png" alt="RecyclerView错误提示"><br>显示java.lang.ClassNotFoundException: Didn’t find class “android.support.v7.widget.RecyclerView”  </p>
+<p><img src="/blog/2020/21901/RecyclerView%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.png" alt="RecyclerView错误提示"><br>显示java.lang.ClassNotFoundException: Didn’t find class “android.support.v7.widget.RecyclerView”  </p>
 <p><strong>代码更新写法</strong><br>参考资料：<a href="https://blog.csdn.net/u011041494/article/details/93849730" target="_blank" rel="noopener">一次解决找不到 android.support.v7.XXX 问题</a><br>在build.gradle中用</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">implementation &#39;androidx.recyclerview:recyclerview:1.0.0&#39;</span><br></pre></td></tr></table></figure>
 <p>替换</p>
@@ -783,9 +783,9 @@
 <p>的参数 LinearLayoutManager.VERTICAL为RecyclerView.VERTICAL</p>
 <h2 id="5-2-1-动态注册监听网络变化"><a href="#5-2-1-动态注册监听网络变化" class="headerlink" title="5.2.1 动态注册监听网络变化"></a>5.2.1 动态注册监听网络变化</h2><p><strong>位置</strong><br>第5章 全局大喇叭——详解广播机制<br>5.2.1 动态注册监听网络变化  </p>
 <p><strong>运行错误提示</strong>  </p>
-<p><img src="/blog/blog/2020/21901/NetworkInfo%E9%94%99%E8%AF%AF.png" alt="NetworkInfo错误提示"><br>显示’android.net.Networklnfo’ is deprecated（被弃用了）   </p>
+<p><img src="/blog/2020/21901/NetworkInfo%E9%94%99%E8%AF%AF.png" alt="NetworkInfo错误提示"><br>显示’android.net.Networklnfo’ is deprecated（被弃用了）   </p>
 <p><strong>代码更新写法</strong><br>参考资料：<br><a href="https://www.jb51.net/article/136923.htm" target="_blank" rel="noopener">Android 7.0 监听网络变化的示例代码</a><br><a href="https://blog.csdn.net/u011315960/article/details/79006162" target="_blank" rel="noopener">各种网络状态的解释</a><br><a href="https://developer.android.google.cn/reference/android/net/ConnectivityManager.NetworkCallback.html" target="_blank" rel="noopener">ConnectivityManager.NetworkCallback官网文档</a></p>
-<p>AndroidManifest.xml添加权限<br><img src="/blog/blog/2020/21901/%E7%94%B3%E8%AF%B7%E6%9D%83%E9%99%90.png" alt="AndroidManifest.xml添加权限"> </p>
+<p>AndroidManifest.xml添加权限<br><img src="/blog/2020/21901/%E7%94%B3%E8%AF%B7%E6%9D%83%E9%99%90.png" alt="AndroidManifest.xml添加权限"> </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--在app&#x2F;src&#x2F;main&#x2F;AndroidManifest.xml里添加权限，如下：--&gt;</span><br><span class="line">&lt;uses-permission android:name&#x3D;&quot;android.permission.ACCESS_NETWORK_STATE&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
 
 <p>Activity活动文件代码如下：</p>
@@ -809,13 +809,13 @@
 <p><strong>代码更新写法</strong><br>参考资料：<br><a href="https://blog.csdn.net/baidu_34635864/article/details/90902017" target="_blank" rel="noopener">android studio 3.0以上版本Android Device Monitor的替代方案</a>  </p>
 <p>Android Studio界面右下角有Device File Explorer按钮，点击后，弹出Device File Explorer界面，可以找到/data/data/&lt;package name&gt;/files/data，然后导出。  </p>
 <h2 id="6-4-1-创建数据库"><a href="#6-4-1-创建数据库" class="headerlink" title="6.4.1 创建数据库"></a>6.4.1 创建数据库</h2><p><strong>位置</strong><br>第6章 数据存储全方案——详解持久化技术<br>6.4.1 创建数据库</p>
-<h3 id="Permission-denied没有权限"><a href="#Permission-denied没有权限" class="headerlink" title="Permission denied没有权限"></a>Permission denied没有权限</h3><p><strong>运行错误提示</strong><br>在命令行窗口，执行命令cd &lt;package name&gt;，显示Permission denied没有权限。<br><img src="/blog/blog/2020/21901/adb%E6%9D%83%E9%99%90%E9%94%99%E8%AF%AF.png" alt="adb权限错误"><br><strong>错误原因</strong><br>手机没有获得root权限。   </p>
+<h3 id="Permission-denied没有权限"><a href="#Permission-denied没有权限" class="headerlink" title="Permission denied没有权限"></a>Permission denied没有权限</h3><p><strong>运行错误提示</strong><br>在命令行窗口，执行命令cd &lt;package name&gt;，显示Permission denied没有权限。<br><img src="/blog/2020/21901/adb%E6%9D%83%E9%99%90%E9%94%99%E8%AF%AF.png" alt="adb权限错误"><br><strong>错误原因</strong><br>手机没有获得root权限。   </p>
 <p><strong>解决方法</strong><br>方法一：</p>
 <p>真机测试，手机获取root权限后，输入su root，申请root权限，然后手机上点击授权，再次执行cd data/data即可进入手机data/data目录。<br>参考资料：<br><a href="https://blog.csdn.net/xiejc01/article/details/8449935?utm_source=blogxgwz0" target="_blank" rel="noopener">windows 下通过adb shell进入data目录，Permission denied 权限被拒绝</a>  </p>
-<p>方法二：<br>真机获得root权限的步骤比较复杂，建议安装虚拟机。点击“AVD Manager”按钮，创建虚拟机。<br>安装虚拟机后，输入su root，显示“su: not found”问题。<br>我们获取不了管理员权限都是因为下载的虚拟机中Target带(Google play)，是无法获取管理员权限的。<br><img src="/blog/blog/2020/21901/adb%E6%9D%83%E9%99%90%E9%94%99%E8%AF%AFGoogle_play.png" alt="adb权限错误Google_play">   </p>
-<p>然后重新下载一个Target带（Google APIs）的虚拟机,是可以获取管理员权限的。<br><img src="/blog/blog/2020/21901/adb%E6%9D%83%E9%99%90%E9%94%99%E8%AF%AFGoogle_api.png" alt="adb权限错误Google_play">   </p>
+<p>方法二：<br>真机获得root权限的步骤比较复杂，建议安装虚拟机。点击“AVD Manager”按钮，创建虚拟机。<br>安装虚拟机后，输入su root，显示“su: not found”问题。<br>我们获取不了管理员权限都是因为下载的虚拟机中Target带(Google play)，是无法获取管理员权限的。<br><img src="/blog/2020/21901/adb%E6%9D%83%E9%99%90%E9%94%99%E8%AF%AFGoogle_play.png" alt="adb权限错误Google_play">   </p>
+<p>然后重新下载一个Target带（Google APIs）的虚拟机,是可以获取管理员权限的。<br><img src="/blog/2020/21901/adb%E6%9D%83%E9%99%90%E9%94%99%E8%AF%AFGoogle_api.png" alt="adb权限错误Google_play">   </p>
 <p>参考资料：<br><a href="https://blog.csdn.net/the_shiled/article/details/91044129" target="_blank" rel="noopener">关于解决su:not found的方法</a></p>
-<h3 id="无法打开数据库"><a href="#无法打开数据库" class="headerlink" title="无法打开数据库"></a>无法打开数据库</h3><p><strong>运行错误提示</strong><br>无法打开数据库。<br>android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14 SQLITE_CANTOPEN): Could not open database<br><img src="/blog/blog/2020/21901/%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="无法打开数据库">   </p>
+<h3 id="无法打开数据库"><a href="#无法打开数据库" class="headerlink" title="无法打开数据库"></a>无法打开数据库</h3><p><strong>运行错误提示</strong><br>无法打开数据库。<br>android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14 SQLITE_CANTOPEN): Could not open database<br><img src="/blog/2020/21901/%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="无法打开数据库">   </p>
 <p><strong>错误原因</strong><br>Android6.0以后出现了很多权限即使在AndroidManifest.xml中配置了也不行，必须手动请求，或者在设置-应用-权限打开对应的权限。<br>换成Android 4.0系统运行，直接就运行起来了。<br>自Android 6.0开始，Google开始对系统权限做出严格的要求，有些权限必须用户同意才能调用相应功能，所以开发者需要调用权限申请的代码，弹出一个小窗口，向用户动态申请权限。  </p>
 <p>参考资料：<br><a href="https://blog.csdn.net/qq_31796651/article/details/70155155" target="_blank" rel="noopener">unknown error (Sqlite code 14): Could not open database解决方案</a><br><a href="https://blog.csdn.net/qq_34330286/article/details/79660059" target="_blank" rel="noopener">Android 6.0以上动态申请文件读写权限</a><br><a href="https://blog.csdn.net/qq_33200967/article/details/81041390" target="_blank" rel="noopener">Android的单个或多个权限动态申请</a>  </p>
 <p><strong>解决方法</strong>   </p>
@@ -831,7 +831,7 @@
   </entry>
   <entry>
     <title>紫荆PT站种子简介写作入门</title>
-    <url>/blog/2020/51708/</url>
+    <url>/2020/51708/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 紫荆PT是南京大学教育网环境下的PT站，站友在上传种子时，需要写种子简介。这里，提供一些入门教程，方便站内快速、高效地写出合格的种子简介。</p>
 <a id="more"></a>
 <h1 id="BBCode"><a href="#BBCode" class="headerlink" title="BBCode"></a>BBCode</h1><p>PT站大多使用的是轻量标记语言BBCode，紫荆PT亦是如此。<br>常见的BBCode标签代码：</p>
@@ -840,17 +840,17 @@
 <li><a href="https://bangumi.tv/help/bbcode" target="_blank" rel="noopener">BBCode 标签指南</a>  </li>
 </ul>
 <p><strong>“引用”</strong></p>
-<p><img src="/blog/blog/2020/51708/%E5%BC%95%E7%94%A8.png" alt="引用"><br>代码如下：</p>
+<p><img src="/blog/2020/51708/%E5%BC%95%E7%94%A8.png" alt="引用"><br>代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[quote]转自SSD</span><br><span class="line">原种子链接：https:&#x2F;&#x2F;springsunday.net&#x2F;details.php?id&#x3D;50837&amp;hit&#x3D;1</span><br><span class="line">原上传时间：2017年</span><br><span class="line">未改变文件内容[&#x2F;quote]</span><br></pre></td></tr></table></figure>
 
 <p><strong>给“引用”添加标题</strong></p>
-<p><img src="/blog/blog/2020/51708/%E5%BC%95%E7%94%A8%E5%8A%A0%E6%A0%87%E9%A2%98.png" alt="引用"><br>代码如下：</p>
+<p><img src="/blog/2020/51708/%E5%BC%95%E7%94%A8%E5%8A%A0%E6%A0%87%E9%A2%98.png" alt="引用"><br>代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[quote&#x3D;搬运信息]转自SSD</span><br><span class="line">原种子链接：https:&#x2F;&#x2F;springsunday.net&#x2F;details.php?id&#x3D;50837&amp;hit&#x3D;1</span><br><span class="line">原上传时间：2017年</span><br><span class="line">未改变文件内容[&#x2F;quote]</span><br></pre></td></tr></table></figure>
 
 
 <h1 id="实用工具"><a href="#实用工具" class="headerlink" title="实用工具"></a>实用工具</h1><h2 id="PTGen快速填写电影、剧集的简介"><a href="#PTGen快速填写电影、剧集的简介" class="headerlink" title="PTGen快速填写电影、剧集的简介"></a>PTGen快速填写电影、剧集的简介</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>PTGen是由R酱（rhilip）开发的Pt站资源简介生成工具。<br>R酱博客：<a href="https://blog.rhilip.info/" target="_blank" rel="noopener">https://blog.rhilip.info/</a><br>R酱Github：<a href="https://github.com/Rhilip/" target="_blank" rel="noopener">https://github.com/Rhilip/</a>  </p>
 <p>在填写电影、剧集、综艺类资源的简介时，强烈推荐使用下面这个简介生成模板：<br><a href="https://rhilip.github.io/PT-help/ptgen" target="_blank" rel="noopener">https://rhilip.github.io/PT-help/ptgen</a>  </p>
-<p><img src="/blog/blog/2020/51708/PTGen.png" alt="PTGen.png">  </p>
+<p><img src="/blog/2020/51708/PTGen.png" alt="PTGen.png">  </p>
 <h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><ol>
 <li>输入豆瓣链接、豆瓣ID、IMDB链接、IMDB ID、电影中文名、电影英文名等信息；</li>
 <li>获得查询结果；</li>
@@ -866,15 +866,15 @@
 <hr>
 <h2 id="MedioInfo填写视频编码信息"><a href="#MedioInfo填写视频编码信息" class="headerlink" title="MedioInfo填写视频编码信息"></a>MedioInfo填写视频编码信息</h2><h3 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h3><p>MediaInfo是一款免费、实用的视频参数检测工具，除了可以对视频进行编码分析查询，还可以对音频文件的编码及信息进行检测。<br>下载链接：<a href="http://mediaarea.net/en/MediaInfo" target="_blank" rel="noopener">http://mediaarea.net/en/MediaInfo</a></p>
 <h3 id="使用方法-2"><a href="#使用方法-2" class="headerlink" title="使用方法"></a>使用方法</h3><p>1.选中文件，右键用MedioInfo打开；   </p>
-<p><img src="/blog/blog/2020/51708/%E5%8F%B3%E9%94%AE%E7%94%A8MedioInfo%E6%89%93%E5%BC%80.png" alt="右键用MedioInfo打开"><br>2.点击View-&gt;Text；  </p>
-<p><img src="/blog/blog/2020/51708/View%E9%80%89%E6%8B%A9Text.png" alt="View选择Text"><br>3.全选，复制粘贴到PT站种子简介处；<br>视频编码信息会出现不对齐的现象，需要括在下述代码内，设置为等宽字体。</p>
+<p><img src="/blog/2020/51708/%E5%8F%B3%E9%94%AE%E7%94%A8MedioInfo%E6%89%93%E5%BC%80.png" alt="右键用MedioInfo打开"><br>2.点击View-&gt;Text；  </p>
+<p><img src="/blog/2020/51708/View%E9%80%89%E6%8B%A9Text.png" alt="View选择Text"><br>3.全选，复制粘贴到PT站种子简介处；<br>视频编码信息会出现不对齐的现象，需要括在下述代码内，设置为等宽字体。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[font&#x3D;Consolas,monospace]视频编码信息[&#x2F;font]</span><br></pre></td></tr></table></figure>
 
 <p>参考资料：<br><a href="http://zijingbt.njuftp.org/faq.html#faq16" target="_blank" rel="noopener">紫荆PT-视频编码的查询方法</a></p>
 <h1 id="种子简介示例"><a href="#种子简介示例" class="headerlink" title="种子简介示例"></a>种子简介示例</h1><p>种子链接：<a href="http://zijingbt.njuftp.org/stats.html?id=113159" target="_blank" rel="noopener">http://zijingbt.njuftp.org/stats.html?id=113159</a><br>种子简介代码如下：  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[quote&#x3D;搬运信息]转自SSD</span><br><span class="line">原种子链接：https:&#x2F;&#x2F;springsunday.net&#x2F;details.php?id&#x3D;50837&amp;hit&#x3D;1</span><br><span class="line">原上传时间：2017年</span><br><span class="line">未改变文件内容[&#x2F;quote]</span><br><span class="line"></span><br><span class="line">[img]http:&#x2F;&#x2F;nvidia.njuftp.org&#x2F;images&#x2F;2020&#x2F;1&#x2F;15&#x2F;f824b7f4-326f-4f5b-8061-281e3b7830da.jpg[&#x2F;img]</span><br><span class="line"></span><br><span class="line">◎译　　名　Legend of Tianyun Monutain</span><br><span class="line">◎片　　名　天云山传奇</span><br><span class="line">◎年　　代　1980</span><br><span class="line">◎产　　地　中国大陆</span><br><span class="line">◎类　　别　剧情</span><br><span class="line">◎语　　言　汉语普通话</span><br><span class="line">◎上映日期　1981-11-14</span><br><span class="line">◎IMDb评分  7.7&#x2F;10 from 138 users</span><br><span class="line">◎IMDb链接  https:&#x2F;&#x2F;www.imdb.com&#x2F;title&#x2F;tt0081632</span><br><span class="line">◎豆瓣评分　7.8&#x2F;10 from 3907 users</span><br><span class="line">◎豆瓣链接　https:&#x2F;&#x2F;movie.douban.com&#x2F;subject&#x2F;1291864&#x2F;</span><br><span class="line">◎片　　长　121分钟</span><br><span class="line">◎导　　演　谢晋 Jin Xie</span><br><span class="line">◎编　　剧　鲁彦周 Yanzhou Lu</span><br><span class="line">◎主　　演　石维坚 Weijian Shi</span><br><span class="line">　　　　　  施建岚 Jianlan Shi</span><br><span class="line">　　　　　  王馥荔 Fuli Wang</span><br><span class="line">　　　　　  仲星火 Xinghuo Zhong</span><br><span class="line">　　　　　  洪学敏 Xuemin Hong</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">◎标　　签　谢晋 | 中国电影 | 中国 | 伤痕 | 大陆 | 爱情 | 1980 | 国产老片</span><br><span class="line"></span><br><span class="line">◎简　　介  </span><br><span class="line"></span><br><span class="line">　　1978年冬天，地委组织部副部长宋薇（王馥荔 饰）和丈夫、部长吴遥（仲星火 饰）正在对文革期间的冤假错案进行拨乱反正。从天云山赶回的周瑜贞（洪学敏 饰）向宋薇汇报工作，声称在天云山调查期间拜访了一对儿特殊的夫妻：丈夫罗群（石维坚 饰）是个靠赶车维生的老右派，有多部没有发表的著述；妻子冯晴岚（施建岚 饰）是有病在身的小学教员。这对儿夫妻凄凉的境遇令周瑜贞同情，而且她通过了解，知道罗群是当年宋薇在天云山的恋人……原来二十年前宋薇与冯晴岚一起加入考察队驻扎天云山，吴遥和罗群是前后两任政治委员，吴遥暗恋宋薇，于是陷害罗群是反党分子。罗群的遭遇令宋薇吃惊和愤怒，然而在为罗群平反的问题上，吴遥再次出面阻挠……</span><br><span class="line"></span><br><span class="line">◎获奖情况  </span><br><span class="line"></span><br><span class="line">　　第1届中国电影金鸡奖(1981)</span><br><span class="line">　　最佳故事片</span><br><span class="line">　　最佳导演 谢晋</span><br><span class="line">　　最佳编剧(提名) 鲁彦周</span><br><span class="line">　　最佳女主角(提名) 王馥荔</span><br><span class="line">　　最佳摄影 许琦</span><br><span class="line">　　最佳美术 陈绍勉</span><br><span class="line">　　最佳剪辑(提名) 周鼎文</span><br><span class="line"></span><br><span class="line">　　第4届大众电影百花奖(1981)</span><br><span class="line">　　最佳故事片</span><br><span class="line"></span><br><span class="line">[img]http:&#x2F;&#x2F;nvidia.njuftp.org&#x2F;images&#x2F;2020&#x2F;1&#x2F;15&#x2F;49004b27-e3eb-41d5-9c34-993e103373ec.jpg[&#x2F;img]</span><br><span class="line"></span><br><span class="line">[quote][font&#x3D;Consolas,monospace]General</span><br><span class="line">ID                                       : 1 (0x1)</span><br><span class="line">Complete name                            : F:\03电影\谢晋 天云山传奇\Legend.of.Tianyun.Mountain.1980.HDTV.1080i.H264-CZW\天云山传奇.Legend.of.Tianyun.Mountain.1980.HDTV.1080i.H264-CZW.ts</span><br><span class="line">Format                                   : MPEG-TS</span><br><span class="line">File size                                : 6.15 GiB</span><br><span class="line">Duration                                 : 2 h 0 min</span><br><span class="line">Overall bit rate mode                    : Variable</span><br><span class="line">Overall bit rate                         : 7 290 kb&#x2F;s</span><br><span class="line">Maximum Overall bit rate                 : 35.5 Mb&#x2F;s</span><br><span class="line"></span><br><span class="line">Video</span><br><span class="line">ID                                       : 4113 (0x1011)</span><br><span class="line">Menu ID                                  : 1 (0x1)</span><br><span class="line">Format                                   : AVC</span><br><span class="line">Format&#x2F;Info                              : Advanced Video Codec</span><br><span class="line">Format profile                           : High@L4</span><br><span class="line">Format settings                          : CABAC &#x2F; 4 Ref Frames</span><br><span class="line">Format settings, CABAC                   : Yes</span><br><span class="line">Format settings, Reference frames        : 4 frames</span><br><span class="line">Codec ID                                 : 27</span><br><span class="line">Duration                                 : 2 h 0 min</span><br><span class="line">Bit rate mode                            : Variable</span><br><span class="line">Bit rate                                 : 6 801 kb&#x2F;s</span><br><span class="line">Maximum bit rate                         : 40.0 Mb&#x2F;s</span><br><span class="line">Width                                    : 1 920 pixels</span><br><span class="line">Height                                   : 1 080 pixels</span><br><span class="line">Display aspect ratio                     : 16:9</span><br><span class="line">Frame rate                               : 25.000 FPS</span><br><span class="line">Color space                              : YUV</span><br><span class="line">Chroma subsampling                       : 4:2:0</span><br><span class="line">Bit depth                                : 8 bits</span><br><span class="line">Scan type                                : MBAFF</span><br><span class="line">Scan type, store method                  : Interleaved fields</span><br><span class="line">Scan order                               : Top Field First</span><br><span class="line">Bits&#x2F;(Pixel*Frame)                       : 0.131</span><br><span class="line">Stream size                              : 5.74 GiB (93%)</span><br><span class="line"></span><br><span class="line">Audio</span><br><span class="line">ID                                       : 4352 (0x1100)</span><br><span class="line">Menu ID                                  : 1 (0x1)</span><br><span class="line">Format                                   : MPEG Audio</span><br><span class="line">Format version                           : Version 1</span><br><span class="line">Format profile                           : Layer 2</span><br><span class="line">Codec ID                                 : 4</span><br><span class="line">Duration                                 : 2 h 0 min</span><br><span class="line">Bit rate mode                            : Constant</span><br><span class="line">Bit rate                                 : 128 kb&#x2F;s</span><br><span class="line">Channel(s)                               : 2 channels</span><br><span class="line">Sampling rate                            : 48.0 kHz</span><br><span class="line">Frame rate                               : 41.667 FPS (1152 SPF)</span><br><span class="line">Compression mode                         : Lossy</span><br><span class="line">Delay relative to video                  : 587 ms</span><br><span class="line">Stream size                              : 111 MiB (2%)[&#x2F;font][&#x2F;quote]</span><br></pre></td></tr></table></figure>
 
-<p>种子简介截图：<br><img src="/blog/blog/2020/51708/%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B.png" alt="种子简介"></p>
+<p>种子简介截图：<br><img src="/blog/2020/51708/%E7%A7%8D%E5%AD%90%E7%AE%80%E4%BB%8B.png" alt="种子简介"></p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://www.tjupt.org/forums.php?action=viewtopic&forumid=15&topicid=15075" target="_blank" rel="noopener">【新手手册】初入北洋园PT你必须知道的知识</a>：超级详细的PT站入门教程（需要注册北洋园PT账号）<br><a href="https://www.tjupt.org/forums.php?action=viewtopic&topicid=15098" target="_blank" rel="noopener">发布资源&amp;制作种子的教程</a>：发布资源&amp;制作种子的教程（需要注册北洋园PT账号）    </p>
 ]]></content>
       <categories>
@@ -887,7 +887,7 @@
   </entry>
   <entry>
     <title>PT站简介及注册方式汇总</title>
-    <url>/blog/2020/31857/</url>
+    <url>/2020/31857/</url>
     <content><![CDATA[<p><strong>摘要：</strong> PT站是分享影视，游戏，音乐，动漫，学习等资料的平台。不管是看电影、看电视剧，还是追番，PT站都是不错的选择。PT站的特点是，服务器不存放资源，资源均由用户上传，PT站基本都会设置上传/下载比率限制，防止出现只下载不上传的“吸血鬼”。说不多说，开始简单介绍各大PT站。  </p>
 <a id="more"></a>
 <h1 id="简介及注册方式"><a href="#简介及注册方式" class="headerlink" title="简介及注册方式"></a>简介及注册方式</h1><h2 id="注册方式"><a href="#注册方式" class="headerlink" title="注册方式"></a>注册方式</h2><p>这里是我整理的各大BT、PT站注册方式：<br><a href="https://docs.qq.com/sheet/DSnBBaVBydnBhRHdo?tab=ln32s3&c=A22A0K0" target="_blank" rel="noopener">https://docs.qq.com/sheet/DSnBBaVBydnBhRHdo?tab=ln32s3&amp;c=A22A0K0</a>  </p>
@@ -945,7 +945,7 @@
   </entry>
   <entry>
     <title>Markdown和微信公众号排版</title>
-    <url>/blog/2020/18383/</url>
+    <url>/2020/18383/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 微信公众号排版复杂，但推广方便；Github+Hexo搭建个人博客，写作方便（Markdown语言），但推广不易；lyricat大神开发<a href="https://github.com/lyricat/wechat-format" target="_blank" rel="noopener">微信公众号排版编辑器</a>，轻松转化Markdown到给微信特制的HTML。  </p>
 <a id="more"></a>
 <h1 id="微信公众号"><a href="#微信公众号" class="headerlink" title="微信公众号"></a>微信公众号</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
@@ -979,7 +979,7 @@
   </entry>
   <entry>
     <title>Markdown常用语法</title>
-    <url>/blog/2020/52876/</url>
+    <url>/2020/52876/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 作业部落出品的常用语法：<br><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor</a><br>我用的Markdown编辑器是VS Code。<br><a href="https://markdown-zh.readthedocs.io/en/latest/" target="_blank" rel="noopener">Markdown中文文档</a>  </p>
 <a id="more"></a>
 <hr>
@@ -1082,20 +1082,20 @@
   </entry>
   <entry>
     <title>Github+Hexo搭建个人博客</title>
-    <url>/blog/2020/42500/</url>
+    <url>/2020/42500/</url>
     <content><![CDATA[<p><strong>摘要：</strong> 前段时间，在浏览<a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a>时，知道可以用Github+Hexo搭建个人博客。这几天，参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的教程</a>学习了Git，参考梧雨北辰的教程<a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a>和其他大佬的教程，尝试搭建个人博客。期间，遇到不少问题，在这里贴出来，避免以后再次踩坑。</p>
 <a id="more"></a>
 <p>个人博客，看效果进入：<a href="https://GeRongcun.github.io" target="_blank" rel="noopener">https://GeRongcun.github.io</a><br>Github仓库：<a href="https://github.com/GeRongcun/GeRongcun.github.io" target="_blank" rel="noopener">https://github.com/GeRongcun/GeRongcun.github.io</a>  </p>
 <p>推荐学习资料：<br><a href="https://hexo.io/zh-cn/docs" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="https://itxia.github.io/2018/12/24/SetupBlogWithHexo/#more" target="_blank" rel="noopener">IT侠博客</a><br><a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰老师的Git教程</a><br><a href="https://www.jianshu.com/p/72842e1c63e2" target="_blank" rel="noopener">梧雨北辰 搭建个人博客网站Github、Hexo与Next</a><br><a href="https://www.cnblogs.com/chengxs/p/7402174.html" target="_blank" rel="noopener"><strong>github+hexo搭建自己的博客网站（一）基础入门</strong></a><br>系列教程，介绍得很全。<br><a href="https://blog.csdn.net/qq_36759224/category_9285510.html" target="_blank" rel="noopener"><strong>Hexo 博客搭建</strong></a><br>关于 Hexo 博客搭建以及后期优化的系列教程  </p>
 <hr>
-<h1 id="安装Hexo失败"><a href="#安装Hexo失败" class="headerlink" title="安装Hexo失败"></a>安装Hexo失败</h1><p><img src="/blog/blog/2020/42500/01%E9%94%99%E8%AF%AF.png" alt="安装hexo失败"><br><strong>错误提示</strong>  </p>
+<h1 id="安装Hexo失败"><a href="#安装Hexo失败" class="headerlink" title="安装Hexo失败"></a>安装Hexo失败</h1><p><img src="/blog/2020/42500/01%E9%94%99%E8%AF%AF.png" alt="安装hexo失败"><br><strong>错误提示</strong>  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">FATAL can not read an implicit mapping pair; a colon is missed at line 103, column 16:</span><br><span class="line">    branch:master</span><br><span class="line">                ^</span><br><span class="line">YAMLException: can not read an implicit mapping pair; a colon is missed at line 103, column 16:</span><br><span class="line">    branch:master</span><br></pre></td></tr></table></figure>
 
 <p><strong>解决方法：</strong><br>目前国内npm源有问题；所以键入如下代码即可安装成功:<br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>cnpm install hexo-cli -g</p>
-<h1 id="URL乱码"><a href="#URL乱码" class="headerlink" title="URL乱码"></a>URL乱码</h1><h2 id="导航栏链接URL乱码"><a href="#导航栏链接URL乱码" class="headerlink" title="导航栏链接URL乱码"></a>导航栏链接URL乱码</h2><p><img src="/blog/blog/2020/42500/02%E9%94%99%E8%AF%AF.png" alt="导航栏链接URL乱码"><br><strong>错误原因：</strong>%20由空格转义过来  </p>
-<p><img src="/blog/blog/2020/42500/03.png" alt="解决方法"><br><strong>解决方法：</strong>只需要删除home: / || home中，/和||之间的空格。  </p>
-<h2 id="日志按钮链接URL乱码"><a href="#日志按钮链接URL乱码" class="headerlink" title="日志按钮链接URL乱码"></a>日志按钮链接URL乱码</h2><p><img src="/blog/blog/2020/42500/031.png" alt="点击个人博客头像下方的“日志”按钮"><br>点击个人博客头像下方的“日志”按钮，跳转url出现乱码  </p>
-<p><img src="/blog/blog/2020/42500/04.png" alt="日志按钮链接URL乱码"><br><strong>错误原因：</strong>%7C是由/转义过来的  </p>
+<h1 id="URL乱码"><a href="#URL乱码" class="headerlink" title="URL乱码"></a>URL乱码</h1><h2 id="导航栏链接URL乱码"><a href="#导航栏链接URL乱码" class="headerlink" title="导航栏链接URL乱码"></a>导航栏链接URL乱码</h2><p><img src="/blog/2020/42500/02%E9%94%99%E8%AF%AF.png" alt="导航栏链接URL乱码"><br><strong>错误原因：</strong>%20由空格转义过来  </p>
+<p><img src="/blog/2020/42500/03.png" alt="解决方法"><br><strong>解决方法：</strong>只需要删除home: / || home中，/和||之间的空格。  </p>
+<h2 id="日志按钮链接URL乱码"><a href="#日志按钮链接URL乱码" class="headerlink" title="日志按钮链接URL乱码"></a>日志按钮链接URL乱码</h2><p><img src="/blog/2020/42500/031.png" alt="点击个人博客头像下方的“日志”按钮"><br>点击个人博客头像下方的“日志”按钮，跳转url出现乱码  </p>
+<p><img src="/blog/2020/42500/04.png" alt="日志按钮链接URL乱码"><br><strong>错误原因：</strong>%7C是由/转义过来的  </p>
 <p><strong>解决方法：</strong><br>在themes\next\layout_macro中找到sidebar.swig</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if config.archive_dir !&#x3D; &#39;&#x2F;&#39; and site.posts.length &gt; 0 %&#125;</span><br><span class="line">  &lt;div class&#x3D;&quot;site-state-item site-state-posts&quot;&gt;</span><br><span class="line">  &#123;% if theme.menu.archives %&#125;</span><br><span class="line">	&lt;a href&#x3D;&quot;&#123;&#123; url_for(theme.menu.archives).split(&#39;||&#39;)[0] | trim &#125;&#125;&quot;&gt;</span><br><span class="line">  &#123;% else %&#125;</span><br><span class="line">	&lt;a href&#x3D;&quot;&#123;&#123; url_for(config.archive_dir) &#125;&#125;&quot;&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">	  &lt;span class&#x3D;&quot;site-state-item-count&quot;&gt;&#123;&#123; site.posts.length &#125;&#125;&lt;&#x2F;span&gt;</span><br><span class="line">	  &lt;span class&#x3D;&quot;site-state-item-name&quot;&gt;&#123;&#123; __(&#39;state.posts&#39;) &#125;&#125;&lt;&#x2F;span&gt;</span><br><span class="line">	&lt;&#x2F;a&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <p>将</p>
